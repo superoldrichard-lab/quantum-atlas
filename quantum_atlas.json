@@ -1,0 +1,9578 @@
+{
+ "meta": {
+  "title": "全球高校量子技术图谱 · Quantum Academia Atlas",
+  "generated": "2026-10-04",
+  "description": "覆盖量子计算、量子通信、量子传感与测量的全球高校—学者—学生—公司关系图谱。数据来自公开可查来源(官网、新闻稿、权威媒体、维基百科),逐条附来源链接;缺失字段留空,不确定项以 uncertain 字段与虚线边标注。",
+  "node_types": {
+   "university": "高校/研究机构",
+   "scholar": "学者/课题组负责人",
+   "student": "研究生/博士后(含出身)",
+   "company": "量子技术公司",
+   "investor": "投资机构"
+  },
+  "link_types": {
+   "affiliation": "任职任教",
+   "phd_advisor": "师承指导",
+   "alumni": "培养输送",
+   "collaboration": "联合研究",
+   "founded": "创办",
+   "incubated": "孵化",
+   "employment": "任职",
+   "investment": "投资"
+  },
+  "field_vocab": [
+   "量子计算",
+   "量子通信",
+   "量子传感与测量",
+   "量子软件与算法",
+   "量子材料与器件"
+  ],
+  "region_vocab": [
+   "东亚",
+   "东南亚",
+   "中东",
+   "北美",
+   "大洋洲",
+   "欧洲"
+  ],
+  "strength_meaning": {
+   "3": "核心(创始/导师/主要任职)",
+   "2": "重要(联合创始人/主要合作/指导)",
+   "1": "一般(合作/关联)"
+  },
+  "notes": [
+   "本图谱为示例性精选样本,并非穷尽式名录;研究生与博士后仅收录公开报道充分者。",
+   "公司融资阶段为检索时可查证的最新一轮,均标注时间;投资类关系(investment)在本次检索中未发现高校/学者作为投资方的可靠公开实例,故暂无该类边。",
+   "已停运/被收购公司如实标注(如Zapata AI于2024年10月停运、Oxford Ionics与ID Quantique被IonQ收购、Infleqtion与Terra Quantum推进SPAC上市)。",
+   "uncertain 数组列出未能完全核实或存在分歧的字段;虚线边表示关系本身带有不确定性。",
+   "人物仅收录公开职业信息。"
+  ]
+ },
+ "nodes": [
+  {
+   "id": "uni_caltech",
+   "type": "university",
+   "name": "加州理工学院",
+   "name_en": "California Institute of Technology",
+   "country": "美国",
+   "region": "北美",
+   "city": "Pasadena",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://datascience.uchicago.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_harvard",
+   "type": "university",
+   "name": "哈佛大学",
+   "name_en": "Harvard University",
+   "country": "美国",
+   "region": "北美",
+   "city": "Cambridge, MA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.harvard.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_mit",
+   "type": "university",
+   "name": "麻省理工学院",
+   "name_en": "Massachusetts Institute of Technology",
+   "country": "美国",
+   "region": "北美",
+   "city": "Cambridge, MA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.mit.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_uchicago",
+   "type": "university",
+   "name": "芝加哥大学",
+   "name_en": "University of Chicago",
+   "country": "美国",
+   "region": "北美",
+   "city": "Chicago",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://quantumzeitgeist.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_yale",
+   "type": "university",
+   "name": "耶鲁大学",
+   "name_en": "Yale University",
+   "country": "美国",
+   "region": "北美",
+   "city": "New Haven",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://thequantuminsider.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_duke",
+   "type": "university",
+   "name": "杜克大学",
+   "name_en": "Duke University",
+   "country": "美国",
+   "region": "北美",
+   "city": "Durham, NC",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.ionq.com",
+    "https://otc.duke.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_umaryland",
+   "type": "university",
+   "name": "马里兰大学(帕克)",
+   "name_en": "University of Maryland, College Park",
+   "country": "美国",
+   "region": "北美",
+   "city": "College Park",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.ionq.com",
+    "https://phys.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_ucsb",
+   "type": "university",
+   "name": "加州大学圣塔芭芭拉分校",
+   "name_en": "UC Santa Barbara",
+   "country": "美国",
+   "region": "北美",
+   "city": "Santa Barbara",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.nobelprize.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_berkeley",
+   "type": "university",
+   "name": "加州大学伯克利分校",
+   "name_en": "UC Berkeley",
+   "country": "美国",
+   "region": "北美",
+   "city": "Berkeley",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.nobelprize.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_stanford",
+   "type": "university",
+   "name": "斯坦福大学",
+   "name_en": "Stanford University",
+   "country": "美国",
+   "region": "北美",
+   "city": "Stanford",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://nqp.stanford.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_princeton",
+   "type": "university",
+   "name": "普林斯顿大学",
+   "name_en": "Princeton University",
+   "country": "美国",
+   "region": "北美",
+   "city": "Princeton",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://ece.princeton.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_uwmadison",
+   "type": "university",
+   "name": "威斯康星大学麦迪逊分校",
+   "name_en": "University of Wisconsin–Madison",
+   "country": "美国",
+   "region": "北美",
+   "city": "Madison",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.physics.wisc.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_ucla",
+   "type": "university",
+   "name": "加州大学洛杉矶分校",
+   "name_en": "UCLA",
+   "country": "美国",
+   "region": "北美",
+   "city": "Los Angeles",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.sec.gov"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_waterloo",
+   "type": "university",
+   "name": "滑铁卢大学",
+   "name_en": "University of Waterloo",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Waterloo",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "设量子计算研究院 IQC(2002年创立)",
+   "sources": [
+    "https://uwaterloo.ca"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_sherbrooke",
+   "type": "university",
+   "name": "舍布鲁克大学",
+   "name_en": "Université de Sherbrooke",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Sherbrooke",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "设 Institut quantique",
+   "sources": [
+    "https://www.fusacq.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_ubc",
+   "type": "university",
+   "name": "英属哥伦比亚大学",
+   "name_en": "University of British Columbia",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Vancouver",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://tracxn.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_utoronto",
+   "type": "university",
+   "name": "多伦多大学",
+   "name_en": "University of Toronto",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Toronto",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子软件与算法",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://markets.businessinsider.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_institutoptique",
+   "type": "university",
+   "name": "巴黎高等光学研究院(含CNRS联合实验室)",
+   "name_en": "Institut d'Optique Graduate School",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "Palaiseau",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.prnewswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_c2n",
+   "type": "university",
+   "name": "法国国家科学研究中心 C2N(巴黎-萨克雷)",
+   "name_en": "CNRS – C2N, Université Paris-Saclay",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "Palaiseau",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "CNRS纳米科学与纳米技术中心",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_ens",
+   "type": "university",
+   "name": "巴黎高等师范学院(LPENS)",
+   "name_en": "École Normale Supérieure – LPENS",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "Paris",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_innsbruck",
+   "type": "university",
+   "name": "因斯布鲁克大学",
+   "name_en": "University of Innsbruck",
+   "country": "奥地利",
+   "region": "欧洲",
+   "city": "Innsbruck",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.aqt.eu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_mpq",
+   "type": "university",
+   "name": "马克斯·普朗克量子光学研究所",
+   "name_en": "Max Planck Institute of Quantum Optics (MPQ)",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "Garching",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.mpq.mpg.de"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_lmu",
+   "type": "university",
+   "name": "慕尼黑大学",
+   "name_en": "LMU Munich",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "Munich",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.mpq.mpg.de/7265117/09-wolf-prize-for-immanuel-bloch"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_eth",
+   "type": "university",
+   "name": "苏黎世联邦理工学院",
+   "name_en": "ETH Zurich",
+   "country": "瑞士",
+   "region": "欧洲",
+   "city": "Zurich",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://qudev.phys.ethz.ch",
+    "https://www.insidequantumtechnology.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_tudelft",
+   "type": "university",
+   "name": "代尔夫特理工大学",
+   "name_en": "TU Delft (QuTech)",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "Delft",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "与荷兰应用科学组织TNO共建QuTech",
+   "sources": [
+    "https://inspirehep.net"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_julich",
+   "type": "university",
+   "name": "于利希研究中心(JARA量子信息研究所)",
+   "name_en": "Forschungszentrum Jülich – JARA",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "Jülich",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_oxford",
+   "type": "university",
+   "name": "牛津大学",
+   "name_en": "University of Oxford",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "Oxford",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_ucl",
+   "type": "university",
+   "name": "伦敦大学学院",
+   "name_en": "University College London (UCL)",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "London",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_bristol",
+   "type": "university",
+   "name": "布里斯托大学",
+   "name_en": "University of Bristol",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "Bristol",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.quantiki.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_imperial",
+   "type": "university",
+   "name": "帝国理工学院",
+   "name_en": "Imperial College London",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "London",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://tech.eu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_geneva",
+   "type": "university",
+   "name": "日内瓦大学(应用物理组GAP)",
+   "name_en": "University of Geneva – GAP",
+   "country": "瑞士",
+   "region": "欧洲",
+   "city": "Geneva",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://iiitl.ac.in"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_copenhagen",
+   "type": "university",
+   "name": "哥本哈根大学(尼尔斯·玻尔研究所)",
+   "name_en": "Niels Bohr Institute, Univ. of Copenhagen",
+   "country": "丹麦",
+   "region": "欧洲",
+   "city": "Copenhagen",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://sparrowquantum.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_aalto",
+   "type": "university",
+   "name": "阿尔托大学",
+   "name_en": "Aalto University",
+   "country": "芬兰",
+   "region": "欧洲",
+   "city": "Espoo",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "与VTT技术研究中心共同孵化IQM",
+   "sources": [
+    "https://meetiqm.com"
+   ],
+   "uncertain": [
+    "IQM官网链接为通行地址,本次检索未逐页核对"
+   ]
+  },
+  {
+   "id": "uni_uab",
+   "type": "university",
+   "name": "巴塞罗那自治大学(联合BSC/IFAE)",
+   "name_en": "UAB / BSC / IFAE (巴塞罗那)",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "Barcelona",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://link.springer.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_vienna",
+   "type": "university",
+   "name": "维也纳大学",
+   "name_en": "University of Vienna",
+   "country": "奥地利",
+   "region": "欧洲",
+   "city": "Vienna",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.nobelprize.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_ustc",
+   "type": "university",
+   "name": "中国科学技术大学",
+   "name_en": "University of Science and Technology of China",
+   "country": "中国",
+   "region": "东亚",
+   "city": "合肥",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_tsinghua",
+   "type": "university",
+   "name": "清华大学",
+   "name_en": "Tsinghua University",
+   "country": "中国",
+   "region": "东亚",
+   "city": "北京",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.qq.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_sjtu",
+   "type": "university",
+   "name": "上海交通大学",
+   "name_en": "Shanghai Jiao Tong University",
+   "country": "中国",
+   "region": "东亚",
+   "city": "上海",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.sina.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_zhejiang",
+   "type": "university",
+   "name": "浙江大学",
+   "name_en": "Zhejiang University",
+   "country": "中国",
+   "region": "东亚",
+   "city": "杭州",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.163.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_riken",
+   "type": "university",
+   "name": "理化学研究所(量子计算研究中心RQC)",
+   "name_en": "RIKEN – Center for Quantum Computing",
+   "country": "日本",
+   "region": "东亚",
+   "city": "埼玉和光",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://rqc.riken.jp"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_utokyo",
+   "type": "university",
+   "name": "东京大学",
+   "name_en": "University of Tokyo",
+   "country": "日本",
+   "region": "东亚",
+   "city": "东京",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://alice.t.u-tokyo.ac.jp"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_nus",
+   "type": "university",
+   "name": "新加坡国立大学(量子技术中心CQT)",
+   "name_en": "National University of Singapore – CQT",
+   "country": "新加坡",
+   "region": "东南亚",
+   "city": "新加坡",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.cqt.sg",
+    "https://cde.nus.edu.sg"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_hkust",
+   "type": "university",
+   "name": "香港科技大学",
+   "name_en": "Hong Kong University of Science and Technology",
+   "country": "中国香港",
+   "region": "东亚",
+   "city": "香港",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "http://c.zhineng.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_unsw",
+   "type": "university",
+   "name": "新南威尔士大学",
+   "name_en": "UNSW Sydney",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "悉尼",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.theaustralian.com.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_usydney",
+   "type": "university",
+   "name": "悉尼大学",
+   "name_en": "University of Sydney",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "悉尼",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.smartcompany.com.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_anu",
+   "type": "university",
+   "name": "澳大利亚国立大学",
+   "name_en": "Australian National University",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "堪培拉",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.crunchbase.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_cambridge",
+   "type": "university",
+   "name": "剑桥大学",
+   "name_en": "University of Cambridge",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "Cambridge",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "霍金曾任职于此;Quantinuum前身的剑桥量子与之同城渊源",
+   "sources": [
+    "https://pic-pac.cap.ca"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_preskill",
+   "type": "scholar",
+   "name": "约翰·普雷斯基尔",
+   "name_en": "John Preskill",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "理查德·费曼理论物理讲席教授;IQIM所长;提出NISQ概念",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://datascience.uchicago.edu",
+    "https://quantumfrontiers.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_lukin",
+   "type": "scholar",
+   "name": "米哈伊尔·卢金",
+   "name_en": "Mikhail Lukin",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "https://lukin.physics.harvard.edu",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://lukin.physics.harvard.edu",
+    "https://news.harvard.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_greiner",
+   "type": "scholar",
+   "name": "马库斯·格雷纳",
+   "name_en": "Markus Greiner",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.harvard.edu",
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_vuletic",
+   "type": "scholar",
+   "name": "弗拉丹·武莱蒂奇",
+   "name_en": "Vladan Vuletić",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_shor",
+   "type": "scholar",
+   "name": "彼得·秀尔",
+   "name_en": "Peter Shor",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "数学系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "Morss应用数学讲席教授;1994年提出秀尔算法",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.mit.edu",
+    "https://math.mit.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_chuang",
+   "type": "scholar",
+   "name": "艾萨克·庄",
+   "name_en": "Isaac Chuang",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电气工程与计算机科学系/物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://books.google.co.il/books?id=-s4DEy7o-a0C",
+    "https://news.mit.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_awschalom",
+   "type": "scholar",
+   "name": "大卫·奥沙洛姆",
+   "name_en": "David Awschalom",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "普利兹克分子工程学院",
+   "role": "",
+   "field": [
+    "量子传感与测量",
+    "量子材料与器件"
+   ],
+   "homepage": "",
+   "honors": "Liew家族讲席教授;芝加哥量子交换中心主任",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://quantumzeitgeist.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_schoelkopf",
+   "type": "scholar",
+   "name": "罗伯特·舍尔科普夫",
+   "name_en": "Robert Schoelkopf",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "应用物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "Sterling讲席教授;耶鲁量子研究所所长",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "超导量子比特电路QED开创者之一",
+   "sources": [
+    "https://scholar.google.com/citations?user=T9a08xsAAAAJ",
+    "https://thequantuminsider.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_devoret",
+   "type": "scholar",
+   "name": "米歇尔·德沃雷",
+   "name_en": "Michel Devoret",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "应用物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "诺贝尔物理学奖(2025);耶鲁荣休教授",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "现任Google Quantum AI量子硬件首席科学家(2025-)",
+   "sources": [
+    "https://www.nobelprize.org",
+    "https://e-discoveryteam.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_monroe",
+   "type": "scholar",
+   "name": "克里斯·门罗",
+   "name_en": "Chris Monroe",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电子与计算机工程系/物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "https://iontrap.duke.edu",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "曾长期任职马里兰大学JQI;IonQ首席科学家至2023",
+   "sources": [
+    "https://www.ionq.com",
+    "https://en.wikipedia.org/wiki/Christopher_Monroe",
+    "https://iontrap.duke.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_kim",
+   "type": "scholar",
+   "name": "金俊相",
+   "name_en": "Jungsang Kim",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电子与计算机工程系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.ionq.com",
+    "https://otc.duke.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_martinis",
+   "type": "scholar",
+   "name": "约翰·马蒂尼斯",
+   "name_en": "John Martinis",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "诺贝尔物理学奖(2025);曾任Google量子硬件团队负责人",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.nobelprize.org",
+    "https://www.noozhawk.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_saffman",
+   "type": "scholar",
+   "name": "马克·萨夫曼",
+   "name_en": "Mark Saffman",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "Johannes Rydberg讲席教授;2026年APS Ramsey奖",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.physics.wisc.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_walker",
+   "type": "scholar",
+   "name": "撒迪厄斯·沃克",
+   "name_en": "Thad Walker",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.physics.wisc.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_narang",
+   "type": "scholar",
+   "name": "普里内哈·纳兰",
+   "name_en": "Prineha Narang",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "化学系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "Howard Reiss讲席教授;美国科学特使",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "曾任哈佛大学工程与应用科学学院助理教授",
+   "sources": [
+    "https://www.sec.gov"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_deleon",
+   "type": "scholar",
+   "name": "娜塔莉·德莱昂",
+   "name_en": "Nathalie de Leon",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电气与计算机工程系",
+   "role": "",
+   "field": [
+    "量子传感与测量",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://ece.princeton.edu"
+   ],
+   "uncertain": [
+    "有报道称其转任斯坦福大学,本次未核实"
+   ]
+  },
+  {
+   "id": "sch_thompson",
+   "type": "scholar",
+   "name": "杰夫·汤普森",
+   "name_en": "Jeff Thompson",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电气与计算机工程系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://ece.princeton.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_vuckovic",
+   "type": "scholar",
+   "name": "耶莱娜·武奇科维奇",
+   "name_en": "Jelena Vučković",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电气工程系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信",
+    "量子材料与器件"
+   ],
+   "homepage": "https://nqp.stanford.edu",
+   "honors": "Jensen Huang全球领导力讲席教授",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://nqp.stanford.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_hafezi",
+   "type": "scholar",
+   "name": "穆罕默德·哈菲兹",
+   "name_en": "Mohammad Hafezi",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电气与计算机工程系/物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信",
+    "量子传感与测量"
+   ],
+   "homepage": "https://hafezi.jqi.umd.edu",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://hafezi.jqi.umd.edu",
+    "https://science.gmu.edu"
+   ],
+   "uncertain": [
+    "有迹象显示其转任乔治梅森大学,本次未核实"
+   ]
+  },
+  {
+   "id": "sch_linke",
+   "type": "scholar",
+   "name": "诺贝特·林克",
+   "name_en": "Norbert Linke",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "https://iontrap.umd.edu",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "曾任门罗组博士后/实验室负责人",
+   "sources": [
+    "https://phys.org",
+    "https://iontrap.umd.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_laflamme",
+   "type": "scholar",
+   "name": "雷蒙德·拉弗拉姆",
+   "name_en": "Raymond Laflamme",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "",
+   "dept": "应用数学系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "IQC创始所长(任职15年);量子纠错5比特码共同提出者;1960-2025",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "2025年逝世",
+   "sources": [
+    "https://pic-pac.cap.ca",
+    "https://cacr.uwaterloo.ca"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_mosca",
+   "type": "scholar",
+   "name": "米凯莱·莫斯卡",
+   "name_en": "Michele Mosca",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "",
+   "dept": "数学系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "IQC联合创始人;evolutionQ与softwareQ联合创始人",
+   "sources": [
+    "https://uwaterloo.ca"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_aspuru",
+   "type": "scholar",
+   "name": "阿兰·阿斯普鲁-古齐克",
+   "name_en": "Alán Aspuru-Guzik",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "",
+   "dept": "化学系",
+   "role": "",
+   "field": [
+    "量子软件与算法",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "创办Zapata时任哈佛大学化学与化学生物学教授",
+   "sources": [
+    "https://markets.businessinsider.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_hawking",
+   "type": "scholar",
+   "name": "斯蒂芬·霍金",
+   "name_en": "Stephen Hawking",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "应用数学与理论物理系",
+   "role": "",
+   "field": [
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "剑桥卢卡斯数学教授;1942-2018",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "拉弗拉姆的博士导师;此处仅作师承网络节点",
+   "sources": [
+    "https://pic-pac.cap.ca"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_aspect",
+   "type": "scholar",
+   "name": "阿兰·阿斯佩",
+   "name_en": "Alain Aspect",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "(与CNRS联合实验室)",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "诺贝尔物理学奖(2022)",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.prnewswire.com",
+    "https://www.nobelprize.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_browaeys",
+   "type": "scholar",
+   "name": "安托万·布罗韦",
+   "name_en": "Antoine Browaeys",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.prnewswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_lahaye",
+   "type": "scholar",
+   "name": "蒂埃里·拉哈耶",
+   "name_en": "Thierry Lahaye",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.prnewswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_senellart",
+   "type": "scholar",
+   "name": "帕斯卡莱·瑟内拉尔",
+   "name_en": "Pascale Senellart",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "CNRS研究主任;半导体量子点单光子源开创者之一",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_lanco",
+   "type": "scholar",
+   "name": "洛伊克·朗科",
+   "name_en": "Loïc Lanco",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_leghtas",
+   "type": "scholar",
+   "name": "扎基·勒格塔斯",
+   "name_en": "Zaki Leghtas",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "物理实验室(LPENS)",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_zoller",
+   "type": "scholar",
+   "name": "彼得·措勒",
+   "name_en": "Peter Zoller",
+   "country": "奥地利",
+   "region": "欧洲",
+   "city": "",
+   "dept": "理论物理",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.aqt.eu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_blatt",
+   "type": "scholar",
+   "name": "莱纳·布拉特",
+   "name_en": "Rainer Blatt",
+   "country": "奥地利",
+   "region": "欧洲",
+   "city": "",
+   "dept": "实验物理",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.aqt.eu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_monz",
+   "type": "scholar",
+   "name": "托马斯·蒙茨",
+   "name_en": "Thomas Monz",
+   "country": "奥地利",
+   "region": "欧洲",
+   "city": "",
+   "dept": "实验物理",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.aqt.eu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_cirac",
+   "type": "scholar",
+   "name": "伊格纳西奥·西拉克",
+   "name_en": "Ignacio Cirac",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "理论部",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.mpq.mpg.de"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_bloch",
+   "type": "scholar",
+   "name": "伊曼纽尔·布洛赫",
+   "name_en": "Immanuel Bloch",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "量子多体系统部",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子材料与器件"
+   ],
+   "homepage": "",
+   "honors": "沃尔夫奖(2024);MPQ科学所长兼LMU教授",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.mpq.mpg.de/7265117/09-wolf-prize-for-immanuel-bloch",
+    "https://en.wikipedia.org/wiki/Immanuel_Bloch"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_wallraff",
+   "type": "scholar",
+   "name": "安德烈亚斯·瓦尔夫拉夫",
+   "name_en": "Andreas Wallraff",
+   "country": "瑞士",
+   "region": "欧洲",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "https://qudev.phys.ethz.ch",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "ETH量子中心主任;ETH-PSI量子计算中心共同负责人",
+   "sources": [
+    "https://qudev.phys.ethz.ch",
+    "https://www.insidequantumtechnology.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_home",
+   "type": "scholar",
+   "name": "乔纳森·霍姆",
+   "name_en": "Jonathan Home",
+   "country": "瑞士",
+   "region": "欧洲",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.insidequantumtechnology.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_hanson",
+   "type": "scholar",
+   "name": "罗纳德·汉森",
+   "name_en": "Ronald Hanson",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "",
+   "dept": "(QuTech)",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://inspirehep.net"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_vandersypen",
+   "type": "scholar",
+   "name": "利文·范德西彭",
+   "name_en": "Lieven Vandersypen",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "",
+   "dept": "(QuTech)",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子材料与器件"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://inspirehep.net"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_wehner",
+   "type": "scholar",
+   "name": "斯蒂芬妮·韦纳",
+   "name_en": "Stephanie Wehner",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "",
+   "dept": "(QuTech)",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "2018年Science量子互联网路线图共同作者",
+   "sources": [
+    "https://inspirehep.net"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_terhal",
+   "type": "scholar",
+   "name": "芭芭拉·特哈尔",
+   "name_en": "Barbara Terhal",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "",
+   "dept": "(QuTech/DIAM)",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "兼任于利希研究中心JARA量子信息研究所教授",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_morton",
+   "type": "scholar",
+   "name": "约翰·莫顿",
+   "name_en": "John Morton",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.einpresswire.com",
+    "https://www.quantiki.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_benjamin",
+   "type": "scholar",
+   "name": "西蒙·本杰明",
+   "name_en": "Simon Benjamin",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "材料系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_walmsley",
+   "type": "scholar",
+   "name": "伊恩·沃姆斯利",
+   "name_en": "Ian Walmsley",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "创办ORCA时任帝国理工学院教务长兼实验物理讲席教授",
+   "sources": [
+    "https://tech.eu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_cubitt",
+   "type": "scholar",
+   "name": "托比·丘比特",
+   "name_en": "Toby Cubitt",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子软件与算法",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.quantiki.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_montanaro",
+   "type": "scholar",
+   "name": "阿什利·蒙塔纳罗",
+   "name_en": "Ashley Montanaro",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.quantiki.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_brierley",
+   "type": "scholar",
+   "name": "史蒂夫·布里尔利",
+   "name_en": "Steve Brierley",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "Riverlane创始人兼CEO",
+   "sources": [
+    "https://cryptorank.io"
+   ],
+   "uncertain": [
+    "其剑桥学术履历细节本次未核实"
+   ]
+  },
+  {
+   "id": "sch_gisin",
+   "type": "scholar",
+   "name": "尼古拉·吉桑",
+   "name_en": "Nicolas Gisin",
+   "country": "瑞士",
+   "region": "欧洲",
+   "city": "",
+   "dept": "应用物理组(GAP)",
+   "role": "",
+   "field": [
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "量子密码学先驱;ID Quantique创始人",
+   "sources": [
+    "https://iiitl.ac.in"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_lodahl",
+   "type": "scholar",
+   "name": "彼得·洛达尔",
+   "name_en": "Peter Lodahl",
+   "country": "丹麦",
+   "region": "欧洲",
+   "city": "",
+   "dept": "尼尔斯·玻尔研究所",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://sparrowquantum.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_mottonen",
+   "type": "scholar",
+   "name": "米科·莫托宁",
+   "name_en": "Mikko Möttönen",
+   "country": "芬兰",
+   "region": "欧洲",
+   "city": "",
+   "dept": "(QCD组)",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://meetiqm.com"
+   ],
+   "uncertain": [
+    "IQM官网链接为通行地址,本次检索未逐页核对"
+   ]
+  },
+  {
+   "id": "sch_ekert",
+   "type": "scholar",
+   "name": "阿图尔·埃克特",
+   "name_en": "Artur Ekert",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "CQT创始所长;兼NUS李光前百年讲席教授;E91协议提出者",
+   "sources": [
+    "https://www.cqt.sg"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_latorre",
+   "type": "scholar",
+   "name": "何塞·伊格纳西奥·拉托雷",
+   "name_en": "José Ignacio Latorre",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "巴塞罗那量子生态关键人物",
+   "sources": [
+    "https://link.springer.com"
+   ],
+   "uncertain": [
+    "现职有NUS与阿布扎比TII等报道,本次未逐一核实;与Qilimanjaro的创始人关系未直接确认"
+   ]
+  },
+  {
+   "id": "sch_wunderlich",
+   "type": "scholar",
+   "name": "克里斯托夫·温德利希",
+   "name_en": "Christof Wunderlich",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "MAGIC离子阱方案提出者",
+   "sources": [
+    "https://vestbee.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_siegen",
+   "type": "university",
+   "name": "锡根大学",
+   "name_en": "University of Siegen",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "Siegen",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://vestbee.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_forn_diaz",
+   "type": "scholar",
+   "name": "波尔·福恩-迪亚斯",
+   "name_en": "Pol Forn-Díaz",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "",
+   "dept": "IFAE(巴塞罗那高能物理研究所)",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://link.springer.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_garcia_saez",
+   "type": "scholar",
+   "name": "阿图尔·加西亚-萨伊斯",
+   "name_en": "Artur Garcia-Saez",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "",
+   "dept": "BSC(巴塞罗那超级计算中心)",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://link.springer.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_pan",
+   "type": "scholar",
+   "name": "潘建伟",
+   "name_en": "Jian-Wei Pan",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "中国科学院院士;中科大常务副校长;中科院量子信息与量子科技创新研究院院长",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "墨子号量子卫星首席科学家",
+   "sources": [
+    "https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_lu",
+   "type": "scholar",
+   "name": "陆朝阳",
+   "name_en": "Chaoyang Lu",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "九章系列光量子计算核心人物",
+   "sources": [
+    "https://zqb.cyol.com",
+    "https://xcb.ustc.edu.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_guo_gc",
+   "type": "scholar",
+   "name": "郭光灿",
+   "name_en": "Guangcan Guo",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "中国科学院院士",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.mydrivers.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_guo_gp",
+   "type": "scholar",
+   "name": "郭国平",
+   "name_en": "Guoping Guo",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.mydrivers.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_zhu_xb",
+   "type": "scholar",
+   "name": "朱晓波",
+   "name_en": "Xiaobo Zhu",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "祖冲之号超导量子计算核心成员",
+   "sources": [
+    "https://xcb.ustc.edu.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_wang_hh",
+   "type": "scholar",
+   "name": "王浩华",
+   "name_en": "Haohua Wang",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "祖冲之号系列合作者",
+   "sources": [
+    "https://xcb.ustc.edu.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_du",
+   "type": "scholar",
+   "name": "杜江峰",
+   "name_en": "Jiangfeng Du",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子传感与测量",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "中国科学院院士(2015)",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "曾任中科大副校长、浙江大学校长(2022-12~2025-02);现任教育部副部长(2025-02起)",
+   "sources": [
+    "https://www.163.com",
+    "https://ori.hangzhou.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_duan",
+   "type": "scholar",
+   "name": "段路明",
+   "name_en": "Luming Duan",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "交叉信息研究院",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "中国科学院院士",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.qq.com"
+   ],
+   "uncertain": [
+    "院系归属据公开报道,本次未在清华官网核对"
+   ]
+  },
+  {
+   "id": "sch_jin_xm",
+   "type": "scholar",
+   "name": "金贤敏",
+   "name_en": "Xianmin Jin",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "(无锡光子芯片研究院CHIPX院长)",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "特聘教授;长江学者",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.sina.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_cui_zb",
+   "type": "scholar",
+   "name": "曾蓓",
+   "name_en": "Wei Cui",
+   "country": "中国香港",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "量旋科技首席科学家",
+   "sources": [
+    "http://c.zhineng.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_nakamura",
+   "type": "scholar",
+   "name": "中村泰信",
+   "name_en": "Yasunobu Nakamura",
+   "country": "日本",
+   "region": "东亚",
+   "city": "",
+   "dept": "(RQC)",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "1999年在NEC实现首个超导量子比特相干操控;RQC所长",
+   "sources": [
+    "https://www.technologyreview.com",
+    "https://rqc.riken.jp"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_furusawa",
+   "type": "scholar",
+   "name": "古泽明",
+   "name_en": "Akira Furusawa",
+   "country": "日本",
+   "region": "东亚",
+   "city": "",
+   "dept": "工学系应用物理专业",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "https://alice.t.u-tokyo.ac.jp",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://alice.t.u-tokyo.ac.jp"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_fujii",
+   "type": "scholar",
+   "name": "藤井圭佑",
+   "name_en": "Keisuke Fujii",
+   "country": "日本",
+   "region": "东亚",
+   "city": "",
+   "dept": "生产技术研究所",
+   "role": "",
+   "field": [
+    "量子软件与算法",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_ling",
+   "type": "scholar",
+   "name": "林水德(Alexander Ling)",
+   "name_en": "Alexander Ling",
+   "country": "新加坡",
+   "region": "东南亚",
+   "city": "",
+   "dept": "物理系/CQT",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "星载量子纠缠光源SPEQS项目负责人",
+   "sources": [
+    "https://phys.org",
+    "https://cde.nus.edu.sg"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_simmons",
+   "type": "scholar",
+   "name": "米歇尔·西蒙斯",
+   "name_en": "Michelle Simmons",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "",
+   "dept": "(CQC2T主任)",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "2018年澳大利亚年度人物",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.theaustralian.com.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_dzurak",
+   "type": "scholar",
+   "name": "安德鲁·祖拉克",
+   "name_en": "Andrew Dzurak",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "",
+   "dept": "电气工程与通信系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子材料与器件"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "2014年硅CMOS量子比特实现者之一",
+   "sources": [
+    "https://feeds.transistor.fm"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_biercuk",
+   "type": "scholar",
+   "name": "迈克尔·比尔库克",
+   "name_en": "Michael J. Biercuk",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "量子控制实验室负责人",
+   "sources": [
+    "https://www.smartcompany.com.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_doherty",
+   "type": "scholar",
+   "name": "马库斯·多尔蒂",
+   "name_en": "Marcus Doherty",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "",
+   "dept": "物理研究院",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "创立Quantum Brilliance时任职于ANU",
+   "sources": [
+    "https://www.crunchbase.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_rigetti",
+   "type": "student",
+   "name": "查德·里盖蒂",
+   "name_en": "Chad Rigetti",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "",
+   "role": "耶鲁大学博士(师从舍尔科普夫),后任职IBM",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "创立Rigetti Computing(2013)",
+   "advisor": "sch_schoelkopf",
+   "note": "",
+   "sources": [
+    "https://www.scribd.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_bluvstein",
+   "type": "student",
+   "name": "多列夫·布卢夫斯坦",
+   "name_en": "Dolev Bluvstein",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "",
+   "role": "哈佛大学博士生(卢金组)",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "",
+   "advisor": "sch_lukin",
+   "note": "2023年Nature 48逻辑量子比特处理器第一作者",
+   "sources": [
+    "https://www.researchgate.net"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_peronnin",
+   "type": "student",
+   "name": "泰奥·佩罗南",
+   "name_en": "Théau Peronnin",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "ENS巴黎(Leghtas课题组)出身",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "Alice & Bob联合创始人兼CEO",
+   "advisor": "sch_leghtas",
+   "note": "",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": [
+    "具体学位阶段(博士/博后)未直接核实"
+   ]
+  },
+  {
+   "id": "stu_lescanne",
+   "type": "student",
+   "name": "拉斐尔·莱斯坎",
+   "name_en": "Raphaël Lescanne",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "ENS巴黎(Leghtas课题组)出身",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "Alice & Bob联合创始人",
+   "advisor": "sch_leghtas",
+   "note": "",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": [
+    "具体学位阶段(博士/博后)未直接核实"
+   ]
+  },
+  {
+   "id": "stu_giesz",
+   "type": "student",
+   "name": "瓦莱里安·捷斯",
+   "name_en": "Valérian Giesz",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "CNRS C2N(Senellart课题组)出身",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "Quandela CEO",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_goetz",
+   "type": "student",
+   "name": "扬·格茨",
+   "name_en": "Jan Goetz",
+   "country": "芬兰",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "阿尔托大学出身(IQM源自其研究)",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "IQM联合创始人兼CEO",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://meetiqm.com"
+   ],
+   "uncertain": [
+    "IQM官网链接为通行地址,本次检索未逐页核对"
+   ]
+  },
+  {
+   "id": "stu_tan",
+   "type": "student",
+   "name": "陈坤延(Kuan Yen Tan)",
+   "name_en": "Kuan Yen Tan",
+   "country": "芬兰",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "阿尔托大学出身",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "IQM联合创始人",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://meetiqm.com"
+   ],
+   "uncertain": [
+    "IQM官网链接为通行地址,本次检索未逐页核对"
+   ]
+  },
+  {
+   "id": "stu_st_jean",
+   "type": "student",
+   "name": "菲利普·圣让",
+   "name_en": "Philippe St-Jean",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "",
+   "dept": "",
+   "role": "舍布鲁克大学博士",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "Nord Quantique联合创始人兼CEO",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.fusacq.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_camlmyre",
+   "type": "student",
+   "name": "朱利安·卡米朗·勒米尔",
+   "name_en": "Julien Camirand Lemyre",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "",
+   "dept": "",
+   "role": "舍布鲁克大学物理博士生(创业时)",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "Nord Quantique联合创始人兼总裁/CTO",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.fusacq.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_ionq",
+   "type": "company",
+   "name": "IonQ",
+   "name_en": "IonQ",
+   "country": "美国",
+   "region": "北美",
+   "city": "College Park, MD",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2015,
+   "stage": "上市 (NYSE: IONQ, 2021年SPAC)",
+   "business": "离子阱量子计算机与量子网络",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.ionq.com",
+    "https://otc.duke.edu",
+    "https://mpower.maryland.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_rigetti",
+   "type": "company",
+   "name": "Rigetti Computing",
+   "name_en": "Rigetti Computing",
+   "country": "美国",
+   "region": "北美",
+   "city": "Berkeley, CA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2013,
+   "stage": "上市 (NASDAQ: RGTI, 2022年SPAC)",
+   "business": "超导量子处理器与云服务",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.scribd.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_psiquantum",
+   "type": "company",
+   "name": "PsiQuantum",
+   "name_en": "PsiQuantum",
+   "country": "美国",
+   "region": "北美",
+   "city": "Palo Alto, CA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2016,
+   "stage": "E轮 (2025-09, $10亿, 估值$70亿)",
+   "business": "硅光子容错量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "学术创始人: Jeremy O'Brien(前布里斯托教授)、Terry Rudolph(帝国理工)、Mark Thompson(布里斯托)、Pete Shadbolt——人物节点未单列",
+   "sources": [
+    "https://www.psiquantum.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qci",
+   "type": "company",
+   "name": "Quantum Circuits Inc.",
+   "name_en": "Quantum Circuits Inc.",
+   "country": "美国",
+   "region": "北美",
+   "city": "New Haven, CT",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2017,
+   "stage": "B轮 (2024-05, $2650万;累计$8400万)",
+   "business": "双轨超导量子比特与纠错",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://thequantuminsider.com"
+   ],
+   "uncertain": [
+    "有报道称Michel Devoret为联合创始人,本次来源较弱"
+   ]
+  },
+  {
+   "id": "co_quera",
+   "type": "company",
+   "name": "QuEra Computing",
+   "name_en": "QuEra Computing",
+   "country": "美国",
+   "region": "北美",
+   "city": "Boston, MA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "B轮 (2025-02完成$2.3亿, Google/软银;累计约$4.77亿)",
+   "business": "中性原子(光镊)量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_atom",
+   "type": "company",
+   "name": "Atom Computing",
+   "name_en": "Atom Computing",
+   "country": "美国",
+   "region": "北美",
+   "city": "Berkeley, CA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "累计超$3亿 (2021-11披露)",
+   "business": "中性原子(锶)量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "创始人Ben Bloom与Jonathan King(物理博士);2026年有报道称美国政府拟入股$20亿",
+   "sources": [
+    "https://www.prnewswire.com"
+   ],
+   "uncertain": [
+    "成立年份据多方报道为2018,本次未见直接来源",
+    "美国政府入股报道未核实"
+   ]
+  },
+  {
+   "id": "co_infleqtion",
+   "type": "company",
+   "name": "Infleqtion(原ColdQuanta)",
+   "name_en": "Infleqtion (fka ColdQuanta)",
+   "country": "美国",
+   "region": "北美",
+   "city": "Boulder, CO",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2007,
+   "stage": "$1亿风投 (2025-06);SPAC合并中(估值$18亿)",
+   "business": "中性原子量子计算与量子传感/定位",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.physics.wisc.edu",
+    "https://www.stocktitan.net"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_aliro",
+   "type": "company",
+   "name": "Aliro Quantum",
+   "name_en": "Aliro Technologies (Aliro Quantum)",
+   "country": "美国",
+   "region": "北美",
+   "city": "Boston, MA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "A轮 (2023-10 Leaders Fund领投;累计约$4000万)",
+   "business": "量子网络组网软件",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.sec.gov",
+    "https://startupintros.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_zapata",
+   "type": "company",
+   "name": "Zapata AI",
+   "name_en": "Zapata Computing / Zapata AI",
+   "country": "美国",
+   "region": "北美",
+   "city": "Boston, MA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2017,
+   "stage": "曾SPAC上市(ZPTA);2024-10停止运营;2025-09品牌重组",
+   "business": "工业生成式AI与量子软件",
+   "status": "2024年10月停止运营;2025年9月重组为Zapata Quantum",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://markets.businessinsider.com",
+    "https://content.edgar-online.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qolab",
+   "type": "company",
+   "name": "Qolab",
+   "name_en": "Qolab",
+   "country": "美国",
+   "region": "北美",
+   "city": "Santa Barbara, CA",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "",
+   "business": "超导量子计算硬件",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.noozhawk.com"
+   ],
+   "uncertain": [
+    "成立年份(约2024)未直接核实"
+   ]
+  },
+  {
+   "id": "co_xanadu",
+   "type": "company",
+   "name": "Xanadu",
+   "name_en": "Xanadu Quantum Technologies",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Toronto",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2016,
+   "stage": "上市 (2026-03 IPO, 募资约$3.02亿)",
+   "business": "光量子计算(光芯片+测量型)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "创始人Christian Weedbrook(CEO);学术孵化关系未见直接来源",
+   "sources": [
+    "https://investors.xanadu.ai"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_nordquantique",
+   "type": "company",
+   "name": "Nord Quantique",
+   "name_en": "Nord Quantique",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Sherbrooke",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2020,
+   "stage": "B轮 (2025-05, $6500万)",
+   "business": "玻色编码超导量子比特",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.fusacq.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_evolutionq",
+   "type": "company",
+   "name": "evolutionQ",
+   "name_en": "evolutionQ Inc.",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Waterloo",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "",
+   "business": "量子风险管理与量子安全咨询服务",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://uwaterloo.ca"
+   ],
+   "uncertain": [
+    "成立年份未核实"
+   ]
+  },
+  {
+   "id": "co_quantinuum",
+   "type": "company",
+   "name": "Quantinuum",
+   "name_en": "Quantinuum",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "(剑桥/美国多地)",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2021,
+   "stage": "$3亿 (2024-01, 投前估值约$50亿);有IPO计划报道",
+   "business": "离子阱量子计算机(H2等)与量子软件(Cyberv.Security等)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "2021年11月由Honeywell量子解决方案与剑桥量子(CQC)合并而成;Honeywell为控股股东;CQC创始人Ilyas Khan任CEO",
+   "sources": [
+    "https://app.thequantuminsider.com"
+   ],
+   "uncertain": [
+    "总部城市未直接核实",
+    "剑桥量子的学术孵化渊源未直接核实"
+   ]
+  },
+  {
+   "id": "co_riverlane",
+   "type": "company",
+   "name": "Riverlane",
+   "name_en": "Riverlane",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "Cambridge",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2016,
+   "stage": "$7500万 (2024;累计约$1.21亿)",
+   "business": "量子纠错堆栈(Deltaflow,量子操作系统)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://cryptorank.io"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_phasecraft",
+   "type": "company",
+   "name": "Phasecraft",
+   "name_en": "Phasecraft",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "London / Bristol",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "A轮 (2023, £1300万)",
+   "business": "近-term量子算法与应用",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.quantiki.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qmotion",
+   "type": "company",
+   "name": "Quantum Motion",
+   "name_en": "Quantum Motion Technologies",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "London",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2017,
+   "stage": "C轮 (2026报道$1.6亿);B轮£4200万 (2022)",
+   "business": "硅CMOS兼容量子芯片",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_orca",
+   "type": "company",
+   "name": "ORCA Computing",
+   "name_en": "ORCA Computing",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "London",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "$1500万 (2022-06;当时累计约£1160万)",
+   "business": "基于量子存储的光子量子计算与组网",
+   "status": "运营中",
+   "advisor": "",
+   "note": "其他创始人: Richard Murray(CEO)、Joshua Nunn(CSO)、Cristina Escoda",
+   "sources": [
+    "https://tech.eu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_oxfordionics",
+   "type": "company",
+   "name": "Oxford Ionics",
+   "name_en": "Oxford Ionics",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "Oxford",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "被收购 (IonQ, $10.7亿, 2025-09-18完成)",
+   "business": "芯片化离子阱量子计算",
+   "status": "已被IonQ收购 (2025-09)",
+   "advisor": "",
+   "note": "创始人Chris Ballance与Tom Harty出自牛津离子阱团队(未单列学者节点),并购后加入IonQ",
+   "sources": [
+    "https://finance.yahoo.com",
+    "https://multiples.vc"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_pasqal",
+   "type": "company",
+   "name": "Pasqal",
+   "name_en": "Pasqal",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "Paris / Massy",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "B轮(2023);累计融资超€1.4亿 (2024-05报道)",
+   "business": "中性原子量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "Quantonation基金联合人Christophe Jurczak亦列为共同创始人",
+   "sources": [
+    "https://www.prnewswire.com",
+    "https://www.pasqal.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_quandela",
+   "type": "company",
+   "name": "Quandela",
+   "name_en": "Quandela",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "Massy",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2017,
+   "stage": "A轮 (2023-01, €5000万;累计约$6500万)",
+   "business": "量子点确定性单光子源与光子量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "CEO Valérian Giesz亦出自C2N",
+   "sources": [
+    "https://arxiv.org",
+    "https://www.ipvf.fr"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_alicebob",
+   "type": "company",
+   "name": "Alice & Bob",
+   "name_en": "Alice & Bob",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "Paris(+Boston)",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2020,
+   "stage": "B轮 (2025-01, €1亿;累计约$1.38亿)",
+   "business": "猫比特超导量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_c12",
+   "type": "company",
+   "name": "C12 Quantum Electronics",
+   "name_en": "C12 Quantum Electronics",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "Paris",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2020,
+   "stage": "A轮 (2024-06, €1800万)",
+   "business": "碳-12碳纳米管自旋量子处理器",
+   "status": "运营中",
+   "advisor": "",
+   "note": "创始人Matthieu与Pierre Desjardins(兄弟,巴黎综合理工校友;未单列学者节点)",
+   "sources": [
+    "https://techresearchonline.com",
+    "https://quantumcomputingreport.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_planqc",
+   "type": "company",
+   "name": "planqc",
+   "name_en": "planqc",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "Garching",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2022,
+   "stage": "A轮 (2024-07, €5000万)",
+   "business": "中性原子量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://thequantuminsider.com"
+   ],
+   "uncertain": [
+    "成立年份(2021/2022)以2022-06出隐身报道为准"
+   ]
+  },
+  {
+   "id": "co_eleqtron",
+   "type": "company",
+   "name": "eleQtron",
+   "name_en": "eleQtron",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "Siegen(创立)/Mülheim",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2020,
+   "stage": "A轮 (2026-05, €5700万)",
+   "business": "MAGIC磁梯度耦合离子阱量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://vestbee.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_hqs",
+   "type": "company",
+   "name": "HQS Quantum Simulations",
+   "name_en": "HQS Quantum Simulations",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "Karlsruhe",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子软件与算法",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "未披露",
+   "business": "量子模拟软件(化学/材料)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://vestbee.com"
+   ],
+   "uncertain": [
+    "成立年份(约2017)与KIT分拆关系为通行说法,本次未直接核实"
+   ]
+  },
+  {
+   "id": "co_aqt",
+   "type": "company",
+   "name": "Alpine Quantum Technologies (AQT)",
+   "name_en": "Alpine Quantum Technologies GmbH",
+   "country": "奥地利",
+   "region": "欧洲",
+   "city": "Innsbruck",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "EIC等资助;私有",
+   "business": "模块化离子阱量子计算机",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.aqt.eu",
+    "https://www.crunchbase.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_idq",
+   "type": "company",
+   "name": "ID Quantique",
+   "name_en": "ID Quantique (IDQ)",
+   "country": "瑞士",
+   "region": "欧洲",
+   "city": "Carouge / Geneva",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2001,
+   "stage": "SK电讯2018年控股;2025-02 IonQ宣布收购",
+   "business": "量子随机数发生器与QKD量子安全加密",
+   "status": "2025-02 IonQ宣布收购(此前属SK电讯)",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://iiitl.ac.in",
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_tq",
+   "type": "company",
+   "name": "Terra Quantum",
+   "name_en": "Terra Quantum AG",
+   "country": "瑞士",
+   "region": "欧洲",
+   "city": "Rapperswil",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "SPAC上市推进中 (2026-04报道, 估值约$32.5-35亿)",
+   "business": "量子算法/混合量子云(QMware)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "创始人Markus Pflitsch(CEO);与高校的孵化关系未见直接来源",
+   "sources": [
+    "https://www.cohencm.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qblox",
+   "type": "company",
+   "name": "Qblox",
+   "name_en": "Qblox",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "Delft",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "未披露",
+   "business": "量子比特测控一体机",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://stm.cairn.info"
+   ],
+   "uncertain": [
+    "成立年份未核实"
+   ]
+  },
+  {
+   "id": "co_quantware",
+   "type": "company",
+   "name": "QuantWare",
+   "name_en": "QuantWare",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "Delft",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "报道累计$1.78亿 (2024-09法语文章,待核实)",
+   "business": "超导量子处理器(VIO架构)代工",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://stm.cairn.info"
+   ],
+   "uncertain": [
+    "成立年份未核实",
+    "融资规模来源单一"
+   ]
+  },
+  {
+   "id": "co_qphox",
+   "type": "company",
+   "name": "QphoX",
+   "name_en": "QphoX",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "Delft",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "未披露",
+   "business": "微波-光量子转换器(量子网络关键器件)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://entangledfuture.com"
+   ],
+   "uncertain": [
+    "成立年份未核实"
+   ]
+  },
+  {
+   "id": "co_singlequantum",
+   "type": "company",
+   "name": "Single Quantum",
+   "name_en": "Single Quantum",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "Delft",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "未披露",
+   "business": "超导纳米线单光子探测器(SNSPD)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://stm.cairn.info"
+   ],
+   "uncertain": [
+    "成立年份未核实"
+   ]
+  },
+  {
+   "id": "co_iqm",
+   "type": "company",
+   "name": "IQM Quantum Computers",
+   "name_en": "IQM Quantum Computers",
+   "country": "芬兰",
+   "region": "欧洲",
+   "city": "Espoo",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "B轮扩展 (2025-09, $3.2亿, 估值超€10亿)",
+   "business": "超导量子计算机(欧洲头部)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://meetiqm.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_sparrow",
+   "type": "company",
+   "name": "Sparrow Quantum",
+   "name_en": "Sparrow Quantum",
+   "country": "丹麦",
+   "region": "欧洲",
+   "city": "Copenhagen",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2022,
+   "stage": "A轮扩展 (2025-12;A轮系列€2750万)",
+   "business": "光子量子芯片(确定性单光子源)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://sparrowquantum.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qilimanjaro",
+   "type": "company",
+   "name": "Qilimanjaro Quantum Tech",
+   "name_en": "Qilimanjaro Quantum Tech",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "Barcelona",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "种子轮 (2022, $725万)",
+   "business": "相干模拟退火+门型全栈量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://link.springer.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qm",
+   "type": "company",
+   "name": "Quantum Machines",
+   "name_en": "Quantum Machines",
+   "country": "以色列",
+   "region": "中东",
+   "city": "Tel Aviv",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "C轮 (2025-02, $1.7亿;累计$2.8亿)",
+   "business": "量子测控平台(Quantum Orchestration)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "创始人Itamar Sivan、Yonatan Cohen、Nissim Ofek均为物理学博士;与魏茨曼研究所的具体孵化关系未核实",
+   "sources": [
+    "https://techfundingnews.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qtek",
+   "type": "company",
+   "name": "科大国盾量子",
+   "name_en": "QuantumCTek",
+   "country": "中国",
+   "region": "东亚",
+   "city": "合肥",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2009,
+   "stage": "上市 (科创板 688027, 2020-07-09, 量子通信第一股)",
+   "business": "量子保密通信产品与QKD网络建设",
+   "status": "运营中",
+   "advisor": "",
+   "note": "潘建伟、彭承志等创办",
+   "sources": [
+    "https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_originq",
+   "type": "company",
+   "name": "本源量子",
+   "name_en": "Origin Quantum",
+   "country": "中国",
+   "region": "东亚",
+   "city": "合肥",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2017,
+   "stage": "Pre-IPO (2026-06, 近30亿元, 投后估值近240亿元)",
+   "business": "超导量子计算机整机/操作系统本源司南/量子云",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.mydrivers.com",
+    "https://www.cls.cn",
+    "https://www.21jingji.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_turingq",
+   "type": "company",
+   "name": "图灵量子",
+   "name_en": "Turing Quantum",
+   "country": "中国",
+   "region": "东亚",
+   "city": "上海",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2021,
+   "stage": "累计融资超10亿元(2026报道, 估值约70亿元)",
+   "business": "光量子芯片与光量子计算(国内首条光子芯片中试线)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.sina.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_spinq",
+   "type": "company",
+   "name": "量旋科技",
+   "name_en": "SpinQ",
+   "country": "中国",
+   "region": "东亚",
+   "city": "深圳",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "D轮 (2026-06-30, 10亿元;半年累计20亿元)",
+   "business": "桌面核磁共振量子计算机/超导芯片/量子云",
+   "status": "运营中",
+   "advisor": "",
+   "note": "核心团队来自清华、中科大、滑铁卢、华盛顿大学;港科大曾蓓教授任首席科学家",
+   "sources": [
+    "http://c.zhineng.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_huaq",
+   "type": "company",
+   "name": "华翊量子",
+   "name_en": "HuaYi Quantum (华翊博奥)",
+   "country": "中国",
+   "region": "东亚",
+   "city": "北京",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2022,
+   "stage": "A+轮 (2026-06;2025-07 A轮数亿元)",
+   "business": "离子阱量子计算机(HYQ-B100百比特原型机)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.qq.com",
+    "https://elsewhere.news"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qunasys",
+   "type": "company",
+   "name": "QunaSys",
+   "name_en": "QunaSys",
+   "country": "日本",
+   "region": "东亚",
+   "city": "东京",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "私有(未披露)",
+   "business": "量子化学算法与软件(医药/材料)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "其他联合创始人: Yuichiro Minato(CEO)、Koji Azuma(CTO)",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_speqtral",
+   "type": "company",
+   "name": "SpeQtral",
+   "name_en": "SpeQtral",
+   "country": "新加坡",
+   "region": "东南亚",
+   "city": "新加坡",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "私有(融资轮次未核实)",
+   "business": "星载量子密钥分发(QKD)与量子通信",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://phys.org",
+    "https://www.cqt.sg"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_sqc",
+   "type": "company",
+   "name": "Silicon Quantum Computing",
+   "name_en": "Silicon Quantum Computing (SQC)",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "悉尼",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2017,
+   "stage": "成立时约A$8300万(UNSW/ Telstra / 联邦银行等创始股东+政府资助)",
+   "business": "原子级精确硅量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.theaustralian.com.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_diraq",
+   "type": "company",
+   "name": "Diraq",
+   "name_en": "Diraq",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "悉尼",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2022,
+   "stage": "A轮 (2023, $1500万;另获澳政府A$1290万资助)",
+   "business": "硅CMOS自旋量子比特",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://feeds.transistor.fm"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qctrl",
+   "type": "company",
+   "name": "Q-CTRL",
+   "name_en": "Q-CTRL",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "悉尼",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2017,
+   "stage": "B轮 (2023-07累计A$8000万)",
+   "business": "量子控制与纠错软件(Fire Opal等)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.smartcompany.com.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qbrilliance",
+   "type": "company",
+   "name": "Quantum Brilliance",
+   "name_en": "Quantum Brilliance",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "堪培拉(德国斯图加特有分支)",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "A轮 (2024-12, $3000万, 含NRFC $1300万)",
+   "business": "金刚石NV室温量子加速器",
+   "status": "运营中",
+   "advisor": "",
+   "note": "另一联合创始人Mark Luo(CEO)",
+   "sources": [
+    "https://www.crunchbase.com",
+    "https://alumni.csiro.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_zeilinger",
+   "type": "scholar",
+   "name": "安东·泽林格",
+   "name_en": "Anton Zeilinger",
+   "country": "奥地利",
+   "region": "欧洲",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "诺贝尔物理学奖(2022)",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "量子隐形传态与贝利不等式实验先驱",
+   "sources": [
+    "https://www.nobelprize.org",
+    "https://physicsworld.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_peng",
+   "type": "scholar",
+   "name": "彭承志",
+   "name_en": "Chengzhi Peng",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "(中科院量子信息重点实验室)",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "中国科大研究员;国盾量子联合创办人之一;墨子号卫星系统总师(据公开报道)",
+   "sources": [
+    "https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_sussex",
+   "type": "university",
+   "name": "萨塞克斯大学",
+   "name_en": "University of Sussex",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "Brighton",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.sciencedaily.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_sfu",
+   "type": "university",
+   "name": "西蒙菲莎大学",
+   "name_en": "Simon Fraser University (SFU)",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Burnaby / Vancouver",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "http://www.sfu.ca"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_icfo",
+   "type": "university",
+   "name": "光子科学研究所",
+   "name_en": "ICFO – Institute of Photonic Sciences",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "Barcelona",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://quside.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_sustech",
+   "type": "university",
+   "name": "南方科技大学(深圳国际量子研究院)",
+   "name_en": "Southern University of Science and Technology",
+   "country": "中国",
+   "region": "东亚",
+   "city": "深圳",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "深圳量子科学与工程研究院(现深圳国际量子研究院)依托建设",
+   "sources": [
+    "https://old.gdkjb.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_snu",
+   "type": "university",
+   "name": "首尔国立大学",
+   "name_en": "Seoul National University",
+   "country": "韩国",
+   "region": "东亚",
+   "city": "首尔",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_cas_pma",
+   "type": "university",
+   "name": "中科院精密测量科学与技术创新研究院",
+   "name_en": "CAS Innovation Academy for Precision Measurement",
+   "country": "中国",
+   "region": "东亚",
+   "city": "武汉",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子传感与测量",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "http://www.qtc.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_titech",
+   "type": "university",
+   "name": "东京工业大学(现东京科学大学)",
+   "name_en": "Tokyo Institute of Technology",
+   "country": "日本",
+   "region": "东亚",
+   "city": "东京",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "西森秀稔实验室为量子退火奠基地",
+   "sources": [
+    "https://qbn.world/qbn-member/jij-inc"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "uni_tus",
+   "type": "university",
+   "name": "东京理科大学",
+   "name_en": "Tokyo University of Science",
+   "country": "日本",
+   "region": "东亚",
+   "city": "东京",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.tus.ac.jp/en/mediarelations/archive/20200414_7612.html"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_vazirani",
+   "type": "scholar",
+   "name": "乌梅什·瓦兹拉尼",
+   "name_en": "Umesh Vazirani",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电气工程与计算机科学系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "伯克利量子计算中心创始主任",
+   "sources": [
+    "https://vcresearch.berkeley.edu"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_harrow",
+   "type": "scholar",
+   "name": "阿拉姆·哈罗",
+   "name_en": "Aram Harrow",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系(理论物理中心)",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "HHL算法共同提出者(2009)",
+   "sources": [
+    "https://phys.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_lloyd",
+   "type": "scholar",
+   "name": "塞思·劳埃德",
+   "name_en": "Seth Lloyd",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "机械工程系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://phys.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_oliver",
+   "type": "scholar",
+   "name": "威廉·奥利弗",
+   "name_en": "William Oliver",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电气工程与物理(兼林肯实验室)",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "MIT量子工程中心(CQE)与量子计算中心主任",
+   "sources": [
+    "https://www.ntt-review.jp"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_englund",
+   "type": "scholar",
+   "name": "德克·恩格伦德",
+   "name_en": "Dirk Englund",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "电气工程与计算机科学系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "量子光子学实验室负责人;QuEra联合创始人之一",
+   "sources": [
+    "https://www.ntt-review.jp",
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_brandao",
+   "type": "scholar",
+   "name": "费尔南多·布兰当",
+   "name_en": "Fernando Brandão",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "Bren理论物理讲席教授;AWS量子计算中心(CQC)联合负责人(停薪留职)",
+   "sources": [
+    "https://www.technology.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_jiang",
+   "type": "scholar",
+   "name": "姜梁",
+   "name_en": "Liang Jiang",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "普利兹克分子工程学院",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://pme.uchicago.edu/directory/liang-jiang"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_bernien",
+   "type": "scholar",
+   "name": "汉内斯·伯尔尼恩",
+   "name_en": "Hannes Bernien",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "普利兹克分子工程学院",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "博士(2014)师从汉森(代尔夫特);哈佛博后(卢金组)",
+   "sources": [
+    "https://chicagoquantum.org/research-areas/quantum-computing",
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_girvin",
+   "type": "scholar",
+   "name": "史蒂文·吉尔文",
+   "name_en": "Steven Girvin",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "应用物理系/物理系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "Sterling讲席教授",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "电路量子电动力学(Circuit QED)共同发展者",
+   "sources": [
+    "https://newquantumera.transistor.fm"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_hensinger",
+   "type": "scholar",
+   "name": "温弗里德·亨辛格",
+   "name_en": "Winfried Hensinger",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "物理与天文系",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.sciencedaily.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_weidt",
+   "type": "student",
+   "name": "塞巴斯蒂安·维特",
+   "name_en": "Sebastian Weidt",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "萨塞克斯大学研究员(创办时)",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "Universal Quantum联合创始人(CEO)",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.sciencedaily.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_ssimmons",
+   "type": "scholar",
+   "name": "斯蒂芬妮·西蒙斯",
+   "name_en": "Stephanie Simmons",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子通信"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "Photonic Inc.创始人兼首席量子官;硅T中心色心自旋-光子比特",
+   "sources": [
+    "http://www.sfu.ca",
+    "https://optics.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_ballance",
+   "type": "scholar",
+   "name": "克里斯·巴兰斯",
+   "name_en": "Chris Ballance",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "克拉伦登实验室",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "Oxford Ionics联合创始人兼CEO",
+   "sources": [
+    "https://www.thetimes.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_harty",
+   "type": "student",
+   "name": "汤姆·哈蒂",
+   "name_en": "Tom Harty",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "牛津大学博士(离子阱团队出身)",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "Oxford Ionics联合创始人(CTO)",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.thetimes.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_mitchell",
+   "type": "scholar",
+   "name": "摩根·米切尔",
+   "name_en": "Morgan Mitchell",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "ICREA研究教授;Quside联合创始人",
+   "sources": [
+    "https://quside.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_abellan",
+   "type": "student",
+   "name": "卡洛斯·阿贝连",
+   "name_en": "Carlos Abellán",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "ICFO博士(光子科学研究所)",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "Quside联合创始人兼CEO",
+   "advisor": "",
+   "note": "MIT TR35 (2018)",
+   "sources": [
+    "https://quside.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_orus",
+   "type": "scholar",
+   "name": "罗曼·奥鲁斯",
+   "name_en": "Román Orús",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子软件与算法",
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "Multiverse Computing首席科学官",
+   "sources": [
+    "https://www.hpcwire.com"
+   ],
+   "uncertain": [
+    "其Ikerbasque/DIPC学术任职据公开资料,本次检索未直接核实"
+   ]
+  },
+  {
+   "id": "sch_nishimori",
+   "type": "scholar",
+   "name": "西森秀稔",
+   "name_en": "Hidetoshi Nishimori",
+   "country": "日本",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理系",
+   "role": "",
+   "field": [
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "量子退火(Quantum Annealing)方法奠基者之一",
+   "sources": [
+    "https://qbn.world/qbn-member/jij-inc"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_yu_dp",
+   "type": "scholar",
+   "name": "俞大鹏",
+   "name_en": "Dapeng Yu",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理系(讲席教授)",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子材料与器件"
+   ],
+   "homepage": "",
+   "honors": "中国科学院院士",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "深圳国际量子研究院(原深圳量子科学与工程研究院)院长",
+   "sources": [
+    "https://old.gdkjb.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_xu_fh",
+   "type": "scholar",
+   "name": "徐飞虎",
+   "name_en": "Feihu Xu",
+   "country": "中国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理学院",
+   "role": "",
+   "field": [
+    "量子通信",
+    "量子传感与测量"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "单光子成像与量子通信(200公里单光子三维成像)",
+   "sources": [
+    "https://faculty.ustc.edu.cn",
+    "https://i.ifeng.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_jeong",
+   "type": "scholar",
+   "name": "郑炫锡",
+   "name_en": "Hyunseok Jeong",
+   "country": "韩国",
+   "region": "东亚",
+   "city": "",
+   "dept": "物理天文系",
+   "role": "",
+   "field": [
+    "量子计算",
+    "量子软件与算法"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "宏观量子叠加与量子资源理论研究",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "sch_tsai",
+   "type": "scholar",
+   "name": "蔡兆申",
+   "name_en": "Jaw-Shen Tsai",
+   "country": "日本",
+   "region": "东亚",
+   "city": "",
+   "dept": "(兼RIKEN宏观量子相干团队)",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "1999年与中村泰信共同实现首个超导量子比特(NEC)",
+   "sources": [
+    "https://www.riken.jp/en/about/people/6946/index.html",
+    "https://www.tus.ac.jp/en/mediarelations/archive/20200414_7612.html"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "stu_keesling",
+   "type": "student",
+   "name": "亚历克斯·基斯林",
+   "name_en": "Alex Keesling",
+   "country": "美国",
+   "region": "北美",
+   "city": "",
+   "dept": "",
+   "role": "哈佛大学博士(卢金组;51原子模拟器2017共同作者)",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "now": "QuEra联合创始人兼首任CEO(后转任他职)",
+   "advisor": "sch_lukin",
+   "note": "",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_universalquantum",
+   "type": "company",
+   "name": "Universal Quantum",
+   "name_en": "Universal Quantum",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "Brighton",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2018,
+   "stage": "种子 (2020, $450万);获德国政府€6700万合同 (2022-11)",
+   "business": "模块化离子阱量子计算(电连接模块)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.sciencedaily.com"
+   ],
+   "uncertain": [
+    "成立年份有2018(创立)与2020(正式分拆)两种表述"
+   ]
+  },
+  {
+   "id": "co_photonic",
+   "type": "company",
+   "name": "Photonic Inc.",
+   "name_en": "Photonic Inc.",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Burnaby / Vancouver",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "C轮 (2026-05, 超CAD$2.75亿, 估值约CAD$27亿;累计约CAD$3.75亿)",
+   "business": "硅自旋-光子量子计算(T中心色心,电信波段);与微软战略合作",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://optics.org",
+    "http://www.sfu.ca"
+   ],
+   "uncertain": [
+    "成立年份未核实"
+   ]
+  },
+  {
+   "id": "co_multiverse",
+   "type": "company",
+   "name": "Multiverse Computing",
+   "name_en": "Multiverse Computing",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "San Sebastián",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2019,
+   "stage": "C轮 (2026报道, $5.7亿, 估值$17亿, Forgepoint领投)",
+   "business": "量子与量子启发软件(金融/AI压缩;CompactifAI)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "其他创始人: Enrique Lizaso(CEO)、Samuel Mugel、Alfonso Rubio",
+   "sources": [
+    "https://www.hpcwire.com"
+   ],
+   "uncertain": [
+    "C轮金额/估值来自二手来源"
+   ]
+  },
+  {
+   "id": "co_quside",
+   "type": "company",
+   "name": "Quside",
+   "name_en": "Quside",
+   "country": "西班牙",
+   "region": "欧洲",
+   "city": "Barcelona",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2017,
+   "stage": "A轮 (2025, €1000万, TRUMPF Venture与Bullnet领投)",
+   "business": "光子量子随机数发生器(QRNG)与随机性处理单元",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://quside.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_kipu",
+   "type": "company",
+   "name": "Kipu Quantum",
+   "name_en": "Kipu Quantum",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "Karlsruhe / Berlin",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "种子轮 (2023-12, €1050万, HV Capital与DTCF领投)",
+   "business": "硬件感知量子算法与应用(2025年与IonQ宣称工业量子优势)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.techmonitor.ai"
+   ],
+   "uncertain": [
+    "成立年份(约2021)与创始团队学术背景未核实"
+   ]
+  },
+  {
+   "id": "co_oqs",
+   "type": "company",
+   "name": "Orange Quantum Systems",
+   "name_en": "OrangeQS",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "Delft",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2020,
+   "stage": "私有(获欧盟Quantum SME资助)",
+   "business": "量子芯片自动化测试/筛选系统",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://qutech.h5mag.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_delftcircuits",
+   "type": "company",
+   "name": "Delft Circuits",
+   "name_en": "Delft Circuits",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "Delft",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "未披露",
+   "business": "柔性低温量子线缆(Cri/oFlex)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://qutech.h5mag.com"
+   ],
+   "uncertain": [
+    "成立年份与分拆关系未直接核实"
+   ]
+  },
+  {
+   "id": "co_zhongke",
+   "type": "company",
+   "name": "中科酷原",
+   "name_en": "Zhongke Kuyuan",
+   "country": "中国",
+   "region": "东亚",
+   "city": "武汉",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": 2020,
+   "stage": "战略融资 (2026-01, 近亿元, 中国移动独家投资)",
+   "business": "中性原子量子计算(汉原1号/2号)与冷原子重力仪",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "http://www.qtc.com.cn",
+    "https://www.sina.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_atomionics",
+   "type": "company",
+   "name": "Atomionics",
+   "name_en": "Atomionics",
+   "country": "新加坡",
+   "region": "东南亚",
+   "city": "新加坡",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "Pre-A轮 (2025-09, $1270万)",
+   "business": "冷原子量子重力仪Gravio(矿产勘探)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "创始人Sahil Tapiawala(CEO)、Avishek Kumar",
+   "sources": [
+    "https://startuprise.org",
+    "https://e27.co"
+   ],
+   "uncertain": [
+    "成立年份未核实;创始团队CQT具体任职未核实"
+   ]
+  },
+  {
+   "id": "co_jij",
+   "type": "company",
+   "name": "Jij",
+   "name_en": "Jij Inc.",
+   "country": "日本",
+   "region": "东亚",
+   "city": "东京",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "私有/未披露",
+   "business": "量子退火/伊辛机优化求解(JijZept等)",
+   "status": "运营中",
+   "advisor": "",
+   "note": "CEO 山城由峪(Yu Yamashiro);2025年获EY创新初创奖(量子类别)",
+   "sources": [
+    "https://qbn.world/qbn-member/jij-inc",
+    "https://www.j-ij.com/en/news/20250319"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "co_qart",
+   "type": "company",
+   "name": "Quantum Art",
+   "name_en": "Quantum Art Ltd.",
+   "country": "以色列",
+   "region": "中东",
+   "city": "Ness Ziona",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "A轮扩展 (2026-04, 累计$1.4亿)",
+   "business": "多核多比特门离子阱量子计算",
+   "status": "运营中",
+   "advisor": "",
+   "note": "创始人Amit Ben-Kish(CTO)与Tal David(CEO)",
+   "sources": [
+    "https://finance.yahoo.com",
+    "https://multiples.vc"
+   ],
+   "uncertain": [
+    "成立年份(约2022)与创始团队学术渊源未核实"
+   ]
+  },
+  {
+   "id": "co_qemotion",
+   "type": "company",
+   "name": "Quantum eMotion",
+   "name_en": "Quantum Emotion Corp.",
+   "country": "加拿大",
+   "region": "北美",
+   "city": "Montreal",
+   "dept": "",
+   "role": "",
+   "field": [
+    "量子计算"
+   ],
+   "homepage": "",
+   "honors": "",
+   "founded": "",
+   "stage": "上市 (TSXV: QNC)",
+   "business": "芯片化量子随机数发生器与量子安全方案",
+   "status": "运营中",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.yahoo.com",
+    "https://www.nasdaq.com"
+   ],
+   "uncertain": [
+    "公司2007年在加拿大注册,量子业务时间未核实;与UNIGE具体授权关系未核实;创始人未核实"
+   ]
+  },
+  {
+   "id": "inv_quantonation",
+   "type": "investor",
+   "name": "Quantonation",
+   "name_en": "Quantonation",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "巴黎",
+   "dept": "",
+   "role": "专注物理/量子技术的早期风险基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "管理Quantonation I/II(II期2024年首关€2亿);合伙人Jurczak为Pasqal联合创始人",
+   "sources": [
+    "https://www.quantonation.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_temasek",
+   "type": "investor",
+   "name": "淡马锡",
+   "name_en": "Temasek",
+   "country": "新加坡",
+   "region": "东南亚",
+   "city": "新加坡",
+   "dept": "",
+   "role": "国家投资公司",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.pasqal.com",
+    "https://www.psiquantum.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_blackrock",
+   "type": "investor",
+   "name": "贝莱德",
+   "name_en": "BlackRock",
+   "country": "美国",
+   "region": "北美",
+   "city": "纽约",
+   "dept": "",
+   "role": "资产管理公司",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.psiquantum.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_baillie_gifford",
+   "type": "investor",
+   "name": "Baillie Gifford",
+   "name_en": "Baillie Gifford",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "爱丁堡",
+   "dept": "",
+   "role": "资产管理公司",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.psiquantum.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_bpifrance",
+   "type": "investor",
+   "name": "法国国家投资银行",
+   "name_en": "Bpifrance",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "巴黎",
+   "dept": "",
+   "role": "国家投资银行(大基金)",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.pasqal.com",
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_eic_fund",
+   "type": "investor",
+   "name": "欧洲创新理事会基金",
+   "name_en": "EIC Fund",
+   "country": "欧盟",
+   "region": "欧洲",
+   "city": "布鲁塞尔",
+   "dept": "",
+   "role": "欧盟公共投资基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.pasqal.com",
+    "https://www.crunchbase.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_waed",
+   "type": "investor",
+   "name": "Wa'ed Ventures",
+   "name_en": "Wa'ed Ventures",
+   "country": "沙特阿拉伯",
+   "region": "中东",
+   "city": "达兰",
+   "dept": "",
+   "role": "沙特阿美旗下创投",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.pasqal.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_softbank",
+   "type": "investor",
+   "name": "软银",
+   "name_en": "SoftBank",
+   "country": "日本",
+   "region": "东亚",
+   "city": "东京",
+   "dept": "",
+   "role": "风险投资/愿景基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_google",
+   "type": "investor",
+   "name": "Google(Alphabet)",
+   "name_en": "Google",
+   "country": "美国",
+   "region": "北美",
+   "city": "山景城",
+   "dept": "",
+   "role": "企业战略投资",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_nea",
+   "type": "investor",
+   "name": "恩颐投资",
+   "name_en": "New Enterprise Associates (NEA)",
+   "country": "美国",
+   "region": "北美",
+   "city": "门洛帕克",
+   "dept": "",
+   "role": "风险投资",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.ionq.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_octopus",
+   "type": "investor",
+   "name": "Octopus Ventures",
+   "name_en": "Octopus Ventures",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "伦敦",
+   "dept": "",
+   "role": "风险投资",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_ngp",
+   "type": "investor",
+   "name": "NGP Capital",
+   "name_en": "NGP Capital (诺基亚成长基金)",
+   "country": "美国",
+   "region": "北美",
+   "city": "帕洛阿尔托",
+   "dept": "",
+   "role": "企业创投(诺基亚旗下)",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_sony_fund",
+   "type": "investor",
+   "name": "索尼创新基金",
+   "name_en": "Sony Innovation Fund",
+   "country": "日本",
+   "region": "东亚",
+   "city": "东京",
+   "dept": "",
+   "role": "企业创投",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_psg",
+   "type": "investor",
+   "name": "PSG Equity",
+   "name_en": "PSG Equity",
+   "country": "美国",
+   "region": "北美",
+   "city": "波士顿",
+   "dept": "",
+   "role": "成长型基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://techfundingnews.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_world_fund",
+   "type": "investor",
+   "name": "World Fund",
+   "name_en": "World Fund",
+   "country": "荷兰",
+   "region": "欧洲",
+   "city": "阿姆斯特丹",
+   "dept": "",
+   "role": "气候科技风险基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://meetiqm.com"
+   ],
+   "uncertain": [
+    "总部城市据公开资料,本次未直接核实"
+   ]
+  },
+  {
+   "id": "inv_draper_esprit",
+   "type": "investor",
+   "name": "Draper Esprit",
+   "name_en": "Draper Esprit",
+   "country": "爱尔兰",
+   "region": "欧洲",
+   "city": "都柏林",
+   "dept": "",
+   "role": "风险投资(现Elkstone)",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://cryptorank.io"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_cisco",
+   "type": "investor",
+   "name": "思科投资",
+   "name_en": "Cisco Investments",
+   "country": "美国",
+   "region": "北美",
+   "city": "圣何塞",
+   "dept": "",
+   "role": "企业创投",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.sec.gov"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_main_sequence",
+   "type": "investor",
+   "name": "Main Sequence Ventures",
+   "name_en": "Main Sequence Ventures",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "悉尼",
+   "dept": "",
+   "role": "CSIRO创新基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://q-ctrl.com",
+    "https://mseq.vc"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_blackbird",
+   "type": "investor",
+   "name": "Blackbird",
+   "name_en": "Blackbird",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "悉尼",
+   "dept": "",
+   "role": "风险投资",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://q-ctrl.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_salesforce",
+   "type": "investor",
+   "name": "Salesforce Ventures",
+   "name_en": "Salesforce Ventures",
+   "country": "美国",
+   "region": "北美",
+   "city": "旧金山",
+   "dept": "",
+   "role": "企业创投",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://q-ctrl.com",
+    "https://www.smartcompany.com.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_airbus_v",
+   "type": "investor",
+   "name": "Airbus Ventures",
+   "name_en": "Airbus Ventures",
+   "country": "美国",
+   "region": "北美",
+   "city": "门洛帕克",
+   "dept": "",
+   "role": "企业创投(空客旗下)",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://q-ctrl.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_planet_first",
+   "type": "investor",
+   "name": "Planet First Partners",
+   "name_en": "Planet First Partners",
+   "country": "英国",
+   "region": "欧洲",
+   "city": "伦敦",
+   "dept": "",
+   "role": "可持续增长基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://optics.org"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_ffc",
+   "type": "investor",
+   "name": "Future French Champions",
+   "name_en": "Future French Champions (FFC)",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "巴黎",
+   "dept": "",
+   "role": "卡塔尔投资局与法国国家合资基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_avp",
+   "type": "investor",
+   "name": "AXA Venture Partners",
+   "name_en": "AXA Venture Partners (AVP)",
+   "country": "法国",
+   "region": "欧洲",
+   "city": "巴黎",
+   "dept": "",
+   "role": "保险系创投",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_honeywell",
+   "type": "investor",
+   "name": "霍尼韦尔",
+   "name_en": "Honeywell",
+   "country": "美国",
+   "region": "北美",
+   "city": "夏洛特",
+   "dept": "",
+   "role": "企业战略控股",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://app.thequantuminsider.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_ciif",
+   "type": "investor",
+   "name": "中国互联网投资基金",
+   "name_en": "China Internet Investment Fund",
+   "country": "中国",
+   "region": "东亚",
+   "city": "北京",
+   "dept": "",
+   "role": "国家级产业基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://news.mydrivers.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_szvc",
+   "type": "investor",
+   "name": "深创投(红土基金)",
+   "name_en": "Shenzhen Capital Group",
+   "country": "中国",
+   "region": "东亚",
+   "city": "深圳",
+   "dept": "",
+   "role": "国有风险投资",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.cls.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_chinamobile",
+   "type": "investor",
+   "name": "中国移动",
+   "name_en": "China Mobile",
+   "country": "中国",
+   "region": "东亚",
+   "city": "北京",
+   "dept": "",
+   "role": "电信运营商战略投资",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "http://www.qtc.com.cn",
+    "https://www.sina.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_cicc_cap",
+   "type": "investor",
+   "name": "中金资本",
+   "name_en": "CICC Capital",
+   "country": "中国",
+   "region": "东亚",
+   "city": "北京",
+   "dept": "",
+   "role": "券商系私募股权",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "http://c.zhineng.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_shengshi",
+   "type": "investor",
+   "name": "盛世投资",
+   "name_en": "Shengshi Investment",
+   "country": "中国",
+   "region": "东亚",
+   "city": "北京",
+   "dept": "",
+   "role": "母基金/资产管理",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "领投图灵量子战略轮",
+   "sources": [
+    "https://finance.sina.com.cn"
+   ],
+   "uncertain": [
+    "英文名未核实"
+   ]
+  },
+  {
+   "id": "inv_szhg",
+   "type": "investor",
+   "name": "深圳高新投",
+   "name_en": "Shenzhen Hi-tech Investment",
+   "country": "中国",
+   "region": "东亚",
+   "city": "深圳",
+   "dept": "",
+   "role": "国有担保与投资",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "http://c.zhineng.com.cn"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_forgepoint",
+   "type": "investor",
+   "name": "Forgepoint Capital",
+   "name_en": "Forgepoint Capital",
+   "country": "美国",
+   "region": "北美",
+   "city": "圣马特奥",
+   "dept": "",
+   "role": "网络安全风投",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.hpcwire.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_uvc",
+   "type": "investor",
+   "name": "UVC Partners",
+   "name_en": "UVC Partners",
+   "country": "德国",
+   "region": "欧洲",
+   "city": "慕尼黑",
+   "dept": "",
+   "role": "早期深科技基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://thequantuminsider.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_2xn",
+   "type": "investor",
+   "name": "2xN",
+   "name_en": "2xN",
+   "country": "丹麦",
+   "region": "欧洲",
+   "city": "哥本哈根",
+   "dept": "",
+   "role": "量子领域风险基金",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://sparrowquantum.com"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_churchill",
+   "type": "investor",
+   "name": "Churchill Capital Corp X",
+   "name_en": "Churchill Capital Corp X",
+   "country": "美国",
+   "region": "北美",
+   "city": "纽约",
+   "dept": "",
+   "role": "SPAC上市工具",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.stocktitan.net"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_telstra",
+   "type": "investor",
+   "name": "澳大利亚电信",
+   "name_en": "Telstra",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "墨尔本",
+   "dept": "",
+   "role": "电信运营商",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.theaustralian.com.au"
+   ],
+   "uncertain": []
+  },
+  {
+   "id": "inv_cba",
+   "type": "investor",
+   "name": "澳大利亚联邦银行",
+   "name_en": "Commonwealth Bank of Australia",
+   "country": "澳大利亚",
+   "region": "大洋洲",
+   "city": "悉尼",
+   "dept": "",
+   "role": "银行战略投资",
+   "field": [],
+   "homepage": "",
+   "honors": "",
+   "founded": null,
+   "stage": "",
+   "business": "",
+   "status": "",
+   "advisor": "",
+   "note": "",
+   "sources": [
+    "https://www.theaustralian.com.au"
+   ],
+   "uncertain": []
+  }
+ ],
+ "links": [
+  {
+   "source": "sch_preskill",
+   "target": "uni_caltech",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lukin",
+   "target": "uni_harvard",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_greiner",
+   "target": "uni_harvard",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_vuletic",
+   "target": "uni_mit",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_shor",
+   "target": "uni_mit",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_chuang",
+   "target": "uni_mit",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_awschalom",
+   "target": "uni_uchicago",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_schoelkopf",
+   "target": "uni_yale",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "超导量子比特电路QED开创者之一",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_devoret",
+   "target": "uni_yale",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "现任Google Quantum AI量子硬件首席科学家(2025-)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_monroe",
+   "target": "uni_duke",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "曾长期任职马里兰大学JQI;IonQ首席科学家至2023",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_kim",
+   "target": "uni_duke",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_martinis",
+   "target": "uni_ucsb",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_saffman",
+   "target": "uni_uwmadison",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_walker",
+   "target": "uni_uwmadison",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_narang",
+   "target": "uni_ucla",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "曾任哈佛大学工程与应用科学学院助理教授",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_deleon",
+   "target": "uni_princeton",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_thompson",
+   "target": "uni_princeton",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_vuckovic",
+   "target": "uni_stanford",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_hafezi",
+   "target": "uni_umaryland",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_linke",
+   "target": "uni_umaryland",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "曾任门罗组博士后/实验室负责人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_laflamme",
+   "target": "uni_waterloo",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "2025年逝世",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_mosca",
+   "target": "uni_waterloo",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "IQC联合创始人;evolutionQ与softwareQ联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_aspuru",
+   "target": "uni_utoronto",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "创办Zapata时任哈佛大学化学与化学生物学教授",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_hawking",
+   "target": "uni_cambridge",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "拉弗拉姆的博士导师;此处仅作师承网络节点",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_aspect",
+   "target": "uni_institutoptique",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_browaeys",
+   "target": "uni_institutoptique",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lahaye",
+   "target": "uni_institutoptique",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_senellart",
+   "target": "uni_c2n",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "CNRS研究主任;半导体量子点单光子源开创者之一",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lanco",
+   "target": "uni_c2n",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_leghtas",
+   "target": "uni_ens",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_zoller",
+   "target": "uni_innsbruck",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_blatt",
+   "target": "uni_innsbruck",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_monz",
+   "target": "uni_innsbruck",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_cirac",
+   "target": "uni_mpq",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_bloch",
+   "target": "uni_mpq",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_wallraff",
+   "target": "uni_eth",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "ETH量子中心主任;ETH-PSI量子计算中心共同负责人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_home",
+   "target": "uni_eth",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_hanson",
+   "target": "uni_tudelft",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_vandersypen",
+   "target": "uni_tudelft",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_wehner",
+   "target": "uni_tudelft",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "2018年Science量子互联网路线图共同作者",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_terhal",
+   "target": "uni_tudelft",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "兼任于利希研究中心JARA量子信息研究所教授",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_morton",
+   "target": "uni_ucl",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_benjamin",
+   "target": "uni_oxford",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_walmsley",
+   "target": "uni_oxford",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "创办ORCA时任帝国理工学院教务长兼实验物理讲席教授",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_cubitt",
+   "target": "uni_ucl",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_montanaro",
+   "target": "uni_bristol",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_gisin",
+   "target": "uni_geneva",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "量子密码学先驱;ID Quantique创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lodahl",
+   "target": "uni_copenhagen",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_mottonen",
+   "target": "uni_aalto",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_ekert",
+   "target": "uni_oxford",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "CQT创始所长;兼NUS李光前百年讲席教授;E91协议提出者",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_ekert",
+   "target": "uni_nus",
+   "type": "affiliation",
+   "strength": 2,
+   "note": "新加坡国立大学CQT创始所长",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_terhal",
+   "target": "uni_julich",
+   "type": "affiliation",
+   "strength": 2,
+   "note": "兼任于利希研究中心JARA量子信息研究所教授",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_latorre",
+   "target": "uni_uab",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "巴塞罗那量子生态关键人物",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_wunderlich",
+   "target": "uni_siegen",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "MAGIC离子阱方案提出者",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_pan",
+   "target": "uni_ustc",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "墨子号量子卫星首席科学家",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lu",
+   "target": "uni_ustc",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "九章系列光量子计算核心人物",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_guo_gc",
+   "target": "uni_ustc",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_guo_gp",
+   "target": "uni_ustc",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_zhu_xb",
+   "target": "uni_ustc",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "祖冲之号超导量子计算核心成员",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_wang_hh",
+   "target": "uni_zhejiang",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "祖冲之号系列合作者",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_du",
+   "target": "uni_ustc",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "曾任中科大副校长、浙江大学校长(2022-12~2025-02);现任教育部副部长(2025-02起)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_duan",
+   "target": "uni_tsinghua",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_jin_xm",
+   "target": "uni_sjtu",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_cui_zb",
+   "target": "uni_hkust",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "量旋科技首席科学家",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_nakamura",
+   "target": "uni_riken",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "1999年在NEC实现首个超导量子比特相干操控;RQC所长",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_furusawa",
+   "target": "uni_utokyo",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_fujii",
+   "target": "uni_utokyo",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_nakamura",
+   "target": "uni_utokyo",
+   "type": "affiliation",
+   "strength": 2,
+   "note": "兼东京大学教职(据公开资料)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_ling",
+   "target": "uni_nus",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "星载量子纠缠光源SPEQS项目负责人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_simmons",
+   "target": "uni_unsw",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_dzurak",
+   "target": "uni_unsw",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "2014年硅CMOS量子比特实现者之一",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_biercuk",
+   "target": "uni_usydney",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "量子控制实验室负责人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_doherty",
+   "target": "uni_anu",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "创立Quantum Brilliance时任职于ANU",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_schoelkopf",
+   "target": "stu_rigetti",
+   "type": "phd_advisor",
+   "strength": 2,
+   "note": "师承指导",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lukin",
+   "target": "stu_bluvstein",
+   "type": "phd_advisor",
+   "strength": 2,
+   "note": "师承指导",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_leghtas",
+   "target": "stu_peronnin",
+   "type": "phd_advisor",
+   "strength": 2,
+   "note": "课题组出身/指导关系(见不确定项)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_leghtas",
+   "target": "stu_lescanne",
+   "type": "phd_advisor",
+   "strength": 2,
+   "note": "课题组出身/指导关系(见不确定项)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_umaryland",
+   "target": "co_ionq",
+   "type": "incubated",
+   "strength": 2,
+   "note": "技术授权自马里兰大学与杜克大学;另与杜克关联",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_monroe",
+   "target": "co_ionq",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(首席科学家至2023)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_kim",
+   "target": "co_ionq",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CTO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_duke",
+   "target": "co_ionq",
+   "type": "incubated",
+   "strength": 2,
+   "note": "技术授权自马里兰大学与杜克大学",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_rigetti",
+   "target": "co_rigetti",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_schoelkopf",
+   "target": "co_qci",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人兼首席科学家",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_harvard",
+   "target": "co_quera",
+   "type": "incubated",
+   "strength": 2,
+   "note": "源自哈佛/MIT实验室",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lukin",
+   "target": "co_quera",
+   "type": "founded",
+   "strength": 3,
+   "note": "学术共同创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_greiner",
+   "target": "co_quera",
+   "type": "founded",
+   "strength": 3,
+   "note": "学术共同创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_vuletic",
+   "target": "co_quera",
+   "type": "founded",
+   "strength": 3,
+   "note": "学术共同创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_uwmadison",
+   "target": "co_infleqtion",
+   "type": "incubated",
+   "strength": 2,
+   "note": "由威斯康星大学麦迪逊分校教授创办",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_saffman",
+   "target": "co_infleqtion",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(现任量子信息首席科学家)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_walker",
+   "target": "co_infleqtion",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ucla",
+   "target": "co_aliro",
+   "type": "incubated",
+   "strength": 1,
+   "note": "创始人Narang学术渊源哈佛/UCLA;公司常被称为哈佛衍生",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_narang",
+   "target": "co_aliro",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人兼CTO",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_aspuru",
+   "target": "co_zapata",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(时任哈佛教授)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_martinis",
+   "target": "co_qolab",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人兼CTO",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_sherbrooke",
+   "target": "co_nordquantique",
+   "type": "incubated",
+   "strength": 3,
+   "note": "Institut quantique分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_st_jean",
+   "target": "co_nordquantique",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CEO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_camlmyre",
+   "target": "co_nordquantique",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(总裁/CTO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_mosca",
+   "target": "co_evolutionq",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人兼CEO",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_brierley",
+   "target": "co_riverlane",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人兼CEO",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ucl",
+   "target": "co_phasecraft",
+   "type": "incubated",
+   "strength": 2,
+   "note": "UCL与布里斯托大学分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_cubitt",
+   "target": "co_phasecraft",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CTO/首席科学官)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_montanaro",
+   "target": "co_phasecraft",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CEO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_morton",
+   "target": "co_phasecraft",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ucl",
+   "target": "co_qmotion",
+   "type": "incubated",
+   "strength": 3,
+   "note": "UCL与牛津大学联合分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_morton",
+   "target": "co_qmotion",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_benjamin",
+   "target": "co_qmotion",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_imperial",
+   "target": "co_orca",
+   "type": "incubated",
+   "strength": 3,
+   "note": "源自帝国理工学院沃姆斯利团队(创始人现任职牛津)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_walmsley",
+   "target": "co_orca",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人兼董事长",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_oxford",
+   "target": "co_oxfordionics",
+   "type": "incubated",
+   "strength": 3,
+   "note": "牛津大学分拆(Oxford Science Enterprises早期支持)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_institutoptique",
+   "target": "co_pasqal",
+   "type": "incubated",
+   "strength": 3,
+   "note": "巴黎高等光学研究院(与CNRS关联)分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_aspect",
+   "target": "co_pasqal",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_browaeys",
+   "target": "co_pasqal",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lahaye",
+   "target": "co_pasqal",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_c2n",
+   "target": "co_quandela",
+   "type": "incubated",
+   "strength": 3,
+   "note": "CNRS C2N实验室分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_senellart",
+   "target": "co_quandela",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人兼科学顾问",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lanco",
+   "target": "co_quandela",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ens",
+   "target": "co_alicebob",
+   "type": "incubated",
+   "strength": 2,
+   "note": "源自ENS LPENS Leghtas课题组猫比特研究",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_peronnin",
+   "target": "co_alicebob",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CEO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_lescanne",
+   "target": "co_alicebob",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ens",
+   "target": "co_c12",
+   "type": "incubated",
+   "strength": 2,
+   "note": "CNRS/LPENS生态分拆(据LPENS报道)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_mpq",
+   "target": "co_planqc",
+   "type": "incubated",
+   "strength": 2,
+   "note": "慕尼黑量子谷(MQV)首家分拆;创始团队出自MPQ/LMU布洛赫组",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_siegen",
+   "target": "co_eleqtron",
+   "type": "incubated",
+   "strength": 3,
+   "note": "锡根大学研究分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_wunderlich",
+   "target": "co_eleqtron",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人(2026年退出日常经营)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_innsbruck",
+   "target": "co_aqt",
+   "type": "incubated",
+   "strength": 3,
+   "note": "因斯布鲁克大学分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_blatt",
+   "target": "co_aqt",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_monz",
+   "target": "co_aqt",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CEO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_zoller",
+   "target": "co_aqt",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_geneva",
+   "target": "co_idq",
+   "type": "incubated",
+   "strength": 3,
+   "note": "日内瓦大学应用物理组(GAP)分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_gisin",
+   "target": "co_idq",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_tudelft",
+   "target": "co_qblox",
+   "type": "incubated",
+   "strength": 2,
+   "note": "TU Delft分拆生态",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_tudelft",
+   "target": "co_quantware",
+   "type": "incubated",
+   "strength": 2,
+   "note": "TU Delft分拆生态",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_tudelft",
+   "target": "co_qphox",
+   "type": "incubated",
+   "strength": 2,
+   "note": "TU Delft分拆生态",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_tudelft",
+   "target": "co_singlequantum",
+   "type": "incubated",
+   "strength": 2,
+   "note": "TU Delft分拆生态",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_aalto",
+   "target": "co_iqm",
+   "type": "incubated",
+   "strength": 3,
+   "note": "阿尔托大学与VTT联合分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_mottonen",
+   "target": "co_iqm",
+   "type": "founded",
+   "strength": 3,
+   "note": "学术联合创始人(首席科学家)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_goetz",
+   "target": "co_iqm",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CEO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_tan",
+   "target": "co_iqm",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_copenhagen",
+   "target": "co_sparrow",
+   "type": "incubated",
+   "strength": 3,
+   "note": "尼尔斯·玻尔研究所分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lodahl",
+   "target": "co_sparrow",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人(首席量子官)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_uab",
+   "target": "co_qilimanjaro",
+   "type": "incubated",
+   "strength": 3,
+   "note": "BSC/IFAE/UAB联合分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_forn_diaz",
+   "target": "co_qilimanjaro",
+   "type": "founded",
+   "strength": 3,
+   "note": "科学创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_garcia_saez",
+   "target": "co_qilimanjaro",
+   "type": "founded",
+   "strength": 3,
+   "note": "科学创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ustc",
+   "target": "co_qtek",
+   "type": "incubated",
+   "strength": 3,
+   "note": "中国科学技术大学孵化",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_pan",
+   "target": "co_qtek",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_peng",
+   "target": "co_qtek",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创办人之一",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ustc",
+   "target": "co_originq",
+   "type": "incubated",
+   "strength": 3,
+   "note": "技术起源中科院量子信息重点实验室(中科大)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_guo_gc",
+   "target": "co_originq",
+   "type": "founded",
+   "strength": 3,
+   "note": "领衔创立",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_guo_gp",
+   "target": "co_originq",
+   "type": "founded",
+   "strength": 3,
+   "note": "领衔创立",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_sjtu",
+   "target": "co_turingq",
+   "type": "incubated",
+   "strength": 3,
+   "note": "上海交通大学孵化(集成量子信息技术研究中心)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_jin_xm",
+   "target": "co_turingq",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_tsinghua",
+   "target": "co_huaq",
+   "type": "incubated",
+   "strength": 3,
+   "note": "脱胎于清华大学量子信息中心",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_duan",
+   "target": "co_huaq",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_fujii",
+   "target": "co_qunasys",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_nus",
+   "target": "co_speqtral",
+   "type": "incubated",
+   "strength": 3,
+   "note": "新加坡国立大学CQT分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_ling",
+   "target": "co_speqtral",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_unsw",
+   "target": "co_sqc",
+   "type": "incubated",
+   "strength": 3,
+   "note": "UNSW分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_simmons",
+   "target": "co_sqc",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人兼CEO",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_unsw",
+   "target": "co_diraq",
+   "type": "incubated",
+   "strength": 3,
+   "note": "UNSW分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_dzurak",
+   "target": "co_diraq",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_usydney",
+   "target": "co_qctrl",
+   "type": "incubated",
+   "strength": 3,
+   "note": "悉尼大学分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_biercuk",
+   "target": "co_qctrl",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人兼CEO",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_anu",
+   "target": "co_qbrilliance",
+   "type": "incubated",
+   "strength": 3,
+   "note": "ANU分拆(与斯图加特大学有渊源)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_doherty",
+   "target": "co_qbrilliance",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_zeilinger",
+   "target": "uni_vienna",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "量子隐形传态与贝利不等式实验先驱",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_peng",
+   "target": "uni_ustc",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "中国科大研究员;国盾量子联合创办人之一;墨子号卫星系统总师(据公开报道)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_pan",
+   "target": "sch_lu",
+   "type": "phd_advisor",
+   "strength": 3,
+   "note": "师承关系广为报道(中科大博士);本次来源确认长期合作与团队关系",
+   "sources": [
+    "https://zqb.cyol.com"
+   ],
+   "uncertain": true
+  },
+  {
+   "source": "sch_pan",
+   "target": "sch_jin_xm",
+   "type": "phd_advisor",
+   "strength": 3,
+   "note": "金贤敏曾师从潘建伟院士,博士毕业后赴牛津从事博后研究",
+   "sources": [
+    "https://finance.sina.com.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_zeilinger",
+   "target": "sch_pan",
+   "type": "phd_advisor",
+   "strength": 3,
+   "note": "潘建伟1990年代在因斯布鲁克师从泽林格读博",
+   "sources": [
+    "https://www.fwf.ac.at",
+    "https://ongloballeadership.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_hawking",
+   "target": "sch_laflamme",
+   "type": "phd_advisor",
+   "strength": 3,
+   "note": "拉弗拉姆曾是霍金的博士生(后转向量子计算)",
+   "sources": [
+    "https://pic-pac.cap.ca"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_monroe",
+   "target": "sch_linke",
+   "type": "phd_advisor",
+   "strength": 2,
+   "note": "博士后指导(时任JQI门罗组)",
+   "sources": [
+    "https://phys.org"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ustc",
+   "target": "sch_pan",
+   "type": "alumni",
+   "strength": 2,
+   "note": "本科/硕士(1996年获硕士学位)",
+   "sources": [
+    "https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ustc",
+   "target": "sch_lu",
+   "type": "alumni",
+   "strength": 2,
+   "note": "2000年考入中科大本科",
+   "sources": [
+    "https://zqb.cyol.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "uni_ustc",
+   "target": "sch_du",
+   "type": "alumni",
+   "strength": 3,
+   "note": "1985年保送入中科大少年班",
+   "sources": [
+    "https://www.163.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "uni_innsbruck",
+   "target": "sch_pan",
+   "type": "alumni",
+   "strength": 2,
+   "note": "博士学位(因斯布鲁克)",
+   "sources": [
+    "https://ongloballeadership.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "uni_yale",
+   "target": "stu_rigetti",
+   "type": "alumni",
+   "strength": 2,
+   "note": "博士学位",
+   "sources": [
+    "https://www.scribd.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_cui_zb",
+   "target": "co_spinq",
+   "type": "employment",
+   "strength": 2,
+   "note": "首席科学家",
+   "sources": [
+    "http://c.zhineng.com.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_du",
+   "target": "uni_zhejiang",
+   "type": "employment",
+   "strength": 2,
+   "note": "曾任浙江大学校长(2022-12~2025-02,现任教育部副部长)",
+   "sources": [
+    "https://www.163.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_cirac",
+   "target": "sch_bloch",
+   "type": "collaboration",
+   "strength": 1,
+   "note": "2004年Tonks-Girardeau气体等合作",
+   "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/15152247"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_wehner",
+   "target": "sch_hanson",
+   "type": "collaboration",
+   "strength": 2,
+   "note": "2018年Science量子互联网路线图共同作者;三节点量子网络",
+   "sources": [
+    "https://inspirehep.net"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_pan",
+   "target": "sch_wang_hh",
+   "type": "collaboration",
+   "strength": 2,
+   "note": "祖冲之号系列超导量子计算合作",
+   "sources": [
+    "https://xcb.ustc.edu.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_pan",
+   "target": "sch_zhu_xb",
+   "type": "collaboration",
+   "strength": 2,
+   "note": "祖冲之号系列超导量子计算合作",
+   "sources": [
+    "https://xcb.ustc.edu.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_pan",
+   "target": "sch_lu",
+   "type": "collaboration",
+   "strength": 3,
+   "note": "九章系列光量子计算长期合作",
+   "sources": [
+    "https://zqb.cyol.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_vazirani",
+   "target": "uni_berkeley",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "伯克利量子计算中心创始主任",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_harrow",
+   "target": "uni_mit",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "HHL算法共同提出者(2009)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_mit",
+   "target": "sch_harrow",
+   "type": "alumni",
+   "strength": 2,
+   "note": "MIT本科(2001)与博士(2005)",
+   "sources": [
+    "https://phys.org"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lloyd",
+   "target": "uni_mit",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_oliver",
+   "target": "uni_mit",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "MIT量子工程中心(CQE)与量子计算中心主任",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_englund",
+   "target": "uni_mit",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "量子光子学实验室负责人;QuEra联合创始人之一",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_englund",
+   "target": "co_quera",
+   "type": "founded",
+   "strength": 2,
+   "note": "联合创始人之一(与Lukin/Greiner/Vuletić/Gemelke/Pena)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_brandao",
+   "target": "uni_caltech",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "Bren理论物理讲席教授;AWS量子计算中心(CQC)联合负责人(停薪留职)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_jiang",
+   "target": "uni_uchicago",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_bernien",
+   "target": "uni_uchicago",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "博士(2014)师从汉森(代尔夫特);哈佛博后(卢金组)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_hanson",
+   "target": "sch_bernien",
+   "type": "phd_advisor",
+   "strength": 3,
+   "note": "博士指导(2014年代尔夫特,金刚石NV免漏洞贝尔实验)",
+   "sources": [
+    "https://arxiv.org"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_girvin",
+   "target": "uni_yale",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "电路量子电动力学(Circuit QED)共同发展者",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_girvin",
+   "target": "sch_schoelkopf",
+   "type": "collaboration",
+   "strength": 2,
+   "note": "2004年起共同发展电路量子电动力学(与Devoret)",
+   "sources": [
+    "https://newquantumera.transistor.fm"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_hensinger",
+   "target": "uni_sussex",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "任职任教",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_ssimmons",
+   "target": "uni_sfu",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "Photonic Inc.创始人兼首席量子官;硅T中心色心自旋-光子比特",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_ballance",
+   "target": "uni_oxford",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "Oxford Ionics联合创始人兼CEO",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_mitchell",
+   "target": "uni_icfo",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "ICREA研究教授;Quside联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_nishimori",
+   "target": "uni_titech",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "量子退火(Quantum Annealing)方法奠基者之一",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_yu_dp",
+   "target": "uni_sustech",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "深圳国际量子研究院(原深圳量子科学与工程研究院)院长",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_xu_fh",
+   "target": "uni_ustc",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "单光子成像与量子通信(200公里单光子三维成像)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_pan",
+   "target": "sch_xu_fh",
+   "type": "collaboration",
+   "strength": 2,
+   "note": "远距离单光子三维成像(>200公里)等合作",
+   "sources": [
+    "https://i.ifeng.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_jeong",
+   "target": "uni_snu",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "宏观量子叠加与量子资源理论研究",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_tsai",
+   "target": "uni_tus",
+   "type": "affiliation",
+   "strength": 3,
+   "note": "1999年与中村泰信共同实现首个超导量子比特(NEC)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_tsai",
+   "target": "uni_riken",
+   "type": "affiliation",
+   "strength": 2,
+   "note": "RIKEN宏观量子相干团队",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_nakamura",
+   "target": "sch_tsai",
+   "type": "collaboration",
+   "strength": 3,
+   "note": "1999年首个超导量子比特相干操控(NEC,发表于Nature)",
+   "sources": [
+    "https://www.technologyreview.com",
+    "https://www.riken.jp/en/about/people/6946/index.html"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "sch_lukin",
+   "target": "stu_keesling",
+   "type": "phd_advisor",
+   "strength": 2,
+   "note": "师承指导",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_keesling",
+   "target": "co_quera",
+   "type": "founded",
+   "strength": 2,
+   "note": "联合创始人兼首任CEO(后转任他职)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_sussex",
+   "target": "co_universalquantum",
+   "type": "incubated",
+   "strength": 3,
+   "note": "萨塞克斯大学分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_hensinger",
+   "target": "co_universalquantum",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_weidt",
+   "target": "co_universalquantum",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CEO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_sfu",
+   "target": "co_photonic",
+   "type": "incubated",
+   "strength": 2,
+   "note": "创始人西蒙菲莎大学教授;公司常被称为SFU衍生",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_ssimmons",
+   "target": "co_photonic",
+   "type": "founded",
+   "strength": 3,
+   "note": "创始人(首席量子官)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_orus",
+   "target": "co_multiverse",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(首席科学官)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_icfo",
+   "target": "co_quside",
+   "type": "incubated",
+   "strength": 3,
+   "note": "ICFO分拆;与ICFO共建联合实验室",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_abellan",
+   "target": "co_quside",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人(CEO)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_mitchell",
+   "target": "co_quside",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_tudelft",
+   "target": "co_oqs",
+   "type": "incubated",
+   "strength": 3,
+   "note": "QuTech与TNO联合分拆",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_tudelft",
+   "target": "co_delftcircuits",
+   "type": "incubated",
+   "strength": 1,
+   "note": "代尔夫特/QuTech生态分拆(生态报道)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_cas_pma",
+   "target": "co_zhongke",
+   "type": "incubated",
+   "strength": 3,
+   "note": "脱胎于中科院精密测量科学与技术创新研究院",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_nus",
+   "target": "co_atomionics",
+   "type": "incubated",
+   "strength": 1,
+   "note": "技术根植于CQT/NUS生态",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_titech",
+   "target": "co_jij",
+   "type": "incubated",
+   "strength": 2,
+   "note": "源自西森秀稔实验室(量子退火奠基者)",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "uni_geneva",
+   "target": "co_qemotion",
+   "type": "incubated",
+   "strength": 1,
+   "note": "QRNG技术源于日内瓦大学应用物理组(GAP)光子学研究",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "sch_ballance",
+   "target": "co_oxfordionics",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人兼CEO;被IonQ收购后留任",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "stu_harty",
+   "target": "co_oxfordionics",
+   "type": "founded",
+   "strength": 3,
+   "note": "联合创始人兼CTO;被IonQ收购后留任",
+   "sources": [],
+   "uncertain": false
+  },
+  {
+   "source": "inv_quantonation",
+   "target": "co_pasqal",
+   "type": "investment",
+   "strength": 2,
+   "note": "持续投资方(2023-01报道)",
+   "sources": [
+    "https://www.pasqal.com",
+    "https://www.prnewswire.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_quantonation",
+   "target": "co_quandela",
+   "type": "investment",
+   "strength": 2,
+   "note": "领投€1500万A轮(2021-11);2020年与Bpifrance早期投资",
+   "sources": [
+    "https://www.quantonation.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_quantonation",
+   "target": "co_alicebob",
+   "type": "investment",
+   "strength": 2,
+   "note": "投资组合(据Dealroom)",
+   "sources": [
+    "https://www.quantonation.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_quantonation",
+   "target": "co_c12",
+   "type": "investment",
+   "strength": 2,
+   "note": "投资组合(据Dealroom)",
+   "sources": [
+    "https://www.quantonation.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_quantonation",
+   "target": "co_planqc",
+   "type": "investment",
+   "strength": 2,
+   "note": "参与投资(2024-07报道)",
+   "sources": [
+    "https://thequantuminsider.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_quantonation",
+   "target": "co_diraq",
+   "type": "investment",
+   "strength": 2,
+   "note": "Quantonation II早期投资",
+   "sources": [
+    "https://www.quantonation.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_temasek",
+   "target": "co_pasqal",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投B轮€1亿(2023-01)",
+   "sources": [
+    "https://www.pasqal.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_temasek",
+   "target": "co_psiquantum",
+   "type": "investment",
+   "strength": 2,
+   "note": "联合领投E轮$10亿(2025-09)",
+   "sources": [
+    "https://www.psiquantum.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_blackrock",
+   "target": "co_psiquantum",
+   "type": "investment",
+   "strength": 3,
+   "note": "联合领投E轮$10亿(2025-09)",
+   "sources": [
+    "https://www.psiquantum.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_baillie_gifford",
+   "target": "co_psiquantum",
+   "type": "investment",
+   "strength": 2,
+   "note": "联合领投E轮(2025-09)",
+   "sources": [
+    "https://www.psiquantum.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_bpifrance",
+   "target": "co_pasqal",
+   "type": "investment",
+   "strength": 2,
+   "note": "Large Venture参与B轮(2023-01)",
+   "sources": [
+    "https://www.pasqal.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_bpifrance",
+   "target": "co_alicebob",
+   "type": "investment",
+   "strength": 2,
+   "note": "参与B轮(2025-01)",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_eic_fund",
+   "target": "co_pasqal",
+   "type": "investment",
+   "strength": 2,
+   "note": "参与B轮(2023-01)",
+   "sources": [
+    "https://www.pasqal.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_eic_fund",
+   "target": "co_alicebob",
+   "type": "investment",
+   "strength": 2,
+   "note": "参与B轮(2025-01)",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_eic_fund",
+   "target": "co_aqt",
+   "type": "investment",
+   "strength": 2,
+   "note": "资助/投资(据Crunchbase)",
+   "sources": [
+    "https://www.crunchbase.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_waed",
+   "target": "co_pasqal",
+   "type": "investment",
+   "strength": 2,
+   "note": "参与B轮(2023-01)",
+   "sources": [
+    "https://www.pasqal.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_softbank",
+   "target": "co_quera",
+   "type": "investment",
+   "strength": 2,
+   "note": "参与$2.3亿融资(2025-02)",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_google",
+   "target": "co_quera",
+   "type": "investment",
+   "strength": 2,
+   "note": "战略投资(2024-10/2025-02)",
+   "sources": [
+    "https://finance.yahoo.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_nea",
+   "target": "co_ionq",
+   "type": "investment",
+   "strength": 2,
+   "note": "早期投资",
+   "sources": [
+    "https://www.ionq.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_octopus",
+   "target": "co_qmotion",
+   "type": "investment",
+   "strength": 2,
+   "note": "领投A轮$980万(2020-05)",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_ngp",
+   "target": "co_qmotion",
+   "type": "investment",
+   "strength": 2,
+   "note": "领投B轮£4200万(2022)",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_sony_fund",
+   "target": "co_qmotion",
+   "type": "investment",
+   "strength": 2,
+   "note": "参与英国最大量子轮(2023)",
+   "sources": [
+    "https://www.einpresswire.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_psg",
+   "target": "co_qm",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投C轮$1.7亿(2025-02)",
+   "sources": [
+    "https://techfundingnews.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_world_fund",
+   "target": "co_iqm",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投B轮$1.28亿(2022-07)",
+   "sources": [
+    "https://meetiqm.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_draper_esprit",
+   "target": "co_riverlane",
+   "type": "investment",
+   "strength": 1,
+   "note": "早期投资",
+   "sources": [
+    "https://cryptorank.io"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_cisco",
+   "target": "co_aliro",
+   "type": "investment",
+   "strength": 2,
+   "note": "战略投资(2023-10)",
+   "sources": [
+    "https://www.sec.gov"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_main_sequence",
+   "target": "co_qctrl",
+   "type": "investment",
+   "strength": 3,
+   "note": "早期投资方",
+   "sources": [
+    "https://q-ctrl.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_blackbird",
+   "target": "co_qctrl",
+   "type": "investment",
+   "strength": 2,
+   "note": "早期支持者",
+   "sources": [
+    "https://q-ctrl.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_salesforce",
+   "target": "co_qctrl",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投B轮扩展约$2740万(2023-02)",
+   "sources": [
+    "https://q-ctrl.com",
+    "https://www.smartcompany.com.au"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_airbus_v",
+   "target": "co_qctrl",
+   "type": "investment",
+   "strength": 2,
+   "note": "参投B轮扩展(2023-02)",
+   "sources": [
+    "https://q-ctrl.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_planet_first",
+   "target": "co_photonic",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投C轮首关约CAD$1.8亿(2026-01)",
+   "sources": [
+    "https://optics.org"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_ffc",
+   "target": "co_alicebob",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投B轮€1亿(2025-01)",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_avp",
+   "target": "co_alicebob",
+   "type": "investment",
+   "strength": 2,
+   "note": "联合领投B轮(2025-01)",
+   "sources": [
+    "https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_honeywell",
+   "target": "co_quantinuum",
+   "type": "investment",
+   "strength": 3,
+   "note": "控股股东(2021年合并后)",
+   "sources": [
+    "https://app.thequantuminsider.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_ciif",
+   "target": "co_originq",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投A轮数亿元(2021-01)",
+   "sources": [
+    "https://news.mydrivers.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_szvc",
+   "target": "co_originq",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投B轮近10亿元(2022-07)",
+   "sources": [
+    "https://www.cls.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_chinamobile",
+   "target": "co_zhongke",
+   "type": "investment",
+   "strength": 3,
+   "note": "独家战略投资近亿元(2026-01)",
+   "sources": [
+    "http://www.qtc.com.cn",
+    "https://www.sina.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_cicc_cap",
+   "target": "co_spinq",
+   "type": "investment",
+   "strength": 2,
+   "note": "参与D轮10亿元(2026-06)",
+   "sources": [
+    "http://c.zhineng.com.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_shengshi",
+   "target": "co_turingq",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投亿元战略轮(2025-07)",
+   "sources": [
+    "https://finance.sina.com.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_szhg",
+   "target": "co_spinq",
+   "type": "investment",
+   "strength": 2,
+   "note": "战略融资数千万元(2020-12)",
+   "sources": [
+    "http://c.zhineng.com.cn"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_forgepoint",
+   "target": "co_multiverse",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投C轮$5.7亿(2026报道,估值$17亿)",
+   "sources": [
+    "https://www.hpcwire.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_uvc",
+   "target": "co_planqc",
+   "type": "investment",
+   "strength": 2,
+   "note": "种子轮投资",
+   "sources": [
+    "https://thequantuminsider.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_2xn",
+   "target": "co_sparrow",
+   "type": "investment",
+   "strength": 3,
+   "note": "领投种子轮€410万",
+   "sources": [
+    "https://sparrowquantum.com"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_churchill",
+   "target": "co_infleqtion",
+   "type": "investment",
+   "strength": 2,
+   "note": "SPAC合并推进中(估值$18亿)",
+   "sources": [
+    "https://www.stocktitan.net"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_telstra",
+   "target": "co_sqc",
+   "type": "investment",
+   "strength": 2,
+   "note": "创始股东(2017年分拆时)",
+   "sources": [
+    "https://www.theaustralian.com.au"
+   ],
+   "uncertain": false
+  },
+  {
+   "source": "inv_cba",
+   "target": "co_sqc",
+   "type": "investment",
+   "strength": 2,
+   "note": "创始股东(2017年分拆时)",
+   "sources": [
+    "https://www.theaustralian.com.au"
+   ],
+   "uncertain": false
+  }
+ ]
+}
