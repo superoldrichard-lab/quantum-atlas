@@ -1,0 +1,273 @@
+﻿source,source_name,target,target_name,关系类型,关系中文,强度,说明,不确定,来源
+sch_preskill,约翰·普雷斯基尔,uni_caltech,加州理工学院,affiliation,任职任教,3,任职任教,,
+sch_lukin,米哈伊尔·卢金,uni_harvard,哈佛大学,affiliation,任职任教,3,任职任教,,
+sch_greiner,马库斯·格雷纳,uni_harvard,哈佛大学,affiliation,任职任教,3,任职任教,,
+sch_vuletic,弗拉丹·武莱蒂奇,uni_mit,麻省理工学院,affiliation,任职任教,3,任职任教,,
+sch_shor,彼得·秀尔,uni_mit,麻省理工学院,affiliation,任职任教,3,任职任教,,
+sch_chuang,艾萨克·庄,uni_mit,麻省理工学院,affiliation,任职任教,3,任职任教,,
+sch_awschalom,大卫·奥沙洛姆,uni_uchicago,芝加哥大学,affiliation,任职任教,3,任职任教,,
+sch_schoelkopf,罗伯特·舍尔科普夫,uni_yale,耶鲁大学,affiliation,任职任教,3,超导量子比特电路QED开创者之一,,
+sch_devoret,米歇尔·德沃雷,uni_yale,耶鲁大学,affiliation,任职任教,3,现任Google Quantum AI量子硬件首席科学家(2025-),,
+sch_monroe,克里斯·门罗,uni_duke,杜克大学,affiliation,任职任教,3,曾长期任职马里兰大学JQI;IonQ首席科学家至2023,,
+sch_kim,金俊相,uni_duke,杜克大学,affiliation,任职任教,3,任职任教,,
+sch_martinis,约翰·马蒂尼斯,uni_ucsb,加州大学圣塔芭芭拉分校,affiliation,任职任教,3,任职任教,,
+sch_saffman,马克·萨夫曼,uni_uwmadison,威斯康星大学麦迪逊分校,affiliation,任职任教,3,任职任教,,
+sch_walker,撒迪厄斯·沃克,uni_uwmadison,威斯康星大学麦迪逊分校,affiliation,任职任教,3,任职任教,,
+sch_narang,普里内哈·纳兰,uni_ucla,加州大学洛杉矶分校,affiliation,任职任教,3,曾任哈佛大学工程与应用科学学院助理教授,,
+sch_deleon,娜塔莉·德莱昂,uni_princeton,普林斯顿大学,affiliation,任职任教,3,任职任教,,
+sch_thompson,杰夫·汤普森,uni_princeton,普林斯顿大学,affiliation,任职任教,3,任职任教,,
+sch_vuckovic,耶莱娜·武奇科维奇,uni_stanford,斯坦福大学,affiliation,任职任教,3,任职任教,,
+sch_hafezi,穆罕默德·哈菲兹,uni_umaryland,马里兰大学(帕克),affiliation,任职任教,3,任职任教,,
+sch_linke,诺贝特·林克,uni_umaryland,马里兰大学(帕克),affiliation,任职任教,3,曾任门罗组博士后/实验室负责人,,
+sch_laflamme,雷蒙德·拉弗拉姆,uni_waterloo,滑铁卢大学,affiliation,任职任教,3,2025年逝世,,
+sch_mosca,米凯莱·莫斯卡,uni_waterloo,滑铁卢大学,affiliation,任职任教,3,IQC联合创始人;evolutionQ与softwareQ联合创始人,,
+sch_aspuru,阿兰·阿斯普鲁-古齐克,uni_utoronto,多伦多大学,affiliation,任职任教,3,创办Zapata时任哈佛大学化学与化学生物学教授,,
+sch_hawking,斯蒂芬·霍金,uni_cambridge,剑桥大学,affiliation,任职任教,3,拉弗拉姆的博士导师;此处仅作师承网络节点,,
+sch_aspect,阿兰·阿斯佩,uni_institutoptique,巴黎高等光学研究院(含CNRS联合实验室),affiliation,任职任教,3,任职任教,,
+sch_browaeys,安托万·布罗韦,uni_institutoptique,巴黎高等光学研究院(含CNRS联合实验室),affiliation,任职任教,3,任职任教,,
+sch_lahaye,蒂埃里·拉哈耶,uni_institutoptique,巴黎高等光学研究院(含CNRS联合实验室),affiliation,任职任教,3,任职任教,,
+sch_senellart,帕斯卡莱·瑟内拉尔,uni_c2n,法国国家科学研究中心 C2N(巴黎-萨克雷),affiliation,任职任教,3,CNRS研究主任;半导体量子点单光子源开创者之一,,
+sch_lanco,洛伊克·朗科,uni_c2n,法国国家科学研究中心 C2N(巴黎-萨克雷),affiliation,任职任教,3,任职任教,,
+sch_leghtas,扎基·勒格塔斯,uni_ens,巴黎高等师范学院(LPENS),affiliation,任职任教,3,任职任教,,
+sch_zoller,彼得·措勒,uni_innsbruck,因斯布鲁克大学,affiliation,任职任教,3,任职任教,,
+sch_blatt,莱纳·布拉特,uni_innsbruck,因斯布鲁克大学,affiliation,任职任教,3,任职任教,,
+sch_monz,托马斯·蒙茨,uni_innsbruck,因斯布鲁克大学,affiliation,任职任教,3,任职任教,,
+sch_cirac,伊格纳西奥·西拉克,uni_mpq,马克斯·普朗克量子光学研究所,affiliation,任职任教,3,任职任教,,
+sch_bloch,伊曼纽尔·布洛赫,uni_mpq,马克斯·普朗克量子光学研究所,affiliation,任职任教,3,任职任教,,
+sch_wallraff,安德烈亚斯·瓦尔夫拉夫,uni_eth,苏黎世联邦理工学院,affiliation,任职任教,3,ETH量子中心主任;ETH-PSI量子计算中心共同负责人,,
+sch_home,乔纳森·霍姆,uni_eth,苏黎世联邦理工学院,affiliation,任职任教,3,任职任教,,
+sch_hanson,罗纳德·汉森,uni_tudelft,代尔夫特理工大学,affiliation,任职任教,3,任职任教,,
+sch_vandersypen,利文·范德西彭,uni_tudelft,代尔夫特理工大学,affiliation,任职任教,3,任职任教,,
+sch_wehner,斯蒂芬妮·韦纳,uni_tudelft,代尔夫特理工大学,affiliation,任职任教,3,2018年Science量子互联网路线图共同作者,,
+sch_terhal,芭芭拉·特哈尔,uni_tudelft,代尔夫特理工大学,affiliation,任职任教,3,兼任于利希研究中心JARA量子信息研究所教授,,
+sch_morton,约翰·莫顿,uni_ucl,伦敦大学学院,affiliation,任职任教,3,任职任教,,
+sch_benjamin,西蒙·本杰明,uni_oxford,牛津大学,affiliation,任职任教,3,任职任教,,
+sch_walmsley,伊恩·沃姆斯利,uni_oxford,牛津大学,affiliation,任职任教,3,创办ORCA时任帝国理工学院教务长兼实验物理讲席教授,,
+sch_cubitt,托比·丘比特,uni_ucl,伦敦大学学院,affiliation,任职任教,3,任职任教,,
+sch_montanaro,阿什利·蒙塔纳罗,uni_bristol,布里斯托大学,affiliation,任职任教,3,任职任教,,
+sch_gisin,尼古拉·吉桑,uni_geneva,日内瓦大学(应用物理组GAP),affiliation,任职任教,3,量子密码学先驱;ID Quantique创始人,,
+sch_lodahl,彼得·洛达尔,uni_copenhagen,哥本哈根大学(尼尔斯·玻尔研究所),affiliation,任职任教,3,任职任教,,
+sch_mottonen,米科·莫托宁,uni_aalto,阿尔托大学,affiliation,任职任教,3,任职任教,,
+sch_ekert,阿图尔·埃克特,uni_oxford,牛津大学,affiliation,任职任教,3,CQT创始所长;兼NUS李光前百年讲席教授;E91协议提出者,,
+sch_ekert,阿图尔·埃克特,uni_nus,新加坡国立大学(量子技术中心CQT),affiliation,任职任教,2,新加坡国立大学CQT创始所长,,
+sch_terhal,芭芭拉·特哈尔,uni_julich,于利希研究中心(JARA量子信息研究所),affiliation,任职任教,2,兼任于利希研究中心JARA量子信息研究所教授,,
+sch_latorre,何塞·伊格纳西奥·拉托雷,uni_uab,巴塞罗那自治大学(联合BSC/IFAE),affiliation,任职任教,3,巴塞罗那量子生态关键人物,,
+sch_wunderlich,克里斯托夫·温德利希,uni_siegen,锡根大学,affiliation,任职任教,3,MAGIC离子阱方案提出者,,
+sch_pan,潘建伟,uni_ustc,中国科学技术大学,affiliation,任职任教,3,墨子号量子卫星首席科学家,,
+sch_lu,陆朝阳,uni_ustc,中国科学技术大学,affiliation,任职任教,3,九章系列光量子计算核心人物,,
+sch_guo_gc,郭光灿,uni_ustc,中国科学技术大学,affiliation,任职任教,3,任职任教,,
+sch_guo_gp,郭国平,uni_ustc,中国科学技术大学,affiliation,任职任教,3,任职任教,,
+sch_zhu_xb,朱晓波,uni_ustc,中国科学技术大学,affiliation,任职任教,3,祖冲之号超导量子计算核心成员,,
+sch_wang_hh,王浩华,uni_zhejiang,浙江大学,affiliation,任职任教,3,祖冲之号系列合作者,,
+sch_du,杜江峰,uni_ustc,中国科学技术大学,affiliation,任职任教,3,曾任中科大副校长、浙江大学校长(2022-12~2025-02);现任教育部副部长(2025-02起),,
+sch_duan,段路明,uni_tsinghua,清华大学,affiliation,任职任教,3,任职任教,,
+sch_jin_xm,金贤敏,uni_sjtu,上海交通大学,affiliation,任职任教,3,任职任教,,
+sch_cui_zb,曾蓓,uni_hkust,香港科技大学,affiliation,任职任教,3,量旋科技首席科学家,,
+sch_nakamura,中村泰信,uni_riken,理化学研究所(量子计算研究中心RQC),affiliation,任职任教,3,1999年在NEC实现首个超导量子比特相干操控;RQC所长,,
+sch_furusawa,古泽明,uni_utokyo,东京大学,affiliation,任职任教,3,任职任教,,
+sch_fujii,藤井圭佑,uni_utokyo,东京大学,affiliation,任职任教,3,任职任教,,
+sch_nakamura,中村泰信,uni_utokyo,东京大学,affiliation,任职任教,2,兼东京大学教职(据公开资料),,
+sch_ling,林水德(Alexander Ling),uni_nus,新加坡国立大学(量子技术中心CQT),affiliation,任职任教,3,星载量子纠缠光源SPEQS项目负责人,,
+sch_simmons,米歇尔·西蒙斯,uni_unsw,新南威尔士大学,affiliation,任职任教,3,任职任教,,
+sch_dzurak,安德鲁·祖拉克,uni_unsw,新南威尔士大学,affiliation,任职任教,3,2014年硅CMOS量子比特实现者之一,,
+sch_biercuk,迈克尔·比尔库克,uni_usydney,悉尼大学,affiliation,任职任教,3,量子控制实验室负责人,,
+sch_doherty,马库斯·多尔蒂,uni_anu,澳大利亚国立大学,affiliation,任职任教,3,创立Quantum Brilliance时任职于ANU,,
+sch_schoelkopf,罗伯特·舍尔科普夫,stu_rigetti,查德·里盖蒂,phd_advisor,师承指导,2,师承指导,,
+sch_lukin,米哈伊尔·卢金,stu_bluvstein,多列夫·布卢夫斯坦,phd_advisor,师承指导,2,师承指导,,
+sch_leghtas,扎基·勒格塔斯,stu_peronnin,泰奥·佩罗南,phd_advisor,师承指导,2,课题组出身/指导关系(见不确定项),,
+sch_leghtas,扎基·勒格塔斯,stu_lescanne,拉斐尔·莱斯坎,phd_advisor,师承指导,2,课题组出身/指导关系(见不确定项),,
+uni_umaryland,马里兰大学(帕克),co_ionq,IonQ,incubated,孵化,2,技术授权自马里兰大学与杜克大学;另与杜克关联,,
+sch_monroe,克里斯·门罗,co_ionq,IonQ,founded,创办,3,联合创始人(首席科学家至2023),,
+sch_kim,金俊相,co_ionq,IonQ,founded,创办,3,联合创始人(CTO),,
+uni_duke,杜克大学,co_ionq,IonQ,incubated,孵化,2,技术授权自马里兰大学与杜克大学,,
+stu_rigetti,查德·里盖蒂,co_rigetti,Rigetti Computing,founded,创办,3,创始人,,
+sch_schoelkopf,罗伯特·舍尔科普夫,co_qci,Quantum Circuits Inc.,founded,创办,3,联合创始人兼首席科学家,,
+uni_harvard,哈佛大学,co_quera,QuEra Computing,incubated,孵化,2,源自哈佛/MIT实验室,,
+sch_lukin,米哈伊尔·卢金,co_quera,QuEra Computing,founded,创办,3,学术共同创始人,,
+sch_greiner,马库斯·格雷纳,co_quera,QuEra Computing,founded,创办,3,学术共同创始人,,
+sch_vuletic,弗拉丹·武莱蒂奇,co_quera,QuEra Computing,founded,创办,3,学术共同创始人,,
+uni_uwmadison,威斯康星大学麦迪逊分校,co_infleqtion,Infleqtion(原ColdQuanta),incubated,孵化,2,由威斯康星大学麦迪逊分校教授创办,,
+sch_saffman,马克·萨夫曼,co_infleqtion,Infleqtion(原ColdQuanta),founded,创办,3,联合创始人(现任量子信息首席科学家),,
+sch_walker,撒迪厄斯·沃克,co_infleqtion,Infleqtion(原ColdQuanta),founded,创办,3,联合创始人,,
+uni_ucla,加州大学洛杉矶分校,co_aliro,Aliro Quantum,incubated,孵化,1,创始人Narang学术渊源哈佛/UCLA;公司常被称为哈佛衍生,,
+sch_narang,普里内哈·纳兰,co_aliro,Aliro Quantum,founded,创办,3,联合创始人兼CTO,,
+sch_aspuru,阿兰·阿斯普鲁-古齐克,co_zapata,Zapata AI,founded,创办,3,联合创始人(时任哈佛教授),,
+sch_martinis,约翰·马蒂尼斯,co_qolab,Qolab,founded,创办,3,联合创始人兼CTO,,
+uni_sherbrooke,舍布鲁克大学,co_nordquantique,Nord Quantique,incubated,孵化,3,Institut quantique分拆,,
+stu_st_jean,菲利普·圣让,co_nordquantique,Nord Quantique,founded,创办,3,联合创始人(CEO),,
+stu_camlmyre,朱利安·卡米朗·勒米尔,co_nordquantique,Nord Quantique,founded,创办,3,联合创始人(总裁/CTO),,
+sch_mosca,米凯莱·莫斯卡,co_evolutionq,evolutionQ,founded,创办,3,联合创始人兼CEO,,
+sch_brierley,史蒂夫·布里尔利,co_riverlane,Riverlane,founded,创办,3,创始人兼CEO,,
+uni_ucl,伦敦大学学院,co_phasecraft,Phasecraft,incubated,孵化,2,UCL与布里斯托大学分拆,,
+sch_cubitt,托比·丘比特,co_phasecraft,Phasecraft,founded,创办,3,联合创始人(CTO/首席科学官),,
+sch_montanaro,阿什利·蒙塔纳罗,co_phasecraft,Phasecraft,founded,创办,3,联合创始人(CEO),,
+sch_morton,约翰·莫顿,co_phasecraft,Phasecraft,founded,创办,3,联合创始人,,
+uni_ucl,伦敦大学学院,co_qmotion,Quantum Motion,incubated,孵化,3,UCL与牛津大学联合分拆,,
+sch_morton,约翰·莫顿,co_qmotion,Quantum Motion,founded,创办,3,联合创始人,,
+sch_benjamin,西蒙·本杰明,co_qmotion,Quantum Motion,founded,创办,3,联合创始人,,
+uni_imperial,帝国理工学院,co_orca,ORCA Computing,incubated,孵化,3,源自帝国理工学院沃姆斯利团队(创始人现任职牛津),,
+sch_walmsley,伊恩·沃姆斯利,co_orca,ORCA Computing,founded,创办,3,联合创始人兼董事长,,
+uni_oxford,牛津大学,co_oxfordionics,Oxford Ionics,incubated,孵化,3,牛津大学分拆(Oxford Science Enterprises早期支持),,
+uni_institutoptique,巴黎高等光学研究院(含CNRS联合实验室),co_pasqal,Pasqal,incubated,孵化,3,巴黎高等光学研究院(与CNRS关联)分拆,,
+sch_aspect,阿兰·阿斯佩,co_pasqal,Pasqal,founded,创办,3,联合创始人,,
+sch_browaeys,安托万·布罗韦,co_pasqal,Pasqal,founded,创办,3,联合创始人,,
+sch_lahaye,蒂埃里·拉哈耶,co_pasqal,Pasqal,founded,创办,3,联合创始人,,
+uni_c2n,法国国家科学研究中心 C2N(巴黎-萨克雷),co_quandela,Quandela,incubated,孵化,3,CNRS C2N实验室分拆,,
+sch_senellart,帕斯卡莱·瑟内拉尔,co_quandela,Quandela,founded,创办,3,联合创始人兼科学顾问,,
+sch_lanco,洛伊克·朗科,co_quandela,Quandela,founded,创办,3,联合创始人,,
+uni_ens,巴黎高等师范学院(LPENS),co_alicebob,Alice & Bob,incubated,孵化,2,源自ENS LPENS Leghtas课题组猫比特研究,,
+stu_peronnin,泰奥·佩罗南,co_alicebob,Alice & Bob,founded,创办,3,联合创始人(CEO),,
+stu_lescanne,拉斐尔·莱斯坎,co_alicebob,Alice & Bob,founded,创办,3,联合创始人,,
+uni_ens,巴黎高等师范学院(LPENS),co_c12,C12 Quantum Electronics,incubated,孵化,2,CNRS/LPENS生态分拆(据LPENS报道),,
+uni_mpq,马克斯·普朗克量子光学研究所,co_planqc,planqc,incubated,孵化,2,慕尼黑量子谷(MQV)首家分拆;创始团队出自MPQ/LMU布洛赫组,,
+uni_siegen,锡根大学,co_eleqtron,eleQtron,incubated,孵化,3,锡根大学研究分拆,,
+sch_wunderlich,克里斯托夫·温德利希,co_eleqtron,eleQtron,founded,创办,3,创始人(2026年退出日常经营),,
+uni_innsbruck,因斯布鲁克大学,co_aqt,Alpine Quantum Technologies (AQT),incubated,孵化,3,因斯布鲁克大学分拆,,
+sch_blatt,莱纳·布拉特,co_aqt,Alpine Quantum Technologies (AQT),founded,创办,3,联合创始人,,
+sch_monz,托马斯·蒙茨,co_aqt,Alpine Quantum Technologies (AQT),founded,创办,3,联合创始人(CEO),,
+sch_zoller,彼得·措勒,co_aqt,Alpine Quantum Technologies (AQT),founded,创办,3,联合创始人,,
+uni_geneva,日内瓦大学(应用物理组GAP),co_idq,ID Quantique,incubated,孵化,3,日内瓦大学应用物理组(GAP)分拆,,
+sch_gisin,尼古拉·吉桑,co_idq,ID Quantique,founded,创办,3,创始人,,
+uni_tudelft,代尔夫特理工大学,co_qblox,Qblox,incubated,孵化,2,TU Delft分拆生态,,
+uni_tudelft,代尔夫特理工大学,co_quantware,QuantWare,incubated,孵化,2,TU Delft分拆生态,,
+uni_tudelft,代尔夫特理工大学,co_qphox,QphoX,incubated,孵化,2,TU Delft分拆生态,,
+uni_tudelft,代尔夫特理工大学,co_singlequantum,Single Quantum,incubated,孵化,2,TU Delft分拆生态,,
+uni_aalto,阿尔托大学,co_iqm,IQM Quantum Computers,incubated,孵化,3,阿尔托大学与VTT联合分拆,,
+sch_mottonen,米科·莫托宁,co_iqm,IQM Quantum Computers,founded,创办,3,学术联合创始人(首席科学家),,
+stu_goetz,扬·格茨,co_iqm,IQM Quantum Computers,founded,创办,3,联合创始人(CEO),,
+stu_tan,陈坤延(Kuan Yen Tan),co_iqm,IQM Quantum Computers,founded,创办,3,联合创始人,,
+uni_copenhagen,哥本哈根大学(尼尔斯·玻尔研究所),co_sparrow,Sparrow Quantum,incubated,孵化,3,尼尔斯·玻尔研究所分拆,,
+sch_lodahl,彼得·洛达尔,co_sparrow,Sparrow Quantum,founded,创办,3,创始人(首席量子官),,
+uni_uab,巴塞罗那自治大学(联合BSC/IFAE),co_qilimanjaro,Qilimanjaro Quantum Tech,incubated,孵化,3,BSC/IFAE/UAB联合分拆,,
+sch_forn_diaz,波尔·福恩-迪亚斯,co_qilimanjaro,Qilimanjaro Quantum Tech,founded,创办,3,科学创始人,,
+sch_garcia_saez,阿图尔·加西亚-萨伊斯,co_qilimanjaro,Qilimanjaro Quantum Tech,founded,创办,3,科学创始人,,
+uni_ustc,中国科学技术大学,co_qtek,科大国盾量子,incubated,孵化,3,中国科学技术大学孵化,,
+sch_pan,潘建伟,co_qtek,科大国盾量子,founded,创办,3,联合创始人,,
+sch_peng,彭承志,co_qtek,科大国盾量子,founded,创办,3,联合创办人之一,,
+uni_ustc,中国科学技术大学,co_originq,本源量子,incubated,孵化,3,技术起源中科院量子信息重点实验室(中科大),,
+sch_guo_gc,郭光灿,co_originq,本源量子,founded,创办,3,领衔创立,,
+sch_guo_gp,郭国平,co_originq,本源量子,founded,创办,3,领衔创立,,
+uni_sjtu,上海交通大学,co_turingq,图灵量子,incubated,孵化,3,上海交通大学孵化(集成量子信息技术研究中心),,
+sch_jin_xm,金贤敏,co_turingq,图灵量子,founded,创办,3,创始人,,
+uni_tsinghua,清华大学,co_huaq,华翊量子,incubated,孵化,3,脱胎于清华大学量子信息中心,,
+sch_duan,段路明,co_huaq,华翊量子,founded,创办,3,创始人,,
+sch_fujii,藤井圭佑,co_qunasys,QunaSys,founded,创办,3,联合创始人,,
+uni_nus,新加坡国立大学(量子技术中心CQT),co_speqtral,SpeQtral,incubated,孵化,3,新加坡国立大学CQT分拆,,
+sch_ling,林水德(Alexander Ling),co_speqtral,SpeQtral,founded,创办,3,创始人,,
+uni_unsw,新南威尔士大学,co_sqc,Silicon Quantum Computing,incubated,孵化,3,UNSW分拆,,
+sch_simmons,米歇尔·西蒙斯,co_sqc,Silicon Quantum Computing,founded,创办,3,创始人兼CEO,,
+uni_unsw,新南威尔士大学,co_diraq,Diraq,incubated,孵化,3,UNSW分拆,,
+sch_dzurak,安德鲁·祖拉克,co_diraq,Diraq,founded,创办,3,创始人,,
+uni_usydney,悉尼大学,co_qctrl,Q-CTRL,incubated,孵化,3,悉尼大学分拆,,
+sch_biercuk,迈克尔·比尔库克,co_qctrl,Q-CTRL,founded,创办,3,创始人兼CEO,,
+uni_anu,澳大利亚国立大学,co_qbrilliance,Quantum Brilliance,incubated,孵化,3,ANU分拆(与斯图加特大学有渊源),,
+sch_doherty,马库斯·多尔蒂,co_qbrilliance,Quantum Brilliance,founded,创办,3,联合创始人,,
+sch_zeilinger,安东·泽林格,uni_vienna,维也纳大学,affiliation,任职任教,3,量子隐形传态与贝利不等式实验先驱,,
+sch_peng,彭承志,uni_ustc,中国科学技术大学,affiliation,任职任教,3,中国科大研究员;国盾量子联合创办人之一;墨子号卫星系统总师(据公开报道),,
+sch_pan,潘建伟,sch_lu,陆朝阳,phd_advisor,师承指导,3,师承关系广为报道(中科大博士);本次来源确认长期合作与团队关系,是,https://zqb.cyol.com
+sch_pan,潘建伟,sch_jin_xm,金贤敏,phd_advisor,师承指导,3,"金贤敏曾师从潘建伟院士,博士毕业后赴牛津从事博后研究",,https://finance.sina.com.cn
+sch_zeilinger,安东·泽林格,sch_pan,潘建伟,phd_advisor,师承指导,3,潘建伟1990年代在因斯布鲁克师从泽林格读博,,https://www.fwf.ac.at ; https://ongloballeadership.com
+sch_hawking,斯蒂芬·霍金,sch_laflamme,雷蒙德·拉弗拉姆,phd_advisor,师承指导,3,拉弗拉姆曾是霍金的博士生(后转向量子计算),,https://pic-pac.cap.ca
+sch_monroe,克里斯·门罗,sch_linke,诺贝特·林克,phd_advisor,师承指导,2,博士后指导(时任JQI门罗组),,https://phys.org
+uni_ustc,中国科学技术大学,sch_pan,潘建伟,alumni,培养输送,2,本科/硕士(1996年获硕士学位),,https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm
+uni_ustc,中国科学技术大学,sch_lu,陆朝阳,alumni,培养输送,2,2000年考入中科大本科,,https://zqb.cyol.com
+uni_ustc,中国科学技术大学,sch_du,杜江峰,alumni,培养输送,3,1985年保送入中科大少年班,,https://www.163.com
+uni_innsbruck,因斯布鲁克大学,sch_pan,潘建伟,alumni,培养输送,2,博士学位(因斯布鲁克),,https://ongloballeadership.com
+uni_yale,耶鲁大学,stu_rigetti,查德·里盖蒂,alumni,培养输送,2,博士学位,,https://www.scribd.com
+sch_cui_zb,曾蓓,co_spinq,量旋科技,employment,任职,2,首席科学家,,http://c.zhineng.com.cn
+sch_du,杜江峰,uni_zhejiang,浙江大学,employment,任职,2,"曾任浙江大学校长(2022-12~2025-02,现任教育部副部长)",,https://www.163.com
+sch_cirac,伊格纳西奥·西拉克,sch_bloch,伊曼纽尔·布洛赫,collaboration,联合研究,1,2004年Tonks-Girardeau气体等合作,,https://pubmed.ncbi.nlm.nih.gov/15152247
+sch_wehner,斯蒂芬妮·韦纳,sch_hanson,罗纳德·汉森,collaboration,联合研究,2,2018年Science量子互联网路线图共同作者;三节点量子网络,,https://inspirehep.net
+sch_pan,潘建伟,sch_wang_hh,王浩华,collaboration,联合研究,2,祖冲之号系列超导量子计算合作,,https://xcb.ustc.edu.cn
+sch_pan,潘建伟,sch_zhu_xb,朱晓波,collaboration,联合研究,2,祖冲之号系列超导量子计算合作,,https://xcb.ustc.edu.cn
+sch_pan,潘建伟,sch_lu,陆朝阳,collaboration,联合研究,3,九章系列光量子计算长期合作,,https://zqb.cyol.com
+sch_vazirani,乌梅什·瓦兹拉尼,uni_berkeley,加州大学伯克利分校,affiliation,任职任教,3,伯克利量子计算中心创始主任,,
+sch_harrow,阿拉姆·哈罗,uni_mit,麻省理工学院,affiliation,任职任教,3,HHL算法共同提出者(2009),,
+uni_mit,麻省理工学院,sch_harrow,阿拉姆·哈罗,alumni,培养输送,2,MIT本科(2001)与博士(2005),,https://phys.org
+sch_lloyd,塞思·劳埃德,uni_mit,麻省理工学院,affiliation,任职任教,3,任职任教,,
+sch_oliver,威廉·奥利弗,uni_mit,麻省理工学院,affiliation,任职任教,3,MIT量子工程中心(CQE)与量子计算中心主任,,
+sch_englund,德克·恩格伦德,uni_mit,麻省理工学院,affiliation,任职任教,3,量子光子学实验室负责人;QuEra联合创始人之一,,
+sch_englund,德克·恩格伦德,co_quera,QuEra Computing,founded,创办,2,联合创始人之一(与Lukin/Greiner/Vuletić/Gemelke/Pena),,
+sch_brandao,费尔南多·布兰当,uni_caltech,加州理工学院,affiliation,任职任教,3,Bren理论物理讲席教授;AWS量子计算中心(CQC)联合负责人(停薪留职),,
+sch_jiang,姜梁,uni_uchicago,芝加哥大学,affiliation,任职任教,3,任职任教,,
+sch_bernien,汉内斯·伯尔尼恩,uni_uchicago,芝加哥大学,affiliation,任职任教,3,博士(2014)师从汉森(代尔夫特);哈佛博后(卢金组),,
+sch_hanson,罗纳德·汉森,sch_bernien,汉内斯·伯尔尼恩,phd_advisor,师承指导,3,"博士指导(2014年代尔夫特,金刚石NV免漏洞贝尔实验)",,https://arxiv.org
+sch_girvin,史蒂文·吉尔文,uni_yale,耶鲁大学,affiliation,任职任教,3,电路量子电动力学(Circuit QED)共同发展者,,
+sch_girvin,史蒂文·吉尔文,sch_schoelkopf,罗伯特·舍尔科普夫,collaboration,联合研究,2,2004年起共同发展电路量子电动力学(与Devoret),,https://newquantumera.transistor.fm
+sch_hensinger,温弗里德·亨辛格,uni_sussex,萨塞克斯大学,affiliation,任职任教,3,任职任教,,
+sch_ssimmons,斯蒂芬妮·西蒙斯,uni_sfu,西蒙菲莎大学,affiliation,任职任教,3,Photonic Inc.创始人兼首席量子官;硅T中心色心自旋-光子比特,,
+sch_ballance,克里斯·巴兰斯,uni_oxford,牛津大学,affiliation,任职任教,3,Oxford Ionics联合创始人兼CEO,,
+sch_mitchell,摩根·米切尔,uni_icfo,光子科学研究所,affiliation,任职任教,3,ICREA研究教授;Quside联合创始人,,
+sch_nishimori,西森秀稔,uni_titech,东京工业大学(现东京科学大学),affiliation,任职任教,3,量子退火(Quantum Annealing)方法奠基者之一,,
+sch_yu_dp,俞大鹏,uni_sustech,南方科技大学(深圳国际量子研究院),affiliation,任职任教,3,深圳国际量子研究院(原深圳量子科学与工程研究院)院长,,
+sch_xu_fh,徐飞虎,uni_ustc,中国科学技术大学,affiliation,任职任教,3,单光子成像与量子通信(200公里单光子三维成像),,
+sch_pan,潘建伟,sch_xu_fh,徐飞虎,collaboration,联合研究,2,远距离单光子三维成像(>200公里)等合作,,https://i.ifeng.com
+sch_jeong,郑炫锡,uni_snu,首尔国立大学,affiliation,任职任教,3,宏观量子叠加与量子资源理论研究,,
+sch_tsai,蔡兆申,uni_tus,东京理科大学,affiliation,任职任教,3,1999年与中村泰信共同实现首个超导量子比特(NEC),,
+sch_tsai,蔡兆申,uni_riken,理化学研究所(量子计算研究中心RQC),affiliation,任职任教,2,RIKEN宏观量子相干团队,,
+sch_nakamura,中村泰信,sch_tsai,蔡兆申,collaboration,联合研究,3,"1999年首个超导量子比特相干操控(NEC,发表于Nature)",,https://www.technologyreview.com ; https://www.riken.jp/en/about/people/6946/index.html
+sch_lukin,米哈伊尔·卢金,stu_keesling,亚历克斯·基斯林,phd_advisor,师承指导,2,师承指导,,
+stu_keesling,亚历克斯·基斯林,co_quera,QuEra Computing,founded,创办,2,联合创始人兼首任CEO(后转任他职),,
+uni_sussex,萨塞克斯大学,co_universalquantum,Universal Quantum,incubated,孵化,3,萨塞克斯大学分拆,,
+sch_hensinger,温弗里德·亨辛格,co_universalquantum,Universal Quantum,founded,创办,3,联合创始人,,
+stu_weidt,塞巴斯蒂安·维特,co_universalquantum,Universal Quantum,founded,创办,3,联合创始人(CEO),,
+uni_sfu,西蒙菲莎大学,co_photonic,Photonic Inc.,incubated,孵化,2,创始人西蒙菲莎大学教授;公司常被称为SFU衍生,,
+sch_ssimmons,斯蒂芬妮·西蒙斯,co_photonic,Photonic Inc.,founded,创办,3,创始人(首席量子官),,
+sch_orus,罗曼·奥鲁斯,co_multiverse,Multiverse Computing,founded,创办,3,联合创始人(首席科学官),,
+uni_icfo,光子科学研究所,co_quside,Quside,incubated,孵化,3,ICFO分拆;与ICFO共建联合实验室,,
+stu_abellan,卡洛斯·阿贝连,co_quside,Quside,founded,创办,3,联合创始人(CEO),,
+sch_mitchell,摩根·米切尔,co_quside,Quside,founded,创办,3,联合创始人,,
+uni_tudelft,代尔夫特理工大学,co_oqs,Orange Quantum Systems,incubated,孵化,3,QuTech与TNO联合分拆,,
+uni_tudelft,代尔夫特理工大学,co_delftcircuits,Delft Circuits,incubated,孵化,1,代尔夫特/QuTech生态分拆(生态报道),,
+uni_cas_pma,中科院精密测量科学与技术创新研究院,co_zhongke,中科酷原,incubated,孵化,3,脱胎于中科院精密测量科学与技术创新研究院,,
+uni_nus,新加坡国立大学(量子技术中心CQT),co_atomionics,Atomionics,incubated,孵化,1,技术根植于CQT/NUS生态,,
+uni_titech,东京工业大学(现东京科学大学),co_jij,Jij,incubated,孵化,2,源自西森秀稔实验室(量子退火奠基者),,
+uni_geneva,日内瓦大学(应用物理组GAP),co_qemotion,Quantum eMotion,incubated,孵化,1,QRNG技术源于日内瓦大学应用物理组(GAP)光子学研究,,
+sch_ballance,克里斯·巴兰斯,co_oxfordionics,Oxford Ionics,founded,创办,3,联合创始人兼CEO;被IonQ收购后留任,,
+stu_harty,汤姆·哈蒂,co_oxfordionics,Oxford Ionics,founded,创办,3,联合创始人兼CTO;被IonQ收购后留任,,
+inv_quantonation,Quantonation,co_pasqal,Pasqal,investment,投资,2,持续投资方(2023-01报道),,https://www.pasqal.com ; https://www.prnewswire.com
+inv_quantonation,Quantonation,co_quandela,Quandela,investment,投资,2,领投€1500万A轮(2021-11);2020年与Bpifrance早期投资,,https://www.quantonation.com
+inv_quantonation,Quantonation,co_alicebob,Alice & Bob,investment,投资,2,投资组合(据Dealroom),,https://www.quantonation.com
+inv_quantonation,Quantonation,co_c12,C12 Quantum Electronics,investment,投资,2,投资组合(据Dealroom),,https://www.quantonation.com
+inv_quantonation,Quantonation,co_planqc,planqc,investment,投资,2,参与投资(2024-07报道),,https://thequantuminsider.com
+inv_quantonation,Quantonation,co_diraq,Diraq,investment,投资,2,Quantonation II早期投资,,https://www.quantonation.com
+inv_temasek,淡马锡,co_pasqal,Pasqal,investment,投资,3,领投B轮€1亿(2023-01),,https://www.pasqal.com
+inv_temasek,淡马锡,co_psiquantum,PsiQuantum,investment,投资,2,联合领投E轮$10亿(2025-09),,https://www.psiquantum.com
+inv_blackrock,贝莱德,co_psiquantum,PsiQuantum,investment,投资,3,联合领投E轮$10亿(2025-09),,https://www.psiquantum.com
+inv_baillie_gifford,Baillie Gifford,co_psiquantum,PsiQuantum,investment,投资,2,联合领投E轮(2025-09),,https://www.psiquantum.com
+inv_bpifrance,法国国家投资银行,co_pasqal,Pasqal,investment,投资,2,Large Venture参与B轮(2023-01),,https://www.pasqal.com
+inv_bpifrance,法国国家投资银行,co_alicebob,Alice & Bob,investment,投资,2,参与B轮(2025-01),,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/
+inv_eic_fund,欧洲创新理事会基金,co_pasqal,Pasqal,investment,投资,2,参与B轮(2023-01),,https://www.pasqal.com
+inv_eic_fund,欧洲创新理事会基金,co_alicebob,Alice & Bob,investment,投资,2,参与B轮(2025-01),,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/
+inv_eic_fund,欧洲创新理事会基金,co_aqt,Alpine Quantum Technologies (AQT),investment,投资,2,资助/投资(据Crunchbase),,https://www.crunchbase.com
+inv_waed,Wa'ed Ventures,co_pasqal,Pasqal,investment,投资,2,参与B轮(2023-01),,https://www.pasqal.com
+inv_softbank,软银,co_quera,QuEra Computing,investment,投资,2,参与$2.3亿融资(2025-02),,https://finance.yahoo.com
+inv_google,Google(Alphabet),co_quera,QuEra Computing,investment,投资,2,战略投资(2024-10/2025-02),,https://finance.yahoo.com
+inv_nea,恩颐投资,co_ionq,IonQ,investment,投资,2,早期投资,,https://www.ionq.com
+inv_octopus,Octopus Ventures,co_qmotion,Quantum Motion,investment,投资,2,领投A轮$980万(2020-05),,https://www.einpresswire.com
+inv_ngp,NGP Capital,co_qmotion,Quantum Motion,investment,投资,2,领投B轮£4200万(2022),,https://www.einpresswire.com
+inv_sony_fund,索尼创新基金,co_qmotion,Quantum Motion,investment,投资,2,参与英国最大量子轮(2023),,https://www.einpresswire.com
+inv_psg,PSG Equity,co_qm,Quantum Machines,investment,投资,3,领投C轮$1.7亿(2025-02),,https://techfundingnews.com
+inv_world_fund,World Fund,co_iqm,IQM Quantum Computers,investment,投资,3,领投B轮$1.28亿(2022-07),,https://meetiqm.com
+inv_draper_esprit,Draper Esprit,co_riverlane,Riverlane,investment,投资,1,早期投资,,https://cryptorank.io
+inv_cisco,思科投资,co_aliro,Aliro Quantum,investment,投资,2,战略投资(2023-10),,https://www.sec.gov
+inv_main_sequence,Main Sequence Ventures,co_qctrl,Q-CTRL,investment,投资,3,早期投资方,,https://q-ctrl.com
+inv_blackbird,Blackbird,co_qctrl,Q-CTRL,investment,投资,2,早期支持者,,https://q-ctrl.com
+inv_salesforce,Salesforce Ventures,co_qctrl,Q-CTRL,investment,投资,3,领投B轮扩展约$2740万(2023-02),,https://q-ctrl.com ; https://www.smartcompany.com.au
+inv_airbus_v,Airbus Ventures,co_qctrl,Q-CTRL,investment,投资,2,参投B轮扩展(2023-02),,https://q-ctrl.com
+inv_planet_first,Planet First Partners,co_photonic,Photonic Inc.,investment,投资,3,领投C轮首关约CAD$1.8亿(2026-01),,https://optics.org
+inv_ffc,Future French Champions,co_alicebob,Alice & Bob,investment,投资,3,领投B轮€1亿(2025-01),,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/
+inv_avp,AXA Venture Partners,co_alicebob,Alice & Bob,investment,投资,2,联合领投B轮(2025-01),,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/
+inv_honeywell,霍尼韦尔,co_quantinuum,Quantinuum,investment,投资,3,控股股东(2021年合并后),,https://app.thequantuminsider.com
+inv_ciif,中国互联网投资基金,co_originq,本源量子,investment,投资,3,领投A轮数亿元(2021-01),,https://news.mydrivers.com
+inv_szvc,深创投(红土基金),co_originq,本源量子,investment,投资,3,领投B轮近10亿元(2022-07),,https://www.cls.cn
+inv_chinamobile,中国移动,co_zhongke,中科酷原,investment,投资,3,独家战略投资近亿元(2026-01),,http://www.qtc.com.cn ; https://www.sina.cn
+inv_cicc_cap,中金资本,co_spinq,量旋科技,investment,投资,2,参与D轮10亿元(2026-06),,http://c.zhineng.com.cn
+inv_shengshi,盛世投资,co_turingq,图灵量子,investment,投资,3,领投亿元战略轮(2025-07),,https://finance.sina.com.cn
+inv_szhg,深圳高新投,co_spinq,量旋科技,investment,投资,2,战略融资数千万元(2020-12),,http://c.zhineng.com.cn
+inv_forgepoint,Forgepoint Capital,co_multiverse,Multiverse Computing,investment,投资,3,"领投C轮$5.7亿(2026报道,估值$17亿)",,https://www.hpcwire.com
+inv_uvc,UVC Partners,co_planqc,planqc,investment,投资,2,种子轮投资,,https://thequantuminsider.com
+inv_2xn,2xN,co_sparrow,Sparrow Quantum,investment,投资,3,领投种子轮€410万,,https://sparrowquantum.com
+inv_churchill,Churchill Capital Corp X,co_infleqtion,Infleqtion(原ColdQuanta),investment,投资,2,SPAC合并推进中(估值$18亿),,https://www.stocktitan.net
+inv_telstra,澳大利亚电信,co_sqc,Silicon Quantum Computing,investment,投资,2,创始股东(2017年分拆时),,https://www.theaustralian.com.au
+inv_cba,澳大利亚联邦银行,co_sqc,Silicon Quantum Computing,investment,投资,2,创始股东(2017年分拆时),,https://www.theaustralian.com.au
