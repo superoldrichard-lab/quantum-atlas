@@ -1,261 +1,364 @@
-﻿id,类型,名称,英文名,国家,地区,城市,院系,身份/角色,研究方向,主页,荣誉,成立年份,融资阶段,主营业务,现状,备注,来源,不确定项
-uni_caltech,university,加州理工学院,California Institute of Technology,美国,北美,Pasadena,,,量子计算,,,,,,,,https://datascience.uchicago.edu,
-uni_harvard,university,哈佛大学,Harvard University,美国,北美,"Cambridge, MA",,,量子计算;量子传感与测量,,,,,,,,https://news.harvard.edu,
-uni_mit,university,麻省理工学院,Massachusetts Institute of Technology,美国,北美,"Cambridge, MA",,,量子计算;量子软件与算法,,,,,,,,https://news.mit.edu,
-uni_uchicago,university,芝加哥大学,University of Chicago,美国,北美,Chicago,,,量子计算;量子传感与测量,,,,,,,,https://quantumzeitgeist.com,
-uni_yale,university,耶鲁大学,Yale University,美国,北美,New Haven,,,量子计算,,,,,,,,https://thequantuminsider.com,
-uni_duke,university,杜克大学,Duke University,美国,北美,"Durham, NC",,,量子计算;量子通信,,,,,,,,https://www.ionq.com ; https://otc.duke.edu,
-uni_umaryland,university,马里兰大学(帕克),"University of Maryland, College Park",美国,北美,College Park,,,量子计算;量子通信,,,,,,,,https://www.ionq.com ; https://phys.org,
-uni_ucsb,university,加州大学圣塔芭芭拉分校,UC Santa Barbara,美国,北美,Santa Barbara,,,量子计算,,,,,,,,https://www.nobelprize.org,
-uni_berkeley,university,加州大学伯克利分校,UC Berkeley,美国,北美,Berkeley,,,量子计算;量子传感与测量,,,,,,,,https://www.nobelprize.org,
-uni_stanford,university,斯坦福大学,Stanford University,美国,北美,Stanford,,,量子计算;量子通信,,,,,,,,https://nqp.stanford.edu,
-uni_princeton,university,普林斯顿大学,Princeton University,美国,北美,Princeton,,,量子计算;量子传感与测量,,,,,,,,https://ece.princeton.edu,
-uni_uwmadison,university,威斯康星大学麦迪逊分校,University of Wisconsin–Madison,美国,北美,Madison,,,量子计算;量子传感与测量,,,,,,,,https://www.physics.wisc.edu,
-uni_ucla,university,加州大学洛杉矶分校,UCLA,美国,北美,Los Angeles,,,量子计算;量子软件与算法,,,,,,,,https://www.sec.gov,
-uni_waterloo,university,滑铁卢大学,University of Waterloo,加拿大,北美,Waterloo,,,量子计算;量子通信,,,,,,,设量子计算研究院 IQC(2002年创立),https://uwaterloo.ca,
-uni_sherbrooke,university,舍布鲁克大学,Université de Sherbrooke,加拿大,北美,Sherbrooke,,,量子计算,,,,,,,设 Institut quantique,https://www.fusacq.com,
-uni_ubc,university,英属哥伦比亚大学,University of British Columbia,加拿大,北美,Vancouver,,,量子计算,,,,,,,,https://tracxn.com,
-uni_utoronto,university,多伦多大学,University of Toronto,加拿大,北美,Toronto,,,量子软件与算法;量子计算,,,,,,,,https://markets.businessinsider.com,
-uni_institutoptique,university,巴黎高等光学研究院(含CNRS联合实验室),Institut d'Optique Graduate School,法国,欧洲,Palaiseau,,,量子计算;量子传感与测量,,,,,,,,https://www.prnewswire.com,
-uni_c2n,university,法国国家科学研究中心 C2N(巴黎-萨克雷),"CNRS – C2N, Université Paris-Saclay",法国,欧洲,Palaiseau,,,量子计算;量子通信,,,,,,,CNRS纳米科学与纳米技术中心,https://arxiv.org,
-uni_ens,university,巴黎高等师范学院(LPENS),École Normale Supérieure – LPENS,法国,欧洲,Paris,,,量子计算,,,,,,,,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/,
-uni_innsbruck,university,因斯布鲁克大学,University of Innsbruck,奥地利,欧洲,Innsbruck,,,量子计算;量子通信,,,,,,,,https://www.aqt.eu,
-uni_mpq,university,马克斯·普朗克量子光学研究所,Max Planck Institute of Quantum Optics (MPQ),德国,欧洲,Garching,,,量子计算;量子软件与算法,,,,,,,,https://www.mpq.mpg.de,
-uni_lmu,university,慕尼黑大学,LMU Munich,德国,欧洲,Munich,,,量子计算,,,,,,,,https://www.mpq.mpg.de/7265117/09-wolf-prize-for-immanuel-bloch,
-uni_eth,university,苏黎世联邦理工学院,ETH Zurich,瑞士,欧洲,Zurich,,,量子计算;量子传感与测量,,,,,,,,https://qudev.phys.ethz.ch ; https://www.insidequantumtechnology.com,
-uni_tudelft,university,代尔夫特理工大学,TU Delft (QuTech),荷兰,欧洲,Delft,,,量子计算;量子通信,,,,,,,与荷兰应用科学组织TNO共建QuTech,https://inspirehep.net,
-uni_julich,university,于利希研究中心(JARA量子信息研究所),Forschungszentrum Jülich – JARA,德国,欧洲,Jülich,,,量子计算,,,,,,,,https://arxiv.org,
-uni_oxford,university,牛津大学,University of Oxford,英国,欧洲,Oxford,,,量子计算;量子通信,,,,,,,,https://www.einpresswire.com,
-uni_ucl,university,伦敦大学学院,University College London (UCL),英国,欧洲,London,,,量子计算,,,,,,,,https://www.einpresswire.com,
-uni_bristol,university,布里斯托大学,University of Bristol,英国,欧洲,Bristol,,,量子计算;量子通信,,,,,,,,https://www.quantiki.org,
-uni_imperial,university,帝国理工学院,Imperial College London,英国,欧洲,London,,,量子计算;量子通信,,,,,,,,https://tech.eu,
-uni_geneva,university,日内瓦大学(应用物理组GAP),University of Geneva – GAP,瑞士,欧洲,Geneva,,,量子通信;量子计算,,,,,,,,https://iiitl.ac.in,
-uni_copenhagen,university,哥本哈根大学(尼尔斯·玻尔研究所),"Niels Bohr Institute, Univ. of Copenhagen",丹麦,欧洲,Copenhagen,,,量子计算;量子通信,,,,,,,,https://sparrowquantum.com,
-uni_aalto,university,阿尔托大学,Aalto University,芬兰,欧洲,Espoo,,,量子计算,,,,,,,与VTT技术研究中心共同孵化IQM,https://meetiqm.com,"IQM官网链接为通行地址,本次检索未逐页核对"
-uni_uab,university,巴塞罗那自治大学(联合BSC/IFAE),UAB / BSC / IFAE (巴塞罗那),西班牙,欧洲,Barcelona,,,量子计算,,,,,,,,https://link.springer.com,
-uni_vienna,university,维也纳大学,University of Vienna,奥地利,欧洲,Vienna,,,量子通信;量子计算,,,,,,,,https://www.nobelprize.org,
-uni_ustc,university,中国科学技术大学,University of Science and Technology of China,中国,东亚,合肥,,,量子计算;量子通信;量子传感与测量,,,,,,,,https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm,
-uni_tsinghua,university,清华大学,Tsinghua University,中国,东亚,北京,,,量子计算,,,,,,,,https://news.qq.com,
-uni_sjtu,university,上海交通大学,Shanghai Jiao Tong University,中国,东亚,上海,,,量子计算;量子通信,,,,,,,,https://finance.sina.com.cn,
-uni_zhejiang,university,浙江大学,Zhejiang University,中国,东亚,杭州,,,量子计算;量子传感与测量,,,,,,,,https://www.163.com,
-uni_riken,university,理化学研究所(量子计算研究中心RQC),RIKEN – Center for Quantum Computing,日本,东亚,埼玉和光,,,量子计算,,,,,,,,https://rqc.riken.jp,
-uni_utokyo,university,东京大学,University of Tokyo,日本,东亚,东京,,,量子计算;量子通信,,,,,,,,https://alice.t.u-tokyo.ac.jp,
-uni_nus,university,新加坡国立大学(量子技术中心CQT),National University of Singapore – CQT,新加坡,东南亚,新加坡,,,量子计算;量子通信,,,,,,,,https://www.cqt.sg ; https://cde.nus.edu.sg,
-uni_hkust,university,香港科技大学,Hong Kong University of Science and Technology,中国香港,东亚,香港,,,量子计算,,,,,,,,http://c.zhineng.com.cn,
-uni_unsw,university,新南威尔士大学,UNSW Sydney,澳大利亚,大洋洲,悉尼,,,量子计算,,,,,,,,https://www.theaustralian.com.au,
-uni_usydney,university,悉尼大学,University of Sydney,澳大利亚,大洋洲,悉尼,,,量子计算;量子传感与测量,,,,,,,,https://www.smartcompany.com.au,
-uni_anu,university,澳大利亚国立大学,Australian National University,澳大利亚,大洋洲,堪培拉,,,量子计算;量子传感与测量,,,,,,,,https://www.crunchbase.com,
-uni_cambridge,university,剑桥大学,University of Cambridge,英国,欧洲,Cambridge,,,量子计算,,,,,,,霍金曾任职于此;Quantinuum前身的剑桥量子与之同城渊源,https://pic-pac.cap.ca,
-sch_preskill,scholar,约翰·普雷斯基尔,John Preskill,美国,北美,,物理系,,量子计算;量子软件与算法,,理查德·费曼理论物理讲席教授;IQIM所长;提出NISQ概念,,,,,,https://datascience.uchicago.edu ; https://quantumfrontiers.com,
-sch_lukin,scholar,米哈伊尔·卢金,Mikhail Lukin,美国,北美,,物理系,,量子计算;量子传感与测量,https://lukin.physics.harvard.edu,,,,,,,https://lukin.physics.harvard.edu ; https://news.harvard.edu,
-sch_greiner,scholar,马库斯·格雷纳,Markus Greiner,美国,北美,,物理系,,量子计算;量子传感与测量,,,,,,,,https://news.harvard.edu ; https://finance.yahoo.com,
-sch_vuletic,scholar,弗拉丹·武莱蒂奇,Vladan Vuletić,美国,北美,,物理系,,量子计算,,,,,,,,https://finance.yahoo.com,
-sch_shor,scholar,彼得·秀尔,Peter Shor,美国,北美,,数学系,,量子计算;量子软件与算法,,Morss应用数学讲席教授;1994年提出秀尔算法,,,,,,https://news.mit.edu ; https://math.mit.edu,
-sch_chuang,scholar,艾萨克·庄,Isaac Chuang,美国,北美,,电气工程与计算机科学系/物理系,,量子计算;量子软件与算法,,,,,,,,https://books.google.co.il/books?id=-s4DEy7o-a0C ; https://news.mit.edu,
-sch_awschalom,scholar,大卫·奥沙洛姆,David Awschalom,美国,北美,,普利兹克分子工程学院,,量子传感与测量;量子材料与器件,,Liew家族讲席教授;芝加哥量子交换中心主任,,,,,,https://quantumzeitgeist.com,
-sch_schoelkopf,scholar,罗伯特·舍尔科普夫,Robert Schoelkopf,美国,北美,,应用物理系,,量子计算,,Sterling讲席教授;耶鲁量子研究所所长,,,,,超导量子比特电路QED开创者之一,https://scholar.google.com/citations?user=T9a08xsAAAAJ ; https://thequantuminsider.com,
-sch_devoret,scholar,米歇尔·德沃雷,Michel Devoret,美国,北美,,应用物理系,,量子计算,,诺贝尔物理学奖(2025);耶鲁荣休教授,,,,,现任Google Quantum AI量子硬件首席科学家(2025-),https://www.nobelprize.org ; https://e-discoveryteam.com,
-sch_monroe,scholar,克里斯·门罗,Chris Monroe,美国,北美,,电子与计算机工程系/物理系,,量子计算,https://iontrap.duke.edu,,,,,,曾长期任职马里兰大学JQI;IonQ首席科学家至2023,https://www.ionq.com ; https://en.wikipedia.org/wiki/Christopher_Monroe ; https://iontrap.duke.edu,
-sch_kim,scholar,金俊相,Jungsang Kim,美国,北美,,电子与计算机工程系,,量子计算;量子通信,,,,,,,,https://www.ionq.com ; https://otc.duke.edu,
-sch_martinis,scholar,约翰·马蒂尼斯,John Martinis,美国,北美,,物理系,,量子计算,,诺贝尔物理学奖(2025);曾任Google量子硬件团队负责人,,,,,,https://www.nobelprize.org ; https://www.noozhawk.com,
-sch_saffman,scholar,马克·萨夫曼,Mark Saffman,美国,北美,,物理系,,量子计算,,Johannes Rydberg讲席教授;2026年APS Ramsey奖,,,,,,https://www.physics.wisc.edu,
-sch_walker,scholar,撒迪厄斯·沃克,Thad Walker,美国,北美,,物理系,,量子计算;量子传感与测量,,,,,,,,https://www.physics.wisc.edu,
-sch_narang,scholar,普里内哈·纳兰,Prineha Narang,美国,北美,,化学系,,量子计算;量子通信;量子软件与算法,,Howard Reiss讲席教授;美国科学特使,,,,,曾任哈佛大学工程与应用科学学院助理教授,https://www.sec.gov,
-sch_deleon,scholar,娜塔莉·德莱昂,Nathalie de Leon,美国,北美,,电气与计算机工程系,,量子传感与测量;量子计算,,,,,,,,https://ece.princeton.edu,"有报道称其转任斯坦福大学,本次未核实"
-sch_thompson,scholar,杰夫·汤普森,Jeff Thompson,美国,北美,,电气与计算机工程系,,量子计算;量子传感与测量,,,,,,,,https://ece.princeton.edu,
-sch_vuckovic,scholar,耶莱娜·武奇科维奇,Jelena Vučković,美国,北美,,电气工程系,,量子计算;量子通信;量子材料与器件,https://nqp.stanford.edu,Jensen Huang全球领导力讲席教授,,,,,,https://nqp.stanford.edu,
-sch_hafezi,scholar,穆罕默德·哈菲兹,Mohammad Hafezi,美国,北美,,电气与计算机工程系/物理系,,量子计算;量子通信;量子传感与测量,https://hafezi.jqi.umd.edu,,,,,,,https://hafezi.jqi.umd.edu ; https://science.gmu.edu,"有迹象显示其转任乔治梅森大学,本次未核实"
-sch_linke,scholar,诺贝特·林克,Norbert Linke,美国,北美,,物理系,,量子计算,https://iontrap.umd.edu,,,,,,曾任门罗组博士后/实验室负责人,https://phys.org ; https://iontrap.umd.edu,
-sch_laflamme,scholar,雷蒙德·拉弗拉姆,Raymond Laflamme,加拿大,北美,,应用数学系,,量子计算;量子软件与算法,,IQC创始所长(任职15年);量子纠错5比特码共同提出者;1960-2025,,,,,2025年逝世,https://pic-pac.cap.ca ; https://cacr.uwaterloo.ca,
-sch_mosca,scholar,米凯莱·莫斯卡,Michele Mosca,加拿大,北美,,数学系,,量子计算;量子通信,,,,,,,IQC联合创始人;evolutionQ与softwareQ联合创始人,https://uwaterloo.ca,
-sch_aspuru,scholar,阿兰·阿斯普鲁-古齐克,Alán Aspuru-Guzik,加拿大,北美,,化学系,,量子软件与算法;量子计算,,,,,,,创办Zapata时任哈佛大学化学与化学生物学教授,https://markets.businessinsider.com,
-sch_hawking,scholar,斯蒂芬·霍金,Stephen Hawking,英国,欧洲,,应用数学与理论物理系,,量子软件与算法,,剑桥卢卡斯数学教授;1942-2018,,,,,拉弗拉姆的博士导师;此处仅作师承网络节点,https://pic-pac.cap.ca,
-sch_aspect,scholar,阿兰·阿斯佩,Alain Aspect,法国,欧洲,,(与CNRS联合实验室),,量子通信;量子计算,,诺贝尔物理学奖(2022),,,,,,https://www.prnewswire.com ; https://www.nobelprize.org,
-sch_browaeys,scholar,安托万·布罗韦,Antoine Browaeys,法国,欧洲,,,,量子计算;量子传感与测量,,,,,,,,https://www.prnewswire.com,
-sch_lahaye,scholar,蒂埃里·拉哈耶,Thierry Lahaye,法国,欧洲,,,,量子计算,,,,,,,,https://www.prnewswire.com,
-sch_senellart,scholar,帕斯卡莱·瑟内拉尔,Pascale Senellart,法国,欧洲,,,,量子计算;量子通信,,,,,,,CNRS研究主任;半导体量子点单光子源开创者之一,https://arxiv.org,
-sch_lanco,scholar,洛伊克·朗科,Loïc Lanco,法国,欧洲,,,,量子计算,,,,,,,,https://arxiv.org,
-sch_leghtas,scholar,扎基·勒格塔斯,Zaki Leghtas,法国,欧洲,,物理实验室(LPENS),,量子计算,,,,,,,,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/,
-sch_zoller,scholar,彼得·措勒,Peter Zoller,奥地利,欧洲,,理论物理,,量子计算;量子通信,,,,,,,,https://www.aqt.eu,
-sch_blatt,scholar,莱纳·布拉特,Rainer Blatt,奥地利,欧洲,,实验物理,,量子计算,,,,,,,,https://www.aqt.eu,
-sch_monz,scholar,托马斯·蒙茨,Thomas Monz,奥地利,欧洲,,实验物理,,量子计算,,,,,,,,https://www.aqt.eu,
-sch_cirac,scholar,伊格纳西奥·西拉克,Ignacio Cirac,德国,欧洲,,理论部,,量子计算;量子软件与算法,,,,,,,,https://www.mpq.mpg.de,
-sch_bloch,scholar,伊曼纽尔·布洛赫,Immanuel Bloch,德国,欧洲,,量子多体系统部,,量子计算;量子材料与器件,,沃尔夫奖(2024);MPQ科学所长兼LMU教授,,,,,,https://www.mpq.mpg.de/7265117/09-wolf-prize-for-immanuel-bloch ; https://en.wikipedia.org/wiki/Immanuel_Bloch,
-sch_wallraff,scholar,安德烈亚斯·瓦尔夫拉夫,Andreas Wallraff,瑞士,欧洲,,物理系,,量子计算,https://qudev.phys.ethz.ch,,,,,,ETH量子中心主任;ETH-PSI量子计算中心共同负责人,https://qudev.phys.ethz.ch ; https://www.insidequantumtechnology.com,
-sch_home,scholar,乔纳森·霍姆,Jonathan Home,瑞士,欧洲,,物理系,,量子计算,,,,,,,,https://www.insidequantumtechnology.com,
-sch_hanson,scholar,罗纳德·汉森,Ronald Hanson,荷兰,欧洲,,(QuTech),,量子通信;量子传感与测量,,,,,,,,https://inspirehep.net,
-sch_vandersypen,scholar,利文·范德西彭,Lieven Vandersypen,荷兰,欧洲,,(QuTech),,量子计算;量子材料与器件,,,,,,,,https://inspirehep.net,
-sch_wehner,scholar,斯蒂芬妮·韦纳,Stephanie Wehner,荷兰,欧洲,,(QuTech),,量子通信;量子软件与算法,,,,,,,2018年Science量子互联网路线图共同作者,https://inspirehep.net,
-sch_terhal,scholar,芭芭拉·特哈尔,Barbara Terhal,荷兰,欧洲,,(QuTech/DIAM),,量子计算;量子软件与算法,,,,,,,兼任于利希研究中心JARA量子信息研究所教授,https://arxiv.org,
-sch_morton,scholar,约翰·莫顿,John Morton,英国,欧洲,,,,量子计算,,,,,,,,https://www.einpresswire.com ; https://www.quantiki.org,
-sch_benjamin,scholar,西蒙·本杰明,Simon Benjamin,英国,欧洲,,材料系,,量子计算,,,,,,,,https://www.einpresswire.com,
-sch_walmsley,scholar,伊恩·沃姆斯利,Ian Walmsley,英国,欧洲,,物理系,,量子计算;量子通信,,,,,,,创办ORCA时任帝国理工学院教务长兼实验物理讲席教授,https://tech.eu,
-sch_cubitt,scholar,托比·丘比特,Toby Cubitt,英国,欧洲,,,,量子软件与算法;量子计算,,,,,,,,https://www.quantiki.org,
-sch_montanaro,scholar,阿什利·蒙塔纳罗,Ashley Montanaro,英国,欧洲,,,,量子软件与算法,,,,,,,,https://www.quantiki.org,
-sch_brierley,scholar,史蒂夫·布里尔利,Steve Brierley,英国,欧洲,,,,量子软件与算法,,,,,,,Riverlane创始人兼CEO,https://cryptorank.io,其剑桥学术履历细节本次未核实
-sch_gisin,scholar,尼古拉·吉桑,Nicolas Gisin,瑞士,欧洲,,应用物理组(GAP),,量子通信,,,,,,,量子密码学先驱;ID Quantique创始人,https://iiitl.ac.in,
-sch_lodahl,scholar,彼得·洛达尔,Peter Lodahl,丹麦,欧洲,,尼尔斯·玻尔研究所,,量子计算;量子通信,,,,,,,,https://sparrowquantum.com,
-sch_mottonen,scholar,米科·莫托宁,Mikko Möttönen,芬兰,欧洲,,(QCD组),,量子计算,,,,,,,,https://meetiqm.com,"IQM官网链接为通行地址,本次检索未逐页核对"
-sch_ekert,scholar,阿图尔·埃克特,Artur Ekert,英国,欧洲,,物理系,,量子通信,,,,,,,CQT创始所长;兼NUS李光前百年讲席教授;E91协议提出者,https://www.cqt.sg,
-sch_latorre,scholar,何塞·伊格纳西奥·拉托雷,José Ignacio Latorre,西班牙,欧洲,,,,量子计算,,,,,,,巴塞罗那量子生态关键人物,https://link.springer.com,"现职有NUS与阿布扎比TII等报道,本次未逐一核实;与Qilimanjaro的创始人关系未直接确认"
-sch_wunderlich,scholar,克里斯托夫·温德利希,Christof Wunderlich,德国,欧洲,,物理系,,量子计算,,,,,,,MAGIC离子阱方案提出者,https://vestbee.com,
-uni_siegen,university,锡根大学,University of Siegen,德国,欧洲,Siegen,,,量子计算,,,,,,,,https://vestbee.com,
-sch_forn_diaz,scholar,波尔·福恩-迪亚斯,Pol Forn-Díaz,西班牙,欧洲,,IFAE(巴塞罗那高能物理研究所),,量子计算,,,,,,,,https://link.springer.com,
-sch_garcia_saez,scholar,阿图尔·加西亚-萨伊斯,Artur Garcia-Saez,西班牙,欧洲,,BSC(巴塞罗那超级计算中心),,量子计算;量子软件与算法,,,,,,,,https://link.springer.com,
-sch_pan,scholar,潘建伟,Jian-Wei Pan,中国,东亚,,物理学院,,量子通信;量子计算;量子传感与测量,,中国科学院院士;中科大常务副校长;中科院量子信息与量子科技创新研究院院长,,,,,墨子号量子卫星首席科学家,https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm,
-sch_lu,scholar,陆朝阳,Chaoyang Lu,中国,东亚,,物理学院,,量子计算,,,,,,,九章系列光量子计算核心人物,https://zqb.cyol.com ; https://xcb.ustc.edu.cn,
-sch_guo_gc,scholar,郭光灿,Guangcan Guo,中国,东亚,,物理学院,,量子计算;量子通信,,中国科学院院士,,,,,,https://news.mydrivers.com,
-sch_guo_gp,scholar,郭国平,Guoping Guo,中国,东亚,,物理学院,,量子计算,,,,,,,,https://news.mydrivers.com,
-sch_zhu_xb,scholar,朱晓波,Xiaobo Zhu,中国,东亚,,物理学院,,量子计算,,,,,,,祖冲之号超导量子计算核心成员,https://xcb.ustc.edu.cn,
-sch_wang_hh,scholar,王浩华,Haohua Wang,中国,东亚,,物理学院,,量子计算,,,,,,,祖冲之号系列合作者,https://xcb.ustc.edu.cn,
-sch_du,scholar,杜江峰,Jiangfeng Du,中国,东亚,,物理学院,,量子传感与测量;量子计算,,中国科学院院士(2015),,,,,曾任中科大副校长、浙江大学校长(2022-12~2025-02);现任教育部副部长(2025-02起),https://www.163.com ; https://ori.hangzhou.com.cn,
-sch_duan,scholar,段路明,Luming Duan,中国,东亚,,交叉信息研究院,,量子计算,,中国科学院院士,,,,,,https://news.qq.com,"院系归属据公开报道,本次未在清华官网核对"
-sch_jin_xm,scholar,金贤敏,Xianmin Jin,中国,东亚,,(无锡光子芯片研究院CHIPX院长),,量子计算;量子通信,,特聘教授;长江学者,,,,,,https://finance.sina.com.cn,
-sch_cui_zb,scholar,曾蓓,Wei Cui,中国香港,东亚,,物理系,,量子计算;量子软件与算法,,,,,,,量旋科技首席科学家,http://c.zhineng.com.cn,
-sch_nakamura,scholar,中村泰信,Yasunobu Nakamura,日本,东亚,,(RQC),,量子计算,,,,,,,1999年在NEC实现首个超导量子比特相干操控;RQC所长,https://www.technologyreview.com ; https://rqc.riken.jp,
-sch_furusawa,scholar,古泽明,Akira Furusawa,日本,东亚,,工学系应用物理专业,,量子计算,https://alice.t.u-tokyo.ac.jp,,,,,,,https://alice.t.u-tokyo.ac.jp,
-sch_fujii,scholar,藤井圭佑,Keisuke Fujii,日本,东亚,,生产技术研究所,,量子软件与算法;量子计算,,,,,,,,https://finance.yahoo.com,
-sch_ling,scholar,林水德(Alexander Ling),Alexander Ling,新加坡,东南亚,,物理系/CQT,,量子通信;量子传感与测量,,,,,,,星载量子纠缠光源SPEQS项目负责人,https://phys.org ; https://cde.nus.edu.sg,
-sch_simmons,scholar,米歇尔·西蒙斯,Michelle Simmons,澳大利亚,大洋洲,,(CQC2T主任),,量子计算,,2018年澳大利亚年度人物,,,,,,https://www.theaustralian.com.au,
-sch_dzurak,scholar,安德鲁·祖拉克,Andrew Dzurak,澳大利亚,大洋洲,,电气工程与通信系,,量子计算;量子材料与器件,,,,,,,2014年硅CMOS量子比特实现者之一,https://feeds.transistor.fm,
-sch_biercuk,scholar,迈克尔·比尔库克,Michael J. Biercuk,澳大利亚,大洋洲,,物理学院,,量子计算;量子软件与算法,,,,,,,量子控制实验室负责人,https://www.smartcompany.com.au,
-sch_doherty,scholar,马库斯·多尔蒂,Marcus Doherty,澳大利亚,大洋洲,,物理研究院,,量子计算;量子传感与测量,,,,,,,创立Quantum Brilliance时任职于ANU,https://www.crunchbase.com,
-stu_rigetti,student,查德·里盖蒂,Chad Rigetti,美国,北美,,,"耶鲁大学博士(师从舍尔科普夫),后任职IBM",量子计算,,,,,,,,https://www.scribd.com,
-stu_bluvstein,student,多列夫·布卢夫斯坦,Dolev Bluvstein,美国,北美,,,哈佛大学博士生(卢金组),量子计算,,,,,,,2023年Nature 48逻辑量子比特处理器第一作者,https://www.researchgate.net,
-stu_peronnin,student,泰奥·佩罗南,Théau Peronnin,法国,欧洲,,,ENS巴黎(Leghtas课题组)出身,量子计算,,,,,,,,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/,具体学位阶段(博士/博后)未直接核实
-stu_lescanne,student,拉斐尔·莱斯坎,Raphaël Lescanne,法国,欧洲,,,ENS巴黎(Leghtas课题组)出身,量子计算,,,,,,,,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/,具体学位阶段(博士/博后)未直接核实
-stu_giesz,student,瓦莱里安·捷斯,Valérian Giesz,法国,欧洲,,,CNRS C2N(Senellart课题组)出身,量子计算,,,,,,,,https://arxiv.org,
-stu_goetz,student,扬·格茨,Jan Goetz,芬兰,欧洲,,,阿尔托大学出身(IQM源自其研究),量子计算,,,,,,,,https://meetiqm.com,"IQM官网链接为通行地址,本次检索未逐页核对"
-stu_tan,student,陈坤延(Kuan Yen Tan),Kuan Yen Tan,芬兰,欧洲,,,阿尔托大学出身,量子计算,,,,,,,,https://meetiqm.com,"IQM官网链接为通行地址,本次检索未逐页核对"
-stu_st_jean,student,菲利普·圣让,Philippe St-Jean,加拿大,北美,,,舍布鲁克大学博士,量子计算,,,,,,,,https://www.fusacq.com,
-stu_camlmyre,student,朱利安·卡米朗·勒米尔,Julien Camirand Lemyre,加拿大,北美,,,舍布鲁克大学物理博士生(创业时),量子计算,,,,,,,,https://www.fusacq.com,
-co_ionq,company,IonQ,IonQ,美国,北美,"College Park, MD",,,量子计算,,,2015,"上市 (NYSE: IONQ, 2021年SPAC)",离子阱量子计算机与量子网络,运营中,,https://www.ionq.com ; https://otc.duke.edu ; https://mpower.maryland.edu,
-co_rigetti,company,Rigetti Computing,Rigetti Computing,美国,北美,"Berkeley, CA",,,量子计算,,,2013,"上市 (NASDAQ: RGTI, 2022年SPAC)",超导量子处理器与云服务,运营中,,https://www.scribd.com,
-co_psiquantum,company,PsiQuantum,PsiQuantum,美国,北美,"Palo Alto, CA",,,量子计算,,,2016,"E轮 (2025-09, $10亿, 估值$70亿)",硅光子容错量子计算,运营中,学术创始人: Jeremy O'Brien(前布里斯托教授)、Terry Rudolph(帝国理工)、Mark Thompson(布里斯托)、Pete Shadbolt——人物节点未单列,https://www.psiquantum.com,
-co_qci,company,Quantum Circuits Inc.,Quantum Circuits Inc.,美国,北美,"New Haven, CT",,,量子计算,,,2017,"B轮 (2024-05, $2650万;累计$8400万)",双轨超导量子比特与纠错,运营中,,https://thequantuminsider.com,"有报道称Michel Devoret为联合创始人,本次来源较弱"
-co_quera,company,QuEra Computing,QuEra Computing,美国,北美,"Boston, MA",,,量子计算,,,2018,"B轮 (2025-02完成$2.3亿, Google/软银;累计约$4.77亿)",中性原子(光镊)量子计算,运营中,,https://finance.yahoo.com,
-co_atom,company,Atom Computing,Atom Computing,美国,北美,"Berkeley, CA",,,量子计算,,,2018,累计超$3亿 (2021-11披露),中性原子(锶)量子计算,运营中,创始人Ben Bloom与Jonathan King(物理博士);2026年有报道称美国政府拟入股$20亿,https://www.prnewswire.com,"成立年份据多方报道为2018,本次未见直接来源 ; 美国政府入股报道未核实"
-co_infleqtion,company,Infleqtion(原ColdQuanta),Infleqtion (fka ColdQuanta),美国,北美,"Boulder, CO",,,量子计算;量子传感与测量,,,2007,$1亿风投 (2025-06);SPAC合并中(估值$18亿),中性原子量子计算与量子传感/定位,运营中,,https://www.physics.wisc.edu ; https://www.stocktitan.net,
-co_aliro,company,Aliro Quantum,Aliro Technologies (Aliro Quantum),美国,北美,"Boston, MA",,,量子通信;量子软件与算法,,,2019,A轮 (2023-10 Leaders Fund领投;累计约$4000万),量子网络组网软件,运营中,,https://www.sec.gov ; https://startupintros.com,
-co_zapata,company,Zapata AI,Zapata Computing / Zapata AI,美国,北美,"Boston, MA",,,量子计算,,,2017,曾SPAC上市(ZPTA);2024-10停止运营;2025-09品牌重组,工业生成式AI与量子软件,2024年10月停止运营;2025年9月重组为Zapata Quantum,,https://markets.businessinsider.com ; https://content.edgar-online.com,
-co_qolab,company,Qolab,Qolab,美国,北美,"Santa Barbara, CA",,,量子计算,,,,,超导量子计算硬件,运营中,,https://www.noozhawk.com,成立年份(约2024)未直接核实
-co_xanadu,company,Xanadu,Xanadu Quantum Technologies,加拿大,北美,Toronto,,,量子计算;量子通信,,,2016,"上市 (2026-03 IPO, 募资约$3.02亿)",光量子计算(光芯片+测量型),运营中,创始人Christian Weedbrook(CEO);学术孵化关系未见直接来源,https://investors.xanadu.ai,
-co_nordquantique,company,Nord Quantique,Nord Quantique,加拿大,北美,Sherbrooke,,,量子计算,,,2020,"B轮 (2025-05, $6500万)",玻色编码超导量子比特,运营中,,https://www.fusacq.com,
-co_evolutionq,company,evolutionQ,evolutionQ Inc.,加拿大,北美,Waterloo,,,量子通信,,,,,量子风险管理与量子安全咨询服务,运营中,,https://uwaterloo.ca,成立年份未核实
-co_quantinuum,company,Quantinuum,Quantinuum,英国,欧洲,(剑桥/美国多地),,,量子计算,,,2021,"$3亿 (2024-01, 投前估值约$50亿);有IPO计划报道",离子阱量子计算机(H2等)与量子软件(Cyberv.Security等),运营中,2021年11月由Honeywell量子解决方案与剑桥量子(CQC)合并而成;Honeywell为控股股东;CQC创始人Ilyas Khan任CEO,https://app.thequantuminsider.com,总部城市未直接核实 ; 剑桥量子的学术孵化渊源未直接核实
-co_riverlane,company,Riverlane,Riverlane,英国,欧洲,Cambridge,,,量子计算,,,2016,$7500万 (2024;累计约$1.21亿),"量子纠错堆栈(Deltaflow,量子操作系统)",运营中,,https://cryptorank.io,
-co_phasecraft,company,Phasecraft,Phasecraft,英国,欧洲,London / Bristol,,,量子计算,,,2019,"A轮 (2023, £1300万)",近-term量子算法与应用,运营中,,https://www.quantiki.org,
-co_qmotion,company,Quantum Motion,Quantum Motion Technologies,英国,欧洲,London,,,量子计算,,,2017,C轮 (2026报道$1.6亿);B轮£4200万 (2022),硅CMOS兼容量子芯片,运营中,,https://www.einpresswire.com,
-co_orca,company,ORCA Computing,ORCA Computing,英国,欧洲,London,,,量子计算,,,2019,$1500万 (2022-06;当时累计约£1160万),基于量子存储的光子量子计算与组网,运营中,其他创始人: Richard Murray(CEO)、Joshua Nunn(CSO)、Cristina Escoda,https://tech.eu,
-co_oxfordionics,company,Oxford Ionics,Oxford Ionics,英国,欧洲,Oxford,,,量子计算,,,2019,"被收购 (IonQ, $10.7亿, 2025-09-18完成)",芯片化离子阱量子计算,已被IonQ收购 (2025-09),"创始人Chris Ballance与Tom Harty出自牛津离子阱团队(未单列学者节点),并购后加入IonQ",https://finance.yahoo.com ; https://multiples.vc,
-co_pasqal,company,Pasqal,Pasqal,法国,欧洲,Paris / Massy,,,量子计算,,,2019,B轮(2023);累计融资超€1.4亿 (2024-05报道),中性原子量子计算,运营中,Quantonation基金联合人Christophe Jurczak亦列为共同创始人,https://www.prnewswire.com ; https://www.pasqal.com,
-co_quandela,company,Quandela,Quandela,法国,欧洲,Massy,,,量子计算,,,2017,"A轮 (2023-01, €5000万;累计约$6500万)",量子点确定性单光子源与光子量子计算,运营中,CEO Valérian Giesz亦出自C2N,https://arxiv.org ; https://www.ipvf.fr,
-co_alicebob,company,Alice & Bob,Alice & Bob,法国,欧洲,Paris(+Boston),,,量子计算,,,2020,"B轮 (2025-01, €1亿;累计约$1.38亿)",猫比特超导量子计算,运营中,,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/,
-co_c12,company,C12 Quantum Electronics,C12 Quantum Electronics,法国,欧洲,Paris,,,量子计算,,,2020,"A轮 (2024-06, €1800万)",碳-12碳纳米管自旋量子处理器,运营中,"创始人Matthieu与Pierre Desjardins(兄弟,巴黎综合理工校友;未单列学者节点)",https://techresearchonline.com ; https://quantumcomputingreport.com,
-co_planqc,company,planqc,planqc,德国,欧洲,Garching,,,量子计算,,,2022,"A轮 (2024-07, €5000万)",中性原子量子计算,运营中,,https://thequantuminsider.com,成立年份(2021/2022)以2022-06出隐身报道为准
-co_eleqtron,company,eleQtron,eleQtron,德国,欧洲,Siegen(创立)/Mülheim,,,量子计算,,,2020,"A轮 (2026-05, €5700万)",MAGIC磁梯度耦合离子阱量子计算,运营中,,https://vestbee.com,
-co_hqs,company,HQS Quantum Simulations,HQS Quantum Simulations,德国,欧洲,Karlsruhe,,,量子软件与算法;量子计算,,,,未披露,量子模拟软件(化学/材料),运营中,,https://vestbee.com,"成立年份(约2017)与KIT分拆关系为通行说法,本次未直接核实"
-co_aqt,company,Alpine Quantum Technologies (AQT),Alpine Quantum Technologies GmbH,奥地利,欧洲,Innsbruck,,,量子计算,,,2018,EIC等资助;私有,模块化离子阱量子计算机,运营中,,https://www.aqt.eu ; https://www.crunchbase.com,
-co_idq,company,ID Quantique,ID Quantique (IDQ),瑞士,欧洲,Carouge / Geneva,,,量子通信,,,2001,SK电讯2018年控股;2025-02 IonQ宣布收购,量子随机数发生器与QKD量子安全加密,2025-02 IonQ宣布收购(此前属SK电讯),,https://iiitl.ac.in ; https://finance.yahoo.com,
-co_tq,company,Terra Quantum,Terra Quantum AG,瑞士,欧洲,Rapperswil,,,量子计算,,,2019,"SPAC上市推进中 (2026-04报道, 估值约$32.5-35亿)",量子算法/混合量子云(QMware),运营中,创始人Markus Pflitsch(CEO);与高校的孵化关系未见直接来源,https://www.cohencm.com,
-co_qblox,company,Qblox,Qblox,荷兰,欧洲,Delft,,,量子计算,,,,未披露,量子比特测控一体机,运营中,,https://stm.cairn.info,成立年份未核实
-co_quantware,company,QuantWare,QuantWare,荷兰,欧洲,Delft,,,量子计算,,,,"报道累计$1.78亿 (2024-09法语文章,待核实)",超导量子处理器(VIO架构)代工,运营中,,https://stm.cairn.info,成立年份未核实 ; 融资规模来源单一
-co_qphox,company,QphoX,QphoX,荷兰,欧洲,Delft,,,量子计算,,,,未披露,微波-光量子转换器(量子网络关键器件),运营中,,https://entangledfuture.com,成立年份未核实
-co_singlequantum,company,Single Quantum,Single Quantum,荷兰,欧洲,Delft,,,量子计算,,,,未披露,超导纳米线单光子探测器(SNSPD),运营中,,https://stm.cairn.info,成立年份未核实
-co_iqm,company,IQM Quantum Computers,IQM Quantum Computers,芬兰,欧洲,Espoo,,,量子计算,,,2018,"B轮扩展 (2025-09, $3.2亿, 估值超€10亿)",超导量子计算机(欧洲头部),运营中,,https://meetiqm.com,
-co_sparrow,company,Sparrow Quantum,Sparrow Quantum,丹麦,欧洲,Copenhagen,,,量子计算,,,2022,A轮扩展 (2025-12;A轮系列€2750万),光子量子芯片(确定性单光子源),运营中,,https://sparrowquantum.com,
-co_qilimanjaro,company,Qilimanjaro Quantum Tech,Qilimanjaro Quantum Tech,西班牙,欧洲,Barcelona,,,量子计算,,,2019,"种子轮 (2022, $725万)",相干模拟退火+门型全栈量子计算,运营中,,https://link.springer.com,
-co_qm,company,Quantum Machines,Quantum Machines,以色列,中东,Tel Aviv,,,量子计算;量子通信,,,2018,"C轮 (2025-02, $1.7亿;累计$2.8亿)",量子测控平台(Quantum Orchestration),运营中,创始人Itamar Sivan、Yonatan Cohen、Nissim Ofek均为物理学博士;与魏茨曼研究所的具体孵化关系未核实,https://techfundingnews.com,
-co_qtek,company,科大国盾量子,QuantumCTek,中国,东亚,合肥,,,量子通信;量子计算,,,2009,"上市 (科创板 688027, 2020-07-09, 量子通信第一股)",量子保密通信产品与QKD网络建设,运营中,潘建伟、彭承志等创办,https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm,
-co_originq,company,本源量子,Origin Quantum,中国,东亚,合肥,,,量子计算,,,2017,"Pre-IPO (2026-06, 近30亿元, 投后估值近240亿元)",超导量子计算机整机/操作系统本源司南/量子云,运营中,,https://news.mydrivers.com ; https://www.cls.cn ; https://www.21jingji.com,
-co_turingq,company,图灵量子,Turing Quantum,中国,东亚,上海,,,量子计算,,,2021,"累计融资超10亿元(2026报道, 估值约70亿元)",光量子芯片与光量子计算(国内首条光子芯片中试线),运营中,,https://finance.sina.com.cn,
-co_spinq,company,量旋科技,SpinQ,中国,东亚,深圳,,,量子计算,,,2018,"D轮 (2026-06-30, 10亿元;半年累计20亿元)",桌面核磁共振量子计算机/超导芯片/量子云,运营中,核心团队来自清华、中科大、滑铁卢、华盛顿大学;港科大曾蓓教授任首席科学家,http://c.zhineng.com.cn,
-co_huaq,company,华翊量子,HuaYi Quantum (华翊博奥),中国,东亚,北京,,,量子计算,,,2022,A+轮 (2026-06;2025-07 A轮数亿元),离子阱量子计算机(HYQ-B100百比特原型机),运营中,,https://news.qq.com ; https://elsewhere.news,
-co_qunasys,company,QunaSys,QunaSys,日本,东亚,东京,,,量子软件与算法,,,2018,私有(未披露),量子化学算法与软件(医药/材料),运营中,其他联合创始人: Yuichiro Minato(CEO)、Koji Azuma(CTO),https://finance.yahoo.com,
-co_speqtral,company,SpeQtral,SpeQtral,新加坡,东南亚,新加坡,,,量子通信,,,2018,私有(融资轮次未核实),星载量子密钥分发(QKD)与量子通信,运营中,,https://phys.org ; https://www.cqt.sg,
-co_sqc,company,Silicon Quantum Computing,Silicon Quantum Computing (SQC),澳大利亚,大洋洲,悉尼,,,量子计算,,,2017,成立时约A$8300万(UNSW/ Telstra / 联邦银行等创始股东+政府资助),原子级精确硅量子计算,运营中,,https://www.theaustralian.com.au,
-co_diraq,company,Diraq,Diraq,澳大利亚,大洋洲,悉尼,,,量子计算,,,2022,"A轮 (2023, $1500万;另获澳政府A$1290万资助)",硅CMOS自旋量子比特,运营中,,https://feeds.transistor.fm,
-co_qctrl,company,Q-CTRL,Q-CTRL,澳大利亚,大洋洲,悉尼,,,量子计算,,,2017,B轮 (2023-07累计A$8000万),量子控制与纠错软件(Fire Opal等),运营中,,https://www.smartcompany.com.au,
-co_qbrilliance,company,Quantum Brilliance,Quantum Brilliance,澳大利亚,大洋洲,堪培拉(德国斯图加特有分支),,,量子计算;量子传感与测量,,,2019,"A轮 (2024-12, $3000万, 含NRFC $1300万)",金刚石NV室温量子加速器,运营中,另一联合创始人Mark Luo(CEO),https://www.crunchbase.com ; https://alumni.csiro.au,
-sch_zeilinger,scholar,安东·泽林格,Anton Zeilinger,奥地利,欧洲,,物理系,,量子通信;量子计算,,诺贝尔物理学奖(2022),,,,,量子隐形传态与贝利不等式实验先驱,https://www.nobelprize.org ; https://physicsworld.com,
-sch_peng,scholar,彭承志,Chengzhi Peng,中国,东亚,,(中科院量子信息重点实验室),,量子通信;量子计算,,,,,,,中国科大研究员;国盾量子联合创办人之一;墨子号卫星系统总师(据公开报道),https://news.ustc.edu.cn/zybxgd/info/1005/1205.htm,
-uni_sussex,university,萨塞克斯大学,University of Sussex,英国,欧洲,Brighton,,,量子计算,,,,,,,,https://www.sciencedaily.com,
-uni_sfu,university,西蒙菲莎大学,Simon Fraser University (SFU),加拿大,北美,Burnaby / Vancouver,,,量子计算;量子通信,,,,,,,,http://www.sfu.ca,
-uni_icfo,university,光子科学研究所,ICFO – Institute of Photonic Sciences,西班牙,欧洲,Barcelona,,,量子计算;量子通信;量子传感与测量,,,,,,,,https://quside.com,
-uni_sustech,university,南方科技大学(深圳国际量子研究院),Southern University of Science and Technology,中国,东亚,深圳,,,量子计算;量子传感与测量,,,,,,,深圳量子科学与工程研究院(现深圳国际量子研究院)依托建设,https://old.gdkjb.com,
-uni_snu,university,首尔国立大学,Seoul National University,韩国,东亚,首尔,,,量子计算;量子通信,,,,,,,,https://arxiv.org,
-uni_cas_pma,university,中科院精密测量科学与技术创新研究院,CAS Innovation Academy for Precision Measurement,中国,东亚,武汉,,,量子传感与测量;量子计算,,,,,,,,http://www.qtc.com.cn,
-uni_titech,university,东京工业大学(现东京科学大学),Tokyo Institute of Technology,日本,东亚,东京,,,量子计算;量子软件与算法,,,,,,,西森秀稔实验室为量子退火奠基地,https://qbn.world/qbn-member/jij-inc,
-uni_tus,university,东京理科大学,Tokyo University of Science,日本,东亚,东京,,,量子计算,,,,,,,,https://www.tus.ac.jp/en/mediarelations/archive/20200414_7612.html,
-sch_vazirani,scholar,乌梅什·瓦兹拉尼,Umesh Vazirani,美国,北美,,电气工程与计算机科学系,,量子计算;量子软件与算法,,,,,,,伯克利量子计算中心创始主任,https://vcresearch.berkeley.edu,
-sch_harrow,scholar,阿拉姆·哈罗,Aram Harrow,美国,北美,,物理系(理论物理中心),,量子计算;量子软件与算法,,,,,,,HHL算法共同提出者(2009),https://phys.org,
-sch_lloyd,scholar,塞思·劳埃德,Seth Lloyd,美国,北美,,机械工程系,,量子计算;量子软件与算法,,,,,,,,https://phys.org,
-sch_oliver,scholar,威廉·奥利弗,William Oliver,美国,北美,,电气工程与物理(兼林肯实验室),,量子计算,,,,,,,MIT量子工程中心(CQE)与量子计算中心主任,https://www.ntt-review.jp,
-sch_englund,scholar,德克·恩格伦德,Dirk Englund,美国,北美,,电气工程与计算机科学系,,量子计算;量子通信,,,,,,,量子光子学实验室负责人;QuEra联合创始人之一,https://www.ntt-review.jp ; https://finance.yahoo.com,
-sch_brandao,scholar,费尔南多·布兰当,Fernando Brandão,美国,北美,,物理系,,量子计算;量子软件与算法,,,,,,,Bren理论物理讲席教授;AWS量子计算中心(CQC)联合负责人(停薪留职),https://www.technology.org,
-sch_jiang,scholar,姜梁,Liang Jiang,美国,北美,,普利兹克分子工程学院,,量子计算;量子通信;量子传感与测量,,,,,,,,https://pme.uchicago.edu/directory/liang-jiang,
-sch_bernien,scholar,汉内斯·伯尔尼恩,Hannes Bernien,美国,北美,,普利兹克分子工程学院,,量子计算;量子通信,,,,,,,博士(2014)师从汉森(代尔夫特);哈佛博后(卢金组),https://chicagoquantum.org/research-areas/quantum-computing ; https://arxiv.org,
-sch_girvin,scholar,史蒂文·吉尔文,Steven Girvin,美国,北美,,应用物理系/物理系,,量子计算,,Sterling讲席教授,,,,,电路量子电动力学(Circuit QED)共同发展者,https://newquantumera.transistor.fm,
-sch_hensinger,scholar,温弗里德·亨辛格,Winfried Hensinger,英国,欧洲,,物理与天文系,,量子计算,,,,,,,,https://www.sciencedaily.com,
-stu_weidt,student,塞巴斯蒂安·维特,Sebastian Weidt,英国,欧洲,,,萨塞克斯大学研究员(创办时),量子计算,,,,,,,,https://www.sciencedaily.com,
-sch_ssimmons,scholar,斯蒂芬妮·西蒙斯,Stephanie Simmons,加拿大,北美,,物理系,,量子计算;量子通信,,,,,,,Photonic Inc.创始人兼首席量子官;硅T中心色心自旋-光子比特,http://www.sfu.ca ; https://optics.org,
-sch_ballance,scholar,克里斯·巴兰斯,Chris Ballance,英国,欧洲,,克拉伦登实验室,,量子计算,,,,,,,Oxford Ionics联合创始人兼CEO,https://www.thetimes.com,
-stu_harty,student,汤姆·哈蒂,Tom Harty,英国,欧洲,,,牛津大学博士(离子阱团队出身),量子计算,,,,,,,,https://www.thetimes.com,
-sch_mitchell,scholar,摩根·米切尔,Morgan Mitchell,西班牙,欧洲,,,,量子通信;量子传感与测量,,,,,,,ICREA研究教授;Quside联合创始人,https://quside.com,
-stu_abellan,student,卡洛斯·阿贝连,Carlos Abellán,西班牙,欧洲,,,ICFO博士(光子科学研究所),量子计算,,,,,,,MIT TR35 (2018),https://quside.com,
-sch_orus,scholar,罗曼·奥鲁斯,Román Orús,西班牙,欧洲,,,,量子软件与算法;量子计算,,,,,,,Multiverse Computing首席科学官,https://www.hpcwire.com,"其Ikerbasque/DIPC学术任职据公开资料,本次检索未直接核实"
-sch_nishimori,scholar,西森秀稔,Hidetoshi Nishimori,日本,东亚,,物理系,,量子软件与算法,,,,,,,量子退火(Quantum Annealing)方法奠基者之一,https://qbn.world/qbn-member/jij-inc,
-sch_yu_dp,scholar,俞大鹏,Dapeng Yu,中国,东亚,,物理系(讲席教授),,量子计算;量子材料与器件,,中国科学院院士,,,,,深圳国际量子研究院(原深圳量子科学与工程研究院)院长,https://old.gdkjb.com,
-sch_xu_fh,scholar,徐飞虎,Feihu Xu,中国,东亚,,物理学院,,量子通信;量子传感与测量,,,,,,,单光子成像与量子通信(200公里单光子三维成像),https://faculty.ustc.edu.cn ; https://i.ifeng.com,
-sch_jeong,scholar,郑炫锡,Hyunseok Jeong,韩国,东亚,,物理天文系,,量子计算;量子软件与算法,,,,,,,宏观量子叠加与量子资源理论研究,https://arxiv.org,
-sch_tsai,scholar,蔡兆申,Jaw-Shen Tsai,日本,东亚,,(兼RIKEN宏观量子相干团队),,量子计算,,,,,,,1999年与中村泰信共同实现首个超导量子比特(NEC),https://www.riken.jp/en/about/people/6946/index.html ; https://www.tus.ac.jp/en/mediarelations/archive/20200414_7612.html,
-stu_keesling,student,亚历克斯·基斯林,Alex Keesling,美国,北美,,,哈佛大学博士(卢金组;51原子模拟器2017共同作者),量子计算,,,,,,,,https://finance.yahoo.com,
-co_universalquantum,company,Universal Quantum,Universal Quantum,英国,欧洲,Brighton,,,量子计算,,,2018,"种子 (2020, $450万);获德国政府€6700万合同 (2022-11)",模块化离子阱量子计算(电连接模块),运营中,,https://www.sciencedaily.com,成立年份有2018(创立)与2020(正式分拆)两种表述
-co_photonic,company,Photonic Inc.,Photonic Inc.,加拿大,北美,Burnaby / Vancouver,,,量子计算,,,,"C轮 (2026-05, 超CAD$2.75亿, 估值约CAD$27亿;累计约CAD$3.75亿)","硅自旋-光子量子计算(T中心色心,电信波段);与微软战略合作",运营中,,https://optics.org ; http://www.sfu.ca,成立年份未核实
-co_multiverse,company,Multiverse Computing,Multiverse Computing,西班牙,欧洲,San Sebastián,,,量子计算,,,2019,"C轮 (2026报道, $5.7亿, 估值$17亿, Forgepoint领投)",量子与量子启发软件(金融/AI压缩;CompactifAI),运营中,其他创始人: Enrique Lizaso(CEO)、Samuel Mugel、Alfonso Rubio,https://www.hpcwire.com,C轮金额/估值来自二手来源
-co_quside,company,Quside,Quside,西班牙,欧洲,Barcelona,,,量子计算,,,2017,"A轮 (2025, €1000万, TRUMPF Venture与Bullnet领投)",光子量子随机数发生器(QRNG)与随机性处理单元,运营中,,https://quside.com,
-co_kipu,company,Kipu Quantum,Kipu Quantum,德国,欧洲,Karlsruhe / Berlin,,,量子计算,,,,"种子轮 (2023-12, €1050万, HV Capital与DTCF领投)",硬件感知量子算法与应用(2025年与IonQ宣称工业量子优势),运营中,,https://www.techmonitor.ai,成立年份(约2021)与创始团队学术背景未核实
-co_oqs,company,Orange Quantum Systems,OrangeQS,荷兰,欧洲,Delft,,,量子计算,,,2020,私有(获欧盟Quantum SME资助),量子芯片自动化测试/筛选系统,运营中,,https://qutech.h5mag.com,
-co_delftcircuits,company,Delft Circuits,Delft Circuits,荷兰,欧洲,Delft,,,量子计算,,,,未披露,柔性低温量子线缆(Cri/oFlex),运营中,,https://qutech.h5mag.com,成立年份与分拆关系未直接核实
-co_zhongke,company,中科酷原,Zhongke Kuyuan,中国,东亚,武汉,,,量子计算,,,2020,"战略融资 (2026-01, 近亿元, 中国移动独家投资)",中性原子量子计算(汉原1号/2号)与冷原子重力仪,运营中,,http://www.qtc.com.cn ; https://www.sina.cn,
-co_atomionics,company,Atomionics,Atomionics,新加坡,东南亚,新加坡,,,量子计算,,,,"Pre-A轮 (2025-09, $1270万)",冷原子量子重力仪Gravio(矿产勘探),运营中,创始人Sahil Tapiawala(CEO)、Avishek Kumar,https://startuprise.org ; https://e27.co,成立年份未核实;创始团队CQT具体任职未核实
-co_jij,company,Jij,Jij Inc.,日本,东亚,东京,,,量子计算,,,,私有/未披露,量子退火/伊辛机优化求解(JijZept等),运营中,CEO 山城由峪(Yu Yamashiro);2025年获EY创新初创奖(量子类别),https://qbn.world/qbn-member/jij-inc ; https://www.j-ij.com/en/news/20250319,
-co_qart,company,Quantum Art,Quantum Art Ltd.,以色列,中东,Ness Ziona,,,量子计算,,,,"A轮扩展 (2026-04, 累计$1.4亿)",多核多比特门离子阱量子计算,运营中,创始人Amit Ben-Kish(CTO)与Tal David(CEO),https://finance.yahoo.com ; https://multiples.vc,成立年份(约2022)与创始团队学术渊源未核实
-co_qemotion,company,Quantum eMotion,Quantum Emotion Corp.,加拿大,北美,Montreal,,,量子计算,,,,上市 (TSXV: QNC),芯片化量子随机数发生器与量子安全方案,运营中,,https://finance.yahoo.com ; https://www.nasdaq.com,"公司2007年在加拿大注册,量子业务时间未核实;与UNIGE具体授权关系未核实;创始人未核实"
-inv_quantonation,investor,Quantonation,Quantonation,法国,欧洲,巴黎,,专注物理/量子技术的早期风险基金,,,,,,,,管理Quantonation I/II(II期2024年首关€2亿);合伙人Jurczak为Pasqal联合创始人,https://www.quantonation.com,
-inv_temasek,investor,淡马锡,Temasek,新加坡,东南亚,新加坡,,国家投资公司,,,,,,,,,https://www.pasqal.com ; https://www.psiquantum.com,
-inv_blackrock,investor,贝莱德,BlackRock,美国,北美,纽约,,资产管理公司,,,,,,,,,https://www.psiquantum.com,
-inv_baillie_gifford,investor,Baillie Gifford,Baillie Gifford,英国,欧洲,爱丁堡,,资产管理公司,,,,,,,,,https://www.psiquantum.com,
-inv_bpifrance,investor,法国国家投资银行,Bpifrance,法国,欧洲,巴黎,,国家投资银行(大基金),,,,,,,,,https://www.pasqal.com ; https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/,
-inv_eic_fund,investor,欧洲创新理事会基金,EIC Fund,欧盟,欧洲,布鲁塞尔,,欧盟公共投资基金,,,,,,,,,https://www.pasqal.com ; https://www.crunchbase.com,
-inv_waed,investor,Wa'ed Ventures,Wa'ed Ventures,沙特阿拉伯,中东,达兰,,沙特阿美旗下创投,,,,,,,,,https://www.pasqal.com,
-inv_softbank,investor,软银,SoftBank,日本,东亚,东京,,风险投资/愿景基金,,,,,,,,,https://finance.yahoo.com,
-inv_google,investor,Google(Alphabet),Google,美国,北美,山景城,,企业战略投资,,,,,,,,,https://finance.yahoo.com,
-inv_nea,investor,恩颐投资,New Enterprise Associates (NEA),美国,北美,门洛帕克,,风险投资,,,,,,,,,https://www.ionq.com,
-inv_octopus,investor,Octopus Ventures,Octopus Ventures,英国,欧洲,伦敦,,风险投资,,,,,,,,,https://www.einpresswire.com,
-inv_ngp,investor,NGP Capital,NGP Capital (诺基亚成长基金),美国,北美,帕洛阿尔托,,企业创投(诺基亚旗下),,,,,,,,,https://www.einpresswire.com,
-inv_sony_fund,investor,索尼创新基金,Sony Innovation Fund,日本,东亚,东京,,企业创投,,,,,,,,,https://www.einpresswire.com,
-inv_psg,investor,PSG Equity,PSG Equity,美国,北美,波士顿,,成长型基金,,,,,,,,,https://techfundingnews.com,
-inv_world_fund,investor,World Fund,World Fund,荷兰,欧洲,阿姆斯特丹,,气候科技风险基金,,,,,,,,,https://meetiqm.com,"总部城市据公开资料,本次未直接核实"
-inv_draper_esprit,investor,Draper Esprit,Draper Esprit,爱尔兰,欧洲,都柏林,,风险投资(现Elkstone),,,,,,,,,https://cryptorank.io,
-inv_cisco,investor,思科投资,Cisco Investments,美国,北美,圣何塞,,企业创投,,,,,,,,,https://www.sec.gov,
-inv_main_sequence,investor,Main Sequence Ventures,Main Sequence Ventures,澳大利亚,大洋洲,悉尼,,CSIRO创新基金,,,,,,,,,https://q-ctrl.com ; https://mseq.vc,
-inv_blackbird,investor,Blackbird,Blackbird,澳大利亚,大洋洲,悉尼,,风险投资,,,,,,,,,https://q-ctrl.com,
-inv_salesforce,investor,Salesforce Ventures,Salesforce Ventures,美国,北美,旧金山,,企业创投,,,,,,,,,https://q-ctrl.com ; https://www.smartcompany.com.au,
-inv_airbus_v,investor,Airbus Ventures,Airbus Ventures,美国,北美,门洛帕克,,企业创投(空客旗下),,,,,,,,,https://q-ctrl.com,
-inv_planet_first,investor,Planet First Partners,Planet First Partners,英国,欧洲,伦敦,,可持续增长基金,,,,,,,,,https://optics.org,
-inv_ffc,investor,Future French Champions,Future French Champions (FFC),法国,欧洲,巴黎,,卡塔尔投资局与法国国家合资基金,,,,,,,,,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/,
-inv_avp,investor,AXA Venture Partners,AXA Venture Partners (AVP),法国,欧洲,巴黎,,保险系创投,,,,,,,,,https://alice-bob.com/newsroom/alice-bob-100m-series-b-fundraising-press-release/,
-inv_honeywell,investor,霍尼韦尔,Honeywell,美国,北美,夏洛特,,企业战略控股,,,,,,,,,https://app.thequantuminsider.com,
-inv_ciif,investor,中国互联网投资基金,China Internet Investment Fund,中国,东亚,北京,,国家级产业基金,,,,,,,,,https://news.mydrivers.com,
-inv_szvc,investor,深创投(红土基金),Shenzhen Capital Group,中国,东亚,深圳,,国有风险投资,,,,,,,,,https://www.cls.cn,
-inv_chinamobile,investor,中国移动,China Mobile,中国,东亚,北京,,电信运营商战略投资,,,,,,,,,http://www.qtc.com.cn ; https://www.sina.cn,
-inv_cicc_cap,investor,中金资本,CICC Capital,中国,东亚,北京,,券商系私募股权,,,,,,,,,http://c.zhineng.com.cn,
-inv_shengshi,investor,盛世投资,Shengshi Investment,中国,东亚,北京,,母基金/资产管理,,,,,,,,领投图灵量子战略轮,https://finance.sina.com.cn,英文名未核实
-inv_szhg,investor,深圳高新投,Shenzhen Hi-tech Investment,中国,东亚,深圳,,国有担保与投资,,,,,,,,,http://c.zhineng.com.cn,
-inv_forgepoint,investor,Forgepoint Capital,Forgepoint Capital,美国,北美,圣马特奥,,网络安全风投,,,,,,,,,https://www.hpcwire.com,
-inv_uvc,investor,UVC Partners,UVC Partners,德国,欧洲,慕尼黑,,早期深科技基金,,,,,,,,,https://thequantuminsider.com,
-inv_2xn,investor,2xN,2xN,丹麦,欧洲,哥本哈根,,量子领域风险基金,,,,,,,,,https://sparrowquantum.com,
-inv_churchill,investor,Churchill Capital Corp X,Churchill Capital Corp X,美国,北美,纽约,,SPAC上市工具,,,,,,,,,https://www.stocktitan.net,
-inv_telstra,investor,澳大利亚电信,Telstra,澳大利亚,大洋洲,墨尔本,,电信运营商,,,,,,,,,https://www.theaustralian.com.au,
-inv_cba,investor,澳大利亚联邦银行,Commonwealth Bank of Australia,澳大利亚,大洋洲,悉尼,,银行战略投资,,,,,,,,,https://www.theaustralian.com.au,
+﻿id,类型,名称,英文名,国家,地区,城市,院系,身份/角色,研究方向,主页,荣誉,成立年份,融资阶段,主营业务,现状,备注,来源,不确定项,权重,核实,别名
+u_mit,university,麻省理工学院,MIT,美国,北美,,,,量子计算;量子通信;量子传感与测量,,,,,,,RLE 与量子工程中心（CQE）,,,10,否,MIT;麻省理工
+u_harvard,university,哈佛大学,Harvard University,美国,北美,,,,量子计算;量子网络;量子传感与测量,,,,,,,Harvard Quantum Initiative,,,10,否,Harvard
+u_caltech,university,加州理工学院,Caltech,美国,北美,,,,量子计算;量子软件与算法,,,,,,,IQIM 量子信息与物质研究所,,,9,否,Caltech
+u_princeton,university,普林斯顿大学,Princeton University,美国,北美,,,,量子计算,,,,,,,超导/半导体量子比特方向,,,7,否,Princeton
+u_chicago,university,芝加哥大学,University of Chicago,美国,北美,,,,量子计算;量子网络,,,,,,,Chicago Quantum Exchange 牵头校,,,9,否,UChicago
+u_berkeley,university,加州大学伯克利分校,UC Berkeley,美国,北美,,,,量子计算,,,,,,,,,,8,否,UC Berkeley;Berkeley
+u_maryland,university,马里兰大学,University of Maryland,美国,北美,,,,量子计算;量子网络,,,,,,,联合量子研究所（JQI，与 NIST 共建）,,,8,否,UMD;University of Maryland
+u_duke,university,杜克大学,Duke University,美国,北美,,,,量子计算;量子网络,,,,,,,Duke Quantum Center,,,7,否,Duke
+u_yale,university,耶鲁大学,Yale University,美国,北美,,,,量子计算,,,,,,,Yale Quantum Institute；电路量子电动力学重镇,,,9,否,Yale
+u_colorado,university,科罗拉多大学博尔德分校,University of Colorado Boulder,美国,北美,,,,量子计算;量子传感与测量,,,,,,,JILA（与 NIST 共建）,,,8,否,CU Boulder
+u_ucsb,university,加州大学圣塔芭芭拉分校,UC Santa Barbara,美国,北美,,,,量子计算,,,,,,,,,,7,否,UCSB
+u_stanford,university,斯坦福大学,Stanford University,美国,北美,,,,量子计算;量子传感与测量,,,,,,,Q-FARM 量子科学与工程计划,,主页地址以官网为准,8,否,Stanford
+u_usc,university,南加州大学,University of Southern California,美国,北美,,,,量子计算;量子软件与算法,,,,,,,USC-Lockheed Martin Quantum Computing Center,,,6,否,USC
+u_waterloo,university,滑铁卢大学,University of Waterloo,加拿大,北美,,,,量子计算;量子通信,,,,,,,量子计算研究所（IQC）,,,9,否,Waterloo
+u_toronto,university,多伦多大学,University of Toronto,加拿大,北美,,,,量子计算;量子软件与算法,,,,,,,,,,7,否,U of T
+u_ubc,university,英属哥伦比亚大学,University of British Columbia,加拿大,北美,,,,量子计算,,,,,,,Stewart Blusson 量子物质研究所,,,6,否,UBC
+u_sfu,university,西蒙菲莎大学,Simon Fraser University,加拿大,北美,,,,量子计算,,,,,,,4Q Labs 量子实验室,,主页地址以官网为准,5,否,SFU
+u_uq,university,昆士兰大学,University of Queensland,澳大利亚,亚太及其他,,,,量子计算;量子通信,,,,,,,ARC 量子计算与通信技术中心曾设于此,,主页地址以官网为准,5,否,UQ
+u_oxford,university,牛津大学,University of Oxford,英国,欧洲,,,,量子计算;量子通信;量子传感与测量,,,,,,,英国量子计算与模拟中心（NQCC 生态）,,,10,否,Oxford
+u_cambridge,university,剑桥大学,University of Cambridge,英国,欧洲,,,,量子计算;量子通信,,,,,,,卡文迪许实验室,,,8,否,Cambridge
+u_bristol,university,布里斯托大学,University of Bristol,英国,欧洲,,,,量子计算;量子软件与算法,,,,,,,量子工程技术实验室（QET Labs）,,,7,否,Bristol
+u_imperial,university,帝国理工学院,Imperial College London,英国,欧洲,,,,量子计算;量子传感与测量,,,,,,,,,,8,否,Imperial
+u_ucl,university,伦敦大学学院,UCL,英国,欧洲,,,,量子计算;量子软件与算法,,,,,,,,,,7,否,UCL
+u_sussex,university,萨塞克斯大学,University of Sussex,英国,欧洲,,,,量子计算,,,,,,,Sussex Centre for Quantum Technologies,,,5,否,Sussex
+u_eth,university,苏黎世联邦理工学院,ETH Zurich,瑞士,欧洲,,,,量子计算,,,,,,,超导与离子阱量子器件,,,9,否,ETH Zurich
+u_delft,university,代尔夫特理工大学,TU Delft,荷兰,欧洲,,,,量子计算;量子网络,,,,,,,QuTech（与 TNO 共建）,,,9,否,TU Delft
+u_innsbruck,university,因斯布鲁克大学,University of Innsbruck,奥地利,欧洲,,,,量子计算;量子软件与算法,,,,,,,离子阱量子计算发源地之一,,,8,否,Innsbruck
+u_mpq,university,马克斯·普朗克量子光学研究所,Max Planck Institute of Quantum Optics,德国,欧洲,,,,量子计算;量子软件与算法,,,,,,,研究机构（非高校，按同类主体归类）,,主体类型为研究所而非高校,9,否,MPQ
+u_lmu,university,慕尼黑大学,LMU Munich,德国,欧洲,,,,量子计算,,,,,,,Munich Quantum Valley 成员,,,7,否,LMU
+u_vienna,university,维也纳大学,University of Vienna,奥地利,欧洲,,,,量子通信;量子计算,,,,,,,维也纳量子科技中心（VCQ）,,,8,否,Vienna
+u_geneva,university,日内瓦大学,University of Geneva,瑞士,欧洲,,,,量子通信,,,,,,,Group of Applied Physics (GAP),,主页地址以官网为准,7,否,Geneva
+u_basel,university,巴塞尔大学,University of Basel,瑞士,欧洲,,,,量子计算;量子传感与测量,,,,,,,瑞士量子科学与工程中心（NCCR QSIT 牵头）,,主页地址以官网为准,6,否,Basel
+u_cph,university,哥本哈根大学,University of Copenhagen,丹麦,欧洲,,,,量子计算;量子通信,,,,,,,尼尔斯·玻尔研究所（NBI）,,,7,否,Copenhagen;NBI
+u_bordeaux,university,波尔多大学,University of Bordeaux,法国,欧洲,,,,量子传感与测量,,,,,,,,,,5,否,Bordeaux
+u_iqo,university,巴黎-萨克雷高等光学学院,Institut d'Optique Graduate School,法国,欧洲,,,,量子计算;量子通信,,,,,,,中性原子量子物理重镇,,,7,否,IOGS;Institut d'Optique
+u_ens,university,巴黎高等师范学院,ENS Paris,法国,欧洲,,,,量子计算,,,,,,,,,,7,否,ENS Paris
+u_aalto,university,阿尔托大学,Aalto University,芬兰,欧洲,,,,量子计算,,,,,,,与 VTT 共建量子生态,,,6,否,Aalto
+u_ustc,university,中国科学技术大学,USTC,中国,东亚,,,,量子计算;量子通信;量子传感与测量,,,,,,,合肥国家实验室/中科院量子创新研究院依托单位,,,10,否,USTC;中科大
+u_tsinghua,university,清华大学,Tsinghua University,中国,东亚,,,,量子计算;量子网络;量子软件与算法,,,,,,,交叉信息研究院（IIIS）,,,9,否,Tsinghua;清华
+u_sjtu,university,上海交通大学,Shanghai Jiao Tong University,中国,东亚,,,,量子计算,,,,,,,光量子芯片方向,,,7,否,SJTU;上海交大
+u_zju,university,浙江大学,Zhejiang University,中国,东亚,,,,量子传感与测量;量子计算,,,,,,,,,,6,否,ZJU;浙大
+u_sustech,university,南方科技大学,SUSTech,中国,东亚,,,,量子传感与测量;量子计算,,,,,,,深圳量子科学与工程研究院,,主页地址以官网为准,6,否,SUSTech;南科大
+u_sydney,university,悉尼大学,University of Sydney,澳大利亚,亚太及其他,,,,量子计算;量子软件与算法,,,,,,,Sydney Quantum 生态,,,7,否,USyd
+u_unsw,university,新南威尔士大学,UNSW Sydney,澳大利亚,亚太及其他,,,,量子计算,,,,,,,量子计算与通信技术卓越中心（CQC2T）,,,8,否,UNSW
+u_anu,university,澳大利亚国立大学,Australian National University,澳大利亚,亚太及其他,,,,量子传感与测量;量子计算,,,,,,,,,,6,否,ANU
+u_tokyo,university,东京大学,University of Tokyo,日本,亚太及其他,,,,量子计算,,,,,,,,,,8,否,UTokyo
+u_nus,university,新加坡国立大学,National University of Singapore,新加坡,亚太及其他,,,,量子通信;量子计算,,,,,,,量子科技中心（CQT）,,,7,否,NUS
+u_weizmann,university,魏茨曼科学研究所,Weizmann Institute of Science,以色列,亚太及其他,,,,量子计算,,,,,,,研究机构（非高校，按同类主体归类）,,主体类型为研究所而非高校,7,否,Weizmann
+s_shor,scholar,彼得·肖尔,Peter Shor,美国,北美,,数学系,,量子计算;量子软件与算法,,教授,,,,,Shor 算法提出者，1994,,,10,否,Peter Shor
+s_chuang,scholar,艾萨克·庄,Isaac Chuang,美国,北美,,物理系,,量子计算;量子传感与测量,,教授,,,,,NMR 量子计算先驱；《量子计算与量子信息》合著者,,,8,否,Isaac Chuang
+s_lukin,scholar,米哈伊尔·卢金,Mikhail Lukin,美国,北美,,物理系,,量子计算;量子网络;量子传感与测量,,教授,,,,,中性原子/钻石NV,,,9,否,Mikhail Lukin
+s_greiner,scholar,马库斯·格雷纳,Markus Greiner,美国,北美,,物理系,,量子计算,,教授,,,,,量子气体显微镜；QuEra 联合创始人,,,8,否,Markus Greiner
+s_vuletic,scholar,弗拉丹·武莱蒂奇,Vladan Vuletić,美国,北美,,物理系,,量子计算;量子网络,,教授,,,,,QuEra 联合创始人,,,7,否,Vladan Vuletić
+s_preskill,scholar,约翰·普雷斯基尔,John Preskill,美国,北美,,理论物理,,量子计算;量子软件与算法,,教授,,,,,“量子霸权”概念提出者；IQIM 主任,,,10,否,John Preskill
+s_monroe,scholar,克里斯托弗·门罗,Christopher Monroe,美国,北美,,电气与计算机工程系,,量子计算;量子网络,,教授,,,,,IonQ 联合创始人；曾任 CEO（2018-08–2019-05）与首席科学家（至 2023），现任首席科学顾问；2021 年 1 月起任杜克大学 Gilhuly Family Presidential Distinguished Professor，Duke Quantum Center 创始主任,,,9,是,Christopher Monroe
+s_kim,scholar,金仲桑,Jungsang Kim,美国,北美,,电气与计算机工程系,,量子计算,,教授,,,,,IonQ 联合创始人,,,7,否,Jungsang Kim
+s_schoelkopf,scholar,罗伯特·舍尔科普夫,Robert Schoelkopf,美国,北美,,应用物理系,,量子计算,,教授,,,,,超导量子电路奠基人之一；QCI 联合创始人/首席科学家，2026-01 QCI 并入 D-Wave 后出任 D-Wave 首席科学家,,,9,是,Robert Schoelkopf
+s_devoret,scholar,米歇尔·德沃雷,Michel Devoret,美国,北美,,应用物理系,,量子计算,,教授,,,,,QCI 联合创始人（Yale 荣休；Google Quantum AI 硬件首席科学家）；QCI 已于 2026-01 并入 D-Wave,,Google 任职以公开报道为准,10,是,Michel Devoret
+s_martinis,scholar,约翰·马蒂尼斯,John M. Martinis,美国,北美,,,,量子计算,,教授（曾任）,,,,,2019 量子霸权实验负责人；2020 离开 Google；2025 诺贝尔物理学奖,,,10,是,John M. Martinis
+s_kimble,scholar,杰夫·金布尔,H. Jeff Kimble,美国,北美,,物理系,,量子网络;量子计算,,教授,,,,,腔 QED 与量子网络先驱,,,8,否,H. Jeff Kimble
+s_houck,scholar,安德鲁·哈克,Andrew Houck,美国,北美,,电气与计算机工程系,,量子计算,,教授,,,,,3D 腔 QED / transmon 量子比特,,维基页面存在性未核验,7,否,Andrew Houck
+s_siddiqi,scholar,伊尔凡·西迪基,Irfan Siddiqi,美国,北美,,物理系,,量子计算,,教授,,,,,超导量子测量,,维基页面存在性未核验,7,否,Irfan Siddiqi
+s_awschalom,scholar,大卫·奥沙洛姆,David Awschalom,美国,北美,,普利兹克分子工程学院,,量子传感与测量;量子计算,,教授,,,,,自旋量子比特与量子传感,,,8,否,David Awschalom
+s_bernien,scholar,汉内斯·伯尼恩,Hannes Bernien,美国,北美,,普利兹克分子工程学院,,量子计算;量子网络,,教授,,,,,中性原子阵列；QuEra 联合创始人,,2026 年论文署名含因斯布鲁克大学实验物理研究所（arXiv 2601.16257），是否正式兼任待核验,7,是,Hannes Bernien
+s_lidar,scholar,丹尼尔·利达尔,Daniel Lidar,美国,北美,,电气与计算机工程系,,量子计算;量子软件与算法,,教授,,,,,量子退火理论；D-Wave 系统评测,,,7,否,Daniel Lidar
+s_zeilinger,scholar,安东·蔡林格,Anton Zeilinger,奥地利,欧洲,,物理系,,量子通信;量子计算,,教授,,,,,2022 诺奖,,,10,否,Anton Zeilinger
+s_pan,scholar,潘建伟,Pan Jianwei,中国,东亚,,物理学院,,量子通信;量子计算,,教授,,,,,直接持股国盾量子 6.42%（2025 年一季报核实），并将表决权委托给科大控股行使,,,10,是,Pan Jianwei
+s_guo,scholar,郭光灿,Guo Guangcan,中国,东亚,,物理学院,,量子计算;量子通信,,教授,,,,,中科院院士；本源量子共同发起人,,,8,否,Guo Guangcan
+s_du,scholar,杜江峰,Du Jiangfeng,中国,东亚,,,,量子传感与测量;量子计算,,教授,,,,,NV 色心量子传感；现任浙江大学校长,,,8,否,Du Jiangfeng
+s_duan,scholar,段路明,Luming Duan,中国,东亚,,交叉信息研究院,,量子计算;量子网络,,教授,,,,,DLCZ 方案；华翊量子发起人,,,8,否,Luming Duan
+s_yao,scholar,姚期智,Andrew Yao,中国,东亚,,交叉信息研究院,,量子软件与算法;量子计算,,教授,,,,,图灵奖（2000）,,,10,否,Andrew Yao
+s_jin,scholar,金贤敏,Xianmin Jin,中国,东亚,,物理与天文学院,,量子计算,,教授,,,,,光量子芯片；图灵量子创始人,,,6,否,Xianmin Jin
+s_lu,scholar,陆朝阳,Chao-Yang Lu,中国,东亚,,物理学院,,量子计算,,教授,,,,,九章光量子；潘建伟学生,,,7,否,Chao-Yang Lu
+s_chen,scholar,陈宇翱,Yu-Ao Chen,中国,东亚,,物理学院,,量子通信;量子计算,,教授,,,,,量子存储/中继,,,6,否,Yu-Ao Chen
+s_guogp,scholar,郭国平,Guo Guoping,中国,东亚,,物理学院,,量子计算,,教授,,,,,本源量子首席科学家；郭光灿学生,,师承关系以公开访谈与报道为准,7,否,Guo Guoping
+s_peng,scholar,彭承志,Cheng-Zhi Peng,中国,东亚,,物理学院,,量子通信,,教授,,,,,国盾量子董事长；直接持股 1.64%，与科大控股、中电信量子集团为一致行动人（定期报告核实）,,职务以公司公告为准,7,是,Cheng-Zhi Peng
+s_xue,scholar,薛其坤,Qikun Xue,中国,东亚,,,,量子传感与测量;量子计算,,教授,,,,,量子反常霍尔效应；国家最高科技奖（2023）,,,9,否,Qikun Xue
+s_wallraff,scholar,安德烈亚斯·瓦尔拉夫,Andreas Wallraff,瑞士,欧洲,,物理系,,量子计算,,教授,,,,,超导电路量子电动力学,,,8,否,Andreas Wallraff
+s_home,scholar,乔纳森·霍姆,Jonathan Home,瑞士,欧洲,,物理系,,量子计算,,教授,,,,,囚禁离子量子信息,,,6,否,Jonathan Home
+s_hanson,scholar,罗纳德·汉森,Ronald Hanson,荷兰,欧洲,,QuTech / Kavli 纳米科学研究所,,量子网络;量子传感与测量,,教授,,,,,量子互联网演示,,,8,否,Ronald Hanson
+s_vandersypen,scholar,利文·范德西彭,Lieven Vandersypen,荷兰,欧洲,,QuTech / Kavli 纳米科学研究所,,量子计算,,教授,,,,,半导体自旋量子比特,,,7,否,Lieven Vandersypen
+s_groblacher,scholar,西蒙·格勒布拉赫,Simon Gröblacher,荷兰,欧洲,,应用科学学院,,量子网络,,教授,,,,,QphoX 联合创始人,,,6,否,Simon Gröblacher
+s_blatt,scholar,赖纳·布拉特,Rainer Blatt,奥地利,欧洲,,实验物理研究所,,量子计算,,教授,,,,,离子阱量子计算先驱；AQT 联合创始人,,,8,否,Rainer Blatt
+s_zoller,scholar,彼得·佐勒,Peter Zoller,奥地利,欧洲,,理论物理研究所,,量子计算;量子软件与算法,,教授,,,,,Cirac–Zoller 方案；AQT 联合创始人,,,9,否,Peter Zoller
+s_cirac,scholar,伊格纳西奥·西拉克,J. Ignacio Cirac,德国,欧洲,,理论部,,量子软件与算法;量子计算,,所长/教授,,,,,张量网络；planqc 科学顾问,,,9,否,J. Ignacio Cirac
+s_bloch,scholar,伊曼努尔·布洛赫,Immanuel Bloch,德国,欧洲,,量子多体系统部,,量子计算,,教授/所长,,,,,光晶格量子模拟；planqc 科学顾问,,,9,否,Immanuel Bloch
+s_ekert,scholar,阿图尔·埃克特,Artur Ekert,英国/新加坡,欧洲,,数学研究所（牛津）/ CQT（NUS）,,量子通信;量子计算,,教授,,,,,E91 协议；CQT 创始主任,,,9,否,Artur Ekert
+s_steane,scholar,安德鲁·斯坦,Andrew Steane,英国,欧洲,,物理系,,量子计算,,教授,,,,,Steane 纠错码；离子阱量子计算,,,7,否,Andrew Steane
+s_walmsley,scholar,伊恩·沃姆斯利,Ian Walmsley,英国,欧洲,,,,量子计算;量子传感与测量,,教授,,,,,ORCA 联合创始人；帝国理工教务长,,,7,否,Ian Walmsley
+s_obrien,scholar,杰里米·奥布莱恩,Jeremy O'Brien,英国/美国,欧洲,,,,量子计算,,教授（曾任）,,,,,联合创始人/CEO（2016–2026-02）；2026-02 起转任执行董事长，Victor Peng 任临时 CEO,,,7,是,Jeremy O'Brien
+s_thompson,scholar,马克·汤普森,Mark Thompson,英国/美国,欧洲,,,,量子计算,,教授（曾任）,,,,,PsiQuantum 联合创始人/CTO,,,6,否,Mark Thompson
+s_rudolph,scholar,特里·鲁道夫,Terry Rudolph,英国/美国,欧洲,,物理系,,量子计算,,教授,,,,,PsiQuantum 联合创始人,,,6,否,Terry Rudolph
+s_montanaro,scholar,阿什利·蒙塔纳罗,Ashley Montanaro,英国,欧洲,,数学学院,,量子软件与算法,,教授,,,,,Phasecraft 联合创始人/CEO,,,6,否,Ashley Montanaro
+s_cubitt,scholar,托比·丘比特,Toby Cubitt,英国,欧洲,,计算机科学系,,量子软件与算法,,教授,,,,,Phasecraft 联合创始人,,,6,否,Toby Cubitt
+s_morton,scholar,约翰·莫顿,John Morton,英国,欧洲,,电子与电气工程系,,量子计算,,教授,,,,,Quantum Motion / Phasecraft 联合创始人,,院系主页地址以官网为准,6,否,John Morton
+s_hensinger,scholar,温弗里德·亨辛格,Winfried Hensinger,英国,欧洲,,物理与天文系,,量子计算,,教授,,,,,Universal Quantum 联合创始人,,,7,否,Winfried Hensinger
+s_lucas,scholar,大卫·卢卡斯,David Lucas,英国,欧洲,,物理系,,量子计算,,教授,,,,,Oxford Ionics 创始团队导师,,师承细节以校方公开资料为准,5,否,David Lucas
+s_leek,scholar,彼得·利克,Peter Leek,英国,欧洲,,物理系,,量子计算,,教授,,,,,OQC 联合创始人,,主页地址以官网为准,6,否,Peter Leek
+s_gisin,scholar,尼古拉·吉桑,Nicolas Gisin,瑞士,欧洲,,应用物理组,,量子通信,,教授,,,,,ID Quantique 联合创始人,,,9,否,Nicolas Gisin
+s_loss,scholar,丹尼尔·洛斯,Daniel Loss,瑞士,欧洲,,物理系,,量子计算,,教授,,,,,Loss-DiVincenzo 自旋量子比特方案,,,9,否,Daniel Loss
+s_lodahl,scholar,彼得·洛达尔,Peter Lodahl,丹麦,欧洲,,尼尔斯·玻尔研究所,,量子计算;量子通信,,教授,,,,,Sparrow Quantum 创始人,,主页地址以官网为准,6,否,Peter Lodahl
+s_anderson,scholar,达纳·安德森,Dana Z. Anderson,美国,北美,,物理系,,量子计算;量子传感与测量,,教授,,,,,Infleqtion 联合创始人,,,6,否,Dana Z. Anderson
+s_biercuk,scholar,迈克尔·比尔库克,Michael Biercuk,澳大利亚,亚太及其他,,物理学院,,量子计算;量子软件与算法,,教授,,,,,Q-CTRL 创始人/CEO,,,7,否,Michael Biercuk
+s_simmons,scholar,米歇尔·西蒙斯,Michelle Simmons,澳大利亚,亚太及其他,,CQC2T / 物理学院,,量子计算,,教授,,,,,SQC 创始人；硅基原子量子比特,,,8,否,Michelle Simmons
+s_morello,scholar,安德烈亚·莫雷洛,Andrea Morello,澳大利亚,亚太及其他,,电气工程与电信学院,,量子计算,,教授,,,,,硅基自旋量子比特,,,7,否,Andrea Morello
+s_dzurak,scholar,安德鲁·祖拉克,Andrew Dzurak,澳大利亚,亚太及其他,,电气工程与电信学院,,量子计算,,教授,,,,,Diraq 创始人/CEO,,,7,否,Andrew Dzurak
+s_doherty,scholar,马库斯·多尔蒂,Marcus Doherty,澳大利亚,亚太及其他,,物理学院,,量子传感与测量;量子计算,,副教授,,,,,Quantum Brilliance 联合创始人,,,5,否,Marcus Doherty
+s_nakamura,scholar,中村泰信,Yasunobu Nakamura,日本,亚太及其他,,量子计算研究中心（RQC）,,量子计算,,教授,,,,,首个超导量子比特演示（1999）,,,8,否,Yasunobu Nakamura
+s_yamamoto,scholar,山本喜久,Yoshihisa Yamamoto,日本,亚太及其他,,NTT 基础科学实验室（NTT Research PHI Lab）,,量子计算,,教授,,,,,相干伊辛机；玻色量子创始人的导师,,,8,否,Yoshihisa Yamamoto
+s_alan,scholar,阿兰·阿斯普鲁-古齐克,Alán Aspuru-Guzik,加拿大,北美,,化学系/计算机科学系,,量子软件与算法;量子计算,,教授,,,,,Zapata 联合创始人（该公司 2024 年申请破产保护）,,,8,否,Alán Aspuru-Guzik
+s_emerson,scholar,约瑟夫·爱默生,Joseph Emerson,加拿大,北美,,应用数学系,,量子软件与算法;量子计算,,教授,,,,,Quantum Benchmark 创始人（2021 年被 Keysight 收购）,,,6,否,Joseph Emerson
+s_mosca,scholar,米歇尔·莫斯卡,Michele Mosca,加拿大,北美,,组合数学与优化系,,量子软件与算法;量子通信,,教授,,,,,evolutionQ 联合创始人,,,7,否,Michele Mosca
+s_browaeys,scholar,安托万·布洛维,Antoine Browaeys,法国,欧洲,,Institut d'Optique / CNRS,,量子计算,,研究主任,,,,,Pasqal 联合创始人,,,8,否,Antoine Browaeys
+s_aspect,scholar,阿兰·阿斯佩,Alain Aspect,法国,欧洲,,Institut d'Optique（名誉教授）,,量子通信,,教授,,,,,2022 诺奖；Pasqal 科学顾问（共同发起，公开报道）,,在 Pasqal 的具体身份（共同发起人/科学顾问）以公司披露为准,10,否,Alain Aspect
+s_fitzsimons,scholar,乔·菲茨西蒙斯,Joe Fitzsimons,新加坡,亚太及其他,,,,量子软件与算法;量子计算,,教授,,,,,Horizon Quantum 创始人/CEO,,任职机构（SUTD 与 CQT）以公开资料为准,6,否,Joe Fitzsimons
+st_rigetti,student,查德·里盖蒂,Chad Rigetti,美国,北美,,应用物理,,量子计算,,博士（校友）,,,,,现任 CEO 为 Subodh Kulkarni（2022-12 起）；博士导师 Devoret 经专访核实,,博士导师归属公开资料口径不一（Schoelkopf / Devoret 组）,6,是,Chad Rigetti
+st_weedbrook,student,克里斯蒂安·威德布鲁克,Christian Weedbrook,加拿大,北美,,,,量子计算,,博士/博后（校友）,,,,,2016 年创立 Xanadu,,博士导师信息未核验,6,否,Christian Weedbrook
+st_wen,student,文凯,Kai Wen,中国,东亚,,应用物理,,量子计算,,博士（校友）,,,,,2020 年创立玻色量子,,,5,是,Kai Wen
+st_ballance,student,克里斯·巴兰斯,Chris Ballance,英国,欧洲,,物理系,,量子计算,,博士（校友）,,,,,Oxford Ionics 联合创始人/CEO；2025-11 起兼任 IonQ 量子计算总裁（IonQ Q3 财报）,,博士导师（David Lucas）以公开资料为准,5,是,Chris Ballance
+st_heyu,student,贺羽,Yu He,中国,东亚,,,,量子传感与测量,,博士（校友）,,,,,国仪量子（CIQTEK）创始人,,个人履历以公司官网与媒体公开报道为准,5,是,Yu He
+st_wallman,student,乔尔·沃尔曼,Joel Wallman,加拿大,北美,,应用数学系,,量子软件与算法,,博后（校友）,,,,,Quantum Benchmark 联合创始人,,现职以校方公开信息为准,5,否,Joel Wallman
+st_zeiher,student,约翰内斯·蔡尔,Johannes Zeiher,德国,欧洲,,MPQ / LMU（组长、教授）,,量子计算,,组长/教授,,,,,planqc 联合创始人,,在 Bloch 组的具体身份（博士/博后）未细分,5,否,Johannes Zeiher
+st_bedington,student,罗伯特·贝丁顿,Robert Bedington,新加坡,亚太及其他,,,,量子通信,,博后（校友）,,,,,SpeQtral 联合创始人/CTO,,,4,否,Robert Bedington
+c_ionq,company,IonQ,IonQ,美国,北美,,,,量子计算;量子网络,,,2015,已上市（NYSE: IONQ，2021 年经 SPAC）,离子阱量子计算机硬件与云服务,,2025-02 CEO 换任：Niccolo de Masi 任总裁兼 CEO，Peter Chapman 转任执行董事长；2025 年完成 IDQ 控股收购（05-06 交割，07 持股约 91%）；Oxford Ionics 2025-09 交割；SkyWater 交易待交割,,各收购交割进度以官方公告为准,9,是,IONQ
+c_quera,company,QuEra Computing,QuEra,美国,北美,,,,量子计算,,,2018,累计融资超 4.5 亿美元（2025-02 B 轮 2.3 亿美元：Google 量子 AI 与软银愿景基金 2 联合领投；2025-12 再完成超 2.3 亿美元新融资，同领投方加注、NVentures 战略投资）,中性原子量子计算机（Aquila）与云服务,,,,成立年份部分资料记为 2019；最新轮次未核验,7,是,QuEra
+c_rigetti,company,Rigetti Computing,Rigetti,美国,北美,,,,量子计算,,,2013,已上市（NASDAQ: RGTI，2022 年经 SPAC）,超导量子计算全栈（芯片、整机、云服务）,,现任 CEO 为 Subodh Kulkarni（2022-12 起）；创始人 Chad Rigetti 2022 年底卸任 CEO,,,8,是,RGTI;Rigetti
+c_atom,company,Atom Computing,Atom Computing,美国,北美,,,,量子计算,,,2018,累计融资超 3 亿美元（含 2026-06 完成的 1 亿美元 C 轮，Third Point Ventures 领投；另有与美国商务部 1 亿美元意向书）,中性原子（核自旋）量子计算机,,,,与 UC Berkeley 为创始人校友关联，非正式技术转移孵化,6,是,Atom Computing
+c_infleqtion,company,Infleqtion（原 ColdQuanta）,Infleqtion,美国,北美,,,,量子计算;量子传感与测量,,,2007,已上市（NYSE: INFQ；2026-02-13 完成与 Churchill Capital Corp X 的 SPAC 合并，02-17 起交易，募资超 5.5 亿美元，交易投前估值 18 亿美元）,冷原子量子计算、量子传感与精密时钟,,全球首家上市中性原子量子技术公司；2025 财年收入 3250 万美元,,SPAC 上市进展以官方公告为准,7,是,INFQ;ColdQuanta
+c_qci,company,Quantum Circuits Inc,QCI,美国,北美,,,,量子计算,,,2015,已被 D-Wave Quantum 收购（2026-01-06 宣布、2026-01-20 交割；对价未官方披露，第三方数据库口径约 5.5 亿美元）；此前累计融资约 7800 万美元（2024-05 B 轮 2660 万美元，Sequoia Capital 领投）,超导量子计算机（含双轨腔量子比特路线）,,耶鲁大学正式技术转移孵化；2026-01 并入 D-Wave（Schoelkopf 出任 D-Wave 首席科学家），成为 D-Wave 门模型产品线核心,,,6,是,QCI
+c_psiquantum,company,PsiQuantum,PsiQuantum,美国,北美,,,,量子计算,,,2016,E 轮 10 亿美元（2025-09，估值 70 亿美元，BlackRock/淡马锡/Baillie Gifford 领投，NVentures 等跟投），累计超 18 亿美元,光量子容错量子计算（与 GlobalFoundries 合作制造）,,2026-02 CEO 换任：Victor Peng（前 AMD 总裁）任临时 CEO，O'Brien 转任执行董事长；2026-09-30 在芝加哥 IQMP 启动美国最大量子计算项目,,估值与融资额以最新公开报道为准,9,是,PsiQuantum
+c_qolab,company,Qolab,Qolab,美国,北美,,,,量子计算,,,2022,B 轮 5420 万美元（2026-07，UC Investments 领投）；早期 1600 万美元+（WARF 威斯康星校友研究基金会、日本开发银行等）,超导量子计算硬件,,Martinis 任 CTO；2026-01 加入 Chicago Quantum Exchange 企业合作,,成立年份公开信息较少，以官网/报道为准,5,是,Qolab
+c_dwave,company,D-Wave Systems,D-Wave,加拿大,北美,,,,量子计算,,,1999,已上市（NYSE: QBTS，2022 年经 SPAC）,量子退火机与门模型量子计算,,UBC 孵化背景（创始团队为 UBC 校友）；2026-01-20 完成 QCI 收购（对价未官方披露，第三方口径约 5.5 亿美元）；CEO Alan Baratz（2020 起）,,,8,是,QBTS;D-Wave
+c_xanadu,company,Xanadu,Xanadu,加拿大,北美,,,,量子计算;量子软件与算法,,,2016,已上市（2026-03-26 完成与 Crane Harbor 的 SPAC 合并，2026-03-27 起以 XNDU 在 Nasdaq 与多伦多交易所交易；募资总额约 3.02 亿美元，交易宣布时投前估值约 30 亿美元）,光量子计算硬件与 PennyLane 开源软件生态,,全球首家上市纯光量子计算公司,,与多伦多大学为团队校友/博后关联,7,是,Xanadu;XNDU
+c_qm,company,Quantum Machines,Quantum Machines,以色列,亚太及其他,,,,量子计算,,,2018,C 轮 1.7 亿美元（2025-02，PSG 领投，Intel Capital 等跟投）；累计约 2.5 亿美元（2022 年收购丹麦 QDevil）；估值约 6.7 亿美元,量子计算控制与操控系统（OPX）,,魏茨曼孵化；三位创始人 Sivan/Cohen/Ofek 均为魏茨曼 Heiblum 组博士,,估值以最新公开报道为准,7,是,Quantum Machines
+c_oxford_ionics,company,Oxford Ionics,Oxford Ionics,英国,欧洲,,,,量子计算,,,2019,成长期风险投资；2025-06-09 IonQ 宣布以约 10.75 亿美元收购（股票为主），2025-09-17 交割完成，现为 IonQ 全资子公司（保留 Oxford 运营）,电子控制离子阱量子芯片,,2025 年 9 月并入 IonQ；创始人 Ballance（CEO）/Harty（CTO）均为牛津离子阱量子计算博士,,收购交割进展以官方公告为准,6,是,Oxford Ionics
+c_universal_quantum,company,Universal Quantum,,英国,欧洲,,,,量子计算,,,2018,风险投资 + 德国宇航中心（DLR）6700 万欧元研制合同（2023，公开报道）,模块化离子阱量子计算,,萨塞克斯大学孵化,,,5,否,Universal Quantum
+c_riverlane,company,Riverlane,Riverlane,英国,欧洲,,,,量子软件与算法;量子计算,,,2016,累计融资超 1.2 亿美元（含 2024-08 C 轮 7500 万美元）,量子纠错软硬件栈（Deltaflow）,,剑桥大学孵化；Deltaflow 与 Qblox 控制硬件完成实时纠错集成（2026-03）；与 Infleqtion 签署 QEC 合作 MOU（2026-09）,,,7,是,Riverlane
+c_phasecraft,company,Phasecraft,Phasecraft,英国,欧洲,,,,量子软件与算法,,,2019,B 轮 3400 万美元（2025，Plural/Playground Global/Novo 量子基金联合领投），累计超 5000 万美元,量子算法与量子化学/材料模拟软件,,UCL 与布里斯托大学团队共同创立,,,5,是,Phasecraft
+c_quantum_motion,company,Quantum Motion,Quantum Motion,英国,欧洲,,,,量子计算,,,2017,B 轮 4200 万英镑（2023-02，Bosch Ventures/Porsche SE/British Patient Capital 等，公开报道）,硅基 CMOS 工艺量子芯片,,UCL 孵化,,,5,否,Quantum Motion
+c_orca,company,ORCA Computing,ORCA Computing,英国,欧洲,,,,量子计算,,,2019,A 轮 1500 万美元（2022，公开报道）,光量子计算（量子存储复用架构）,,三位联创：Murray（CEO）、Nunn（CSO）、Walmsley（董事长）；2024-01 收购 GXC 光子部门（Austin）；已向 NQCC、PCSS（波兰超算）、蒙大拿州立、英国国防部等交付 10 台整机；与英伟达 CUDA-Q 深度集成,,,5,是,ORCA
+c_oqc,company,Oxford Quantum Circuits,OQC,英国,欧洲,,,,量子计算,,,2017,B 轮 1 亿美元（2023-11 宣布，SBI 领投，Chevron 2024-03 跟投）；2026-06 完成 2.6 亿英镑 C 轮（欧洲量子计算公司最大轮次）,超导量子计算机与云服务（Toshiko）,,现任 CEO 为 Gerald Mullally（2024-05 起，先任临时 CEO）,,官网地址以公司披露为准,6,是,OQC
+c_pasqal,company,Pasqal,Pasqal,法国,欧洲,,,,量子计算,,,2019,B 轮约 1 亿欧元（2023，淡马锡领投）；2026-03 宣布 3.4 亿欧元融资（1.7 亿欧元股权：Parkway、广达电脑、LG 电子、CMA CGM 等新投资方，淡马锡、EIC Fund、沙特阿美、Isai 等老股东加码；另 1.7 亿欧元可转换私募）+ 与 Bleichroeder II 的 SPAC 合并协议（投前估值 20 亿美元），计划 Nasdaq + Euronext 双重上市，预计 2026 下半年交割,中性原子量子处理器,,SPAC 交易已宣布待交割；2026 年起公司 CEO 公开报道为 Loïc Henriet（原 CTO，SEC 文件引述），Reymond 转任其他职务,,,7,是,Pasqal
+c_alicebob,company,Alice & Bob,Alice & Bob,法国,欧洲,,,,量子计算,,,2020,累计融资 1.8 亿欧元（B 轮 1 亿欧元 2025-01，FFC/AXA Venture Partners/Bpifrance 领投；2026-05 NVentures 扩轮）；入选法国 PROQCIMA（最高 5 亿欧元）与 DARPA QBI；咨询委员会含 Devoret/Martinis/DiVincenzo/Nakamura/Gottesman,猫量子比特容错量子计算,,ENS Paris 孵化；PROQCIMA 入选经公司官网核实,,融资轮次以最新公开报道为准,6,是,Alice & Bob
+c_quandela,company,Quandela,Quandela,法国,欧洲,,,,量子计算,,,2017,B 轮 5000 万欧元（2023-11，Omnes/Quantonation/Bpifrance 等，公开报道）,光量子计算（半导体单光子源）,,B 轮 5000 万欧元（2023-11）；2025-10 向 CEA 交付 12 比特「Lucy」光量子系统（部署 TGCC 超算中心，EuroHPC JU 项目）；Belenos/Canopus 经 OVHcloud 主权云接入（2026 年中）；2026 年计划新一轮融资,,,6,是,Quandela
+c_planqc,company,planqc,planqc,德国,欧洲,,,,量子计算,,,2022,A 轮 5000 万欧元（2024，公开报道）,中性原子（锶、光晶格）量子计算机,,MPQ 孵化；2025 年德国创始人奖,,,6,否,planqc
+c_iqm,company,IQM Quantum Computers,IQM,芬兰,欧洲,,,,量子计算,,,2018,已上市（2026-07-01 完成与 Real Asset Acquisition Corp 的 SPAC 合并；ADS 以 IQMX 在 Nasdaq 交易，普通股同日在 Nasdaq Helsinki 上市；净募资约 2.335 亿美元）；上市前 2025-09 完成 3.2 亿美元 B 轮（估值约 10 亿美元）,超导量子计算机整机,,2026-03 获贝莱德 5000 万欧元融资安排；2025 年营收至少 3500 万美元、年末订单超 1 亿美元；SPAC 交易投前估值 18 亿美元,,,7,是,IQM;IQMX
+c_aqt,company,Alpine Quantum Technologies,AQT,奥地利,欧洲,,,,量子计算,,,2018,风险投资,离子阱量子计算机,,因斯布鲁克大学孵化,,,5,否,AQT
+c_qphox,company,QphoX,QphoX,荷兰,欧洲,,,,量子网络,,,2020,早期风险投资,量子网络换能器（微波-光学转换）,,TU Delft 孵化,,成立年份以公司披露为准,4,否,QphoX
+c_qblox,company,Qblox,Qblox,荷兰,欧洲,,,,量子计算,,,2018,早中期风险投资,量子计算控制电子学（Cluster）,,QuTech 生态孵化,,,5,否,Qblox
+c_idq,company,ID Quantique,ID Quantique,瑞士,欧洲,,,,量子通信;量子传感与测量,,,2001,2025 年 5 月被 IonQ 控股收购,QKD 设备、量子随机数发生器、单光子探测器,,日内瓦大学孵化；2025-02-26 IonQ 宣布控股收购（SKT 以所持 56.9% IDQ 股权置换约 3.1% IonQ 股份），2025-05-06 交割；2025-07 IonQ 持股升至约 91%,,,8,是,IDQ
+c_kets,company,KETS Quantum Security,KETS,英国,欧洲,,,,量子通信,,,2016,早期（累计约 550 万英镑 + Innovate UK SBRI 项目，公开报道）,芯片级量子密钥分发（QKD）系统,,布里斯托大学孵化,,成立年份与官网地址以公司披露为准,4,否,KETS
+c_nuquantum,company,Nu Quantum,Nu Quantum,英国,欧洲,,,,量子网络,,,2018,累计融资超 7000 万美元（含 6000 万美元 A 轮——全球量子网络公司最大轮次）,量子网络接口（量子比特-光子纠缠分发）,,剑桥大学孵化；2026-06 与 Atom Computing 达成分布式量子计算合作,,成立年份与官网地址以公司披露为准,5,是,Nu Quantum
+c_sparrow,company,Sparrow Quantum,Sparrow Quantum,丹麦,欧洲,,,,量子通信;量子计算,,,2015,种子轮 2500 万美元（2025-04）+ A 轮 3500 万美元（2025，North Ventures、Scale Capital、LIFTT、EIFO 等）；牵头欧盟 P4Q 光子量子中试线（5000 万欧元）；员工 50+,确定性单光子源芯片,,哥本哈根大学（NBI）孵化；Lodahl 任创始人兼首席量子官（CQO），Kurt Stokbro 任 CEO,,成立年份（2015/2016）以公司披露为准,5,是,Sparrow
+c_qnami,company,Qnami,Qnami,瑞士,欧洲,,,,量子传感与测量,,,2017,A 轮约 440 万美元（2021，公开报道）,NV 色心扫描量子显微镜,,巴塞尔大学孵化,,成立年份以公司披露为准; A 轮金额来自公开报道，未经公司公告核验,4,否,Qnami
+c_muquans,company,Muquans,Muquans,法国,欧洲,,,,量子传感与测量,,,2011,已被 Exail（原 iXblue）收购,冷原子干涉量子重力仪与惯性传感,,三位创始人 Bouyer/Landragin/Desruelle（2011 年成立于塔朗斯，依托 IOGS Aquitaine/SYRTE/LP2N 研究）；2021 年并入 iXblue（后更名 Exail）,,收购时间与官网地址以公开报道为准,5,是,Muquans
+c_quantumctek,company,国盾量子,QuantumCTek,中国,东亚,,,,量子通信;量子计算,,,2009,已上市（科创板 688027，2020-07；2025-01 起中电信量子集团控股）,量子通信（QKD）设备、量子计算测控系统,,中科大孵化（科大控股持股 10.5%）；潘建伟直接持股 6.42% 经定期报告核实,,官网地址以公司披露为准,8,是,QuantumCTek;688027;国盾
+c_origin,company,本源量子,Origin Quantum,中国,东亚,,,,量子计算,,,2017,Pre-IPO 轮近 30 亿元（2026-06 完成，投前估值 210 亿元，为国内估值最高的量子计算企业；中国兵器集团领投增资 5 亿元，中科创星联合领投 4.5 亿元，深创投、中网投、合肥高投等加码）；2025-09 完成科创板 IPO 辅导备案（中信建投）,超导量子计算全栈（本源悟空、QPanda 软件）,,2026-06 Pre-IPO 轮融资经多家权威财经媒体核实,,,7,是,Origin Quantum;本源
+c_ciqtek,company,国仪量子,CIQTEK,中国,东亚,,,,量子传感与测量,,,2016,已上市（科创板 688828；2026-08-11 上市，开盘涨 418%、市值一度破 440 亿元；IPO 募资总额 8.49 亿元）；A 轮（2018）全部由中科大及校友资本出资（科大讯飞、讯飞控股、科大控股、科大国创）,量子精密测量与高端科学仪器（EPR、NV 扫描探针等）,,实控人贺羽+荣星（34.87%）；科大控股持股 14.75% 第一大外部股东；2017-09 中科大与杜江峰团队《技术移交确认书》移交 4 项专利+1 项专有技术；杜江峰 2025 年应组织部门要求挂牌转让退出全部股份,,,7,是,CIQTEK;688828;国仪
+c_turingq,company,图灵量子,TuringQ,中国,东亚,,,,量子计算,,,2021,战略轮（2025 年，估值超 70 亿元，累计 8 轮超 10 亿元）,光量子计算芯片与系统,,2026-08-06 启动 IPO 辅导（证监会公示）,,,6,是,TuringQ;图灵
+c_boseq,company,玻色量子,QBoson,中国,东亚,,,,量子计算,,,2020,B 轮 10 亿元（2026-03-31，北京金控、工银资本、招银国际、深投控联合领投）；Pre-IPO 轮数亿元（2026-07，杭州产投、九智资本、元禾璞华、全新世、洪泰基金、君礼资本、招银国际、中银资本投控、元和资本、福州国资等 10 家机构）；2026-07 完成 IPO 辅导备案（国泰海通），累计 10 轮融资,相干伊辛机/光量子计算（组合优化）,,文凯为清华本硕、斯坦福电子工程系博士；马寅任 COO（公开报道）,,,5,是,QBoson;玻色
+c_huayi,company,华翊量子,Huayi Quantum,中国,东亚,,,,量子计算,,,2022,天使轮（2022-04，高榕资本领投）、Pre-A 轮过亿元（2024-05，央视融媒体产业投资基金领投）、A 轮数亿元（2025-07，社保基金中关村自主创新专项基金、北京信息产业发展投资基金与君联资本联合领投）、A+ 轮（2026-05，建投投资领投，中信建投投资、中车资本跟投，百度风投/信产基金/君联等老股东追加），累计超 5 亿元,离子阱量子计算,,HYQ-B100 已交付中国移动研究院；与中石油数智研究院深度合作,,,4,是,Huayi Quantum;华翊
+c_qctrl,company,Q-CTRL,Q-CTRL,澳大利亚,亚太及其他,,,,量子软件与算法;量子计算,,,2017,B 轮及多轮扩展（累计约 1 亿美元级，公开报道口径不一）,量子控制与量子基础设施软件,,悉尼大学孵化,,累计融资金额各家报道口径不一（约 1 亿美元级）,7,否,Q-CTRL
+c_sqc,company,Silicon Quantum Computing,SQC,澳大利亚,亚太及其他,,,,量子计算,,,2017,A 轮 5000 万澳元（2023，估值 1.95 亿澳元）；2026-03 获澳国家重建基金（NRF）2000 万澳元,硅基原子量子比特,,UNSW / CQC2T 孵化,,,6,否,SQC
+c_diraq,company,Diraq,Diraq,澳大利亚,亚太及其他,,,,量子计算,,,2022,A 轮累计约 7500 万澳元（含 2026-02 澳 NRF 2000 万澳元，公开报道）,硅 MOS 量子点量子计算芯片,,UNSW 孵化,,成立年份与官网地址以公司披露为准,5,否,Diraq
+c_qb,company,Quantum Brilliance,Quantum Brilliance,澳大利亚,亚太及其他,,,,量子计算;量子传感与测量,,,2019,A 轮约 3000 万美元（2024，公开报道）,金刚石 NV 色心室温量子计算与量子加速卡,,ANU 孵化,,A 轮具体金额来自第三方数据库报道，未经公司公告核验,5,否,Quantum Brilliance
+c_speqtral,company,SpeQtral,SpeQtral,新加坡,亚太及其他,,,,量子通信,,,2017,A 轮 830 万美元（2021-11，Xora Innovation 领投）,卫星量子密钥分发（QKD）,,NUS/CQT 孵化,,成立年份 2017/2018 公开资料口径不一,5,是,SpeQtral
+c_horizon,company,Horizon Quantum,Horizon Quantum,新加坡,亚太及其他,,,,量子软件与算法,,,2018,已上市（2026-03-19/20 完成与 dMY Squared 的 SPAC 合并，Nasdaq 代码 HQ；配套 1.1 亿美元 PIPE，IonQ 与一家财富 50 强科技公司为领投方）,量子程序编译与开发工具链,,新加坡首家上市量子公司,,与 NUS/CQT 为团队关联，非正式技术转移,5,是,Horizon Quantum;HQ
+c_qbench,company,Quantum Benchmark,Quantum Benchmark,加拿大,北美,,,,量子软件与算法,,,2017,2021 年 5 月被 Keysight 收购,量子硬件错误诊断与性能验证软件,,滑铁卢大学（IQC）孵化；2021 年被 Keysight 收购,,,5,否,Quantum Benchmark
+c_evoq,company,evolutionQ,evolutionQ,加拿大,北美,,,,量子通信,,,2015,早期风险投资,量子安全（QKD/后量子密码）评估与迁移服务,,滑铁卢大学孵化,,成立年份与官网地址以公司披露为准,4,否,evolutionQ
+c_photonicinc,company,Photonic Inc,Photonic Inc,加拿大,北美,,,,量子计算;量子网络,,,2016,累计融资超 3.5 亿美元（2024-09 B 轮 1 亿美元；2025 年 1.8 亿加元首轮交割；2026-05 Planet First Partners 领投 2 亿美元新轮，投后估值约 20 亿美元；投资方含微软、RBC、TELUS、Mubadala 等）,硅自旋量子比特与量子网络,,2026 年 CEO 为 Don Mattrick（公开报道）；创始人 Simmons 任首席量子官,,成立年份与融资额以最新公开报道为准,6,是,Photonic Inc
+c_qunasys,company,QunaSys,QunaSys,日本,亚太及其他,,,,量子软件与算法,,,2018,早中期风险投资,量子化学计算软件（Qamuy）,,,,与东京大学为团队校友关联，非正式孵化,5,是,QunaSys
+u_nju,university,南京大学,Nanjing University,中国,东亚,,,,量子计算;量子通信;量子传感与测量,,,,,,,,,,7,否,NJU
+u_sxu,university,山西大学,Shanxi University,中国,东亚,,,,量子通信;量子传感与测量,,,,,,,,,,6,否,SXU
+u_chalmers,university,查尔姆斯理工大学,Chalmers University of Technology,瑞典,欧洲,,,,量子计算;量子通信;量子传感与测量,,,,,,,,,,7,否,Chalmers
+u_siegen,university,锡根大学,University of Siegen,德国,欧洲,,,,量子计算,,,,,,,,,,4,否,Siegen
+u_riken,university,理化学研究所,RIKEN,日本,亚太及其他,,,,量子计算;量子通信,,,,,,,,,,7,否,RIKEN
+s_ye,scholar,叶军,Jun Ye,美国,北美,,物理系 / JILA（NIST 联合研究所）,,量子传感与测量;量子计算,,教授 / JILA Fellow,,,,,本科毕业于上海交通大学,,,9,否,Jun Ye
+s_zhusn,scholar,祝世宁,Zhu Shining,中国,东亚,,物理学院,,量子通信;量子计算,,教授 / 中国科学院院士,,,,,,,,8,否,Zhu Shining
+s_pengkc,scholar,彭堃墀,Peng Kunchi,中国,东亚,,光电研究所,,量子通信;量子传感与测量,,教授 / 中国科学院院士,,,,,,,,8,否,Peng Kunchi
+s_han,scholar,韩正甫,Han Zhengfu,中国,东亚,,光学与光学工程系,,量子通信,,教授,,,,,,,,6,否,Han Zhengfu
+s_delsing,scholar,佩尔·德尔辛,Per Delsing,瑞典,欧洲,,微技术与纳米科学系,,量子计算,,教授 / WACQT 创始主任（2018-2024）,,,,,,,,7,否,Per Delsing
+s_wehner,scholar,斯蒂芬妮·韦纳,Stephanie Wehner,荷兰,欧洲,,QuTech,,量子网络;量子通信,,教授 / 量子互联网联盟（QIA）协调人,,,,,,,,7,否,Stephanie Wehner
+s_wunderlich,scholar,克里斯托夫·文德利希,Christof Wunderlich,德国,欧洲,,物理系量子光学教席,,量子计算,,教授,,,,,,,,5,否,Christof Wunderlich
+s_vazirani,scholar,乌梅什·瓦兹拉尼,Umesh Vazirani,美国,北美,,计算机科学系,,量子计算;量子软件与算法,,教授,,,,,,,,7,否,Umesh Vazirani
+st_xiang,student,项金根,Xiang Jingen,中国,东亚,,,,量子计算,,创始人 / CEO（清华大学博士、哈佛大学博士后）,,,,,,,,5,否,Xiang Jingen
+st_peronnin,student,泰奥·佩罗南,Théau Peronnin,法国,欧洲,,,,量子计算,,联合创始人 / CEO,,,,,博士毕业于 ENS Lyon（导师 Benjamin Huard），与 Raphaël Lescanne 合作的猫量子比特奠基论文刊于 Nature Physics 2020；公司 2020 年创立,,,4,是,Théau Peronnin
+c_quantinuum,company,Quantinuum,Quantinuum,美国/英国,欧洲,,,,量子计算;量子软件与算法,,,2021（前身 Cambridge Quantum 2014）,已上市（Nasdaq: QNT；2026-06-04 传统 IPO，发行价 60 美元，发行 2800 万股募资 16.8 亿美元，上市时市值约 156 亿美元）；上市前 2025-09 获 6 亿美元融资（投前估值 100 亿美元）,离子阱量子计算整机（H 系列）与量子软件（TKET、Quantum Origin）,,2026-06-04 完成 IPO，为全球最大纯量子计算 IPO；CEO 为 Rajeeb Hazra,,,9,是,Quantinuum;QNT
+c_ctquantum,company,中电信量子集团,China Telecom Quantum Group,中国,东亚,,,,量子通信;量子计算;量子传感与测量,,,2023（前身中电信量子科技 2020）,央企子公司（中国电信全资，注册资本 30 亿元）,量子通信网络运营、天衍量子计算云平台、量子安全产品,,天衍-287 联合团队：中电信量子+国盾量子（央广网 2025-11）,,,7,是,中电信量子
+c_wentian,company,问天量子,Qasky (Anhui Qasky Quantum Technology),中国,东亚,,,,量子通信,,,2009,B 轮（2026 年 7 月，6 亿元）,量子保密通信设备、量子随机数芯片、量子密码标准制定,,,,,6,否,Qasky;问天
+c_eleqtron,company,eleQtron,eleQtron GmbH,德国,欧洲,,,,量子计算,,,2020,A 轮（2026 年 5 月，5700 万欧元）,MAGIC 微波操控离子阱量子计算机整机,,,,,5,否,eleQtron
+c_spinq,company,量旋科技,SpinQ Technology,中国,东亚,,,,量子计算,,,2018,D 轮 10 亿元（2026-06-30，半年累计融资 20 亿元）；C 系列累计近 10 亿元（2026-01 C 轮、2026-04 C+ 轮 6 亿元）；已启动 Pre-IPO 轮融资,核磁共振教育量子计算机、超导量子芯片与整机,,创始人教育背景经科创板日报核实,,,5,是,SpinQ;量旋
+c_guoyao,company,国耀量子,Guoyao Quantum,中国,东亚,,,,量子传感与测量,,,2017,,量子雷达（单光子探测）,,2017 年成立，部分雷达技术源自潘建伟团队（公开报道）,,股权结构与技术作价细节以工商信息为准,4,是,国耀
+c_gkqn,company,国科量网（国科量子通信网络）,Guoke Quantum Network,中国,东亚,,,,量子通信,,,2016,,量子保密通信骨干网络建设与运营,,潘建伟团队联合国科控股成立（2016，投资界/新浪科技报道核实）,,,4,是,国科量子;国科量网
+s_mottonen,scholar,米科·默特宁,Mikko Möttönen,芬兰,欧洲,,应用物理系,,量子计算,,教授 / IQM 首席科学家,,,,,,,,6,否,Mikko Möttönen
+s_senellart,scholar,帕斯卡尔·塞内拉尔,Pascale Senellart,法国,欧洲,,纳米科学与技术中心（C2N）,,量子计算;量子通信,,CNRS 研究主任 / Quandela 联合创始人,,,,,,,任职机构表述（C2N 隶属 CNRS/巴黎-萨克雷）待核验,6,否,Pascale Senellart
+x_khan,exec,伊利亚斯·汗,Ilyas Khan,英国,欧洲,,,,量子计算,,创始人（CQC）/ 首席产品官、副董事长,,,,,,,,6,否,Ilyas Khan
+x_goetz,exec,扬·格茨,Jan Goetz,芬兰,欧洲,,,,量子计算,,联合创始人 / CEO,,,,,,,,5,否,Jan Goetz
+x_reymond,exec,乔治-奥利维耶·雷蒙,Georges-Olivier Reymond,法国,欧洲,,,,量子计算,,联合创始人 / 前 CEO,,,,,"Pasqal 联合创始人、首任 CEO；2026 年起 CEO 公开口径为 Loïc Henriet（原 CTO），Reymond 转任其他职务（早期""Wasiq Bokhari""报道与 SEC 文件冲突，以 SEC 文件为准）",,,5,是,Georges-Olivier Reymond
+x_ribordy,exec,格雷瓜尔·里博迪,Grégoire Ribordy,瑞士,欧洲,,,,量子通信,,联合创始人 / CEO,,,,,IDQ 联合创始人兼 CEO；IonQ 收购后兼任 IonQ 科学副总裁（VP Science）；日内瓦大学博士（2000，导师 Gisin/Zbinden）,,,5,是,Grégoire Ribordy
+x_bloom,exec,本·布鲁姆,Ben Bloom,美国,北美,,,,量子计算,,创始人 / CEO,,,,,,,,5,否,Ben Bloom
+x_rose,exec,乔迪·罗斯,Geordie Rose,加拿大,北美,,,,量子计算,,创始人,,,,,,,现任 D-Wave 职务状态待核验,5,否,Geordie Rose
+x_sivan,exec,伊塔马尔·西万,Itamar Sivan,以色列,亚太及其他,,,,量子计算,,联合创始人 / CEO,,,,,,,,5,否,Itamar Sivan
+x_wisby,exec,伊拉娜·维斯比,Ilana Wisby,英国,欧洲,,,,量子计算,,创始人 / 前 CEO（2017–2024）,,,,,2024-05 卸任 OQC CEO（Gerald Mullally 接任）；物理学博士毕业于伦敦大学皇家霍洛威学院（Royal Holloway，非牛津）；2026-07 起任 Cambridge Innovation Capital 驻场企业家（EIR）,,现任 OQC 职务状态待核验,4,是,Ilana Wisby
+x_shadbolt,exec,皮特·沙德博尔特,Pete Shadbolt,美国,北美,,,,量子计算,,联合创始人 / 首席科学官,,,,,,,,5,否,Pete Shadbolt
+x_brierley,exec,史蒂夫·布赖尔利,Steve Brierley,英国,欧洲,,,,量子软件与算法,,创始人 / CEO,,,,,,,,4,否,Steve Brierley
+x_weidt,exec,塞巴斯蒂安·韦特,Sebastian Weidt,英国,欧洲,,,,量子计算,,联合创始人 / CEO,,,,,,,,4,否,Sebastian Weidt
+x_yaolin,exec,姚麟,Yao Lin,中国,东亚,,,,量子计算,,联合创始人 / 董事长兼 CEO,,,,,,,,5,否,Yao Lin
+x_mayin,exec,马寅,Ma Yin,中国,东亚,,,,量子计算,,联合创始人 / COO,,,,,与文凯共同创立玻色量子；公开报道为 COO，中科院背景,,教育背景与具体职务分工待核验,4,是,Ma Yin
+x_palacios,exec,卡门·帕拉西奥斯,Carmen Palacios-Berraquero,英国,欧洲,,,,量子通信,,创始人 / CEO,,,,,,,博士学位授予院校待核验,4,否,Carmen Palacios-Berraquero
+x_nunn,exec,乔什·纳恩,Josh Nunn,英国,欧洲,,,,量子计算,,联合创始人 / CSO,,,,,,,,4,否,Josh Nunn
+i_chinatelecom,investor,中国电信集团,China Telecom,中国,东亚,,,,,,,,,,,,,,8,否,China Telecom
+i_honeywell,investor,霍尼韦尔,Honeywell,美国,北美,,,,,,,,,,,,,,7,否,Honeywell
+i_jpmorgan,investor,摩根大通,JPMorgan Chase,美国,北美,,,,,,,,,,,,,,6,否,JPMorgan Chase
+i_nvidia,investor,英伟达（NVentures）,NVIDIA / NVentures,美国,北美,,,,,,,,,,,,,,8,否,NVIDIA / NVentures
+i_blackrock,investor,贝莱德,BlackRock,美国,北美,,,,,,,,,,,,,,7,否,BlackRock
+i_tencent,investor,腾讯,Tencent,中国,东亚,,,,,,,,,,,,,,6,否,Tencent
+i_temasek,investor,淡马锡,Temasek,新加坡,亚太及其他,,,,,,,,,,,,,领投 Pasqal B 轮的细节待核验,6,否,Temasek
+i_hillhouse,investor,高瓴创投,GL Ventures,中国,东亚,,,,,,,,,,,,,,6,否,GL Ventures
+i_jushi,investor,基石资本,Co-Stone Capital,中国,东亚,,,,,,,,,,,,,,4,否,Co-Stone Capital
+i_cicf,investor,中网投（中国互联网投资基金）,China Internet Investment Fund,中国,东亚,,,,,,,,,,,,,,5,否,China Internet Investment Fund
+i_szvc,investor,深创投,Shenzhen Capital Group,中国,东亚,,,,,,,,,,,,,,5,否,Shenzhen Capital Group
+i_zkx,investor,中科创星,CASSTAR,中国,东亚,,,,,,,,,,,2022-03 领投中科酷原 A 轮；2026-06 联合领投本源量子 Pre-IPO 轮 4.5 亿元（科创板日报核实）,,,5,是,CASSTAR
+i_junlian,investor,君联资本,Legend Capital,中国,东亚,,,,,,,,,,,,,,5,否,Legend Capital
+i_legendstar,investor,联想之星,Legend Star,中国,东亚,,,,,,,,,,,,,,4,否,Legend Star
+i_shengshi,investor,盛世投资,CGP Investment,中国,东亚,,,,,,,,,,,,,,4,否,CGP Investment
+i_gaorong,investor,高榕资本,Gaorong Capital,中国,东亚,,,,,,,,,,,,,,4,否,Gaorong Capital
+i_baiduv,investor,百度风投,Baidu Ventures,中国,东亚,,,,,,,,,,,,,,4,否,Baidu Ventures
+i_jiantou,investor,建投投资,JIC Investment,中国,东亚,,,,,,,,,,,,,,4,否,JIC Investment
+i_wuhu,investor,芜湖投控,Wuhu Investment Holding Group,中国,东亚,,,,,,,,,,,,,,4,否,Wuhu Investment Holding Group
+i_worldfund,investor,World Fund,World Fund,德国,欧洲,,,,,,,,,,,,,,4,否,World Fund
+i_earlybird,investor,Earlybird（UNI-X）,Earlybird Venture Capital,德国,欧洲,,,,,,,,,,,,,,4,否,Earlybird Venture Capital
+i_google,investor,Google（量子 AI）,Google Quantum AI,美国,北美,,,,量子计算,,,,,,,,,,7,否,Google Quantum AI
+i_softbank,investor,软银愿景基金,SoftBank Vision Fund,日本,亚太及其他,,,,量子计算,,,,,,,,,,6,否,SoftBank Vision Fund
+i_nrf,investor,澳大利亚国家重建基金,National Reconstruction Fund (NRF),澳大利亚,亚太及其他,,,,量子计算,,,,,,,,,,5,否,National Reconstruction Fund (NRF)
+u_baqis,university,北京量子信息科学研究院,Beijing Academy of Quantum Information Sciences,中国,东亚,,,,量子计算;量子通信,,,,,,,,,,7,否,BAQIS;北京量子院
+u_icfo,university,光子科学研究所（ICFO）,The Institute of Photonic Sciences,西班牙,欧洲,,,,量子通信;量子传感与测量,,,,,,,,,,6,否,ICFO
+u_cealeti,university,CEA-Leti（格勒诺布尔）,CEA-Leti,法国,欧洲,,,,量子计算,,,,,,,,,,6,否,CEA-Leti
+u_bham,university,伯明翰大学,University of Birmingham,英国,欧洲,,,,量子传感与测量,,,,,,,,,,5,否,Birmingham
+u_wisc,university,威斯康星大学麦迪逊分校,University of Wisconsin–Madison,美国,北美,,,,量子计算,,,,,,,,,,6,否,UW-Madison;Wisconsin
+u_huji,university,耶路撒冷希伯来大学,Hebrew University of Jerusalem,以色列,亚太及其他,,,,量子计算;量子软件与算法,,,,,,,,,,6,否,Hebrew University
+u_sysu,university,中山大学,Sun Yat-sen University,中国,东亚,,,,量子计算,,,,,,,,,,5,否,SYSU
+u_iapcm,university,中科院精密测量科学与技术创新研究院,"Innovation Academy for Precision Measurement Science and Technology, CAS",中国,东亚,,,,量子计算;量子传感与测量,,,,,,,,,,6,否,中科院精密测量院
+u_sherbrooke,university,舍布鲁克大学,Université de Sherbrooke,加拿大,北美,,,,量子计算,,,,,,,,,,5,否,Sherbrooke
+s_saffman,scholar,Mark Saffman,Mark Saffman,美国,北美,,物理系,,量子计算,,教授 / Wisconsin Quantum Institute 主任,,,,,,,,7,否,Mark Saffman
+s_jennewein,scholar,Thomas Jennewein,Thomas Jennewein,加拿大,北美,,物理与天文学系 / IQC,,量子通信,,教授,,,,,,,,7,否,Thomas Jennewein
+s_knight,scholar,Peter Knight,Peter Knight,英国,欧洲,,物理系,,量子通信;量子计算,,教授（英国皇家学会院士）,,,,,,,,8,否,Peter Knight
+s_aharonov,scholar,Dorit Aharonov,Dorit Aharonov,以色列,亚太及其他,,计算机科学与工程学院,,量子计算;量子软件与算法,,教授,,,,,,,,8,否,Dorit Aharonov
+s_ozeri,scholar,Roee Ozeri,Roee Ozeri,以色列,亚太及其他,,复杂系统物理系,,量子计算,,教授,,,,,,,,6,否,Roee Ozeri
+s_luole,scholar,罗乐,Le Luo,中国,东亚,,物理与天文学院,,量子计算,,教授,,,,,,,,5,否,Le Luo
+s_zengguihua,scholar,曾贵华,Guihua Zeng,中国,东亚,,电子信息与电气工程学院,,量子通信,,教授,,,,,循态量子创始人/董事长/首席科学家（经公司官网核实）,,与循态量子的具体关联细节以公开报道为准，待核验,5,是,Guihua Zeng
+s_bongs,scholar,Kai Bongs,Kai Bongs,英国,欧洲,,物理与天文学院,,量子传感与测量,,教授,,,,,2024 年起转任 DLR 量子技术研究所所长兼乌尔姆大学教授（公开简历）；曾任伯明翰教授与英国国家量子传感 Hub 主任,,,6,是,Kai Bongs
+st_goban,student,Akihisa Goban,Akihisa Goban,日本,亚太及其他,,,,量子计算;量子网络,,联合创始人,,,,,,,博后师承关系依据其 Caltech 时期纳米光纤囚禁研究经历整理,4,否,Akihisa Goban
+st_lemyre,student,Julien Camirand Lemyre,Julien Camirand Lemyre,加拿大,北美,,,,量子计算,,联合创始人/CEO,,,,,,,,4,否,Julien Camirand Lemyre
+c_classiq,company,Classiq,Classiq Technologies,以色列,亚太及其他,,,,量子软件与算法,,,2020,累计超 2 亿美元（C 轮 1.1 亿美元 2025-05；2025-11 增资 3000 万美元：AMD Ventures、Qualcomm Ventures、IonQ、Mirae Asset、LeumiTech77、Quantum Eretz 等；2026 年初获软银 1000 万美元）；早期投资方含 Entrée Capital、HPE Pathfinder、Samsung NEXT、HSBC,量子软件平台（电路自动合成）,,SPAC 上市谈判仍在进行中，估值以最终交割为准,,SPAC 上市谈判仍在进行中，估值以最终交割为准,6,是,Classiq
+c_qart,company,Quantum Art,Quantum Art,以色列,亚太及其他,,,,量子计算,,,2022,累计约 2 亿美元（A 轮 1 亿美元 2025-12；2026-04 扩轮 1.4 亿美元）；正洽谈 SPAC 上市（估值区间 20–50 亿美元，2026-07 报道：进展较 Classiq 更快，或于 2026 年底成为首家上市以色列量子公司）,离子阱量子计算整机,,SPAC 谈判进行中，估值以最终交割为准,,SPAC 上市谈判仍在进行中，估值以最终交割为准,6,是,Quantum Art
+c_qedma,company,Qedma,Qedma Quantum,以色列,亚太及其他,,,,量子软件与算法,,,2020,A 轮 2600 万美元（2025-07，Glilot+ 领投，IBM、韩国投资伙伴等跟投）,量子错误缓解软件,,,,,5,否,Qedma
+c_quobly,company,Quobly,Quobly,法国,欧洲,,,,量子计算,,,2022,A 轮 1.15 亿欧元（2026-06-03 交割，Bpifrance、SEALSQ、意法半导体领投，EIC/Blast/ALIAD/Innovacom 跟投；2025-09 治理重组：Meunier 任首席科学与创新官、Jean-Charles Barbé 任 CTO），此前种子轮 1900 万欧元（2023，欧洲量子领域最大种子轮）；Alloy Pioneer 整机 2026 云接入、2027 部署 HPC,硅基量子计算整机与处理器,,"CEA-Leti/CNRS spin-off（2022，原名 Siquance）；三位联创：Vinet（CEO）、Meunier、François Perruchot（COO——更正早期""Yann Perruchot""误写）；与意法半导体/Air Liquide/Soitec/Orano 共建制造链",,,7,是,Quobly
+c_nordq,company,Nord Quantique,Nord Quantique,加拿大,北美,,,,量子计算,,,2020,早中期风险投资（A 轮 2024，Quantonation 领投，公开报道）,玻色码超导量子计算,,,,,5,否,Nord Quantique
+c_quside,company,Quside,Quside Technologies,西班牙,欧洲,,,,量子通信;量子传感与测量,,,2017,早中期风险投资（公开报道）,量子随机数发生器,,,,,4,否,Quside
+c_luxquanta,company,LuxQuanta,LuxQuanta Technologies,西班牙,欧洲,,,,量子通信,,,2021,早期风险投资（A 轮，公开报道）,CV-QKD 系统,,,,,4,否,LuxQuanta
+c_nanoqt,company,NanoQT,Nanofiber Quantum Technologies,日本,亚太及其他,,,,量子计算;量子网络,,,2022,早期风险投资（公开报道）,纳米光纤腔 QED 量子计算,,,,创始团队与融资细节公开信息有限,4,否,NanoQT
+c_qike,company,启科量子,Qudoors,中国,东亚,,,,量子计算;量子通信,,,2019,天使轮 5000 万元（2021-01）；后续轮次未完整公开,离子阱量子计算 + 量子保密通信设备,,核心成员：陈柳平（CEO）、李杨（董事长）、罗乐（首席科学家）、韩琢（执行副总裁，2012 年加拿大 1QBit 联合创始人）,,,5,是,Qudoors;启科
+c_coolatom,company,中科酷原,Cold Atom Quantum (Wuhan),中国,东亚,,,,量子计算;量子传感与测量,,,2020,天使轮（2021-08，中科院创投）、A 轮（2022-03，中科创星领投）、战略投资（2025-02，武汉高科）、C 轮数千万元（2025-07，光谷金控/湖北科投/彩讯股份/武汉高科）、D 轮近亿元（2026-01-13，中国移动链长基金独家投资）；累计披露约 1.6 亿元,中性原子量子计算整机 + 量子精密测量仪器,,高精度量子绝对重力仪获国际计量局认证；湖北省量子技术产业链链主企业,,公司官网地址以工商/公开报道为准，待核验,5,是,中科酷原
+c_xuntai,company,循态量子,Xuntai Quantum,中国,东亚,,,,量子通信,,,2017,风险投资（公开信息有限）,CV-QKD 设备与组网,,创始人任职与上交大的合作关系经交大官网及公司官网核实,,与上海交大的成果转化关系及融资信息依据公开报道整理，待核验,4,是,Xuntai;循态
+x_vinet,exec,Maud Vinet,Maud Vinet,法国,欧洲,,,,量子计算,,联合创始人/CEO,,,,,原 CEA-Leti 量子计算项目负责人（2020 年被任命为量子硬件主任）；法国荣誉军团骑士（2020）,,,5,是,Maud Vinet
+x_tangbiao,exec,汤彪,Tang Biao,中国,东亚,,,,量子计算;量子传感与测量,,创始人/董事长,,,,,,,个人履历公开信息有限,4,否,Tang Biao
+i_skt,investor,SK 电讯,SK Telecom,韩国,亚太及其他,,,,量子通信,,,,,,,IDQ 控股→换股退出经 2025 年公告核实；现持有约 3.1% IonQ 股份,,,5,是,SK Telecom
+u_sheffield,university,谢菲尔德大学,University of Sheffield,英国,欧洲,,,,量子计算;量子通信,,,,,,,,,,5,否,Sheffield
+u_ub,university,巴塞罗那大学,Universitat de Barcelona,西班牙,欧洲,,,,量子计算,,,,,,,,,,4,否,UB
+s_lechner,scholar,沃尔夫冈·莱希纳,Wolfgang Lechner,奥地利,欧洲,,理论物理研究所,,量子计算;量子软件与算法,,教授,,,,,,,,6,否,Wolfgang Lechner
+s_lewenstein,scholar,马切伊·莱文斯坦,Maciej Lewenstein,西班牙,欧洲,,量子光学理论组,,量子计算,,ICREA 研究教授,,,,,,,,7,否,Maciej Lewenstein
+s_grangier,scholar,菲利普·格朗吉耶,Philippe Grangier,法国,欧洲,,Charles Fabry 实验室,,量子通信,,CNRS 研究主任/教授,,,,,,,,7,否,Philippe Grangier
+s_longguilu,scholar,龙桂鲁,Long Guilu,中国,东亚,,物理系,,量子通信,,教授,,,,,,,,7,否,Long Guilu
+s_wangxiangbin,scholar,王向斌,Wang Xiangbin,中国,东亚,,物理系,,量子通信,,教授、济南量子技术研究院院长,,,,,,,,7,否,Wang Xiangbin
+x_sich,exec,马克西姆·西奇,Maksym Sich,英国,欧洲,,,,量子计算;量子通信,,联合创始人 / CIO（首任 CEO）,,,,,谢菲尔德大学物理学博士+LSE 经济学本科；2026 年起 Dufferwiel 接任 CEO，Sich 转任 CIO（公司/行业采访）,,,3,是,Maksym Sich
+c_aegiq,company,Aegiq,Aegiq,英国,欧洲,,,,量子计算;量子通信,,,2019,累计约 500 万英镑（High-Tech Gründerfonds 领投，Black Quant/Quantum Exponential 等跟投）,半导体量子点确定性单光子源、光量子计算与量子通信系统,,2026 年起 Dufferwiel 任 CEO、Sich 转任 CIO；三位联创 Sich/Dufferwiel/Iamshanov 均为谢菲背景；Artemis 原型机部署英国 NQCC（与 Pixel Photonics 合作 WI-SNSPD）,,,4,是,Aegiq
+c_parityqc,company,ParityQC,ParityQC,奥地利,欧洲,,,,量子软件与算法,,,2020,早中期风险投资,Parity 架构量子优化软件、编译器与硬件蓝图授权,,,,,4,否,ParityQC
+c_qili,company,Qilimanjaro Quantum Tech,Qilimanjaro,西班牙,欧洲,,,,量子计算,,,2020,早中期风险投资,绝热/模拟量子计算（超导 flux 量子比特）与量子云服务,,,,,4,是,Qilimanjaro
+c_entropica,company,Entropica Labs,Entropica Labs,新加坡,亚太及其他,,,,量子软件与算法,,,2018,早期风险投资,量子算法、错误缓解与量子工作流软件,,,,,3,否,Entropica
+c_orangeqs,company,Orange Quantum Systems,OrangeQS,荷兰,欧洲,,,,量子计算,,,2020,早期风险投资,量子芯片自动化测试与表征设备,,,,,3,否,OrangeQS
+i_bpifrance,investor,法国公共投资银行,Bpifrance,法国,欧洲,,,,,,,,,,,,,,6,否,Bpifrance
+i_norinco,investor,中国兵器工业集团,Norinco Group,中国,东亚,,,,,,,,,,,Pre-IPO 轮领投方（科创板日报等多家权威媒体核实）,,,5,是,Norinco;中兵集团
+u_pku,university,北京大学,Peking University,中国,东亚,,,,量子计算,,,,,,,2026-08 纳开量子完成破亿元天使轮及天使+轮,,,7,是,PKU;北大
+u_fudan,university,复旦大学,Fudan University,中国,东亚,,,,量子计算,,,,,,,量子方向公开信息有限，权重保守给 5,,,5,是,Fudan;复旦
+u_buaa,university,北京航空航天大学,Beihang University,中国,东亚,,,,量子传感与测量,,,,,,,未磁科技核心团队均毕业于北航,,,6,是,BUAA;北航
+c_c12,company,C12 Quantum Electronics,C12 Quantum Electronics,法国,欧洲,,,,量子计算,,,2020,种子轮 1000 万美元（2021）+ A 轮约 1940 万美元（2024-06，360 Capital 领投——EPO 案例另载 Quantonation 领投口径，待核验）,碳纳米管自旋量子比特量子处理器与云仿真器,,ENS/CNRS 独家基础专利授权,,,5,是,C12
+c_lightsynq,company,Lightsynq Technologies,Lightsynq,美国,北美,,,,量子网络,,,2023,A 轮 1800 万美元（2024-11，Cerberus Ventures 领投）；2025-06 被 IonQ 收购,光子互连、量子存储器与量子中继,,2025-06-03 IonQ 完成收购,,,5,是,Lightsynq
+c_vector_atomic,company,Vector Atomic,Vector Atomic,美国,北美,,,,量子传感与测量,,,2018,累计融资未完整公开（2 亿美元+政府合同）；2025-10 被 IonQ 全股票收购,原子钟、惯性传感与 PNT 系统,,2025-10 并入 IonQ（76 名员工）,,,5,是,Vector Atomic
+c_sandboxaq,company,SandboxAQ,SandboxAQ,美国,北美,,,,量子软件与算法,,,2022,分拆后获多轮大额融资（含 T. Rowe Price、Breyer Capital 等，公开报道）；金额以公司披露为准,后量子密码迁移、量子传感与 AI 仿真软件,,Alphabet 分拆背景经多家媒体确认；投资细节待核验,,Alphabet 具体持股细节待核验,6,否,SandboxAQ
+c_nakai,company,纳开量子,Nakai Quantum,中国,东亚,,,,量子计算,,,2026,天使轮+天使+轮累计破亿元（2026-08；高瓴创投领投首轮，长石资本领投天使+轮）,中性原子量子计算（模拟+通用双轨）,,高瓴创投领投天使轮，长石资本领投天使+轮,,,4,是,纳开启元
+c_vecq,company,向量奇点,Vector Singularity,中国,东亚,,,,量子计算,,,2026,天使轮超亿元（2026，IDG 资本领投）,中性原子（镱-171）通用量子计算机,,IDG 资本领投，五源资本、耀途、英诺、零以、滴普科技跟投,,,4,是,向量奇点
+c_liangyi,company,两仪万象,Liangyi Wanxiang,中国,东亚,,,,量子计算,,,2024,社保基金中关村专项基金（君联管理）早期投资；轮次金额未完整公开,原子量子计算整机研制,,科学家留实验室、产业团队做工程化的双轨模式,,,4,是,两仪万象
+c_logicbit,company,逻辑比特,LogicBit,中国,东亚,,,,量子计算,,,2022,天使轮数千万元（2025-04，东方嘉富领投，浙江省科创母基金等参与）；Pre-A+ 轮（2026-02，海望资本、陆石投资领投）,规模化超导量子计算系统,,东方嘉富领投天使轮（2025-04，数千万元）,,与浙大的正式孵化关系以校方公开资料为准,4,是,逻辑比特
+c_buchou,company,不筹量子,Buchou Quantum,中国,东亚,,,,量子计算,,,2025,天使轮数千万元（2025-12，中科创星领投）,中性原子量子计算,,中科创星领投，复容投资、东方富海跟投,,与复旦的正式孵化关系以校方公开资料为准,3,是,不筹量子
+c_xianggan,company,相干科技,Coherent Quantum Tech,中国,东亚,,,,量子计算,,,2023,Pre-A 轮超亿元（2026-02-09，天际资本、普华资本领投）,超导量子计算解决方案与云服务,,天际资本、普华资本领投,,,4,是,相干科技
+c_weici,company,未磁科技,Weici Technology,中国,东亚,,,,量子传感与测量,,,2019,累计 5 轮超 3 亿元（A 轮 2022 IDG 领投超亿元；A+ 轮 2024 北京机器人产业基金领投过亿元；北航投资、中科创星、雅瑞资本、中关村科学城等）,原子磁力计、心磁图仪与脑磁图仪,,累计 5 轮超 3 亿元,,,5,是,未磁科技
+i_sequoia,investor,红杉资本（美国）,Sequoia Capital,美国,北美,,,,,,,,,,,QCI B 轮 >6000 万美元,,,7,是,Sequoia
+i_thirdpoint,investor,Third Point Ventures,Third Point Ventures,美国,北美,,,,,,,,,,,,,,5,是,Third Point
+i_idg,investor,IDG资本,IDG Capital,中国,东亚,,,,,,,,,,,,,,7,是,IDG;IDG资本
+s_stephsimmons,scholar,斯蒂芬妮·西蒙斯,Stephanie Simmons,加拿大,北美,,物理系,,量子计算;量子网络,,副教授 / Canada Research Chair,,,,,与 UNSW 的 Michelle Simmons（SQC 创始人）区分，两人同名不同人,,,7,是,Stephanie Simmons;斯蒂芬妮西蒙斯
+s_mcdermott,scholar,罗伯特·麦克德莫特,Robert McDermott,美国,北美,,物理系,,量子计算,,教授,,,,,WARF 参投 Qolab 并促成 UW-Madison 孵化,,,6,是,Robert McDermott
+s_zhaihui,scholar,翟荟,Zhai Hui,中国,东亚,,物理系,,量子计算,,教授,,,,,,,,7,是,翟荟;Hui Zhai
+s_jinyirong,scholar,金贻荣,Jin Yirong,中国,东亚,,,,量子计算,,研究员,,,,,,,,5,是,金贻荣
+st_bhaskar,student,米希尔·巴斯卡尔,Mihir Bhaskar,美国,北美,,,,量子网络;量子计算,,博士（校友）/ IonQ SVP,,,,,2020 年首次演示量子网络速率增强,,,4,是,Mihir Bhaskar
+st_lixiang,student,李相良,Li Xiangliang,中国,东亚,,,,量子计算,,创始人（清华本科、ETH 博士）,,,,,,,,4,是,李相良
+x_demasi,exec,尼科洛·德马西,Niccolo de Masi,美国,北美,,,,量子计算,,总裁兼 CEO / 董事长,,,,,Peter Chapman 转任执行董事长,,,5,是,Niccolo de Masi
+x_keesling,exec,亚历克斯·基斯林,Alex Keesling,美国,北美,,,,量子计算,,联合创始人（首任 CEO，现任技术负责人）,,,,,2024 年起 CEO 为 Andy Ory（Acme Packet 创始人）；Keesling 转任 CTO/技术生产负责人（QuEra 官网与行业报道）,,,5,是,Alex Keesling
+x_hazra,exec,拉吉布·哈兹拉,Rajeeb Hazra,美国,北美,,,,量子计算,,总裁兼 CEO,,,,,,,,5,是,Rajeeb Hazra
+x_baratz,exec,艾伦·巴拉茨,Alan Baratz,美国,北美,,,,量子计算,,总裁兼 CEO,,,,,,,,5,是,Alan Baratz
+x_somaschi,exec,尼科洛·索马斯基,Niccolò Somaschi,法国,欧洲,,,,量子计算,,联合创始人 / CEO,,,,,,,,5,是,Niccolo Somaschi
+x_henriet,exec,卢瓦克·昂里耶,Loïc Henriet,法国,欧洲,,,,量子计算,,CEO（2026 起）,,,,,,,CEO 就任具体时间线待核验,4,否,Loic Henriet
+x_ho,exec,艾伦·何,Alan Ho,美国,北美,,,,量子计算,,联合创始人 / CEO,,,,,,,,4,是,Alan Ho
+x_yan,exec,晏天任,Tennin Yan,日本,亚太及其他,,,,量子软件与算法,,联合创始人 / CEO,,,,,,,,4,是,Tennin Yan
+x_cohen,exec,约纳坦·科恩,Yonatan Cohen,以色列,亚太及其他,,,,量子计算,,联合创始人 / CTO,,,,,,,,4,是,Yonatan Cohen
+x_caibin,exec,蔡宾,Cai Bin,中国,东亚,,,,量子传感与测量,,创始人 / CEO,,,,,,,,4,是,蔡宾
+x_pdesjardins,exec,皮埃尔·德雅尔丹,Pierre Desjardins,法国,欧洲,,,,量子计算,,联合创始人 / CEO,,,,,,,,4,是,Pierre Desjardins
+u_osaka,university,大阪大学,Osaka University,日本,亚太及其他,,,,量子计算;量子软件与算法,,,,,,,,,,6,是,Osaka University;阪大
+s_fujii,scholar,藤井啓祐,Keisuke Fujii,日本,亚太及其他,,工程科学研究科 / QIQB,,量子计算;量子软件与算法,,教授 / QIQB 副主任,,,,,2026-04 起兼任京都大学情报学研究科教授,,,7,是,Keisuke Fujii;藤井启祐
+s_mitarai,scholar,御手洗光介,Kosuke Mitarai,日本,亚太及其他,,工程科学研究科,,量子计算;量子软件与算法,,副教授 / QunaSys 联合创始人,,,,,,,,6,是,Kosuke Mitarai
+s_ling,scholar,林（亚历山大）·灵,Alexander Ling,新加坡,亚太及其他,,物理系 / CQT,,量子通信,,首席研究员 / 副教授,,,,,,,,6,是,Alexander Ling;Alexander L. Ling
+s_dayan,scholar,巴拉克·达扬,Barak Dayan,以色列,亚太及其他,,物理系,,量子计算;量子网络,,教授 / 量子光学实验室主任,,,,,曾在 Caltech Jeff Kimble 组从事博士后研究（2005–2008）,,,7,是,Barak Dayan
+s_pruneri,scholar,瓦莱里奥·普鲁内里,Valerio Pruneri,西班牙,欧洲,,光电集团,,量子通信;量子传感与测量,,ICREA 教授,,,,,70+ 专利族,,,7,是,Valerio Pruneri
+s_latorre,scholar,何塞·伊格纳西奥·拉托雷,José Ignacio Latorre,西班牙,欧洲,,物理学院,,量子计算;量子软件与算法,,教授 / Qilimanjaro CSO,,,,,,,,7,是,Jose Ignacio Latorre
+s_forndiaz,scholar,波尔·福恩-迪亚斯,Pol Forn-Díaz,西班牙,欧洲,,量子计算技术组,,量子计算,,组长 / 联合创始人兼 CTO,,,,,,,,6,是,Pol Forn-Diaz
+c_qsource,company,Quantum Source,Quantum Source Labs,以色列,亚太及其他,,,,量子计算;量子网络,,,2021,累计 7700 万美元（种子 1500 万 2022 + 扩轮 1200 万 2023 + A 轮 5000 万 2024-09）,光子-原子混合确定性光量子计算,,种子轮 1500 万美元（2022，Grove/Pitango First/Eclipse 联合领投）+ 1200 万美元扩轮（2023，Dell Technologies Capital）+ A 轮 5000 万美元（2024-09，Eclipse 领投），累计 7700 万美元,,,6,是,Quantum Source;QS Labs
+x_lum,exec,林俊阳,Lum Chune Yang,新加坡,亚太及其他,,,,量子通信,,联合创始人 / CEO,,,,,,,,4,是,Lum Chune Yang;Chune Yang Lum
+x_melamed,exec,奥德德·梅拉梅德,Oded Melamed,以色列,亚太及其他,,,,量子计算,,联合创始人 / CEO,,,,,另两位联创：Gil Semo（研发副总）、Dan Charash（董事长）,,,4,是,Oded Melamed
+x_abellan,exec,卡洛斯·阿贝扬,Carlos Abellan,西班牙,欧洲,,,,量子通信;量子传感与测量,,联合创始人 / CEO,,,,,另两位联创：Waldimar Amaya（首席工程师）、Domenico Tulli（CTO）,,,4,是,Carlos Abellan
+x_etcheverry,exec,塞巴斯蒂安·埃切维里,Sebastian Etcheverry,西班牙,欧洲,,,,量子通信,,联合创始人 / CTO,,,,,,,,4,是,Sebastian Etcheverry
+x_tan,exec,陈冠仁,Kuan Yen Tan,芬兰,欧洲,,,,量子计算,,联合创始人 / CTO,,,,,,,,4,是,Kuan Yen Tan
+x_vartiainen,exec,尤哈·瓦尔蒂艾宁,Juha Vartiainen,芬兰,欧洲,,,,量子计算,,联合创始人 / 全球事务官,,,,,,,,4,是,Juha Vartiainen
+x_minerbi,exec,尼尔·米内尔比,Nir Minerbi,以色列,亚太及其他,,,,量子软件与算法,,联合创始人 / CEO,,,,,另两位联创：Amir Naveh（CPO）、Yehuda Naveh（CTO，IBM 研究院 20 年、IBM 量子计算团队创始人）,,,4,是,Nir Minerbi
+x_navehy,exec,耶胡达·纳维,Yehuda Naveh,以色列,亚太及其他,,,,量子软件与算法,,联合创始人 / CTO,,,,,,,,4,是,Yehuda Naveh
+x_erven,exec,克里斯·埃文,Chris Erven,加拿大,北美,,,,量子通信,,联合创始人 / CEO,,,,,五位联创：Erven、Sibson、Kennard、Clark、Thompson,,,4,是,Chris Erven
+x_lescannne,exec,拉斐尔·莱坎,Raphaël Lescanne,法国,欧洲,,,,量子计算,,联合创始人 / CTO,,,,,,,,4,是,Raphael Lescanne
+x_giesz,exec,瓦莱里安·吉耶斯,Valérian Giesz,法国,欧洲,,,,量子计算,,联合创始人 / COO（首任 CEO）,,,,,,,,4,是,Valerian Giesz
+x_canivell,exec,维克托·卡尼维尔,Victor Canivell,西班牙,欧洲,,,,量子计算;量子软件与算法,,联合创始人,,,,,另三位学术联创：Latorre（CSO）、García-Sáez（首席软件架构师）、Blasco（CFO）,,,4,是,Victor Canivell
+x_kulkarni,exec,苏博德·库尔卡尼,Subodh Kulkarni,美国,北美,,,,量子计算,,总裁兼 CEO,,,,,,,,4,是,Subodh Kulkarni
+x_mullally,exec,杰拉尔德·马拉利,Gerald Mullally,英国,欧洲,,,,量子计算,,CEO,,,,,,,,4,是,Gerald Mullally
+st_harty,student,汤姆·哈蒂,Tom Harty,英国,欧洲,,,,量子计算,,博士（校友）/ 联合创始人兼 CTO,,,,,,,,4,是,Tom Harty
+c_paragraf,company,Paragraf,Paragraf,英国,欧洲,,,,量子传感与测量;量子计算,,,2017,累计约 1.4 亿美元（种子 290 万英镑 2018 → A 轮 1280 万英镑 2019 Parkwalk 领投 → B 轮 4500 万英镑/6000 万美元 2022 New Science Ventures 领投 → C 轮 5500 万美元 2025）,石墨烯霍尔传感器与石墨烯电子器件（量子计算方向探索）,,2023 年收购美国石墨烯技术公司,,,5,是,Paragraf
+s_humphreys,scholar,科林·汉弗莱斯爵士,Sir Colin Humphreys,英国,欧洲,,材料科学与冶金系,,量子计算;量子传感与测量,,教授 / 英国皇家学会院士,,,,,,,,6,是,Colin Humphreys
+x_sthomas,exec,西蒙·托马斯,Simon Thomas,英国,欧洲,,,,量子传感与测量;量子计算,,联合创始人 / CEO,,,,,,,,4,是,Simon Thomas
+c_deltag,company,Delta g,Delta g,英国,欧洲,,,,量子传感与测量,,,2023,pre-seed 150 万英镑（2023，Science Creates Ventures 领投）+ 种子轮 460 万英镑（2025-09，超额认购）,量子重力梯度仪与地下空间测绘,,创始人：Michael Holynski 教授、Andrew Lamb 博士、Jonathan Winch；CEO Tony Lowe,,,4,是,Delta g
+s_holynski,scholar,迈克尔·霍林斯基,Michael Holynski,英国,欧洲,,物理与天文学院,,量子传感与测量,,教授,,,,,,,,6,是,Michael Holynski
+x_lowe,exec,托尼·洛,Tony Lowe,英国,欧洲,,,,量子传感与测量,,CEO,,,,,,,,3,是,Tony Lowe
+s_bouyer,scholar,菲利普·布耶,Philippe Bouyer,法国,欧洲,,物理系,,量子传感与测量;量子计算,,教授 / Quantum Delta NL 主席,,,,,2012 年法国科学院 Louis D. 奖；2026 年起任新加坡 Atomionics 科学顾问,,,7,是,Philippe Bouyer
+x_peng,exec,彭文迪,Victor Peng,美国,北美,,,,量子计算,,临时 CEO,,,,,,,,5,是,Victor Peng;彭文迪
+x_ofek,exec,尼西姆·奥菲克,Nissim Ofek,以色列,亚太及其他,,,,量子计算,,联合创始人 / 首席工程师,,,,,,,,4,是,Nissim Ofek
+s_heiblum,scholar,莫蒂·海布卢姆,Moty Heiblum,以色列,亚太及其他,,凝聚态物理系,,量子计算,,教授,,,,,,,,8,是,Moty Heiblum
+x_dufferwiel,exec,斯科特·达弗维尔,Scott Dufferwiel,英国,欧洲,,,,量子计算;量子通信,,联合创始人 / CEO,,,,,另两位联创：Maksym Sich（首任 CEO，现任 CIO）、Andrii Iamshanov（CFO）,,,4,是,Scott Dufferwiel
+x_izaac,exec,乔什·伊扎克,Josh Izaac,澳大利亚,亚太及其他,,,,量子软件与算法,,产品总监,,,,,,,,3,是,Josh Izaac
+u_twente,university,特文特大学,University of Twente,荷兰,欧洲,,,,量子计算,,,,,,,,,,5,是,UT;Twente
+c_quix,company,QuiX Quantum,QuiX Quantum,荷兰,欧洲,,,,量子计算,,,2019,A 轮 1500 万欧元（2025-07，Invest-NL/EIC Fund 联合领投）；DLR QCI 1400 万欧元合同（2022-2026）,氮化硅可编程光量子处理器与整机,,公司称 DLR 合同为通用光量子计算机首次商业销售,,,4,是,QuiX
+s_renema,scholar,耶尔默·雷内马,Jelmer Renema,荷兰,欧洲,,,,量子计算,,教授,,,,,,,,5,是,Jelmer Renema
+x_murray,exec,理查德·默里,Richard Murray,英国,欧洲,,,,量子计算,,联合创始人 / CEO,,,,,与 Ian Walmsley（董事长）、Josh Nunn（CSO）2019 年联合创立,,,5,是,Richard Murray
+x_meunier,exec,特里斯坦·默尼耶,Tristan Meunier,法国,欧洲,,,,量子计算,,联合创始人 / 首席科学与创新官,,,,,120+ 篇论文（H 指数 37）,,,5,是,Tristan Meunier
+x_chenliuping,exec,陈柳平,Chen Liuping,中国,东亚,,,,量子计算;量子通信,,联合创始人 / CEO,,,,,董事长李杨、执行副总裁韩琢（2012 年加拿大 1QBit 联合创始人）为另两位核心成员,,,4,是,陈柳平
+s_zbinden,scholar,雨果·兹宾登,Hugo Zbinden,瑞士,欧洲,,应用物理组（GAP）,,量子通信,,副教授,,,,,,,,6,是,Hugo Zbinden
+s_rongxing,scholar,荣星,Rong Xing,中国,东亚,,物理学院,,量子传感与测量;量子计算,,教授 / 副院长（挂职）,,,,,国仪量子董事,,,6,是,荣星;Rong Xing
+s_sblatt,scholar,塞巴斯蒂安·布拉特,Sebastian Blatt,德国,欧洲,,,,量子计算,,组长 / planqc CTO,,,,,与因斯布鲁克 Rainer Blatt（s_blatt）区分，两人同名不同人,,,6,是,Sebastian Blatt;塞巴斯蒂安布拉特
+x_glaetzle,exec,亚历山大·格莱茨勒,Alexander Glätzle,德国,欧洲,,,,量子计算,,联合创始人 / CEO,,,,,,,,4,是,Alexander Glatzle
+x_ory,exec,安迪·奥里,Andy Ory,美国,北美,,,,量子计算,,CEO,,,,,,,,4,是,Andy Ory
