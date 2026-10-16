@@ -1,0 +1,1874 @@
+{
+ "inferred_links": [
+  {
+   "s": "s_dayan",
+   "t": "st_goban",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：杰夫·金布尔",
+   "rule": "R1"
+  },
+  {
+   "s": "s_jennewein",
+   "t": "s_pan",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：安东·蔡林格",
+   "rule": "R1"
+  },
+  {
+   "s": "s_chen",
+   "t": "s_jin",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：潘建伟",
+   "rule": "R1"
+  },
+  {
+   "s": "s_chen",
+   "t": "s_lu",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：潘建伟",
+   "rule": "R1"
+  },
+  {
+   "s": "s_jin",
+   "t": "s_lu",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：潘建伟",
+   "rule": "R1"
+  },
+  {
+   "s": "s_guogp",
+   "t": "s_han",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：郭光灿",
+   "rule": "R1"
+  },
+  {
+   "s": "x_cohen",
+   "t": "x_ofek",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：莫蒂·海布卢姆",
+   "rule": "R1"
+  },
+  {
+   "s": "x_cohen",
+   "t": "x_sivan",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：莫蒂·海布卢姆",
+   "rule": "R1"
+  },
+  {
+   "s": "x_ofek",
+   "t": "x_sivan",
+   "rel": "同门",
+   "w": 1,
+   "note": "共同导师：莫蒂·海布卢姆",
+   "rule": "R1"
+  },
+  {
+   "s": "c_ionq",
+   "t": "i_skt",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：ID Quantique",
+   "rule": "R2"
+  },
+  {
+   "s": "c_ionq",
+   "t": "i_softbank",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：Classiq",
+   "rule": "R2"
+  },
+  {
+   "s": "c_dwave",
+   "t": "i_sequoia",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：Quantum Circuits Inc",
+   "rule": "R2"
+  },
+  {
+   "s": "c_ctquantum",
+   "t": "i_chinatelecom",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：国盾量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_honeywell",
+   "t": "i_jpmorgan",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：Quantinuum",
+   "rule": "R2"
+  },
+  {
+   "s": "i_honeywell",
+   "t": "i_nvidia",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：Quantinuum",
+   "rule": "R2"
+  },
+  {
+   "s": "i_jpmorgan",
+   "t": "i_nvidia",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：Quantinuum",
+   "rule": "R2"
+  },
+  {
+   "s": "i_blackrock",
+   "t": "i_nvidia",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：PsiQuantum",
+   "rule": "R2"
+  },
+  {
+   "s": "i_blackrock",
+   "t": "i_temasek",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：PsiQuantum",
+   "rule": "R2"
+  },
+  {
+   "s": "i_nvidia",
+   "t": "i_temasek",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：PsiQuantum",
+   "rule": "R2"
+  },
+  {
+   "s": "i_google",
+   "t": "i_nvidia",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：QuEra Computing",
+   "rule": "R2"
+  },
+  {
+   "s": "i_google",
+   "t": "i_softbank",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：QuEra Computing",
+   "rule": "R2"
+  },
+  {
+   "s": "i_nvidia",
+   "t": "i_softbank",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：QuEra Computing",
+   "rule": "R2"
+  },
+  {
+   "s": "i_blackrock",
+   "t": "i_tencent",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：IQM Quantum Computers",
+   "rule": "R2"
+  },
+  {
+   "s": "i_blackrock",
+   "t": "i_worldfund",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：IQM Quantum Computers",
+   "rule": "R2"
+  },
+  {
+   "s": "i_tencent",
+   "t": "i_worldfund",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：IQM Quantum Computers",
+   "rule": "R2"
+  },
+  {
+   "s": "i_hillhouse",
+   "t": "i_jushi",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：国仪量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_cicf",
+   "t": "i_norinco",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：本源量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_cicf",
+   "t": "i_szvc",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：本源量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_cicf",
+   "t": "i_zkx",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：本源量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_norinco",
+   "t": "i_szvc",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：本源量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_norinco",
+   "t": "i_zkx",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：本源量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_szvc",
+   "t": "i_zkx",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：本源量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_cicf",
+   "t": "i_junlian",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：图灵量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_cicf",
+   "t": "i_legendstar",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：图灵量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_cicf",
+   "t": "i_shengshi",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：图灵量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_junlian",
+   "t": "i_legendstar",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：图灵量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_junlian",
+   "t": "i_shengshi",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：图灵量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_legendstar",
+   "t": "i_shengshi",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：图灵量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_idg",
+   "t": "i_zkx",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：未磁科技",
+   "rule": "R2"
+  },
+  {
+   "s": "i_baiduv",
+   "t": "i_gaorong",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：华翊量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_baiduv",
+   "t": "i_jiantou",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：华翊量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_baiduv",
+   "t": "i_junlian",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：华翊量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_gaorong",
+   "t": "i_jiantou",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：华翊量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_gaorong",
+   "t": "i_junlian",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：华翊量子",
+   "rule": "R2"
+  },
+  {
+   "s": "i_jiantou",
+   "t": "i_junlian",
+   "rel": "共同投资",
+   "w": 1,
+   "note": "共同被投企业：华翊量子",
+   "rule": "R2"
+  }
+ ],
+ "node_annotations": {
+  "s_pan": {
+   "schools_all": "安东·蔡林格学派｜潘建伟学派",
+   "school": "潘建伟学派",
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.1044
+  },
+  "s_lu": {
+   "schools_all": "安东·蔡林格学派｜潘建伟学派",
+   "school": "安东·蔡林格学派",
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_chen": {
+   "schools_all": "安东·蔡林格学派｜潘建伟学派",
+   "school": "安东·蔡林格学派",
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_jin": {
+   "schools_all": "安东·蔡林格学派｜潘建伟学派",
+   "school": "安东·蔡林格学派",
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0996
+  },
+  "s_zeilinger": {
+   "schools_all": "安东·蔡林格学派",
+   "school": "安东·蔡林格学派",
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0477,
+   "bridge": 1,
+   "bridge_countries": "中国｜加拿大"
+  },
+  "s_jennewein": {
+   "schools_all": "安东·蔡林格学派",
+   "school": "安东·蔡林格学派",
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0435
+  },
+  "u_mit": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.1225
+  },
+  "u_harvard": {
+   "centrality_deg": 0.0193,
+   "centrality_btw": 0.2511
+  },
+  "u_caltech": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0936,
+   "bridge": 1,
+   "bridge_countries": "以色列｜西班牙"
+  },
+  "u_princeton": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_chicago": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0023
+  },
+  "u_berkeley": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0711
+  },
+  "u_maryland": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_duke": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "u_yale": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "u_colorado": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0697
+  },
+  "u_ucsb": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0221
+  },
+  "u_stanford": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_usc": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_waterloo": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0317
+  },
+  "u_toronto": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_ubc": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_sfu": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_uq": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_oxford": {
+   "centrality_deg": 0.0304,
+   "centrality_btw": 0.0768,
+   "bridge": 1,
+   "bridge_countries": "加拿大｜新加坡"
+  },
+  "u_cambridge": {
+   "centrality_deg": 0.0276,
+   "centrality_btw": 0.0333
+  },
+  "u_bristol": {
+   "centrality_deg": 0.0193,
+   "centrality_btw": 0.048,
+   "bridge": 1,
+   "bridge_countries": "加拿大｜美国"
+  },
+  "u_imperial": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0023
+  },
+  "u_ucl": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0042
+  },
+  "u_sussex": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "u_eth": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0045
+  },
+  "u_delft": {
+   "centrality_deg": 0.0249,
+   "centrality_btw": 0.1926,
+   "bridge": 1,
+   "bridge_countries": "法国｜西班牙"
+  },
+  "u_innsbruck": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0056
+  },
+  "u_mpq": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0189
+  },
+  "u_lmu": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_vienna": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_geneva": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0
+  },
+  "u_basel": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_cph": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_bordeaux": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_iqo": {
+   "centrality_deg": 0.0193,
+   "centrality_btw": 0.0481
+  },
+  "u_ens": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0955
+  },
+  "u_aalto": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0014
+  },
+  "u_ustc": {
+   "centrality_deg": 0.0442,
+   "centrality_btw": 0.0774
+  },
+  "u_tsinghua": {
+   "centrality_deg": 0.0249,
+   "centrality_btw": 0.1932
+  },
+  "u_sjtu": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0692
+  },
+  "u_zju": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0022
+  },
+  "u_sustech": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_sydney": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_unsw": {
+   "centrality_deg": 0.0193,
+   "centrality_btw": 0.0303,
+   "bridge": 1,
+   "bridge_countries": "加拿大｜芬兰"
+  },
+  "u_anu": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_tokyo": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0324
+  },
+  "u_nus": {
+   "centrality_deg": 0.0193,
+   "centrality_btw": 0.0236
+  },
+  "u_weizmann": {
+   "centrality_deg": 0.0249,
+   "centrality_btw": 0.0259
+  },
+  "s_shor": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_chuang": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_lukin": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0327
+  },
+  "s_greiner": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_vuletic": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0001
+  },
+  "s_preskill": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_monroe": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0191
+  },
+  "s_kim": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_schoelkopf": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_devoret": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.0746
+  },
+  "s_martinis": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0913
+  },
+  "s_kimble": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.067,
+   "bridge": 1,
+   "bridge_countries": "以色列｜日本"
+  },
+  "s_houck": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_siddiqi": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_awschalom": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_bernien": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.1354
+  },
+  "s_lidar": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_guo": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0014
+  },
+  "s_du": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0209
+  },
+  "s_duan": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_yao": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_guogp": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_peng": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_xue": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0023
+  },
+  "s_wallraff": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_home": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_hanson": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.1271
+  },
+  "s_vandersypen": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_groblacher": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_blatt": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_zoller": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0112
+  },
+  "s_cirac": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0235
+  },
+  "s_bloch": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0
+  },
+  "s_ekert": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0042
+  },
+  "s_steane": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_walmsley": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_obrien": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0001
+  },
+  "s_thompson": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_rudolph": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0045
+  },
+  "s_montanaro": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0063
+  },
+  "s_cubitt": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_morton": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0084
+  },
+  "s_hensinger": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_lucas": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0002
+  },
+  "s_leek": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_gisin": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_loss": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_lodahl": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_anderson": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_biercuk": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_simmons": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_morello": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_dzurak": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_doherty": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_nakamura": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0366
+  },
+  "s_yamamoto": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.009
+  },
+  "s_alan": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_emerson": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0012
+  },
+  "s_mosca": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_browaeys": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_aspect": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_fitzsimons": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "st_rigetti": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0381
+  },
+  "st_weedbrook": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "st_wen": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0068,
+   "bridge": 1,
+   "bridge_countries": "日本｜美国"
+  },
+  "st_ballance": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0008
+  },
+  "st_heyu": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "st_wallman": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "st_zeiher": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0483
+  },
+  "st_bedington": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_ionq": {
+   "centrality_deg": 0.0359,
+   "centrality_btw": 0.1684,
+   "bridge": 1,
+   "bridge_countries": "以色列｜新加坡｜瑞士｜英国｜韩国"
+  },
+  "c_quera": {
+   "centrality_deg": 0.0304,
+   "centrality_btw": 0.3187
+  },
+  "c_rigetti": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.037
+  },
+  "c_atom": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0045
+  },
+  "c_infleqtion": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_qci": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0459
+  },
+  "c_psiquantum": {
+   "centrality_deg": 0.0249,
+   "centrality_btw": 0.1906,
+   "bridge": 1,
+   "bridge_countries": "新加坡｜英国"
+  },
+  "c_qolab": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.09
+  },
+  "c_dwave": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0575
+  },
+  "c_xanadu": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0001
+  },
+  "c_qm": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0
+  },
+  "c_oxford_ionics": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0671
+  },
+  "c_universal_quantum": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "c_riverlane": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_phasecraft": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0229
+  },
+  "c_quantum_motion": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_orca": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0023
+  },
+  "c_oqc": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0149
+  },
+  "c_pasqal": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.0676
+  },
+  "c_alicebob": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.1257,
+   "bridge": 1,
+   "bridge_countries": "日本｜美国"
+  },
+  "c_quandela": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0148
+  },
+  "c_planqc": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.0212
+  },
+  "c_iqm": {
+   "centrality_deg": 0.0221,
+   "centrality_btw": 0.0602,
+   "bridge": 1,
+   "bridge_countries": "中国｜德国｜美国"
+  },
+  "c_aqt": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0011
+  },
+  "c_qphox": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_qblox": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_idq": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.0192,
+   "bridge": 1,
+   "bridge_countries": "美国｜韩国"
+  },
+  "c_kets": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_nuquantum": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_sparrow": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_qnami": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_muquans": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_quantumctek": {
+   "centrality_deg": 0.0138,
+   "centrality_btw": 0.0038
+  },
+  "c_origin": {
+   "centrality_deg": 0.0193,
+   "centrality_btw": 0.0409
+  },
+  "c_ciqtek": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.0254
+  },
+  "c_turingq": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.1207
+  },
+  "c_boseq": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0023
+  },
+  "c_huayi": {
+   "centrality_deg": 0.0193,
+   "centrality_btw": 0.0643
+  },
+  "c_qctrl": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_sqc": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0011
+  },
+  "c_diraq": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0011
+  },
+  "c_qb": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_speqtral": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0023
+  },
+  "c_horizon": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0323
+  },
+  "c_qbench": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0011
+  },
+  "c_evoq": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_photonicinc": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_qunasys": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.017
+  },
+  "u_nju": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_sxu": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_chalmers": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_siegen": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_riken": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_ye": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0587
+  },
+  "s_zhusn": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_pengkc": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_han": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_delsing": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_wehner": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_wunderlich": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_vazirani": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "st_xiang": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.1878
+  },
+  "st_peronnin": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_quantinuum": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.031
+  },
+  "c_ctquantum": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0001
+  },
+  "c_wentian": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0023
+  },
+  "c_eleqtron": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "c_spinq": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_guoyao": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_gkqn": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_mottonen": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_senellart": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_khan": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_goetz": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_reymond": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_ribordy": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "x_bloom": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_rose": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_sivan": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "x_wisby": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_shadbolt": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_brierley": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_weidt": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_yaolin": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_mayin": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_palacios": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_nunn": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "i_chinatelecom": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "i_honeywell": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_jpmorgan": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_nvidia": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.1971
+  },
+  "i_blackrock": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0571
+  },
+  "i_tencent": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_temasek": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0697,
+   "bridge": 1,
+   "bridge_countries": "法国｜美国"
+  },
+  "i_hillhouse": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0148
+  },
+  "i_jushi": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_cicf": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0349
+  },
+  "i_szvc": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_zkx": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0186
+  },
+  "i_junlian": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.1135
+  },
+  "i_legendstar": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_shengshi": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_gaorong": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_baiduv": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_jiantou": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_wuhu": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_worldfund": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_earlybird": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_google": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0023
+  },
+  "i_softbank": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0381,
+   "bridge": 1,
+   "bridge_countries": "以色列｜美国"
+  },
+  "i_nrf": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_baqis": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0192
+  },
+  "u_icfo": {
+   "centrality_deg": 0.0166,
+   "centrality_btw": 0.0003
+  },
+  "u_cealeti": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_bham": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "u_wisc": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0023
+  },
+  "u_huji": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_sysu": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_iapcm": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "u_sherbrooke": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_saffman": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_knight": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_aharonov": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_ozeri": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_luole": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.017
+  },
+  "s_zengguihua": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_bongs": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "st_goban": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0662
+  },
+  "st_lemyre": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_classiq": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0482,
+   "bridge": 1,
+   "bridge_countries": "日本｜美国"
+  },
+  "c_qart": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_qedma": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_quobly": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.017
+  },
+  "c_nordq": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_quside": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "c_luxquanta": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "c_nanoqt": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_qike": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0126
+  },
+  "c_coolatom": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0045
+  },
+  "c_xuntai": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_vinet": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_tangbiao": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "i_skt": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0,
+   "bridge": 1,
+   "bridge_countries": "瑞士｜美国"
+  },
+  "u_sheffield": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "u_ub": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_lechner": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_lewenstein": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_grangier": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_longguilu": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_wangxiangbin": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_sich": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_aegiq": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "c_parityqc": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_qili": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0068
+  },
+  "c_entropica": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_orangeqs": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_bpifrance": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_norinco": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_pku": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_fudan": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_buaa": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_c12": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0023
+  },
+  "c_lightsynq": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0598
+  },
+  "c_vector_atomic": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_sandboxaq": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_nakai": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0126
+  },
+  "c_vecq": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0463
+  },
+  "c_liangyi": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0576
+  },
+  "c_logicbit": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "c_buchou": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0023
+  },
+  "c_xianggan": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_weici": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0184
+  },
+  "i_sequoia": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_thirdpoint": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "i_idg": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0265
+  },
+  "s_stephsimmons": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0353,
+   "bridge": 1,
+   "bridge_countries": "澳大利亚｜英国"
+  },
+  "s_mcdermott": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0721
+  },
+  "s_zhaihui": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_jinyirong": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "st_bhaskar": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0598
+  },
+  "st_lixiang": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0512
+  },
+  "x_demasi": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0162
+  },
+  "x_keesling": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_hazra": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_baratz": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.054
+  },
+  "x_somaschi": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_henriet": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_ho": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_yan": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_cohen": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "x_caibin": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_pdesjardins": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_osaka": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_fujii": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0063
+  },
+  "s_mitarai": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0063
+  },
+  "s_ling": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_dayan": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.042
+  },
+  "s_pruneri": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_latorre": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_forndiaz": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.1018,
+   "bridge": 1,
+   "bridge_countries": "美国｜荷兰"
+  },
+  "c_qsource": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0023
+  },
+  "x_lum": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_melamed": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_abellan": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_etcheverry": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_tan": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0255
+  },
+  "x_vartiainen": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_minerbi": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_navehy": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_erven": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_lescannne": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_giesz": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_canivell": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_kulkarni": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0457
+  },
+  "x_mullally": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "st_harty": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_paragraf": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_humphreys": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_sthomas": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_deltag": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_holynski": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_lowe": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_bouyer": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0045
+  },
+  "x_peng": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_ofek": {
+   "centrality_deg": 0.0083,
+   "centrality_btw": 0.0
+  },
+  "s_heiblum": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.0
+  },
+  "x_dufferwiel": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_izaac": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "u_twente": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "c_quix": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_renema": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_murray": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_meunier": {
+   "centrality_deg": 0.011,
+   "centrality_btw": 0.1186
+  },
+  "x_chenliuping": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "s_zbinden": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_rongxing": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "s_sblatt": {
+   "centrality_deg": 0.0055,
+   "centrality_btw": 0.0
+  },
+  "x_glaetzle": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  },
+  "x_ory": {
+   "centrality_deg": 0.0028,
+   "centrality_btw": 0.0
+  }
+ },
+ "stats": {
+  "R1_同门推断边": 9,
+  "R2_共同投资推断边": 36,
+  "R3_学派数": 2,
+  "R5_跨境桥梁节点": 19
+ }
+}

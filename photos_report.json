@@ -1,0 +1,1319 @@
+{
+ "u_mit": {
+  "via": "icon-horse",
+  "url": "rle.mit.edu"
+ },
+ "u_harvard": {
+  "via": "unavatar",
+  "url": "quantum.harvard.edu"
+ },
+ "u_caltech": {
+  "via": "unavatar",
+  "url": "iqim.caltech.edu"
+ },
+ "u_princeton": {
+  "via": "unavatar",
+  "url": "princeton.edu"
+ },
+ "u_chicago": {
+  "via": "icon-horse",
+  "url": "quantum.uchicago.edu"
+ },
+ "u_berkeley": {
+  "via": "bing",
+  "url": "http://down2.ucweb.com/ucbrowser/html/images/index_pic/img/d0ae1a471627d18762a6b70803c2bb2c.jpg"
+ },
+ "u_maryland": {
+  "via": "icon-horse",
+  "url": "jqi.umd.edu"
+ },
+ "u_duke": {
+  "via": "unavatar",
+  "url": "quantum.duke.edu"
+ },
+ "u_yale": {
+  "via": "icon-horse",
+  "url": "quantum.yale.edu"
+ },
+ "u_colorado": {
+  "via": "unavatar",
+  "url": "jila.colorado.edu"
+ },
+ "u_ucsb": {
+  "via": "unavatar",
+  "url": "physics.ucsb.edu"
+ },
+ "u_stanford": {
+  "via": "unavatar",
+  "url": "qfarm.stanford.edu"
+ },
+ "u_usc": {
+  "via": "icon-horse",
+  "url": "viterbi.usc.edu"
+ },
+ "u_waterloo": {
+  "via": "unavatar",
+  "url": "uwaterloo.ca"
+ },
+ "u_toronto": {
+  "via": "unavatar",
+  "url": "physics.utoronto.ca"
+ },
+ "u_ubc": {
+  "via": "unavatar",
+  "url": "qmi.ubc.ca"
+ },
+ "u_sfu": {
+  "via": "unavatar",
+  "url": "sfu.ca"
+ },
+ "u_uq": {
+  "via": "icon-horse",
+  "url": "physics.uq.edu.au"
+ },
+ "u_oxford": {
+  "via": "icon-horse",
+  "url": "physics.ox.ac.uk"
+ },
+ "u_cambridge": {
+  "via": "icon-horse",
+  "url": "phy.cam.ac.uk"
+ },
+ "u_bristol": {
+  "via": "icon-horse",
+  "url": "bristol.ac.uk"
+ },
+ "u_imperial": {
+  "via": "icon-horse",
+  "url": "imperial.ac.uk"
+ },
+ "u_ucl": {
+  "via": "icon-horse",
+  "url": "ucl.ac.uk"
+ },
+ "u_sussex": {
+  "via": "icon-horse",
+  "url": "sussex.ac.uk"
+ },
+ "u_eth": {
+  "via": "icon-horse",
+  "url": "qudev.phys.ethz.ch"
+ },
+ "u_delft": {
+  "via": "icon-horse",
+  "url": "qutech.nl"
+ },
+ "u_innsbruck": {
+  "via": "sogou-logo",
+  "url": "https://www.gtn9.com/pw/201111/25/091800g6zxag5aprxjexau.jpg"
+ },
+ "u_mpq": {
+  "via": "icon-horse",
+  "url": "mpq.mpg.de"
+ },
+ "u_lmu": {
+  "via": "icon-horse",
+  "url": "lmu.de"
+ },
+ "u_vienna": {
+  "via": "icon-horse",
+  "url": "quantum.at"
+ },
+ "u_geneva": {
+  "via": "avatar"
+ },
+ "u_basel": {
+  "via": "icon-horse",
+  "url": "quantum.unibas.ch"
+ },
+ "u_cph": {
+  "via": "icon-horse",
+  "url": "nbi.ku.dk"
+ },
+ "u_bordeaux": {
+  "via": "unavatar",
+  "url": "u-bordeaux.fr"
+ },
+ "u_iqo": {
+  "via": "icon-horse",
+  "url": "institutoptique.fr"
+ },
+ "u_ens": {
+  "via": "icon-horse",
+  "url": "phys.ens.fr"
+ },
+ "u_aalto": {
+  "via": "unavatar",
+  "url": "aalto.fi"
+ },
+ "u_ustc": {
+  "via": "sogou-logo",
+  "url": "https://vipyidiancom.oss-cn-beijing.aliyuncs.com/vipyidian.com/article/14878211108552107.jpg"
+ },
+ "u_tsinghua": {
+  "via": "unavatar",
+  "url": "iiis.tsinghua.edu.cn"
+ },
+ "u_sjtu": {
+  "via": "unavatar",
+  "url": "sjtu.edu.cn"
+ },
+ "u_zju": {
+  "via": "icon-horse",
+  "url": "zju.edu.cn"
+ },
+ "u_sustech": {
+  "via": "unavatar",
+  "url": "siqse.sustech.edu.cn"
+ },
+ "u_sydney": {
+  "via": "icon-horse",
+  "url": "sydney.edu.au"
+ },
+ "u_unsw": {
+  "via": "icon-horse",
+  "url": "cqc2t.org"
+ },
+ "u_anu": {
+  "via": "icon-horse",
+  "url": "anu.edu.au"
+ },
+ "u_tokyo": {
+  "via": "icon-horse",
+  "url": "u-tokyo.ac.jp"
+ },
+ "u_nus": {
+  "via": "icon-horse",
+  "url": "quantumlah.org"
+ },
+ "u_weizmann": {
+  "via": "sogou-logo",
+  "url": "https://www2.scut.edu.cn/_upload/article/images/7c/d4/1752bfc54f36a99963987ef65fc9/2acdaa8d-0feb-4eb8-9ea0-2363983f505f.png"
+ },
+ "s_shor": {
+  "via": "sogou",
+  "url": "https://imgconvert.csdnimg.cn/aHR0cHM6Ly9tbWJpei5xcGljLmNuL3N6X21tYml6X2pwZy9mODRrSkJYenJCVzQzNFhyMUNMWnpQcW9KMFFpY0pvaWJjdXNCRmN5V0JpYUFTSlZGUFFpY04xdHNGWmlhaFp6UkJSZW1pYWZndkI4ZjVUS25Kak1TWXNSeWV4US82NDA?x-oss-process=image/format,png"
+ },
+ "s_chuang": {
+  "via": "avatar"
+ },
+ "s_lukin": {
+  "via": "avatar"
+ },
+ "s_greiner": {
+  "via": "avatar"
+ },
+ "s_vuletic": {
+  "via": "avatar"
+ },
+ "s_preskill": {
+  "via": "sogou",
+  "url": "https://img4.kuwo.cn/star/albumcover/240/33/39/2789170652.jpg"
+ },
+ "s_monroe": {
+  "via": "avatar"
+ },
+ "s_kim": {
+  "via": "sogou",
+  "url": "https://p1.ssl.qhmsg.com/dr/220__/t01f6cfec1f989e0b9f.jpg"
+ },
+ "s_schoelkopf": {
+  "via": "avatar"
+ },
+ "s_devoret": {
+  "via": "avatar"
+ },
+ "s_martinis": {
+  "via": "avatar"
+ },
+ "s_kimble": {
+  "via": "avatar"
+ },
+ "s_houck": {
+  "via": "avatar"
+ },
+ "s_siddiqi": {
+  "via": "avatar"
+ },
+ "s_awschalom": {
+  "via": "avatar"
+ },
+ "s_bernien": {
+  "via": "avatar"
+ },
+ "s_lidar": {
+  "via": "sogou",
+  "url": "https://2b.zol-img.com.cn/article/16_200x150/851/liWg99frITBs.jpg"
+ },
+ "s_zeilinger": {
+  "via": "sogou",
+  "url": "https://file.elecfans.com/web1/M00/66/0A/o4YBAFu6yOyASHNTAACtB4yhbkU504.png"
+ },
+ "s_pan": {
+  "via": "sogou",
+  "url": "https://p3.itc.cn/q_70/images03/20210617/d8b9bd28d39a4c12a0d7ff63b9daf330.jpeg"
+ },
+ "s_guo": {
+  "via": "sogou",
+  "url": "https://imagepphcloud.thepaper.cn/pph/image/288/985/62.jpg"
+ },
+ "s_du": {
+  "via": "sogou",
+  "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2022%2F1228%2F78094457j00rnlphc00k7c000rq00hpg.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
+ },
+ "s_duan": {
+  "via": "sogou",
+  "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2021%2F1218%2F29e7d171j00r4aydw001lc000gv00b6m.jpg&thumbnail=650x2147483647&quality=80&type=jpg"
+ },
+ "s_yao": {
+  "via": "sogou",
+  "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F0708%2F88ec427dj00rxgd3p0012d000rs00cjp.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
+ },
+ "s_jin": {
+  "via": "sogou",
+  "url": "https://images.shobserver.com/img/2023/1/9/69d77aa7-6cd8-455d-8bb3-9d1d9bf58065.jpg"
+ },
+ "s_lu": {
+  "via": "sogou",
+  "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2026%2F0515%2F4e145690j00tf2hft001qd200u000k0g00u000k0.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
+ },
+ "s_chen": {
+  "via": "sogou",
+  "url": "https://physics.ustc.edu.cn/_upload/article/images/9b/6c/1448dfff4b79b8f259867bd5300b/d0c4895c-49b9-431f-83a3-6338a82efe33.jpg"
+ },
+ "s_guogp": {
+  "via": "sogou",
+  "url": "https://file1.elecfans.com/web2/M00/FE/9C/wKgaomaeHA6AanQmAAFyOqrRJ9U911.jpg"
+ },
+ "s_peng": {
+  "via": "sogou",
+  "url": "https://news.sciencenet.cn/upload/news/images/2026/4/2026424134951210.png"
+ },
+ "s_xue": {
+  "via": "sogou",
+  "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2024%2F0624%2F0c7ad0a3j00sfl4tq003jd001hc00u0c.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
+ },
+ "s_wallraff": {
+  "via": "avatar"
+ },
+ "s_home": {
+  "via": "avatar"
+ },
+ "s_hanson": {
+  "via": "avatar"
+ },
+ "s_vandersypen": {
+  "via": "avatar"
+ },
+ "s_groblacher": {
+  "via": "avatar"
+ },
+ "s_blatt": {
+  "via": "avatar"
+ },
+ "s_zoller": {
+  "via": "avatar"
+ },
+ "s_cirac": {
+  "via": "avatar"
+ },
+ "s_bloch": {
+  "via": "avatar"
+ },
+ "s_ekert": {
+  "via": "avatar"
+ },
+ "s_steane": {
+  "via": "avatar"
+ },
+ "s_walmsley": {
+  "via": "avatar"
+ },
+ "s_obrien": {
+  "via": "sogou",
+  "url": "https://pic.baike.soso.com/ugc/baikepic2/0/20190119050111-532745300_jpeg_749_1000_49417.jpg/300"
+ },
+ "s_thompson": {
+  "via": "avatar"
+ },
+ "s_rudolph": {
+  "via": "avatar"
+ },
+ "s_montanaro": {
+  "via": "avatar"
+ },
+ "s_cubitt": {
+  "via": "avatar"
+ },
+ "s_morton": {
+  "via": "sogou",
+  "url": "https://pic.baike.soso.com/ugc/baikepic2/50/cut-20191222202047-381590399_jpg_263_329_14507.jpg/300"
+ },
+ "s_hensinger": {
+  "via": "avatar"
+ },
+ "s_lucas": {
+  "via": "avatar"
+ },
+ "s_leek": {
+  "via": "avatar"
+ },
+ "s_gisin": {
+  "via": "avatar"
+ },
+ "s_loss": {
+  "via": "sogou",
+  "url": "https://images-cn-8.ssl-images-amazon.com/images/I/51dUBwFmEsL._SL500_AA120.jpg"
+ },
+ "s_lodahl": {
+  "via": "avatar"
+ },
+ "s_anderson": {
+  "via": "avatar"
+ },
+ "s_biercuk": {
+  "via": "avatar"
+ },
+ "s_simmons": {
+  "via": "avatar"
+ },
+ "s_morello": {
+  "via": "avatar"
+ },
+ "s_dzurak": {
+  "via": "avatar"
+ },
+ "s_doherty": {
+  "via": "avatar"
+ },
+ "s_nakamura": {
+  "via": "avatar"
+ },
+ "s_yamamoto": {
+  "via": "sogou",
+  "url": "https://p1.itc.cn/q_70/images03/20210223/a6ab63c826a04028a52e8481d47d160e.jpeg"
+ },
+ "s_alan": {
+  "via": "avatar"
+ },
+ "s_emerson": {
+  "via": "sogou",
+  "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F1025%2F311f96ddj00s3359n00llc000hm00hmm.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
+ },
+ "s_mosca": {
+  "via": "avatar"
+ },
+ "s_browaeys": {
+  "via": "avatar"
+ },
+ "s_aspect": {
+  "via": "avatar"
+ },
+ "s_fitzsimons": {
+  "via": "avatar"
+ },
+ "st_rigetti": {
+  "via": "avatar"
+ },
+ "st_weedbrook": {
+  "via": "avatar"
+ },
+ "st_wen": {
+  "via": "sogou",
+  "url": "https://img-blog.csdnimg.cn/img_convert/0d69f1860cc3f4e05f9cb18caef536a2.png"
+ },
+ "st_ballance": {
+  "via": "avatar"
+ },
+ "st_heyu": {
+  "via": "sogou",
+  "url": "https://pic1.zhimg.com/v2-ceb9a09be61f4594efe8200b8f4b53bc_r.jpg"
+ },
+ "st_wallman": {
+  "via": "avatar"
+ },
+ "st_zeiher": {
+  "via": "avatar"
+ },
+ "st_bedington": {
+  "via": "avatar"
+ },
+ "c_ionq": {
+  "via": "icon-horse",
+  "url": "ionq.com"
+ },
+ "c_quera": {
+  "via": "icon-horse",
+  "url": "quera.com"
+ },
+ "c_rigetti": {
+  "via": "icon-horse",
+  "url": "rigetti.com"
+ },
+ "c_atom": {
+  "via": "icon-horse",
+  "url": "atom-computing.com"
+ },
+ "c_infleqtion": {
+  "via": "icon-horse",
+  "url": "infleqtion.com"
+ },
+ "c_qci": {
+  "via": "icon-horse",
+  "url": "quantumcircuits.com"
+ },
+ "c_psiquantum": {
+  "via": "icon-horse",
+  "url": "psiquantum.com"
+ },
+ "c_qolab": {
+  "via": "icon-horse",
+  "url": "qolab.ai"
+ },
+ "c_dwave": {
+  "via": "icon-horse",
+  "url": "dwavequantum.com"
+ },
+ "c_xanadu": {
+  "via": "icon-horse",
+  "url": "xanadu.ai"
+ },
+ "c_qm": {
+  "via": "icon-horse",
+  "url": "quantum-machines.co"
+ },
+ "c_oxford_ionics": {
+  "via": "icon-horse",
+  "url": "oxionics.com"
+ },
+ "c_universal_quantum": {
+  "via": "icon-horse",
+  "url": "universalquantum.com"
+ },
+ "c_riverlane": {
+  "via": "icon-horse",
+  "url": "riverlane.com"
+ },
+ "c_phasecraft": {
+  "via": "favicon-im",
+  "url": "phasecraft.io"
+ },
+ "c_quantum_motion": {
+  "via": "icon-horse",
+  "url": "quantummotion.tech"
+ },
+ "c_orca": {
+  "via": "icon-horse",
+  "url": "orcacomputing.com"
+ },
+ "c_oqc": {
+  "via": "icon-horse",
+  "url": "oqc.tech"
+ },
+ "c_pasqal": {
+  "via": "favicon-im",
+  "url": "pasqal.com"
+ },
+ "c_alicebob": {
+  "via": "icon-horse",
+  "url": "alice-bob.com"
+ },
+ "c_quandela": {
+  "via": "icon-horse",
+  "url": "quandela.com"
+ },
+ "c_planqc": {
+  "via": "icon-horse",
+  "url": "planqc.eu"
+ },
+ "c_iqm": {
+  "via": "icon-horse",
+  "url": "iqm.com"
+ },
+ "c_aqt": {
+  "via": "icon-horse",
+  "url": "aqt.eu"
+ },
+ "c_qphox": {
+  "via": "icon-horse",
+  "url": "qphox.eu"
+ },
+ "c_qblox": {
+  "via": "icon-horse",
+  "url": "qblox.com"
+ },
+ "c_idq": {
+  "via": "icon-horse",
+  "url": "idquantique.com"
+ },
+ "c_kets": {
+  "via": "icon-horse",
+  "url": "kets-quantum.com"
+ },
+ "c_nuquantum": {
+  "via": "icon-horse",
+  "url": "nu-quantum.com"
+ },
+ "c_sparrow": {
+  "via": "avatar"
+ },
+ "c_qnami": {
+  "via": "icon-horse",
+  "url": "qnami.ch"
+ },
+ "c_muquans": {
+  "via": "icon-horse",
+  "url": "exail.com"
+ },
+ "c_quantumctek": {
+  "via": "icon-horse",
+  "url": "quantum-info.com"
+ },
+ "c_origin": {
+  "via": "icon-horse",
+  "url": "originqc.com"
+ },
+ "c_ciqtek": {
+  "via": "icon-horse",
+  "url": "ciqtek.com"
+ },
+ "c_turingq": {
+  "via": "icon-horse",
+  "url": "turingq.com"
+ },
+ "c_boseq": {
+  "via": "icon-horse",
+  "url": "boseq.com"
+ },
+ "c_huayi": {
+  "via": "icon-horse",
+  "url": "hyqubit.com"
+ },
+ "c_qctrl": {
+  "via": "icon-horse",
+  "url": "q-ctrl.com"
+ },
+ "c_sqc": {
+  "via": "icon-horse",
+  "url": "sqc.com.au"
+ },
+ "c_diraq": {
+  "via": "icon-horse",
+  "url": "diraq.com.au"
+ },
+ "c_qb": {
+  "via": "icon-horse",
+  "url": "quantumbrilliance.com"
+ },
+ "c_speqtral": {
+  "via": "icon-horse",
+  "url": "speqtralquantum.com"
+ },
+ "c_horizon": {
+  "via": "icon-horse",
+  "url": "horizonquantum.com"
+ },
+ "c_qbench": {
+  "via": "icon-horse",
+  "url": "keysight.com"
+ },
+ "c_evoq": {
+  "via": "icon-horse",
+  "url": "evolutionq.com"
+ },
+ "c_photonicinc": {
+  "via": "icon-horse",
+  "url": "photonic.com"
+ },
+ "c_qunasys": {
+  "via": "icon-horse",
+  "url": "qunasys.com"
+ },
+ "u_nju": {
+  "via": "sogou-logo",
+  "url": "https://vipyidiancom.oss-cn-beijing.aliyuncs.com/vipyidian.com/article/15107351069840803.jpg"
+ },
+ "u_sxu": {
+  "via": "icon-horse",
+  "url": "sxu.edu.cn"
+ },
+ "u_chalmers": {
+  "via": "icon-horse",
+  "url": "chalmers.se"
+ },
+ "u_siegen": {
+  "via": "icon-horse",
+  "url": "uni-siegen.de"
+ },
+ "u_riken": {
+  "via": "icon-horse",
+  "url": "riken.jp"
+ },
+ "s_ye": {
+  "via": "sogou",
+  "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2023%2F1122%2F02d8f5edj00s4j270001bc000k000mqg.jpg&thumbnail=660x2147483647&quality=80&type=jpg"
+ },
+ "s_zhusn": {
+  "via": "sogou",
+  "url": "https://www.edu.cn/ke_yan_yu_fa_zhan/re_dian_tui_jian/202101/W020210111402194106767.jpg"
+ },
+ "s_pengkc": {
+  "via": "sogou",
+  "url": "https://p8.itc.cn/q_70/images03/20210211/44965b637817476e8686b120113199c5.jpeg"
+ },
+ "s_han": {
+  "via": "avatar"
+ },
+ "s_delsing": {
+  "via": "avatar"
+ },
+ "s_wehner": {
+  "via": "avatar"
+ },
+ "s_wunderlich": {
+  "via": "avatar"
+ },
+ "s_vazirani": {
+  "via": "avatar"
+ },
+ "st_xiang": {
+  "via": "avatar"
+ },
+ "st_peronnin": {
+  "via": "avatar"
+ },
+ "c_quantinuum": {
+  "via": "icon-horse",
+  "url": "quantinuum.com"
+ },
+ "c_ctquantum": {
+  "via": "icon-horse",
+  "url": "gxq.hefei.gov.cn"
+ },
+ "c_wentian": {
+  "via": "icon-horse",
+  "url": "qasky.com"
+ },
+ "c_eleqtron": {
+  "via": "icon-horse",
+  "url": "eleqtron.com"
+ },
+ "c_spinq": {
+  "via": "icon-horse",
+  "url": "spinq.cn"
+ },
+ "c_guoyao": {
+  "via": "icon-horse",
+  "url": "big5.cri.cn"
+ },
+ "c_gkqn": {
+  "via": "icon-horse",
+  "url": "big5.cri.cn"
+ },
+ "s_mottonen": {
+  "via": "avatar"
+ },
+ "s_senellart": {
+  "via": "avatar"
+ },
+ "x_khan": {
+  "via": "avatar"
+ },
+ "x_goetz": {
+  "via": "avatar"
+ },
+ "x_reymond": {
+  "via": "avatar"
+ },
+ "x_ribordy": {
+  "via": "avatar"
+ },
+ "x_bloom": {
+  "via": "avatar"
+ },
+ "x_rose": {
+  "via": "sogou",
+  "url": "https://img4.kuwo.cn/star/albumcover/240/72/42/2395376696.jpg"
+ },
+ "x_sivan": {
+  "via": "avatar"
+ },
+ "x_wisby": {
+  "via": "avatar"
+ },
+ "x_shadbolt": {
+  "via": "avatar"
+ },
+ "x_brierley": {
+  "via": "avatar"
+ },
+ "x_weidt": {
+  "via": "avatar"
+ },
+ "x_yaolin": {
+  "via": "sogou",
+  "url": "https://uface.56.com/photo/29/47/zhangyaolin1314_b_56.com_.jpg?1"
+ },
+ "x_mayin": {
+  "via": "sogou",
+  "url": "https://pic.baike.soso.com/ugc/baikepic2/0/20230418131734-1124297810_jpeg_1333_2000_1214765.jpg/300"
+ },
+ "x_palacios": {
+  "via": "avatar"
+ },
+ "x_nunn": {
+  "via": "avatar"
+ },
+ "i_chinatelecom": {
+  "via": "bing",
+  "url": "http://goooochina.com/images/xw.jpg"
+ },
+ "i_honeywell": {
+  "via": "unavatar",
+  "url": "honeywell.com"
+ },
+ "i_jpmorgan": {
+  "via": "icon-horse",
+  "url": "quantinuum.com"
+ },
+ "i_nvidia": {
+  "via": "bing",
+  "url": "https://blogs.nvidia.cn/wp-content/uploads/sites/20/2024/03/nvidia-placeholder-1024x544-1.jpg"
+ },
+ "i_blackrock": {
+  "via": "sogou-logo",
+  "url": "https://pic.baike.soso.com/ugc/baikepic2/15101/20220814223335-1268636412_png_519_358_32188.jpg/0"
+ },
+ "i_tencent": {
+  "via": "icon-horse",
+  "url": "techfundingnews.com"
+ },
+ "i_temasek": {
+  "via": "icon-horse",
+  "url": "pasqal.com"
+ },
+ "i_hillhouse": {
+  "via": "sogou-logo",
+  "url": "https://imagecloud.thepaper.cn/thepaper/image/149/401/931.jpg?x-oss-process=image/resize,w_332"
+ },
+ "i_jushi": {
+  "via": "bing",
+  "url": "https://img.freepik.com/premium-vector/co-initial-monogram-logo-with-creative-square-style-design_1190297-29672.jpg?semt=ais_hybrid&w=740&q=80"
+ },
+ "i_cicf": {
+  "via": "bing",
+  "url": "http://goooochina.com/images/xw.jpg"
+ },
+ "i_szvc": {
+  "via": "bing",
+  "url": "http://www.eyeshenzhen.com/pic/2023-02/20/25521237_ea9e7137-380a-4645-a483-234b091bd460.jpg"
+ },
+ "i_zkx": {
+  "via": "icon-horse",
+  "url": "unicorn500.com"
+ },
+ "i_junlian": {
+  "via": "sogou-logo",
+  "url": "https://img.kanzhun.com/images/photo/20180519/60d790632b6197460f38eb4cab9dc020.jpg"
+ },
+ "i_legendstar": {
+  "via": "sogou-logo",
+  "url": "https://img2.runjiapp.com/duoteimg/dtnew_newsup_img/202312/20231214120753_81905.jpg"
+ },
+ "i_shengshi": {
+  "via": "sogou-logo",
+  "url": "https://pic.baike.soso.com/ugc/baikepic2/0/20230417143237-7446558_jpeg_1038_1368_256995.jpg/300"
+ },
+ "i_gaorong": {
+  "via": "icon-horse",
+  "url": "m.thepaper.cn"
+ },
+ "i_baiduv": {
+  "via": "icon-horse",
+  "url": "hyqubit.com"
+ },
+ "i_jiantou": {
+  "via": "icon-horse",
+  "url": "hyqubit.com"
+ },
+ "i_wuhu": {
+  "via": "icon-horse",
+  "url": "m.toutiao.com"
+ },
+ "i_worldfund": {
+  "via": "icon-horse",
+  "url": "techfundingnews.com"
+ },
+ "i_earlybird": {
+  "via": "icon-horse",
+  "url": "eleqtron.com"
+ },
+ "i_google": {
+  "via": "icon-horse",
+  "url": "quera.com"
+ },
+ "i_softbank": {
+  "via": "icon-horse",
+  "url": "quera.com"
+ },
+ "i_nrf": {
+  "via": "icon-horse",
+  "url": "smartcompany.com.au"
+ },
+ "u_baqis": {
+  "via": "icon-horse",
+  "url": "baqis.ac.cn"
+ },
+ "u_icfo": {
+  "via": "icon-horse",
+  "url": "icfo.eu"
+ },
+ "u_cealeti": {
+  "via": "icon-horse",
+  "url": "leti-cea.com"
+ },
+ "u_bham": {
+  "via": "icon-horse",
+  "url": "birmingham.ac.uk"
+ },
+ "u_wisc": {
+  "via": "icon-horse",
+  "url": "wqi.wisc.edu"
+ },
+ "u_huji": {
+  "via": "icon-horse",
+  "url": "huji.ac.il"
+ },
+ "u_sysu": {
+  "via": "icon-horse",
+  "url": "sysu.edu.cn"
+ },
+ "u_iapcm": {
+  "via": "icon-horse",
+  "url": "apm.ac.cn"
+ },
+ "u_sherbrooke": {
+  "via": "icon-horse",
+  "url": "usherbrooke.ca"
+ },
+ "s_saffman": {
+  "via": "avatar"
+ },
+ "s_jennewein": {
+  "via": "avatar"
+ },
+ "s_knight": {
+  "via": "sogou",
+  "url": "https://img1.kuwo.cn/star/starheads/240/90/90/1322772687.jpg"
+ },
+ "s_aharonov": {
+  "via": "avatar"
+ },
+ "s_ozeri": {
+  "via": "avatar"
+ },
+ "s_luole": {
+  "via": "sogou",
+  "url": "https://x0.ifengimg.com/res/2020/C9FB90D55D9685EC71683EC1A89BF51611080A75_size41_w640_h480.jpeg"
+ },
+ "s_zengguihua": {
+  "via": "avatar"
+ },
+ "s_bongs": {
+  "via": "avatar"
+ },
+ "st_goban": {
+  "via": "avatar"
+ },
+ "st_lemyre": {
+  "via": "avatar"
+ },
+ "c_classiq": {
+  "via": "icon-horse",
+  "url": "classiq.io"
+ },
+ "c_qart": {
+  "via": "icon-horse",
+  "url": "quantum-art.tech"
+ },
+ "c_qedma": {
+  "via": "icon-horse",
+  "url": "qedma.com"
+ },
+ "c_quobly": {
+  "via": "icon-horse",
+  "url": "quobly.io"
+ },
+ "c_nordq": {
+  "via": "icon-horse",
+  "url": "nordquantique.ca"
+ },
+ "c_quside": {
+  "via": "icon-horse",
+  "url": "quside.com"
+ },
+ "c_luxquanta": {
+  "via": "icon-horse",
+  "url": "luxquanta.com"
+ },
+ "c_nanoqt": {
+  "via": "avatar"
+ },
+ "c_qike": {
+  "via": "icon-horse",
+  "url": "qudoor.com"
+ },
+ "c_coolatom": {
+  "via": "icon-horse",
+  "url": "coldatom.com.cn"
+ },
+ "c_xuntai": {
+  "via": "sogou-logo",
+  "url": "https://inews.gtimg.com/om_bt/OgtWmzoAlmgM9-BCJnVXZCuMwJ46jK-GagfqxrxNlGM9oAA/641"
+ },
+ "x_vinet": {
+  "via": "avatar"
+ },
+ "x_tangbiao": {
+  "via": "sogou",
+  "url": "https://tm-image.tianyancha.com/tm/fa0aaddf0a030535d7eb4506937407d4.jpg"
+ },
+ "i_skt": {
+  "via": "icon-horse",
+  "url": "idquantique.com"
+ },
+ "u_sheffield": {
+  "via": "icon-horse",
+  "url": "aegiq.com"
+ },
+ "u_ub": {
+  "via": "icon-horse",
+  "url": "qilimanjaro.tech"
+ },
+ "s_lechner": {
+  "via": "avatar"
+ },
+ "s_lewenstein": {
+  "via": "avatar"
+ },
+ "s_grangier": {
+  "via": "avatar"
+ },
+ "s_longguilu": {
+  "via": "sogou",
+  "url": "https://imagepphcloud.thepaper.cn/pph/image/102/832/301.jpg"
+ },
+ "s_wangxiangbin": {
+  "via": "sogou",
+  "url": "https://imagepphcloud.thepaper.cn/pph/image/276/799/449.jpg"
+ },
+ "x_sich": {
+  "via": "avatar"
+ },
+ "c_aegiq": {
+  "via": "icon-horse",
+  "url": "aegiq.com"
+ },
+ "c_parityqc": {
+  "via": "icon-horse",
+  "url": "parityqc.com"
+ },
+ "c_qili": {
+  "via": "icon-horse",
+  "url": "qilimanjaro.tech"
+ },
+ "c_entropica": {
+  "via": "icon-horse",
+  "url": "entropicalabs.com"
+ },
+ "c_orangeqs": {
+  "via": "icon-horse",
+  "url": "orangeqs.com"
+ },
+ "i_bpifrance": {
+  "via": "icon-horse",
+  "url": "bpifrance.com"
+ },
+ "i_norinco": {
+  "via": "sogou-logo",
+  "url": "https://gss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/zhidao/wh%3D600%2C800/sign=2368d47e720e0cf3a0a246fd3a76de27/eac4b74543a982267cc6524b8a82b9014a90eb53.jpg"
+ },
+ "u_pku": {
+  "via": "sogou-logo",
+  "url": "https://vim.pku.edu.cn/images/content/2017-10/20171027165035344238.jpg"
+ },
+ "u_fudan": {
+  "via": "sogou-logo",
+  "url": "https://p0.itc.cn/images01/20210626/774c961e24054803bea9cfadbf706c66.png"
+ },
+ "u_buaa": {
+  "via": "unavatar",
+  "url": "hzii.buaa.edu.cn"
+ },
+ "c_c12": {
+  "via": "unavatar",
+  "url": "oecd.org"
+ },
+ "c_lightsynq": {
+  "via": "unavatar",
+  "url": "businesswire.com"
+ },
+ "c_vector_atomic": {
+  "via": "unavatar",
+  "url": "businesswire.com"
+ },
+ "c_sandboxaq": {
+  "via": "unavatar",
+  "url": "globenewswire.com"
+ },
+ "c_nakai": {
+  "via": "unavatar",
+  "url": "ncsti.gov.cn"
+ },
+ "c_vecq": {
+  "via": "icon-horse",
+  "url": "kw.beijing.gov.cn"
+ },
+ "c_liangyi": {
+  "via": "unavatar",
+  "url": "ncsti.gov.cn"
+ },
+ "c_logicbit": {
+  "via": "sogou-logo",
+  "url": "https://img.kanzhun.com/images/defimg/20180710/4501c84d9b8391cb663de5eb46023dfa.jpg"
+ },
+ "c_buchou": {
+  "via": "sogou-logo",
+  "url": "https://pic4.zhimg.com/v2-3f588bb72b175d939fc074c7913bda2b_1440w.jpg?source=172ae18b"
+ },
+ "c_xianggan": {
+  "via": "sogou-logo",
+  "url": "https://dl-preview.csdnimg.cn/11939778/0001-e5eebe02ef16778140cf8c39c3a1d344_thumbnail.jpeg"
+ },
+ "c_weici": {
+  "via": "unavatar",
+  "url": "tmtpost.com"
+ },
+ "i_sequoia": {
+  "via": "unavatar",
+  "url": "newmarketpitch.com"
+ },
+ "i_thirdpoint": {
+  "via": "unavatar",
+  "url": "prnewswire.com"
+ },
+ "i_idg": {
+  "via": "icon-horse",
+  "url": "kw.beijing.gov.cn"
+ },
+ "s_stephsimmons": {
+  "via": "avatar"
+ },
+ "s_mcdermott": {
+  "via": "avatar"
+ },
+ "s_zhaihui": {
+  "via": "sogou",
+  "url": "https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2FLuMu2a5nm%3D8Ed9ats%3DMldgYCRvkX26WByAnrvTR69EbV11558585580219compressflag.jpg&thumbnail=650x2147483647&quality=80&type=jpg"
+ },
+ "s_jinyirong": {
+  "via": "avatar"
+ },
+ "st_bhaskar": {
+  "via": "avatar"
+ },
+ "st_lixiang": {
+  "via": "avatar"
+ },
+ "x_demasi": {
+  "via": "avatar"
+ },
+ "x_keesling": {
+  "via": "avatar"
+ },
+ "x_hazra": {
+  "via": "avatar"
+ },
+ "x_baratz": {
+  "via": "avatar"
+ },
+ "x_somaschi": {
+  "via": "avatar"
+ },
+ "x_henriet": {
+  "via": "avatar"
+ },
+ "x_ho": {
+  "via": "sogou",
+  "url": "https://i.kfs.io/artist/global/274321,0v3/fit/300x300.jpg"
+ },
+ "x_yan": {
+  "via": "avatar"
+ },
+ "x_cohen": {
+  "via": "sogou",
+  "url": "https://c-ssl.duitang.com/uploads/blog/201511/26/20151126221115_cmT84.thumb.700_0.jpeg"
+ },
+ "x_caibin": {
+  "via": "sogou",
+  "url": "https://zkres1.myzaker.com/201906/5cf67f3b8e9f0947404c3f15_1024.jpg"
+ },
+ "x_pdesjardins": {
+  "via": "avatar"
+ },
+ "u_osaka": {
+  "via": "unavatar",
+  "url": "alphaxiv.org"
+ },
+ "s_fujii": {
+  "via": "avatar"
+ },
+ "s_mitarai": {
+  "via": "avatar"
+ },
+ "s_ling": {
+  "via": "sogou",
+  "url": "https://img3.selfimg.com.cn/GQgalleryNoWatermark/2015/12/09/1449638864_oBLn5R.jpg"
+ },
+ "s_dayan": {
+  "via": "avatar"
+ },
+ "s_pruneri": {
+  "via": "avatar"
+ },
+ "s_latorre": {
+  "via": "avatar"
+ },
+ "s_forndiaz": {
+  "via": "sogou",
+  "url": "https://img3.kuwo.cn/star/albumcover/240/29/59/2062720713.jpg"
+ },
+ "c_qsource": {
+  "via": "icon-horse",
+  "url": "forbes.com"
+ },
+ "x_lum": {
+  "via": "sogou",
+  "url": "https://p6.itc.cn/q_70/images03/20210307/0d7ef63033dc4dc1afdbce7b208e2b9d.png"
+ },
+ "x_melamed": {
+  "via": "avatar"
+ },
+ "x_abellan": {
+  "via": "avatar"
+ },
+ "x_etcheverry": {
+  "via": "avatar"
+ },
+ "x_tan": {
+  "via": "sogou",
+  "url": "https://pic1.dbw.cn/0/00/43/35/433506_716988.jpg"
+ },
+ "x_vartiainen": {
+  "via": "avatar"
+ },
+ "x_minerbi": {
+  "via": "avatar"
+ },
+ "x_navehy": {
+  "via": "avatar"
+ },
+ "x_erven": {
+  "via": "avatar"
+ },
+ "x_lescannne": {
+  "via": "avatar"
+ },
+ "x_giesz": {
+  "via": "avatar"
+ },
+ "x_canivell": {
+  "via": "avatar"
+ },
+ "x_kulkarni": {
+  "via": "avatar"
+ },
+ "x_mullally": {
+  "via": "avatar"
+ },
+ "st_harty": {
+  "via": "avatar"
+ },
+ "c_paragraf": {
+  "via": "unavatar",
+  "url": "enterprise.cam.ac.uk"
+ },
+ "s_humphreys": {
+  "via": "avatar"
+ },
+ "x_sthomas": {
+  "via": "sogou",
+  "url": "https://images.ofweek.com/Upload/News/2016-8/leo/ThomasSimonis_blue.jpg"
+ },
+ "c_deltag": {
+  "via": "unavatar",
+  "url": "birmingham.ac.uk"
+ },
+ "s_holynski": {
+  "via": "avatar"
+ },
+ "x_lowe": {
+  "via": "avatar"
+ },
+ "s_bouyer": {
+  "via": "avatar"
+ },
+ "x_peng": {
+  "via": "sogou",
+  "url": "https://file.elecfans.com/web1/M00/EE/DC/pIYBAGCaA2CAdZj5AAUDl9NLV5k562.png"
+ },
+ "x_ofek": {
+  "via": "avatar"
+ },
+ "s_heiblum": {
+  "via": "avatar"
+ },
+ "x_dufferwiel": {
+  "via": "avatar"
+ },
+ "x_izaac": {
+  "via": "avatar"
+ },
+ "u_twente": {
+  "via": "unavatar",
+  "url": "thequantuminsider.com"
+ },
+ "c_quix": {
+  "via": "unavatar",
+  "url": "thequantuminsider.com"
+ },
+ "s_renema": {
+  "via": "avatar"
+ },
+ "x_murray": {
+  "via": "avatar"
+ },
+ "x_meunier": {
+  "via": "avatar"
+ },
+ "x_chenliuping": {
+  "via": "sogou",
+  "url": "https://p1.itc.cn/images01/20210706/e2703116688a4049b96b289f0a1e689d.png"
+ },
+ "s_zbinden": {
+  "via": "avatar"
+ },
+ "s_rongxing": {
+  "via": "sogou",
+  "url": "https://physics.ustc.edu.cn/_upload/article/images/e7/db/d2def84b4a218de146987a9e7932/cd6cff42-8d17-4270-a781-97a0d6f9dac4.png"
+ },
+ "s_sblatt": {
+  "via": "avatar"
+ },
+ "x_glaetzle": {
+  "via": "avatar"
+ },
+ "x_ory": {
+  "via": "avatar"
+ }
+}

@@ -1,0 +1,1322 @@
+[
+ {
+  "id": "u_harvard",
+  "type": "university",
+  "name": "哈佛大学",
+  "name_en": "Harvard University",
+  "qid": "Q13371",
+  "desc": "private university in Cambridge, Massachusetts"
+ },
+ {
+  "id": "u_princeton",
+  "type": "university",
+  "name": "普林斯顿大学",
+  "name_en": "Princeton University",
+  "qid": "Q21578",
+  "desc": "private Ivy League research university in Princeton, New Jersey, United States"
+ },
+ {
+  "id": "u_chicago",
+  "type": "university",
+  "name": "芝加哥大学",
+  "name_en": "University of Chicago",
+  "qid": "Q131252",
+  "desc": "private university in Chicago, Illinois"
+ },
+ {
+  "id": "u_maryland",
+  "type": "university",
+  "name": "马里兰大学",
+  "name_en": "University of Maryland",
+  "qid": "Q503415",
+  "desc": "public research university in the city of College Park in Prince George's County, Maryland, USA"
+ },
+ {
+  "id": "u_duke",
+  "type": "university",
+  "name": "杜克大学",
+  "name_en": "Duke University",
+  "qid": "Q168751",
+  "desc": "private university in Durham, North Carolina, USA"
+ },
+ {
+  "id": "u_yale",
+  "type": "university",
+  "name": "耶鲁大学",
+  "name_en": "Yale University",
+  "qid": "Q49112",
+  "desc": "private university in New Haven, Connecticut"
+ },
+ {
+  "id": "u_colorado",
+  "type": "university",
+  "name": "科罗拉多大学博尔德分校",
+  "name_en": "University of Colorado Boulder",
+  "qid": "Q736674",
+  "desc": "public university in Boulder, Colorado, United States, and flagship of the University of Colorado System"
+ },
+ {
+  "id": "u_stanford",
+  "type": "university",
+  "name": "斯坦福大学",
+  "name_en": "Stanford University",
+  "qid": "Q41506",
+  "desc": "private research university in Stanford, California, USA"
+ },
+ {
+  "id": "u_usc",
+  "type": "university",
+  "name": "南加州大学",
+  "name_en": "University of Southern California",
+  "qid": "Q4614",
+  "desc": "private university in Los Angeles, California, United States"
+ },
+ {
+  "id": "u_waterloo",
+  "type": "university",
+  "name": "滑铁卢大学",
+  "name_en": "University of Waterloo",
+  "qid": "Q1049470",
+  "desc": "public research university in Waterloo, Ontario, Canada"
+ },
+ {
+  "id": "u_toronto",
+  "type": "university",
+  "name": "多伦多大学",
+  "name_en": "University of Toronto",
+  "qid": "Q180865",
+  "desc": "public research university in the Greater Toronto Area of Ontario, Canada"
+ },
+ {
+  "id": "u_ubc",
+  "type": "university",
+  "name": "英属哥伦比亚大学",
+  "name_en": "University of British Columbia",
+  "qid": "Q391028",
+  "desc": "public research university in British Columbia, Canada"
+ },
+ {
+  "id": "u_uq",
+  "type": "university",
+  "name": "昆士兰大学",
+  "name_en": "University of Queensland",
+  "qid": "Q866012",
+  "desc": "university in Australia"
+ },
+ {
+  "id": "u_oxford",
+  "type": "university",
+  "name": "牛津大学",
+  "name_en": "University of Oxford",
+  "qid": "Q34433",
+  "desc": "collegiate research university in Oxford, England"
+ },
+ {
+  "id": "u_cambridge",
+  "type": "university",
+  "name": "剑桥大学",
+  "name_en": "University of Cambridge",
+  "qid": "Q35794",
+  "desc": "collegiate public research university in Cambridge, England, United Kingdom"
+ },
+ {
+  "id": "u_bristol",
+  "type": "university",
+  "name": "布里斯托大学",
+  "name_en": "University of Bristol",
+  "qid": "Q459506",
+  "desc": "research university located in Bristol, United Kingdom"
+ },
+ {
+  "id": "u_imperial",
+  "type": "university",
+  "name": "帝国理工学院",
+  "name_en": "Imperial College London",
+  "qid": "Q189022",
+  "desc": "public research university located in London, United Kingdom"
+ },
+ {
+  "id": "u_sussex",
+  "type": "university",
+  "name": "萨塞克斯大学",
+  "name_en": "University of Sussex",
+  "qid": "Q1161297",
+  "desc": "university in Brighton and Hove, UK"
+ },
+ {
+  "id": "u_eth",
+  "type": "university",
+  "name": "苏黎世联邦理工学院",
+  "name_en": "ETH Zurich",
+  "qid": "Q11942",
+  "desc": "public research university in Zurich"
+ },
+ {
+  "id": "u_innsbruck",
+  "type": "university",
+  "name": "因斯布鲁克大学",
+  "name_en": "University of Innsbruck",
+  "qid": "Q875788",
+  "desc": "public university in Innsbruck, Austria"
+ },
+ {
+  "id": "u_mpq",
+  "type": "university",
+  "name": "马克斯·普朗克量子光学研究所",
+  "name_en": "Max Planck Institute of Quantum Optics",
+  "qid": "Q829535",
+  "desc": "research institute in Garching bei München, Germany"
+ },
+ {
+  "id": "u_vienna",
+  "type": "university",
+  "name": "维也纳大学",
+  "name_en": "University of Vienna",
+  "qid": "Q165980",
+  "desc": "public university in Vienna, Austria"
+ },
+ {
+  "id": "u_geneva",
+  "type": "university",
+  "name": "日内瓦大学",
+  "name_en": "University of Geneva",
+  "qid": "Q503473",
+  "desc": "public research university located in Geneva, Switzerland"
+ },
+ {
+  "id": "u_basel",
+  "type": "university",
+  "name": "巴塞尔大学",
+  "name_en": "University of Basel",
+  "qid": "Q372608",
+  "desc": "public university in Basel, Switzerland"
+ },
+ {
+  "id": "u_cph",
+  "type": "university",
+  "name": "哥本哈根大学",
+  "name_en": "University of Copenhagen",
+  "qid": "Q186285",
+  "desc": "public research university in Copenhagen, Denmark"
+ },
+ {
+  "id": "u_aalto",
+  "type": "university",
+  "name": "阿尔托大学",
+  "name_en": "Aalto University",
+  "qid": "Q300980",
+  "desc": "Finnish university"
+ },
+ {
+  "id": "u_tsinghua",
+  "type": "university",
+  "name": "清华大学",
+  "name_en": "Tsinghua University",
+  "qid": "Q16955",
+  "desc": "public university in Beijing, China"
+ },
+ {
+  "id": "u_sjtu",
+  "type": "university",
+  "name": "上海交通大学",
+  "name_en": "Shanghai Jiao Tong University",
+  "qid": "Q525169",
+  "desc": "university in Shanghai, China"
+ },
+ {
+  "id": "u_zju",
+  "type": "university",
+  "name": "浙江大学",
+  "name_en": "Zhejiang University",
+  "qid": "Q197543",
+  "desc": "university in Hangzhou, China"
+ },
+ {
+  "id": "u_sydney",
+  "type": "university",
+  "name": "悉尼大学",
+  "name_en": "University of Sydney",
+  "qid": "Q487556",
+  "desc": "Australian university founded in 1850"
+ },
+ {
+  "id": "u_anu",
+  "type": "university",
+  "name": "澳大利亚国立大学",
+  "name_en": "Australian National University",
+  "qid": "Q127990",
+  "desc": "national research university in Canberra, Australian Capital Territory"
+ },
+ {
+  "id": "u_tokyo",
+  "type": "university",
+  "name": "东京大学",
+  "name_en": "University of Tokyo",
+  "qid": "Q7842",
+  "desc": "national university in Tokyo, Japan"
+ },
+ {
+  "id": "u_nus",
+  "type": "university",
+  "name": "新加坡国立大学",
+  "name_en": "National University of Singapore",
+  "qid": "Q738236",
+  "desc": "autonomous research university in Singapore"
+ },
+ {
+  "id": "u_weizmann",
+  "type": "university",
+  "name": "魏茨曼科学研究所",
+  "name_en": "Weizmann Institute of Science",
+  "qid": "Q4182",
+  "desc": "research institute in Rehovot, Israel"
+ },
+ {
+  "id": "s_lukin",
+  "type": "scholar",
+  "name": "米哈伊尔·卢金",
+  "name_en": "Mikhail Lukin",
+  "qid": "Q17180747",
+  "desc": "Russian physicist"
+ },
+ {
+  "id": "s_greiner",
+  "type": "scholar",
+  "name": "马库斯·格雷纳",
+  "name_en": "Markus Greiner",
+  "qid": "Q111751",
+  "desc": "German physicist"
+ },
+ {
+  "id": "s_vuletic",
+  "type": "scholar",
+  "name": "弗拉丹·武莱蒂奇",
+  "name_en": "Vladan Vuletić",
+  "qid": "Q59678940",
+  "desc": "physics professor at MIT"
+ },
+ {
+  "id": "s_monroe",
+  "type": "scholar",
+  "name": "克里斯托弗·门罗",
+  "name_en": "Christopher Monroe",
+  "qid": "Q15995315",
+  "desc": "American physicist"
+ },
+ {
+  "id": "s_kim",
+  "type": "scholar",
+  "name": "金仲桑",
+  "name_en": "Jungsang Kim",
+  "qid": "Q89363895",
+  "desc": "researcher"
+ },
+ {
+  "id": "s_devoret",
+  "type": "scholar",
+  "name": "米歇尔·德沃雷",
+  "name_en": "Michel Devoret",
+  "qid": "Q26703310",
+  "desc": "French physicist"
+ },
+ {
+  "id": "s_martinis",
+  "type": "scholar",
+  "name": "约翰·马蒂尼斯",
+  "name_en": "John M. Martinis",
+  "qid": "Q28976188",
+  "desc": "American physicist (born 1958)"
+ },
+ {
+  "id": "s_kimble",
+  "type": "scholar",
+  "name": "杰夫·金布尔",
+  "name_en": "H. Jeff Kimble",
+  "qid": "Q1562594",
+  "desc": "American physicist (1949–2024)"
+ },
+ {
+  "id": "s_houck",
+  "type": "scholar",
+  "name": "安德鲁·哈克",
+  "name_en": "Andrew Houck",
+  "qid": "Q130905879",
+  "desc": "researcher (ORCID 0000-0002-9788-5874)"
+ },
+ {
+  "id": "s_siddiqi",
+  "type": "scholar",
+  "name": "伊尔凡·西迪基",
+  "name_en": "Irfan Siddiqi",
+  "qid": "Q28092367",
+  "desc": "American physicist"
+ },
+ {
+  "id": "s_awschalom",
+  "type": "scholar",
+  "name": "大卫·奥沙洛姆",
+  "name_en": "David Awschalom",
+  "qid": "Q1173608",
+  "desc": "American physicist"
+ },
+ {
+  "id": "s_bernien",
+  "type": "scholar",
+  "name": "汉内斯·伯尼恩",
+  "name_en": "Hannes Bernien",
+  "qid": "Q92508472",
+  "desc": "researcher (ORCID 0000-0002-1950-7368)"
+ },
+ {
+  "id": "s_lidar",
+  "type": "scholar",
+  "name": "丹尼尔·利达尔",
+  "name_en": "Daniel Lidar",
+  "qid": "Q5217938",
+  "desc": "scientist"
+ },
+ {
+  "id": "s_du",
+  "type": "scholar",
+  "name": "杜江峰",
+  "name_en": "Du Jiangfeng",
+  "qid": "Q28413405",
+  "desc": "Chinese physicist"
+ },
+ {
+  "id": "s_duan",
+  "type": "scholar",
+  "name": "段路明",
+  "name_en": "Luming Duan",
+  "qid": "Q60543204",
+  "desc": "Chinese physicist"
+ },
+ {
+  "id": "s_yao",
+  "type": "scholar",
+  "name": "姚期智",
+  "name_en": "Andrew Yao",
+  "qid": "Q62888",
+  "desc": "computer scientist and computational theorist"
+ },
+ {
+  "id": "s_lu",
+  "type": "scholar",
+  "name": "陆朝阳",
+  "name_en": "Chao-Yang Lu",
+  "qid": "Q56704871",
+  "desc": "Chinese quantum optics physicist"
+ },
+ {
+  "id": "s_chen",
+  "type": "scholar",
+  "name": "陈宇翱",
+  "name_en": "Yu-Ao Chen",
+  "qid": "Q68707486",
+  "desc": "researcher"
+ },
+ {
+  "id": "s_peng",
+  "type": "scholar",
+  "name": "彭承志",
+  "name_en": "Cheng-Zhi Peng",
+  "qid": "Q68707490",
+  "desc": "researcher"
+ },
+ {
+  "id": "s_wallraff",
+  "type": "scholar",
+  "name": "安德烈亚斯·瓦尔拉夫",
+  "name_en": "Andreas Wallraff",
+  "qid": "Q30139768",
+  "desc": "German physicist"
+ },
+ {
+  "id": "s_hanson",
+  "type": "scholar",
+  "name": "罗纳德·汉森",
+  "name_en": "Ronald Hanson",
+  "qid": "Q30131201",
+  "desc": "Dutch physicist"
+ },
+ {
+  "id": "s_groblacher",
+  "type": "scholar",
+  "name": "西蒙·格勒布拉赫",
+  "name_en": "Simon Gröblacher",
+  "qid": "Q87217301",
+  "desc": "researcher"
+ },
+ {
+  "id": "s_blatt",
+  "type": "scholar",
+  "name": "赖纳·布拉特",
+  "name_en": "Rainer Blatt",
+  "qid": "Q88678",
+  "desc": "Austrian physicist"
+ },
+ {
+  "id": "s_zoller",
+  "type": "scholar",
+  "name": "彼得·佐勒",
+  "name_en": "Peter Zoller",
+  "qid": "Q78670",
+  "desc": "Austrian theoretical physicist (1952-)"
+ },
+ {
+  "id": "s_bloch",
+  "type": "scholar",
+  "name": "伊曼努尔·布洛赫",
+  "name_en": "Immanuel Bloch",
+  "qid": "Q100694",
+  "desc": "German physicist (b. 1972)"
+ },
+ {
+  "id": "s_ekert",
+  "type": "scholar",
+  "name": "阿图尔·埃克特",
+  "name_en": "Artur Ekert",
+  "qid": "Q714360",
+  "desc": "British physicist"
+ },
+ {
+  "id": "s_steane",
+  "type": "scholar",
+  "name": "安德鲁·斯坦",
+  "name_en": "Andrew Steane",
+  "qid": "Q4758631",
+  "desc": "British physicist"
+ },
+ {
+  "id": "s_walmsley",
+  "type": "scholar",
+  "name": "伊恩·沃姆斯利",
+  "name_en": "Ian Walmsley",
+  "qid": "Q5983191",
+  "desc": "British physicist"
+ },
+ {
+  "id": "s_rudolph",
+  "type": "scholar",
+  "name": "特里·鲁道夫",
+  "name_en": "Terry Rudolph",
+  "qid": "Q57638524",
+  "desc": "Australian quantum physicist"
+ },
+ {
+  "id": "s_montanaro",
+  "type": "scholar",
+  "name": "阿什利·蒙塔纳罗",
+  "name_en": "Ashley Montanaro",
+  "qid": "Q57758540",
+  "desc": "researcher ORCID ID = 0000-0001-5640-0343"
+ },
+ {
+  "id": "s_gisin",
+  "type": "scholar",
+  "name": "尼古拉·吉桑",
+  "name_en": "Nicolas Gisin",
+  "qid": "Q119133",
+  "desc": "Swiss physicist"
+ },
+ {
+  "id": "s_lodahl",
+  "type": "scholar",
+  "name": "彼得·洛达尔",
+  "name_en": "Peter Lodahl",
+  "qid": "Q59428494",
+  "desc": "Danish experimental quantum physicist"
+ },
+ {
+  "id": "s_anderson",
+  "type": "scholar",
+  "name": "达纳·安德森",
+  "name_en": "Dana Z. Anderson",
+  "qid": "Q15990395",
+  "desc": "American physicist"
+ },
+ {
+  "id": "s_simmons",
+  "type": "scholar",
+  "name": "米歇尔·西蒙斯",
+  "name_en": "Michelle Simmons",
+  "qid": "Q16885683",
+  "desc": "British-Australian quantum physicist (born 1967)"
+ },
+ {
+  "id": "s_morello",
+  "type": "scholar",
+  "name": "安德烈亚·莫雷洛",
+  "name_en": "Andrea Morello",
+  "qid": "Q69625876",
+  "desc": "Italian professor of quantum computing"
+ },
+ {
+  "id": "s_nakamura",
+  "type": "scholar",
+  "name": "中村泰信",
+  "name_en": "Yasunobu Nakamura",
+  "qid": "Q28823193",
+  "desc": "Japanese physicist"
+ },
+ {
+  "id": "s_yamamoto",
+  "type": "scholar",
+  "name": "山本喜久",
+  "name_en": "Yoshihisa Yamamoto",
+  "qid": "Q11171655",
+  "desc": "Japanese applied physicist (born 1950)"
+ },
+ {
+  "id": "s_alan",
+  "type": "scholar",
+  "name": "阿兰·阿斯普鲁-古齐克",
+  "name_en": "Alán Aspuru-Guzik",
+  "qid": "Q62109773",
+  "desc": "Mexican-Canadian chemist"
+ },
+ {
+  "id": "s_emerson",
+  "type": "scholar",
+  "name": "约瑟夫·爱默生",
+  "name_en": "Joseph Emerson",
+  "qid": "Q60079942",
+  "desc": "Department of Nuclear Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+ },
+ {
+  "id": "s_browaeys",
+  "type": "scholar",
+  "name": "安托万·布洛维",
+  "name_en": "Antoine Browaeys",
+  "qid": "Q91304898",
+  "desc": "researcher (ORCID 0000-0001-9941-8869)"
+ },
+ {
+  "id": "st_rigetti",
+  "type": "student",
+  "name": "查德·里盖蒂",
+  "name_en": "Chad Rigetti",
+  "qid": "Q112678382",
+  "desc": "computer scientist and entrepreneur"
+ },
+ {
+  "id": "st_bedington",
+  "type": "student",
+  "name": "罗伯特·贝丁顿",
+  "name_en": "Robert Bedington",
+  "qid": "Q59505345",
+  "desc": "researcher ORCID ID = 0000-0001-8033-8244"
+ },
+ {
+  "id": "c_atom",
+  "type": "company",
+  "name": "Atom Computing",
+  "name_en": "Atom Computing",
+  "qid": "Q82798095",
+  "desc": "quantum computer company from Berkely, California"
+ },
+ {
+  "id": "c_infleqtion",
+  "type": "company",
+  "name": "Infleqtion（原 ColdQuanta）",
+  "name_en": "Infleqtion",
+  "qid": "Q133280301",
+  "desc": "atom-based quantum computing company"
+ },
+ {
+  "id": "c_universal_quantum",
+  "type": "company",
+  "name": "Universal Quantum",
+  "name_en": "",
+  "qid": "Q123421845",
+  "desc": "quantum computing company based in Brighton, UK"
+ },
+ {
+  "id": "c_orca",
+  "type": "company",
+  "name": "ORCA Computing",
+  "name_en": "ORCA Computing",
+  "qid": "Q112768698",
+  "desc": "quantum computing company from London, UK"
+ },
+ {
+  "id": "c_alicebob",
+  "type": "company",
+  "name": "Alice & Bob",
+  "name_en": "Alice & Bob",
+  "qid": "Q111452775",
+  "desc": "French quantum computing company based in Paris"
+ },
+ {
+  "id": "c_quandela",
+  "type": "company",
+  "name": "Quandela",
+  "name_en": "Quandela",
+  "qid": "Q97065382",
+  "desc": "quantum photonics technology company from Palaiseau, France"
+ },
+ {
+  "id": "c_nuquantum",
+  "type": "company",
+  "name": "Nu Quantum",
+  "name_en": "Nu Quantum",
+  "qid": "Q116994862",
+  "desc": "British quantum cryptography company based in Cambridge"
+ },
+ {
+  "id": "c_sparrow",
+  "type": "company",
+  "name": "Sparrow Quantum",
+  "name_en": "Sparrow Quantum",
+  "qid": "Q131439282",
+  "desc": "optical quantum technology company from Denmark"
+ },
+ {
+  "id": "c_qnami",
+  "type": "company",
+  "name": "Qnami",
+  "name_en": "Qnami",
+  "qid": "Q111444104",
+  "desc": "Swiss quantum technology company"
+ },
+ {
+  "id": "c_muquans",
+  "type": "company",
+  "name": "Muquans",
+  "name_en": "Muquans",
+  "qid": "Q55264984",
+  "desc": "quantum sensing device company based in Talence, France"
+ },
+ {
+  "id": "c_ciqtek",
+  "type": "company",
+  "name": "国仪量子",
+  "name_en": "CIQTEK",
+  "qid": "Q124542099",
+  "desc": "Chinese quantum precision measurement company"
+ },
+ {
+  "id": "c_turingq",
+  "type": "company",
+  "name": "图灵量子",
+  "name_en": "TuringQ",
+  "qid": "Q111444271",
+  "desc": "Chinese optical quantum computing company"
+ },
+ {
+  "id": "c_qctrl",
+  "type": "company",
+  "name": "Q-CTRL",
+  "name_en": "Q-CTRL",
+  "qid": "Q65053690",
+  "desc": "quantum technology company from Sydney, Australia"
+ },
+ {
+  "id": "c_sqc",
+  "type": "company",
+  "name": "Silicon Quantum Computing",
+  "name_en": "SQC",
+  "qid": "Q102263139",
+  "desc": "Czech company"
+ },
+ {
+  "id": "c_diraq",
+  "type": "company",
+  "name": "Diraq",
+  "name_en": "Diraq",
+  "qid": "Q117406816",
+  "desc": "Australian quantum computing technology company"
+ },
+ {
+  "id": "c_qb",
+  "type": "company",
+  "name": "Quantum Brilliance",
+  "name_en": "Quantum Brilliance",
+  "qid": "Q113558665",
+  "desc": "quantum computing company"
+ },
+ {
+  "id": "c_speqtral",
+  "type": "company",
+  "name": "SpeQtral",
+  "name_en": "SpeQtral",
+  "qid": "Q113558947",
+  "desc": "quantum communications company from Singapore"
+ },
+ {
+  "id": "c_photonicinc",
+  "type": "company",
+  "name": "Photonic Inc",
+  "name_en": "Photonic Inc",
+  "qid": "Q111450729",
+  "desc": "quantum technology company from British Columbia, Canada"
+ },
+ {
+  "id": "c_qunasys",
+  "type": "company",
+  "name": "QunaSys",
+  "name_en": "QunaSys",
+  "qid": "Q82071967",
+  "desc": "Japanese quantum computing company"
+ },
+ {
+  "id": "u_nju",
+  "type": "university",
+  "name": "南京大学",
+  "name_en": "Nanjing University",
+  "qid": "Q683580",
+  "desc": "public university in Nanjing, China"
+ },
+ {
+  "id": "u_sxu",
+  "type": "university",
+  "name": "山西大学",
+  "name_en": "Shanxi University",
+  "qid": "Q7489128",
+  "desc": "university in Taiyuan, Shanxi, China"
+ },
+ {
+  "id": "u_chalmers",
+  "type": "university",
+  "name": "查尔姆斯理工大学",
+  "name_en": "Chalmers University of Technology",
+  "qid": "Q836805",
+  "desc": "university in Gothenburg, Sweden"
+ },
+ {
+  "id": "u_siegen",
+  "type": "university",
+  "name": "锡根大学",
+  "name_en": "University of Siegen",
+  "qid": "Q504723",
+  "desc": "university"
+ },
+ {
+  "id": "u_riken",
+  "type": "university",
+  "name": "理化学研究所",
+  "name_en": "RIKEN",
+  "qid": "Q1153275",
+  "desc": "scientific research institute in Japan"
+ },
+ {
+  "id": "s_pengkc",
+  "type": "scholar",
+  "name": "彭堃墀",
+  "name_en": "Peng Kunchi",
+  "qid": "Q9139859",
+  "desc": "Chinese physicist"
+ },
+ {
+  "id": "s_delsing",
+  "type": "scholar",
+  "name": "佩尔·德尔辛",
+  "name_en": "Per Delsing",
+  "qid": "Q5619970",
+  "desc": "Swedish academic"
+ },
+ {
+  "id": "s_wehner",
+  "type": "scholar",
+  "name": "斯蒂芬妮·韦纳",
+  "name_en": "Stephanie Wehner",
+  "qid": "Q7608426",
+  "desc": "physicist and computer scientist"
+ },
+ {
+  "id": "s_vazirani",
+  "type": "scholar",
+  "name": "乌梅什·瓦兹拉尼",
+  "name_en": "Umesh Vazirani",
+  "qid": "Q92805",
+  "desc": "Indian theoretical computer scientist"
+ },
+ {
+  "id": "c_ctquantum",
+  "type": "company",
+  "name": "中电信量子集团",
+  "name_en": "China Telecom Quantum Group",
+  "qid": "Q131453493",
+  "desc": "Chinese company"
+ },
+ {
+  "id": "s_mottonen",
+  "type": "scholar",
+  "name": "米科·默特宁",
+  "name_en": "Mikko Möttönen",
+  "qid": "Q59429499",
+  "desc": "Finnish physicist, full professor (Aalto University) and CEO"
+ },
+ {
+  "id": "s_senellart",
+  "type": "scholar",
+  "name": "帕斯卡尔·塞内拉尔",
+  "name_en": "Pascale Senellart",
+  "qid": "Q23926228",
+  "desc": "French physicist"
+ },
+ {
+  "id": "x_khan",
+  "type": "exec",
+  "name": "伊利亚斯·汗",
+  "name_en": "Ilyas Khan",
+  "qid": "Q16194636",
+  "desc": "businessperson"
+ },
+ {
+  "id": "x_rose",
+  "type": "exec",
+  "name": "乔迪·罗斯",
+  "name_en": "Geordie Rose",
+  "qid": "Q125960667",
+  "desc": "co-founder of D-Wave"
+ },
+ {
+  "id": "x_wisby",
+  "type": "exec",
+  "name": "伊拉娜·维斯比",
+  "name_en": "Ilana Wisby",
+  "qid": "Q140473370",
+  "desc": "British quantum physicist and deep-tech entrepreneur; founding CEO of Oxford Quantum Circuits"
+ },
+ {
+  "id": "x_weidt",
+  "type": "exec",
+  "name": "塞巴斯蒂安·韦特",
+  "name_en": "Sebastian Weidt",
+  "qid": "Q114874448",
+  "desc": "Co-Founder & CEO, Universal Quantum"
+ },
+ {
+  "id": "x_palacios",
+  "type": "exec",
+  "name": "卡门·帕拉西奥斯",
+  "name_en": "Carmen Palacios-Berraquero",
+  "qid": "Q56692400",
+  "desc": "British quantum physicist and inventor"
+ },
+ {
+  "id": "i_chinatelecom",
+  "type": "investor",
+  "name": "中国电信集团",
+  "name_en": "China Telecom",
+  "qid": "Q24834296",
+  "desc": "one of three listed companies of China Telecommunications Corporation"
+ },
+ {
+  "id": "i_honeywell",
+  "type": "investor",
+  "name": "霍尼韦尔",
+  "name_en": "Honeywell",
+  "qid": "Q28999466",
+  "desc": "company in the Czech Republic"
+ },
+ {
+  "id": "i_jpmorgan",
+  "type": "investor",
+  "name": "摩根大通",
+  "name_en": "JPMorgan Chase",
+  "qid": "Q192314",
+  "desc": "American multinational banking and financial services holding company"
+ },
+ {
+  "id": "i_blackrock",
+  "type": "investor",
+  "name": "贝莱德",
+  "name_en": "BlackRock",
+  "qid": "Q219635",
+  "desc": "American multinational investment management corporation"
+ },
+ {
+  "id": "i_tencent",
+  "type": "investor",
+  "name": "腾讯",
+  "name_en": "Tencent",
+  "qid": "Q860580",
+  "desc": "Chinese multinational investment holding conglomerate"
+ },
+ {
+  "id": "i_cicf",
+  "type": "investor",
+  "name": "中网投（中国互联网投资基金）",
+  "name_en": "China Internet Investment Fund",
+  "qid": "Q119164449",
+  "desc": "Chinese state-owned investment fund"
+ },
+ {
+  "id": "i_szvc",
+  "type": "investor",
+  "name": "深创投",
+  "name_en": "Shenzhen Capital Group",
+  "qid": "Q105334411",
+  "desc": "China Venture Capital firm"
+ },
+ {
+  "id": "i_gaorong",
+  "type": "investor",
+  "name": "高榕资本",
+  "name_en": "Gaorong Capital",
+  "qid": "Q115858169",
+  "desc": "China-based venture capital firm"
+ },
+ {
+  "id": "i_softbank",
+  "type": "investor",
+  "name": "软银愿景基金",
+  "name_en": "SoftBank Vision Fund",
+  "qid": "Q30924618",
+  "desc": "Japanese venture capital fund"
+ },
+ {
+  "id": "u_baqis",
+  "type": "university",
+  "name": "北京量子信息科学研究院",
+  "name_en": "Beijing Academy of Quantum Information Sciences",
+  "qid": "Q82324009",
+  "desc": "research institute in Beijing, China"
+ },
+ {
+  "id": "u_cealeti",
+  "type": "university",
+  "name": "CEA-Leti（格勒诺布尔）",
+  "name_en": "CEA-Leti",
+  "qid": "Q1023249",
+  "desc": "French research institute for electronics and information technologies"
+ },
+ {
+  "id": "u_bham",
+  "type": "university",
+  "name": "伯明翰大学",
+  "name_en": "University of Birmingham",
+  "qid": "Q223429",
+  "desc": "university in Birmingham, England, United Kingdom"
+ },
+ {
+  "id": "u_wisc",
+  "type": "university",
+  "name": "威斯康星大学麦迪逊分校",
+  "name_en": "University of Wisconsin–Madison",
+  "qid": "Q838330",
+  "desc": "public research university in Madison, Wisconsin, USA"
+ },
+ {
+  "id": "u_huji",
+  "type": "university",
+  "name": "耶路撒冷希伯来大学",
+  "name_en": "Hebrew University of Jerusalem",
+  "qid": "Q174158",
+  "desc": "Israeli university in Jerusalem"
+ },
+ {
+  "id": "u_sysu",
+  "type": "university",
+  "name": "中山大学",
+  "name_en": "Sun Yat-sen University",
+  "qid": "Q178972",
+  "desc": "university in Guangdong, China"
+ },
+ {
+  "id": "s_saffman",
+  "type": "scholar",
+  "name": "Mark Saffman",
+  "name_en": "Mark Saffman",
+  "qid": "Q126477233",
+  "desc": "American quantum computing physicist"
+ },
+ {
+  "id": "s_jennewein",
+  "type": "scholar",
+  "name": "Thomas Jennewein",
+  "name_en": "Thomas Jennewein",
+  "qid": "Q30349123",
+  "desc": "Austrian quantum physicist"
+ },
+ {
+  "id": "s_knight",
+  "type": "scholar",
+  "name": "Peter Knight",
+  "name_en": "Peter Knight",
+  "qid": "Q59703330",
+  "desc": "researcher (equine veterinary science)"
+ },
+ {
+  "id": "s_aharonov",
+  "type": "scholar",
+  "name": "Dorit Aharonov",
+  "name_en": "Dorit Aharonov",
+  "qid": "Q9594",
+  "desc": "Israeli computer scientist"
+ },
+ {
+  "id": "s_bongs",
+  "type": "scholar",
+  "name": "Kai Bongs",
+  "name_en": "Kai Bongs",
+  "qid": "Q98652334",
+  "desc": "researcher"
+ },
+ {
+  "id": "st_goban",
+  "type": "student",
+  "name": "Akihisa Goban",
+  "name_en": "Akihisa Goban",
+  "qid": "Q60394625",
+  "desc": "researcher"
+ },
+ {
+  "id": "st_lemyre",
+  "type": "student",
+  "name": "Julien Camirand Lemyre",
+  "name_en": "Julien Camirand Lemyre",
+  "qid": "Q89664280",
+  "desc": "researcher"
+ },
+ {
+  "id": "c_classiq",
+  "type": "company",
+  "name": "Classiq",
+  "name_en": "Classiq Technologies",
+  "qid": "Q135184783",
+  "desc": "quantum computing software company based in Tel Aviv, Israel"
+ },
+ {
+  "id": "c_nordq",
+  "type": "company",
+  "name": "Nord Quantique",
+  "name_en": "Nord Quantique",
+  "qid": "Q117406779",
+  "desc": "quantum processor company from Sherbrooke, Quebec"
+ },
+ {
+  "id": "c_quside",
+  "type": "company",
+  "name": "Quside",
+  "name_en": "Quside Technologies",
+  "qid": "Q82733026",
+  "desc": "quantum device company based in Barcelona"
+ },
+ {
+  "id": "i_skt",
+  "type": "investor",
+  "name": "SK 电讯",
+  "name_en": "SK Telecom",
+  "qid": "Q493145",
+  "desc": "South Korean telecommunications company"
+ },
+ {
+  "id": "u_sheffield",
+  "type": "university",
+  "name": "谢菲尔德大学",
+  "name_en": "University of Sheffield",
+  "qid": "Q823917",
+  "desc": "university in Sheffield, United Kingdom"
+ },
+ {
+  "id": "s_lechner",
+  "type": "scholar",
+  "name": "沃尔夫冈·莱希纳",
+  "name_en": "Wolfgang Lechner",
+  "qid": "Q57611729",
+  "desc": "Austrian physicist"
+ },
+ {
+  "id": "s_lewenstein",
+  "type": "scholar",
+  "name": "马切伊·莱文斯坦",
+  "name_en": "Maciej Lewenstein",
+  "qid": "Q11765481",
+  "desc": "Polish physicist"
+ },
+ {
+  "id": "s_grangier",
+  "type": "scholar",
+  "name": "菲利普·格朗吉耶",
+  "name_en": "Philippe Grangier",
+  "qid": "Q746858",
+  "desc": "French physicist"
+ },
+ {
+  "id": "s_wangxiangbin",
+  "type": "scholar",
+  "name": "王向斌",
+  "name_en": "Wang Xiangbin",
+  "qid": "Q89586833",
+  "desc": "researcher"
+ },
+ {
+  "id": "c_aegiq",
+  "type": "company",
+  "name": "Aegiq",
+  "name_en": "Aegiq",
+  "qid": "Q119982502",
+  "desc": "British quantum computing platform company"
+ },
+ {
+  "id": "c_entropica",
+  "type": "company",
+  "name": "Entropica Labs",
+  "name_en": "Entropica Labs",
+  "qid": "Q77595697",
+  "desc": "quantum machine learning company from Singapore"
+ },
+ {
+  "id": "i_bpifrance",
+  "type": "investor",
+  "name": "法国公共投资银行",
+  "name_en": "Bpifrance",
+  "qid": "Q2362964",
+  "desc": "French bank"
+ },
+ {
+  "id": "u_pku",
+  "type": "university",
+  "name": "北京大学",
+  "name_en": "Peking University",
+  "qid": "Q16952",
+  "desc": "university in Beijing, China"
+ },
+ {
+  "id": "u_fudan",
+  "type": "university",
+  "name": "复旦大学",
+  "name_en": "Fudan University",
+  "qid": "Q495015",
+  "desc": "university in Shanghai, China"
+ },
+ {
+  "id": "u_buaa",
+  "type": "university",
+  "name": "北京航空航天大学",
+  "name_en": "Beihang University",
+  "qid": "Q2299797",
+  "desc": "university in China"
+ },
+ {
+  "id": "c_c12",
+  "type": "company",
+  "name": "C12 Quantum Electronics",
+  "name_en": "C12 Quantum Electronics",
+  "qid": "Q116971305",
+  "desc": "French quantum computing company"
+ },
+ {
+  "id": "c_sandboxaq",
+  "type": "company",
+  "name": "SandboxAQ",
+  "name_en": "SandboxAQ",
+  "qid": "Q115768946",
+  "desc": "company in Palo Alto, United States"
+ },
+ {
+  "id": "i_sequoia",
+  "type": "investor",
+  "name": "红杉资本（美国）",
+  "name_en": "Sequoia Capital",
+  "qid": "Q1852025",
+  "desc": "U.S. venture capital firm"
+ },
+ {
+  "id": "i_idg",
+  "type": "investor",
+  "name": "IDG资本",
+  "name_en": "IDG Capital",
+  "qid": "Q55639935",
+  "desc": "Chinese investment firm"
+ },
+ {
+  "id": "s_stephsimmons",
+  "type": "scholar",
+  "name": "斯蒂芬妮·西蒙斯",
+  "name_en": "Stephanie Simmons",
+  "qid": "Q107598369",
+  "desc": "Canadian computer scientist"
+ },
+ {
+  "id": "st_bhaskar",
+  "type": "student",
+  "name": "米希尔·巴斯卡尔",
+  "name_en": "Mihir Bhaskar",
+  "qid": "Q59671482",
+  "desc": "researcher ORCID ID = 0000-0002-8475-4613"
+ },
+ {
+  "id": "s_dayan",
+  "type": "scholar",
+  "name": "巴拉克·达扬",
+  "name_en": "Barak Dayan",
+  "qid": "Q57703646",
+  "desc": "Physicist"
+ },
+ {
+  "id": "s_pruneri",
+  "type": "scholar",
+  "name": "瓦莱里奥·普鲁内里",
+  "name_en": "Valerio Pruneri",
+  "qid": "Q61251754",
+  "desc": "researcher"
+ },
+ {
+  "id": "s_latorre",
+  "type": "scholar",
+  "name": "何塞·伊格纳西奥·拉托雷",
+  "name_en": "José Ignacio Latorre",
+  "qid": "Q24054872",
+  "desc": "Spanish physicist"
+ },
+ {
+  "id": "s_forndiaz",
+  "type": "scholar",
+  "name": "波尔·福恩-迪亚斯",
+  "name_en": "Pol Forn-Díaz",
+  "qid": "Q62050541",
+  "desc": "researcher"
+ },
+ {
+  "id": "c_paragraf",
+  "type": "company",
+  "name": "Paragraf",
+  "name_en": "Paragraf",
+  "qid": "Q117406746",
+  "desc": "British company developing graphene-based electronic devices"
+ },
+ {
+  "id": "s_holynski",
+  "type": "scholar",
+  "name": "迈克尔·霍林斯基",
+  "name_en": "Michael Holynski",
+  "qid": "Q98652333",
+  "desc": "British atom interferometry researcher"
+ },
+ {
+  "id": "s_bouyer",
+  "type": "scholar",
+  "name": "菲利普·布耶",
+  "name_en": "Philippe Bouyer",
+  "qid": "Q56761427",
+  "desc": "French physicist"
+ },
+ {
+  "id": "u_twente",
+  "type": "university",
+  "name": "特文特大学",
+  "name_en": "University of Twente",
+  "qid": "Q1547084",
+  "desc": "university in Enschede, Netherlands"
+ },
+ {
+  "id": "x_murray",
+  "type": "exec",
+  "name": "理查德·默里",
+  "name_en": "Richard Murray",
+  "qid": "Q107157024",
+  "desc": "Chief Executive, The King’s Fund, since 2019 (Director of Policy, 2014–19)"
+ },
+ {
+  "id": "s_zbinden",
+  "type": "scholar",
+  "name": "雨果·兹宾登",
+  "name_en": "Hugo Zbinden",
+  "qid": "Q86863347",
+  "desc": "researcher"
+ }
+]

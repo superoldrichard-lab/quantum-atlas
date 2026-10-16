@@ -1,0 +1,44 @@
+# ===== 密钥与本地凭据（绝不入库）=====
+*llm_server_config*.json
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# ===== Wikidata 对齐中间产物（体积大、可由脚本重新抓取）=====
+_v2_candidates.json
+_v2_label.json
+_v2_meta.json
+_v3_candidates.json
+_v3_meta.json
+_v3_review.json
+_v4_candidates.json
+_v4_disc.json
+_v4_review.json
+_v5_meta.json
+_v5_raw.json
+_v5_review.json
+_v6_disc.json
+_v6_review.json
+_alias_probe.json
+_wikidata_verify.json
+_verify_accept.json
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===== 平台运行标记与本地配置 =====
+.wbapp_*.genie
+.workbuddy/
+
+# ===== 编辑器与系统 =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

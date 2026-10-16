@@ -1,0 +1,665 @@
+{
+ "meta": {
+  "version": "1.0",
+  "date": "2026-10-09",
+  "source_report": "docs/tech-route-report.md",
+  "rule": "每条企业节点分派唯一主路线；判定规则见报告 1.3 节 R1-R7",
+  "total": 86
+ },
+ "groups": [
+  "量子计算硬件",
+  "量子通信与密码",
+  "量子网络",
+  "量子传感与测量",
+  "软件与算法",
+  "工程支撑与生态"
+ ],
+ "route_order": [
+  "超导量子计算",
+  "离子阱量子计算",
+  "光量子计算",
+  "中性原子量子计算",
+  "硅基及固态自旋量子计算",
+  "拓扑量子计算",
+  "金刚石色心量子计算",
+  "核磁共振量子计算",
+  "量子退火与绝热计算",
+  "量子密钥分发（QKD）",
+  "量子随机数（QRNG）",
+  "后量子密码与量子安全服务",
+  "量子网络与中继",
+  "量子时频与惯性",
+  "量子磁测量与成像",
+  "量子探测与雷达",
+  "量子软件与算法平台",
+  "量子纠错与错误缓解",
+  "测控与仪器装备",
+  "综合运营与生态平台"
+ ],
+ "group_of": {
+  "超导量子计算": "量子计算硬件",
+  "离子阱量子计算": "量子计算硬件",
+  "光量子计算": "量子计算硬件",
+  "中性原子量子计算": "量子计算硬件",
+  "硅基及固态自旋量子计算": "量子计算硬件",
+  "拓扑量子计算": "量子计算硬件",
+  "金刚石色心量子计算": "量子计算硬件",
+  "核磁共振量子计算": "量子计算硬件",
+  "量子退火与绝热计算": "量子计算硬件",
+  "量子密钥分发（QKD）": "量子通信与密码",
+  "量子随机数（QRNG）": "量子通信与密码",
+  "后量子密码与量子安全服务": "量子通信与密码",
+  "量子网络与中继": "量子网络",
+  "量子时频与惯性": "量子传感与测量",
+  "量子磁测量与成像": "量子传感与测量",
+  "量子探测与雷达": "量子传感与测量",
+  "量子软件与算法平台": "软件与算法",
+  "量子纠错与错误缓解": "软件与算法",
+  "测控与仪器装备": "工程支撑与生态",
+  "综合运营与生态平台": "工程支撑与生态"
+ },
+ "routes": {
+  "c_rigetti": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "超导量子计算全栈（芯片、整机、云服务）",
+   "route_note": ""
+  },
+  "c_qci": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "超导量子计算机；以双轨腔（dual-rail cavity）量子比特为差异化路线",
+   "route_note": ""
+  },
+  "c_qolab": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "中",
+   "basis": "超导量子计算硬件",
+   "route_note": "公开信息有限，判定依据其官网自述，置信度中"
+  },
+  "c_oqc": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "超导量子计算机与云服务（Toshiko）",
+   "route_note": ""
+  },
+  "c_alicebob": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "猫量子比特（cat qubit）容错量子计算，属超导电路实现的玻色编码变体",
+   "route_note": ""
+  },
+  "c_iqm": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "超导量子计算机整机",
+   "route_note": ""
+  },
+  "c_nordq": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "玻色码超导量子计算",
+   "route_note": ""
+  },
+  "c_origin": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "超导量子计算全栈（本源悟空、QPanda 软件）；2026 年完成近 30 亿元 Pre-IPO",
+   "route_note": ""
+  },
+  "c_logicbit": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "规模化超导量子计算系统",
+   "route_note": ""
+  },
+  "c_xianggan": {
+   "route": "超导量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "超导量子计算解决方案与云服务",
+   "route_note": ""
+  },
+  "c_ionq": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "主营离子阱量子计算机硬件与云服务；Tempo 架构 64 算法比特、双比特保真度 99.99%",
+   "route_note": "2025 年起先后收购 ID Quantique、Lightsynq、Oxford Ionics、Vector Atomic，2026 年协议收购 SkyWater，已转型为计算+网络+传感纵向一体化集团"
+  },
+  "c_oxford_ionics": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "电子控制离子阱量子芯片，以替代激光控制简化光学系统",
+   "route_note": "2025 年 9 月被 IonQ 以约 10.8 亿美元收购；节点保留其独立技术身份"
+  },
+  "c_universal_quantum": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "模块化离子阱量子计算",
+   "route_note": ""
+  },
+  "c_aqt": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "离子阱量子计算机",
+   "route_note": ""
+  },
+  "c_huayi": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "离子阱量子计算；HYQ-A37 原型机",
+   "route_note": ""
+  },
+  "c_quantinuum": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "离子阱量子计算整机（H 系列；Helios 98 物理比特 / 48 逻辑比特）",
+   "route_note": "并行业务线：量子软件 TKET 与 Quantum Origin（按 R1 取技术首创点为主路线）"
+  },
+  "c_eleqtron": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "MAGIC 微波操控离子阱量子计算机整机",
+   "route_note": ""
+  },
+  "c_qart": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "离子阱量子计算整机",
+   "route_note": ""
+  },
+  "c_qike": {
+   "route": "离子阱量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "离子阱量子计算 + 量子保密通信设备",
+   "route_note": "通信设备为并行线，主路线按计算硬件判定"
+  },
+  "c_psiquantum": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "光量子容错量子计算，与 GlobalFoundries 300mm 产线合作制造 Omega 芯片",
+   "route_note": ""
+  },
+  "c_xanadu": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "光量子计算硬件 + PennyLane 开源软件生态；Aurora 通用光子原型机、Borealis 高斯玻色采样",
+   "route_note": ""
+  },
+  "c_orca": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "光量子计算，量子存储复用架构；PT-2 系统室温运行",
+   "route_note": ""
+  },
+  "c_quandela": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "光量子计算，半导体量子点确定性单光子源",
+   "route_note": ""
+  },
+  "c_sparrow": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "中",
+   "basis": "确定性单光子源芯片，服务下游光量子计算（按 R3 归类）",
+   "route_note": "器件同时服务量子通信场景"
+  },
+  "c_turingq": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "光量子计算芯片与系统",
+   "route_note": ""
+  },
+  "c_boseq": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "相干伊辛机（光量子体系）面向组合优化；物理载体为光量子",
+   "route_note": "按 R1 归光量子路线，而非量子退火路线（载体判据优先于问题形态）"
+  },
+  "c_aegiq": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "中",
+   "basis": "半导体量子点确定性单光子源，服务光量子计算与量子通信",
+   "route_note": "同时面向量子通信，按 R3 归光量子计算"
+  },
+  "c_qsource": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "中",
+   "basis": "光子—原子混合确定性光量子计算",
+   "route_note": "光子与原子混合体系，按主要信息载体（光子）判定"
+  },
+  "c_quix": {
+   "route": "光量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "氮化硅可编程光量子处理器与整机",
+   "route_note": ""
+  },
+  "c_quera": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "中性原子量子计算机（Aquila）与云服务；哈佛 Lukin/Greiner 组孵化",
+   "route_note": ""
+  },
+  "c_atom": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "中性原子（核自旋编码）量子计算机；Phoenix 系统突破千物理比特",
+   "route_note": ""
+  },
+  "c_infleqtion": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "中",
+   "basis": "冷原子量子计算、量子传感与精密时钟双线并行",
+   "route_note": "按主营占比归中性原子；量子传感与时钟为并行业务线"
+  },
+  "c_pasqal": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "中性原子量子处理器；Vela QPU 256+ 比特，已向 CINECA 交付 140+ 比特系统",
+   "route_note": ""
+  },
+  "c_planqc": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "中性原子量子计算机（锶、光晶格路线）；马普量子光学所孵化",
+   "route_note": ""
+  },
+  "c_coolatom": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "中性原子量子计算整机（汉原1号）+ 量子精密测量仪器",
+   "route_note": ""
+  },
+  "c_nakai": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "中性原子量子计算（模拟+通用双轨）",
+   "route_note": ""
+  },
+  "c_vecq": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "中性原子（镱-171）通用量子计算机",
+   "route_note": ""
+  },
+  "c_liangyi": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "原子量子计算整机研制",
+   "route_note": ""
+  },
+  "c_buchou": {
+   "route": "中性原子量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "中性原子量子计算",
+   "route_note": ""
+  },
+  "c_sqc": {
+   "route": "硅基及固态自旋量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "硅基原子量子比特",
+   "route_note": ""
+  },
+  "c_diraq": {
+   "route": "硅基及固态自旋量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "硅 MOS 量子点量子计算芯片",
+   "route_note": ""
+  },
+  "c_quantum_motion": {
+   "route": "硅基及固态自旋量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "硅基 CMOS 工艺量子芯片（硅量子点自旋）",
+   "route_note": ""
+  },
+  "c_photonicinc": {
+   "route": "硅基及固态自旋量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "硅自旋量子比特与量子网络",
+   "route_note": "原生集成网络接口；按 R2 技术首创点（硅自旋）判定"
+  },
+  "c_quobly": {
+   "route": "硅基及固态自旋量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "硅基量子计算整机与处理器",
+   "route_note": ""
+  },
+  "c_c12": {
+   "route": "硅基及固态自旋量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "中",
+   "basis": "碳纳米管自旋量子比特量子处理器与云仿真器",
+   "route_note": "载体为碳纳米管而非硅，归入本路线的'固态自旋'泛类；置信度中"
+  },
+  "c_qb": {
+   "route": "金刚石色心量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "金刚石 NV 色心室温量子计算与量子加速卡",
+   "route_note": ""
+  },
+  "c_spinq": {
+   "route": "核磁共振量子计算",
+   "route_group": "量子计算硬件",
+   "confidence": "中",
+   "basis": "核磁共振教育量子计算机为主要产品定位",
+   "route_note": "双路线布局：同时推进超导量子芯片与整机；按技术首创点（NMR 教学机）判定主路线"
+  },
+  "c_dwave": {
+   "route": "量子退火与绝热计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "量子退火机起家，全球最早商业化的量子计算公司；现同时提供门模型系统",
+   "route_note": ""
+  },
+  "c_qili": {
+   "route": "量子退火与绝热计算",
+   "route_group": "量子计算硬件",
+   "confidence": "高",
+   "basis": "绝热/模拟量子计算（超导磁通量子比特）与量子云服务",
+   "route_note": ""
+  },
+  "c_idq": {
+   "route": "量子密钥分发（QKD）",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "QKD 设备、量子随机数发生器、单光子探测器；全球 QKD 商业化开创者",
+   "route_note": "2025 年 5 月由 IonQ 收购控股权（交易金额口径约 1.4 亿瑞郎）"
+  },
+  "c_kets": {
+   "route": "量子密钥分发（QKD）",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "芯片级集成光子 QKD 系统与量子随机数发生器",
+   "route_note": ""
+  },
+  "c_quantumctek": {
+   "route": "量子密钥分发（QKD）",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "量子通信（QKD）设备为营收主体；另有量子计算测控系统业务",
+   "route_note": "跨通信与计算两条线，按 R1 营收主体判定"
+  },
+  "c_speqtral": {
+   "route": "量子密钥分发（QKD）",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "卫星量子密钥分发（QKD）",
+   "route_note": ""
+  },
+  "c_wentian": {
+   "route": "量子密钥分发（QKD）",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "量子保密通信设备、量子随机数芯片、量子密码标准制定",
+   "route_note": ""
+  },
+  "c_luxquanta": {
+   "route": "量子密钥分发（QKD）",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "连续变量 QKD（CV-QKD）系统",
+   "route_note": ""
+  },
+  "c_xuntai": {
+   "route": "量子密钥分发（QKD）",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "连续变量 QKD（CV-QKD）设备与组网",
+   "route_note": ""
+  },
+  "c_quside": {
+   "route": "量子随机数（QRNG）",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "量子随机数发生器",
+   "route_note": ""
+  },
+  "c_evoq": {
+   "route": "后量子密码与量子安全服务",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "量子安全（QKD/后量子密码）评估与迁移服务",
+   "route_note": ""
+  },
+  "c_sandboxaq": {
+   "route": "后量子密码与量子安全服务",
+   "route_group": "量子通信与密码",
+   "confidence": "高",
+   "basis": "后量子密码迁移、量子传感与 AI 仿真软件；以软件与服务交付为主",
+   "route_note": ""
+  },
+  "c_qphox": {
+   "route": "量子网络与中继",
+   "route_group": "量子网络",
+   "confidence": "高",
+   "basis": "量子网络换能器（微波—光转换）",
+   "route_note": "按 R3 使能器件服务下游互连应用归类"
+  },
+  "c_nuquantum": {
+   "route": "量子网络与中继",
+   "route_group": "量子网络",
+   "confidence": "高",
+   "basis": "量子网络接口（量子比特—光子纠缠分发）",
+   "route_note": ""
+  },
+  "c_nanoqt": {
+   "route": "量子网络与中继",
+   "route_group": "量子网络",
+   "confidence": "中",
+   "basis": "纳米光纤腔 QED，核心能力是原子/离子与光纤腔的强耦合互连",
+   "route_note": "计算与互连双属性，按 R3 归类；置信度中"
+  },
+  "c_lightsynq": {
+   "route": "量子网络与中继",
+   "route_group": "量子网络",
+   "confidence": "高",
+   "basis": "光子互连、量子存储器与量子中继",
+   "route_note": "2025 年 6 月被 IonQ 收购"
+  },
+  "c_muquans": {
+   "route": "量子时频与惯性",
+   "route_group": "量子传感与测量",
+   "confidence": "高",
+   "basis": "冷原子干涉量子重力仪与惯性传感",
+   "route_note": "已并入 Exail"
+  },
+  "c_vector_atomic": {
+   "route": "量子时频与惯性",
+   "route_group": "量子传感与测量",
+   "confidence": "高",
+   "basis": "原子钟、惯性传感与 PNT 系统",
+   "route_note": "2025 年 9 月被 IonQ 收购"
+  },
+  "c_deltag": {
+   "route": "量子时频与惯性",
+   "route_group": "量子传感与测量",
+   "confidence": "高",
+   "basis": "量子重力梯度仪与地下空间测绘",
+   "route_note": ""
+  },
+  "c_qnami": {
+   "route": "量子磁测量与成像",
+   "route_group": "量子传感与测量",
+   "confidence": "高",
+   "basis": "NV 色心扫描量子显微镜（量子磁测量仪器）",
+   "route_note": ""
+  },
+  "c_ciqtek": {
+   "route": "量子磁测量与成像",
+   "route_group": "量子传感与测量",
+   "confidence": "高",
+   "basis": "量子精密测量与高端科学仪器（EPR、NV 扫描探针、微波场强仪）",
+   "route_note": ""
+  },
+  "c_weici": {
+   "route": "量子磁测量与成像",
+   "route_group": "量子传感与测量",
+   "confidence": "高",
+   "basis": "原子磁力计、心磁图仪与脑磁图仪",
+   "route_note": ""
+  },
+  "c_paragraf": {
+   "route": "量子磁测量与成像",
+   "route_group": "量子传感与测量",
+   "confidence": "中",
+   "basis": "石墨烯霍尔传感器（磁测量器件）",
+   "route_note": "非主流量子技术公司；量子计算方向为探索性布局，按主营（磁传感器件）判定"
+  },
+  "c_guoyao": {
+   "route": "量子探测与雷达",
+   "route_group": "量子传感与测量",
+   "confidence": "高",
+   "basis": "量子雷达（单光子探测）",
+   "route_note": ""
+  },
+  "c_phasecraft": {
+   "route": "量子软件与算法平台",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子算法与量子化学/材料模拟软件",
+   "route_note": ""
+  },
+  "c_horizon": {
+   "route": "量子软件与算法平台",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子程序编译与开发工具链",
+   "route_note": ""
+  },
+  "c_qunasys": {
+   "route": "量子软件与算法平台",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子化学计算软件（Qamuy）",
+   "route_note": ""
+  },
+  "c_classiq": {
+   "route": "量子软件与算法平台",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子软件平台（电路自动合成）",
+   "route_note": ""
+  },
+  "c_parityqc": {
+   "route": "量子软件与算法平台",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "Parity 架构量子优化软件、编译器与硬件蓝图授权（IP 授权模式）",
+   "route_note": ""
+  },
+  "c_entropica": {
+   "route": "量子软件与算法平台",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子算法、错误缓解与量子工作流软件",
+   "route_note": ""
+  },
+  "c_qctrl": {
+   "route": "量子软件与算法平台",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子控制与量子基础设施软件",
+   "route_note": "按 R4 软件栈独立成域；已延伸至矿产勘探量子磁力计服务"
+  },
+  "c_riverlane": {
+   "route": "量子纠错与错误缓解",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子纠错软硬件栈 Deltaflow；交付物为纠错栈而非量子处理器",
+   "route_note": ""
+  },
+  "c_qbench": {
+   "route": "量子纠错与错误缓解",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子硬件错误诊断与性能验证软件",
+   "route_note": ""
+  },
+  "c_qedma": {
+   "route": "量子纠错与错误缓解",
+   "route_group": "软件与算法",
+   "confidence": "高",
+   "basis": "量子错误缓解软件",
+   "route_note": ""
+  },
+  "c_qm": {
+   "route": "测控与仪器装备",
+   "route_group": "工程支撑与生态",
+   "confidence": "高",
+   "basis": "量子计算控制与操控系统（OPX），不交付自有品牌量子处理器",
+   "route_note": ""
+  },
+  "c_qblox": {
+   "route": "测控与仪器装备",
+   "route_group": "工程支撑与生态",
+   "confidence": "高",
+   "basis": "量子计算控制电子学（Cluster）",
+   "route_note": ""
+  },
+  "c_orangeqs": {
+   "route": "测控与仪器装备",
+   "route_group": "工程支撑与生态",
+   "confidence": "高",
+   "basis": "量子芯片自动化测试与表征设备",
+   "route_note": ""
+  },
+  "c_ctquantum": {
+   "route": "综合运营与生态平台",
+   "route_group": "工程支撑与生态",
+   "confidence": "高",
+   "basis": "量子通信网络运营、天衍量子计算云平台、量子安全产品",
+   "route_note": "运营与平台属性为主，非单一硬件路线"
+  },
+  "c_gkqn": {
+   "route": "综合运营与生态平台",
+   "route_group": "工程支撑与生态",
+   "confidence": "高",
+   "basis": "量子保密通信骨干网络建设与运营",
+   "route_note": ""
+  }
+ }
+}

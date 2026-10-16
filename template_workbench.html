@@ -1,0 +1,2512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="data:,">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>量子图谱 · 可视化查询工作台</title>
+<style>
+  :root{
+    /* 界面外壳：中性色（石墨 + 灰阶），颜色全部留给数据 */
+    --bg:#f7f8fa; --panel:#ffffff; --line:#e3e7ee; --txt:#1f2937; --sub:#5f6b76;
+    --ink:#1f2933; --ink-h:#111827; --ghost:#5f6b76;
+    /* 数据色（节点类型） */
+    --c-univ:#2563eb; --c-scholar:#7c3aed; --c-student:#0d9488; --c-company:#ea580c; --c-exec:#be185d; --c-investor:#ca8a04;
+    /* 数据色（地区描边） */
+    --r-na:#0ea5e9; --r-eu:#8b5cf6; --r-cn:#dc2626; --r-ap:#059669;
+    /* 数据色（关系边） */
+    --e-advise:#16a34a; --e-collab:#6366f1; --e-spin:#d97706; --e-work:#9aa7b5; --e-found:#ea580c; --e-invest:#e11d48;
+    /* 默认边：中性灰 */
+    --edge-neutral:#9AA3AD;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif;background:var(--bg);color:var(--txt);overflow:hidden}
+  body{display:flex;flex-direction:column}
+  /* 顶栏：一行放下 标题 | 搜索 | 国家▾ 方向▾ 路线▾ | 登录 */
+  header{padding:7px 14px;background:var(--panel);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;flex-wrap:wrap;flex-shrink:0}
+  header h1{font-size:15px;font-weight:700;white-space:nowrap;letter-spacing:.2px}
+  #search{padding:5px 10px;border:1px solid var(--line);border-radius:6px;width:220px;font-size:12.5px;min-width:150px}
+  #search:focus{outline:none;border-color:#9aa7b5}
+  header select{padding:5px 8px;border:1px solid var(--line);border-radius:6px;font-size:12.5px;background:#fff;max-width:200px}
+  header select:focus{outline:none;border-color:#9aa7b5}
+  header .wbauth{margin-left:auto}
+  /* 按钮体系：全页只有「查询图谱」是主按钮（石墨实心）；其余为次级/描边/图标 */
+  .btn{padding:5px 12px;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:pointer;font-size:12.5px;text-decoration:none;color:var(--txt)}
+  .btn:hover{background:#f3f4f6}
+  .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink);font-weight:600}
+  .btn.primary:hover{background:var(--ink-h)}
+  .btn.ghost{color:var(--ghost)}
+  .btn.sm{padding:3px 9px;font-size:12px}
+  .iconbtn{display:inline-flex;align-items:center;gap:5px;padding:4px 9px;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:pointer;font-size:12.5px;color:var(--txt)}
+  .iconbtn:hover{background:#f3f4f6}
+  /* 分段控件（按类型 / 按地区 合一） */
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:7px;overflow:hidden;background:#fff}
+  .seg button{border:0;background:transparent;padding:4px 11px;font-size:12.5px;cursor:pointer;color:var(--txt);border-right:1px solid var(--line)}
+  .seg button:last-child{border-right:0}
+  .seg button:hover{background:#f3f4f6}
+  .seg button.on{background:var(--ink);color:#fff;font-weight:600}
+  /* 开关（简洁视图） */
+  .switch{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--txt);cursor:pointer;user-select:none}
+  .switch input{position:absolute;opacity:0;width:0;height:0}
+  .switch .track{width:30px;height:16px;border-radius:9px;background:#cbd5e1;position:relative;transition:background .15s}
+  .switch .track::after{content:'';position:absolute;left:2px;top:2px;width:12px;height:12px;border-radius:50%;background:#fff;transition:transform .15s}
+  .switch input:checked + .track{background:var(--ink)}
+  .switch input:checked + .track::after{transform:translateX(14px)}
+  .sw{display:inline-block;width:14px;height:3px;border-radius:2px;vertical-align:middle}
+  /* 顶栏/工具栏高度随内容折行变化，#wrap 用 flex 占满剩余高度（勿用写死的 calc 偏移） */
+  #wrap{display:flex;flex:1;min-height:0}
+  /* ---- 左栏问答区：全栏只保留这一个滚动区，不再套内层滚动 ---- */
+  #qpanel{width:400px;flex-shrink:0;background:var(--panel);border-right:1px solid var(--line);overflow-y:auto;min-height:0}
+  #qpanel.hidden{display:none}
+  #qToggle{float:right;cursor:pointer;color:var(--sub);font-size:12.5px;line-height:1.4;padding:1px 7px;border:1px solid var(--line);border-radius:5px;background:#fff;font-weight:400}
+  #qToggle:hover{background:#f3f4f6;color:var(--txt)}
+  #qOpen{position:absolute;left:12px;top:12px;z-index:7;display:none;align-items:center;gap:6px;font-size:12.5px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.95);cursor:pointer;color:var(--txt);box-shadow:0 2px 8px rgba(15,23,42,.08)}
+  #qOpen:hover{background:#f3f4f6}
+  #qOpen.show{display:flex}
+  /* 面板收起后：左上角让给恢复按钮，工具条下移一行，避免互相遮挡 */
+  #gbar.qopen-shift{top:52px}
+  .qsec{padding:10px 12px;border-bottom:1px solid var(--line)}
+  .qsec h3{font-size:12px;color:var(--sub);margin-bottom:6px;font-weight:600}
+  #qInput{width:100%;height:70px;margin-top:6px;font-family:Consolas,"Courier New",monospace;font-size:12px;padding:8px;border:1px solid var(--line);border-radius:6px;resize:vertical;line-height:1.5}
+  #qInput:focus{outline:none;border-color:#9aa7b5}
+  .qrow{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap}
+  .qchk{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--sub);cursor:pointer}
+  #qPresets{padding:7px 12px 10px}
+  #qPresets summary{font-size:12px;color:var(--sub);font-weight:600;cursor:pointer;user-select:none}
+  #qPresets summary:hover{color:var(--txt)}
+  #qPresetsBody{max-height:260px;overflow-y:auto;margin-top:6px}
+  #wbHistoryList{max-height:180px;overflow-y:auto}
+  .pgroup{font-size:11px;color:var(--sub);margin:7px 0 3px}
+  .pitem{display:block;width:100%;text-align:left;font-size:12.5px;padding:4px 9px;margin:2px 0;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:pointer;color:var(--txt)}
+  .pitem:hover{background:#f3f4f6}
+  .pitem .inf{color:var(--sub);font-size:11px;margin-left:4px}
+  #qStatus{font-size:12.5px;padding:8px 12px;color:var(--sub);border-bottom:1px solid var(--line)}
+  #qStatus.ok b{color:var(--txt)}
+  #qStatus.err{color:#b91c1c;background:#fef2f2;line-height:1.6}
+  details.qhelp{font-size:11.5px;color:var(--sub)}
+  details.qhelp summary{cursor:pointer;color:var(--sub)}
+  details.qhelp code{background:#f4f5f7;padding:0 4px;border-radius:3px;font-family:Consolas,monospace}
+  /* ---- 解读区：白底 + 左侧 3px 灰线（界面外壳中性，颜色留给数据） ---- */
+  #nlInput{width:100%;height:64px;font-size:13px;padding:8px;border:1px solid var(--line);border-radius:6px;resize:vertical;line-height:1.55;font-family:inherit}
+  #nlInput:focus{outline:none;border-color:#9aa7b5}
+  .nlans{margin-top:10px;background:#fff;border:1px solid var(--line);border-left:3px solid #cbd5e1;border-radius:0 8px 8px 0;padding:11px 13px;font-size:14.5px;line-height:1.8;color:var(--txt);word-break:break-word}
+  .nlans .nl-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--sub);margin-bottom:4px;letter-spacing:.3px}
+  .nlans .nl-concl{font-size:16px;font-weight:700;line-height:1.65;margin:0 0 9px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  .nlans .nl-body{font-size:14.5px}
+  .nlans .nl-dis{margin-top:8px;font-size:11px;color:#6b7280}
+  .nlans p{margin:0 0 8px}
+  .nlans ul,.nlans ol{margin:0 0 8px 20px}
+  .nlans li{margin:2px 0}
+  .nlans code{background:#f4f5f7;padding:1px 4px;border-radius:3px;font-size:13px;font-family:Consolas,monospace}
+  .nlans h1,.nlans h2,.nlans h3{font-size:15px;margin:8px 0 5px}
+  .nlans table{border-collapse:collapse;font-size:13px;margin:6px 0}
+  .nlans th,.nlans td{border:1px solid var(--line);padding:3px 7px}
+  /* ---- 结果卡片（人物/实体） ---- */
+  .cards{margin-top:11px}
+  .cards .chd{font-size:12px;color:var(--sub);margin:0 0 7px}
+  .pcard{border:1px solid var(--line);border-radius:9px;padding:9px 11px;background:#fff;margin-bottom:7px}
+  .pcard .row1{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
+  .pcard .nm{font-size:14px;font-weight:700}
+  .pcard .ty{font-size:11px;color:#fff;border-radius:9px;padding:1px 7px}
+  .pcard .mt{font-size:12px;color:var(--sub);margin-top:3px}
+  .pcard .now{font-size:13px;line-height:1.65;margin-top:5px}
+  .pcard .acts{margin-top:7px}
+  .thinking::after{content:'';animation:kdots 1.2s steps(4) infinite}
+  @keyframes kdots{0%{content:''}25%{content:' ·'}50%{content:' ··'}75%{content:' ···'}}
+  /* ---- 图区（与纯图版一致） ---- */
+  #stage{flex:1;min-width:0;display:flex;flex-direction:column;min-height:0}
+  #canvasWrap{flex:1;position:relative;overflow:hidden;min-height:0}
+  #graph{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab}
+  svg:active{cursor:grabbing}
+  /* 画布左上工具条：图操作（着色/简洁/重置/重新布局） */
+  #gbar{position:absolute;left:12px;top:12px;z-index:6;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:9px;padding:5px 7px;box-shadow:0 2px 8px rgba(15,23,42,.07);flex-wrap:wrap;max-width:calc(100% - 24px)}
+  #panel{width:330px;flex-shrink:0;background:var(--panel);border-left:1px solid var(--line);overflow-y:auto;padding:16px;display:none}
+  #panel.open{display:block}
+  #panel h2{font-size:16px;margin-bottom:2px}
+  #panel .en{font-size:12px;color:var(--sub);margin-bottom:8px}
+  .tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11px;color:#fff;margin-right:4px}
+  .chip{display:inline-block;padding:1px 8px;border:1px solid var(--line);border-radius:10px;font-size:11px;color:var(--sub);margin:0 4px 4px 0}
+  .kv{display:flex;font-size:12.5px;margin:5px 0;gap:8px}
+  .kv .k{width:74px;color:var(--sub);flex-shrink:0}
+  .kv .v{flex:1;word-break:break-all}
+  .kv a{color:#334155;text-decoration:none}
+  .kv a:hover{text-decoration:underline}
+  .warn{background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:6px 9px;font-size:12px;color:#9a3412;margin:6px 0}
+  .intro{background:#f7f8fa;border-left:3px solid #cbd5e1;border-radius:0 6px 6px 0;padding:8px 10px;font-size:13px;line-height:1.7;color:var(--txt);margin:8px 0}
+  .wbar{display:inline-block;width:110px;height:8px;background:#e5e7eb;border-radius:4px;vertical-align:middle;overflow:hidden}
+  .wbar span{display:block;height:100%;background:var(--ink);border-radius:4px}
+  .relitem{font-size:12.5px;padding:6px 8px;border:1px solid var(--line);border-radius:6px;margin:5px 0;cursor:pointer}
+  .relitem:hover{background:#f6f8fa}
+  .relitem .rname{font-weight:600}
+  .relitem .rnote{color:var(--sub);font-size:11.5px}
+  #panel .close{float:right;cursor:pointer;color:var(--sub);font-size:16px;line-height:1}
+  /* 图例：画布右下角，默认收成一行，展开后兼作筛选面板 */
+  #legend{position:absolute;right:14px;bottom:14px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:8px;padding:7px 11px;font-size:11.5px;color:var(--sub);max-width:300px;max-height:calc(100% - 28px);overflow-y:auto;box-shadow:0 2px 8px rgba(15,23,42,.07)}
+  #legend h3{font-size:12px;color:var(--txt);margin-bottom:3px;display:flex;align-items:center;gap:6px}
+  #legend h3 .ttl{flex:1}
+  #legend h3 .arw{color:var(--sub);font-weight:400}
+  #legend .row{display:flex;align-items:center;gap:6px;margin:3px 0}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}
+  .eline{width:22px;height:0;border-top:3px solid;display:inline-block;flex-shrink:0}
+  .eline.dash{border-top-style:dashed}
+  .lgrid{display:grid;grid-template-columns:1fr 1fr;column-gap:12px}
+  .lgtype{cursor:pointer;border-radius:5px;padding:1px 4px;margin-left:-4px}
+  .lgtype:hover{background:#f1f3f5}
+  .lgtype .nm{display:flex;align-items:center;gap:5px}
+  .lgtype .cnt{margin-left:auto;color:var(--sub);font-size:10.5px;font-variant-numeric:tabular-nums}
+  .lgtype.off{opacity:.42}
+  .lgtype.off .nm{text-decoration:line-through}
+  /* 图例里的关系筛选行（并入图例，点击开关） */
+  .lgrel{cursor:pointer;border-radius:5px;padding:1px 4px;margin-left:-4px;align-items:center}
+  .lgrel:hover{background:#f1f3f5}
+  .lgrel .cnt{margin-left:auto;color:var(--sub);font-size:10.5px;font-variant-numeric:tabular-nums}
+  .lgrel.off{opacity:.42}
+  .lgrel.off .nm{text-decoration:line-through}
+  .lghint{color:var(--sub);font-size:10.5px;font-weight:400}
+  /* ---- 节点 / 边状态 ---- */
+  .node{cursor:pointer}
+  .node text{font-size:10px;fill:#374151;paint-order:stroke;stroke:#fff;stroke-width:2.5px;pointer-events:none}
+  .node.dim{opacity:.15}
+  .node.dim .lbl{display:none}
+  .node .imwrap{display:none}
+  #nodes.showimg .node .imwrap{display:inline}
+  .node.hot .imwrap,.node.picked .imwrap{display:inline}
+  /* 命中高亮：深墨外环 + 白色间隙双环，不占用任何数据色相 */
+  .node .halo1{fill:none;stroke:#1f2933;stroke-width:2.5}
+  .node .halo2{fill:none;stroke:#fff;stroke-width:4}
+  /* 连线为 <path> 曲线：必须 fill:none，否则默认黑色填充会糊住弧线内凹区 */
+  .edge .vis{fill:none;stroke:#9AA3AD;stroke-opacity:.35;stroke-width:1;stroke-linecap:round}
+  .edge.col .vis{stroke-opacity:1;stroke-width:2.5}
+  .edge .hit{fill:none}
+  .edge.dim{opacity:.12}
+  .edge.hl{filter:drop-shadow(0 0 3px rgba(31,41,51,.25))}
+  .hidden{display:none}
+  #tip{position:absolute;pointer-events:none;background:#fff;color:var(--txt);font-size:12px;padding:10px 12px;border-radius:8px;display:none;z-index:5;white-space:normal;max-width:340px;border:1px solid var(--line);box-shadow:0 8px 24px rgba(15,23,42,.14);line-height:1.55;word-break:break-word}
+  #tip .tt-title{font-size:13px;font-weight:700;color:#0f172a}
+  #tip .tt-en{font-size:11px;color:var(--sub);overflow-wrap:anywhere}
+  #tip .tt-tags{margin:4px 0 2px}
+  #tip .tt-kv{display:flex;gap:6px;margin:1.5px 0}
+  #tip .tt-kv .k{width:56px;flex-shrink:0;color:var(--sub)}
+  #tip .tt-kv .v{flex:1;overflow-wrap:anywhere}
+  #tip .tt-intro{margin-top:6px;padding:6px 8px;background:#f7f8fa;border-left:3px solid #cbd5e1;border-radius:0 5px 5px 0;color:var(--txt)}
+  #tip .tt-warn{margin-top:5px;padding:5px 8px;background:#fff7ed;border:1px solid #fed7aa;border-radius:5px;color:#9a3412}
+  #tip .tt-note{margin-top:4px;color:var(--sub);font-size:11.5px}
+  #tip .tt-hint{margin-top:6px;color:var(--sub);font-size:11px}
+  #footer-note{position:absolute;left:14px;bottom:14px;font-size:11px;color:var(--sub);background:rgba(255,255,255,.85);padding:4px 8px;border-radius:6px;border:1px solid var(--line);max-width:340px}
+  #modelMask{position:fixed;inset:0;background:rgba(15,23,42,.35);z-index:60;display:none;align-items:center;justify-content:center}
+  #modelDialog{background:#fff;border-radius:12px;padding:18px 20px;width:380px;max-width:92vw;box-shadow:0 12px 40px rgba(15,23,42,.25)}
+  #modelDialog h3{margin:0 0 6px;font-size:15px}
+  #modelDialog .mcur{font-size:12px;color:var(--sub);margin-bottom:10px}
+  #modelSelect{width:100%;font-size:13px;padding:7px 8px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--txt)}
+  #modelSelect:focus{outline:none;border-color:#93c5fd}
+  /* 仅移动端显示的控件：默认全部隐藏，由 <768px 媒体查询打开 */
+  #mHandle,#mMore,#mFloat,#mNote{display:none}
+  #mMask{position:fixed;inset:0;background:rgba(15,23,42,.32);z-index:30;display:none}
+  #mMask.show{display:block}
+  /* 移动端浮层容器默认不占位（桌面/横屏各自决定是否显示） */
+  .msheet{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-radius:16px 16px 0 0;
+    box-shadow:0 -2px 16px rgba(31,41,51,.2);display:none;flex-direction:column;max-height:86vh;
+    padding-bottom:env(safe-area-inset-bottom)}
+  .msheet.show{display:flex}
+  /* ================= 移动端（<768px）：单列 + 底部面板 + 命中层 =================
+     设计基准 390px，下限 360，上限 430；所有尺寸用 rem/相对单位，不写死物理像素。
+     桌面规则一律不改写，只在下面按需覆盖。 */
+  @media (max-width:767.98px){
+    body{background:#fff}
+    /* --- 顶栏：52px，标题 + 筛选 + 更多 --- */
+    header{padding:6px 12px;padding-top:calc(6px + env(safe-area-inset-top));gap:8px;height:auto;min-height:52px;flex-wrap:nowrap}
+    header h1{font-size:15px;flex:1;overflow:hidden;text-overflow:ellipsis}
+    header #search,header select,header .btn.ghost{display:none}
+    #mMore{display:inline-flex}
+    header .wbauth{margin-left:0}
+    /* --- wrap 单列：画布在下，面板覆盖其上 --- */
+    #wrap{position:relative;display:block;flex:1;min-height:0;overflow:hidden}
+    #stage{position:absolute;inset:0}
+    /* --- 左下角常驻提示（规范 §6：虚线=未核验 / 简洁视图） --- */
+    #mNote{display:flex;position:absolute;left:10px;bottom:calc(10px + var(--panel-h, 168px));z-index:7;flex-direction:column;gap:3px;transition:bottom .2s ease;pointer-events:none;font-size:11px}
+    #mNote span{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:6px;padding:2px 7px;color:var(--sub);width:max-content;
+      box-shadow:0 1px 4px rgba(15,23,42,.06)}
+    #mNote .dash{display:inline-block;width:16px;height:0;border-top:2px dashed #9AA3AD;vertical-align:middle;margin-right:4px}
+    /* --- 底部面板三档 --- */
+    #qpanel{position:absolute;left:0;right:0;bottom:0;width:auto;border-right:0;border-top:1px solid var(--line);
+      border-radius:16px 16px 0 0;box-shadow:0 -2px 12px rgba(31,41,51,.12);background:var(--panel);
+      height:var(--panel-h, 168px);display:flex;flex-direction:column;overflow:visible;z-index:20;
+      transition:height .2s ease;padding-bottom:env(safe-area-inset-bottom)}
+    #qpanel.hidden{display:flex}                     /* 移动端不允许整体收起，只切档位 */
+    #mHandle{display:block;flex-shrink:0;height:22px;cursor:grab;touch-action:none;width:100%;background:transparent;border:0;padding:0}
+    #mHandle::before{content:'';display:block;width:40px;height:4px;border-radius:2px;background:#d3d9e0;margin:8px auto 0}
+    #mHandle:active{cursor:grabbing}
+    #qpanel.dragging{transition:none}
+    /* 面板内容：收起档只留输入行，其余滚动 */
+    #qpanel .qbody{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+    #qpanel.dragging .qbody,#qpanel[data-p="s"] .qbody{overflow:hidden}
+    #qToggle,#qOpen{display:none!important}
+    /* 提问区：输入框占满剩余宽度 + 76px 查询按钮 */
+    .qsec{padding:0 14px 8px;border-bottom:0}
+    #qAsk .qrow{margin-top:8px}
+    #qAsk .qrow{display:grid;grid-template-columns:1fr 76px;gap:8px;align-items:center}
+    #aiKey,#qClearHL{display:none}
+    .qchk{grid-column:1/-1;font-size:12.5px}
+    #nlInput{height:42px;font-size:15px;padding:9px 11px;min-height:42px}
+    #nlAsk{min-height:44px;width:76px;padding:0;font-size:15px}
+    /* 示例问题：横向滑动一排 */
+    #qPresets{padding:0 14px 10px}
+    #qPresets details>summary{display:none}
+    #qPresetsBody{max-height:none;overflow-x:auto;overflow-y:hidden;display:flex;gap:8px;margin-top:0;padding-bottom:2px}
+    #qPresetsBody .pgroup{display:none}
+    #qPresetsBody .pitem{width:max-content;flex:0 0 auto;margin:0;white-space:nowrap;font-size:13px;min-height:36px;padding:8px 12px;border-radius:18px}
+    /* 状态行 + 解读 + 卡片 */
+    #qStatus{font-size:12.5px;padding:0 14px 8px;border-bottom:0}
+    .nlans{margin-top:8px;border-radius:0 8px 8px 0;padding:10px 12px;font-size:15px}
+    .nlans .nl-concl{font-size:18px;font-weight:700;line-height:1.55;margin-bottom:7px;padding-bottom:7px}
+    .nlans .nl-body{font-size:15px;line-height:1.75}
+    .cards{margin-top:10px}
+    /* 人物卡片横向滑动区，卡宽 min(270px,78vw)，露出下一张一角 */
+    .cards{display:flex;gap:10px;overflow-x:auto;padding-bottom:6px;overscroll-behavior-x:contain;scroll-snap-type:x proximity}
+    .cards .chd{display:none}
+    .pcard{flex:0 0 auto;width:min(270px,78vw);scroll-snap-align:start;margin:0;border-radius:11px;padding:11px 13px}
+    .pcard.sel{border-color:var(--ink);border-width:1px}
+    .pcard .nm{font-size:15px}
+    .pcard .now{font-size:13.5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    .pcard .acts{margin-top:9px}
+    .pcard .acts .btn{min-height:40px;width:100%;font-size:13.5px}
+    /* 全屏档：明细/查询语句 */
+    #qpanel[data-p="f"] .qbody{padding-bottom:8px}
+    /* --- 画布浮按钮：右上角纵向 44×44 --- */
+    #gbar{left:auto;right:10px;top:calc(10px + env(safe-area-inset-top));display:none;max-width:none;padding:0;gap:0;background:transparent;border:0;box-shadow:none}
+    #mFloat{display:flex;position:absolute;right:10px;top:calc(10px + env(safe-area-inset-top));z-index:6;flex-direction:column;gap:8px;transition:bottom .2s ease}
+    #mFloat button{width:44px;height:44px;min-height:44px;padding:0;display:flex;align-items:center;justify-content:center;
+      border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.96);color:var(--txt);cursor:pointer;
+      box-shadow:0 2px 8px rgba(15,23,42,.09)}
+    #mFloat button:active{background:#f0f2f5}
+    #mFloat svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+    #mFloat .cnt{position:absolute;top:-4px;right:-4px;min-width:17px;height:17px;border-radius:9px;background:var(--ink);color:#fff;
+      font-size:10.5px;line-height:17px;text-align:center;padding:0 4px;font-weight:600}
+    #mFloatWrap{display:none}
+    /* --- 图例：移动端改为底部浮层，由浮按钮唤起 --- */
+    #legend{position:fixed;left:0;right:0;bottom:0;max-width:none;max-height:78vh;border-radius:16px 16px 0 0;
+      padding:0 14px calc(14px + env(safe-area-inset-bottom));z-index:40;display:none;box-shadow:0 -2px 16px rgba(31,41,51,.18)}
+    #legend.show{display:block}
+    #legend h3{padding:14px 0 8px;font-size:14px;border-bottom:1px solid var(--line)}
+    #legend h3 .arw{display:none}
+    #legend #legendBody{max-height:calc(78vh - 92px);overflow-y:auto}
+    #legend .row{font-size:13px;margin:0;min-height:44px;border-bottom:1px solid #f1f3f5}
+    #legend .lgrid{grid-template-columns:1fr 1fr;column-gap:14px}
+    #legend .lgrel{min-height:44px}
+    #legend .lgtype{min-height:44px}
+    /* --- 底部弹层通用（筛选抽屉 / 节点迷你卡 / 密集区选择列表 / 更多菜单）--- 规则见样式表顶部 --- */
+    .msheet{position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-radius:16px 16px 0 0;
+      box-shadow:0 -2px 16px rgba(31,41,51,.2);display:none;flex-direction:column;max-height:86vh;
+      padding-bottom:env(safe-area-inset-bottom)}
+    .msheet.show{display:flex}
+    .msheet>h3{font-size:15px;font-weight:700;padding:14px 16px 10px;border-bottom:1px solid var(--line);flex-shrink:0;display:flex;align-items:center}
+    .msheet>h3 .x{margin-left:auto;font-size:18px;color:var(--sub);cursor:pointer;padding:0 4px;font-weight:400}
+    .msheet .mbody{overflow-y:auto;padding:6px 16px 12px;min-height:0}
+    .msheet .mfoot{display:flex;gap:10px;padding:10px 16px 14px;border-top:1px solid var(--line);flex-shrink:0}
+    .msheet .mfoot .btn{flex:1;min-height:46px;font-size:15px}
+    /* 筛选项：44px 行高，整行可点 */
+    .mrow{display:flex;align-items:center;gap:10px;min-height:44px;font-size:15px;border-bottom:1px solid #f1f3f5;cursor:pointer}
+    .mrow .lb{flex:1}
+    .mrow input{width:20px;height:20px;flex-shrink:0;accent-color:#1f2933}
+    .mgroup{margin:8px 0 2px;font-size:12.5px;font-weight:700;color:var(--sub)}
+    /* 节点迷你卡 */
+    #mMini .mtop{display:flex;align-items:center;gap:10px}
+    #mMini .mdot{width:14px;height:14px;flex-shrink:0}
+    #mMini .mnm{font-size:17px;font-weight:700;flex:1}
+    #mMini .mty{font-size:11px;color:#fff;border-radius:9px;padding:2px 8px}
+    #mMini .mmeta{font-size:13.5px;color:var(--sub);margin-top:6px;line-height:1.6}
+    /* 密集区选择列表 */
+    #mPick .mrow{gap:12px}
+    #mPick .mdot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+    #mPick .pb{flex:1;min-width:0}
+    #mPick .pn{font-size:15px;font-weight:600}
+    #mPick .pm{font-size:12.5px;color:var(--sub);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    /* 详情面板：全屏底部弹层 */
+    #panel{position:fixed;left:0;right:0;bottom:0;top:auto;width:auto;max-height:78vh;border-left:0;border-radius:16px 16px 0 0;
+      box-shadow:0 -2px 16px rgba(31,41,51,.2);padding:14px 16px calc(18px + env(safe-area-inset-bottom));z-index:45;
+      overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+    #panel .close{font-size:22px;padding:2px 6px;margin:-4px -4px 0 0}
+    #panel h2{font-size:19px}
+    #panel .kv{font-size:14px;margin:8px 0;gap:10px}
+    #panel .kv .k{width:80px}
+    #panel .kv .v{word-break:break-word}
+    #panel .intro{font-size:14.5px;line-height:1.75}
+    #panel .relitem{font-size:14.5px;padding:11px 12px;margin:7px 0;min-height:44px}
+    #panel .warn{font-size:13.5px;line-height:1.65}
+    .kv a{word-break:break-all}
+    /* 数据来源注记：移动到面板上方，避免被面板遮挡 */
+    #footer-note{display:none}
+    #footer-note.m{display:block;position:absolute;left:10px;right:10px;bottom:calc(var(--panel-h, 168px) + 74px);
+      max-width:none;font-size:11px;line-height:1.5;transition:bottom .2s ease;pointer-events:none}
+    /* 收起档：卡片区隐藏，示例问题只留一排 */
+    #qpanel[data-p="s"] #nlCards{display:none!important}
+    #qpanel[data-p="s"] .nlans{display:none!important}
+  }
+  @media (max-width:767.98px) and (max-height:700px){
+    #qpanel{--panel-h:40vh}
+    .pcard .now{-webkit-line-clamp:2}
+  }
+  @media (max-width:359.98px){
+    #qPresetsBody .pitem:nth-child(n+3){display:none}
+  }
+  /* 横屏手机：面板改右侧栏，宽约 360px，图谱占左侧（规范 §3）。
+     判据用高度 <500px 而不是宽度，才能同时覆盖 844×390 这类横屏手机。 */
+  @media (orientation:landscape) and (max-height:499.98px){
+    header{min-height:44px}
+    header #search,header select,header .btn.ghost{display:none}
+    #mMore{display:inline-flex}
+    #wrap{position:relative;display:block;flex:1;min-height:0;overflow:hidden}
+    #stage{position:absolute;inset:0}
+    #qpanel{position:absolute!important;left:auto;right:0;top:0;bottom:0;width:min(360px,46vw);height:auto!important;
+      border-radius:16px 0 0 16px;border-top:0;border-left:1px solid var(--line);box-shadow:-2px 0 12px rgba(31,41,51,.12);
+      display:flex;flex-direction:column;overflow:visible}
+    #mHandle{display:none}
+    #qpanel .qbody{flex:1;min-height:0;overflow-y:auto}
+    #qToggle,#qOpen{display:none!important}
+    #mNote{display:none}
+    #footer-note{display:none}
+    /* 横屏同样是触屏：补齐与竖屏一致的输入行尺寸与 44px 触控目标（规范 §10） */
+    #qpanel .qsec{padding:0 12px 8px;border-bottom:0}
+    #qAsk .qrow{display:grid;grid-template-columns:1fr 76px;gap:8px;align-items:center;margin-top:8px}
+    #nlInput{height:44px;min-height:44px;font-size:15px;padding:9px 11px}
+    #nlAsk{min-height:44px;width:76px;padding:0;font-size:15px}
+    .qchk{grid-column:1/-1;font-size:12.5px}
+    #qPresets{padding:0 12px 8px}
+    #qPresetsBody{display:flex;gap:8px;overflow-x:auto;overflow-y:hidden}
+    #qPresetsBody .pitem{width:max-content;flex:0 0 auto;margin:0;white-space:nowrap;font-size:13px;min-height:36px;padding:8px 12px;border-radius:18px}
+    .pcard{min-width:min(260px,72vw)}
+    #qpanel[data-p="s"] #nlCards{display:block!important}
+    #qpanel[data-p="s"] .nlans{display:block!important}
+    #gbar{display:flex;flex-wrap:wrap;max-width:min(52vw,420px);left:10px;top:10px}
+    #mFloat{display:none}
+    #legend{position:fixed;left:auto;right:min(360px,46vw);top:0;bottom:auto;width:min(360px,46vw);
+      max-height:100vh;border-radius:0 0 0 16px}
+    #legend.show{display:block}
+    #legend #legendBody{max-height:calc(100vh - 92px);overflow-y:auto}
+  }
+  @media (orientation:landscape) and (max-height:499.98px) and (prefers-reduced-motion:no-preference){
+    #qpanel{transition:none}
+  }
+  @media (prefers-reduced-motion:reduce){
+    #qpanel,#mNote,#footer-note.m{transition:none}
+    .node,.edge .vis{transition:none}
+  }
+</style>
+</head>
+<body>
+<!-- 顶栏：只放标题、搜索、三个下拉、登录（计数与关系筛选都收进右下角图例） -->
+<header>
+  <h1>量子图谱查询台</h1>
+  <input type="text" id="search" placeholder="搜索姓名、机构、关键词">
+  <select id="fCountry"><option value="">全部国家/地区</option></select>
+  <select id="fField"><option value="">全部研究方向</option></select>
+  <select id="fRoute" title="按技术路线筛选企业节点。分类框架见项目资料库 docs/tech-route-report.md（6 个一级领域 / 20 条技术路线）"><option value="">全部技术路线（仅企业）</option></select>
+  <button class="btn" id="mMore" title="更多" style="align-items:center;min-height:36px;gap:5px">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.6" fill="currentColor" stroke="none"/></svg>更多</button>
+  <a class="btn ghost" href="index.html" target="_blank">纯图版 ↗</a>
+  <div class="wbauth" id="wbAuth"></div>
+</header>
+<div id="wrap">
+  <div id="qpanel">
+    <div id="mHandle" title="拖动调整高度，或点按切换档位"></div>
+    <div class="qbody">
+    <div class="qsec" id="qAsk">
+      <h3>自然语言提问<button id="qToggle" title="收起查询面板">收起 «</button></h3>
+      <textarea id="nlInput" spellcheck="false" placeholder="例如：潘建伟的学生都有谁？&#10;哪些投资机构布局了两家以上的量子公司？"></textarea>
+      <div class="qrow">
+        <button class="btn primary" id="nlAsk">查询图谱</button>
+        <label class="qchk"><input type="checkbox" id="qInf">含推断层</label>
+        <button class="btn" id="qClearHL">清除高亮</button>
+        <button class="btn" id="aiKey" title="切换模型（本页不保存任何 API Key，凭据由服务端代持）">⚙</button>
+      </div>
+      <div id="nlAnswer" class="nlans" style="display:none"></div>
+      <div id="nlCards" class="cards" style="display:none"></div>
+      <details class="qhelp" id="cyDetails" style="margin-top:8px">
+        <summary>查看 / 修改生成的 Cypher（高级模式）</summary>
+        <textarea id="qInput" spellcheck="false"></textarea>
+        <div class="qrow">
+          <button class="btn sm" id="qRun">运行此 Cypher</button>
+        </div>
+        <div style="margin-top:4px;line-height:1.7">
+          <code>MATCH (n) WHERE n.type = "scholar" AND n.weight &gt;= 9 RETURN n.name</code><br>
+          <code>MATCH (a)-[r]-&gt;(b) WHERE r.rel = "师承" RETURN a.name, b.name</code><br>
+          比较符 = != &gt; &lt; &gt;= &lt;=；NOT 取反；AND 多条件；LIMIT n；字符串用双引号；不支持聚合 / ORDER BY。
+        </div>
+      </details>
+    </div>
+    <div class="qsec" id="qPresets">
+      <details id="qPresetsBox">
+        <summary>示例问题（点击展开）</summary>
+        <div id="qPresetsBody"></div>
+      </details>
+    </div>
+    <div class="qsec" id="wbHistory" style="display:none">
+      <h3>查询历史（云端留存 · <span id="wbHistCount">0</span> 条）
+        <span class="wblink" id="wbHistClear" style="font-weight:400;float:right">清空</span></h3>
+      <div id="wbHistoryList"></div>
+    </div>
+    <div id="qStatus">输入问题或点击示例开始。</div>
+    </div><!-- /.qbody -->
+  </div>
+  <div id="stage">
+    <div id="canvasWrap">
+      <button id="qOpen" title="展开查询面板">» 查询面板</button>
+      <div id="gbar">
+        <div class="seg" id="segColor">
+          <button id="mType" class="on" title="节点按类型着色">按类型</button>
+          <button id="mRegion" title="节点按地区着色">按地区</button>
+        </div>
+        <label class="switch" title="只显示权重≥5 的节点与主干关系"><input type="checkbox" id="mSimple"><span class="track"></span>简洁视图</label>
+        <button class="iconbtn" id="resetView" title="重置视图：适配全图并留出边距">⤢ 重置</button>
+        <button class="iconbtn" id="reheat" title="重新布局">⟳ 重新布局</button>
+      </div>
+      <!-- 移动端画布浮按钮：图例 / 重置视图（44×44，右上角纵向排列） -->
+      <div id="mFloat">
+        <button id="mLg" title="图例" aria-label="图例">
+          <svg viewBox="0 0 24 24"><path d="M4 6h10M4 12h16M4 18h7"/></svg></button>
+        <button id="mReset" title="重置视图" aria-label="重置视图">
+          <svg viewBox="0 0 24 24"><path d="M4 9V5h4M20 9V5h-4M4 15v4h4M20 15v4h-4"/></svg></button>
+      </div>
+      <svg id="graph"><g id="viewport"><g id="edges"></g><g id="nodes"></g><defs id="nodeclips"></defs></g></svg>
+      <div id="tip"></div>
+      <div id="legend"></div>
+      <!-- 左下角常驻提示：虚线含义 + 简洁视图（规范 §6） -->
+      <div id="mNote"><span><i class="dash"></i>虚线表示未核验</span><span id="mNoteSimple" style="display:none">简洁视图：仅显示高权重节点</span></div>
+      <div id="footer-note">数据为公开资料整理（2024–2026 年），融资/任职信息可能滞后；虚线边与详情卡片中的 ⚠ 为未核验不确定项；缺失字段留空。</div>
+    </div>
+  </div>
+  <div id="panel"></div>
+</div>
+<!-- ===== 移动端底部弹层 ===== -->
+<div id="mMask"></div>
+<!-- 筛选抽屉 -->
+<div class="msheet" id="mFilter">
+  <h3>筛选<span class="x" data-close>✕</span></h3>
+  <div class="mbody" id="mFilterBody"></div>
+  <div class="mfoot">
+    <button class="btn" id="mFilterClear">清除</button>
+    <button class="btn primary" id="mFilterApply">应用</button>
+  </div>
+</div>
+<!-- 节点迷你卡 -->
+<div class="msheet" id="mMini">
+  <h3>节点<span class="x" data-close>✕</span></h3>
+  <div class="mbody">
+    <div class="mtop"><svg class="mdot" viewBox="-10 -10 20 20" id="mMiniDot"></svg><span class="mnm" id="mMiniName"></span><span class="mty" id="mMiniType"></span></div>
+    <div class="mmeta" id="mMiniMeta"></div>
+  </div>
+  <div class="mfoot">
+    <button class="btn primary" id="mMiniDetail">查看详情</button>
+  </div>
+</div>
+<!-- 密集区选择列表 -->
+<div class="msheet" id="mPick">
+  <h3>该位置有多个节点<span class="x" data-close>✕</span></h3>
+  <div class="mbody" id="mPickBody"></div>
+</div>
+<!-- 更多菜单 -->
+<div class="msheet" id="mMenu">
+  <h3>更多<span class="x" data-close>✕</span></h3>
+  <div class="mbody" id="mMenuBody"></div>
+</div>
+<!-- 模型选择弹窗：下拉框只列 kimi / deepseek 系列（过滤在 initLLM 中完成） -->
+<div id="modelMask">
+  <div id="modelDialog">
+    <h3>选择大模型</h3>
+    <div class="mcur">当前：<span id="modelCur">—</span></div>
+    <select id="modelSelect"></select>
+    <div id="modelBtns">
+      <button class="btn" id="modelCancel">取消</button>
+      <button class="btn primary" id="modelOk">确定</button>
+    </div>
+  </div>
+</div>
+<!-- 顶层依赖：Markdown 渲染与 HTML 清洗（本地 vendor 优先；缺失时回落 CDN，再缺失则用内置简易渲染） -->
+<script src="vendor/marked.min.js"></script>
+<script>if(!(window.marked&&window.marked.parse)){document.write('<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"><\/script>');}</script>
+<script src="vendor/purify.min.js"></script>
+<script>if(!window.DOMPurify){document.write('<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"><\/script>');}</script>
+<!-- 云服务 SDK（IIFE 形态，暴露全局 WorkBuddyCloud）；CDN 不可用时回落到本地同版本副本 -->
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@dev/lib/index.global.js"></script>
+<script>if(!window.WorkBuddyCloud){document.write('<script src="vendor/workbuddy-cloud-sdk.global.js"><\/script>');}</script>
+<script src="cloud.js"></script>
+<script>
+const DATA = /*__DATA__*/;
+</script>
+<script>
+const ROUTES = /*__ROUTES__*/;
+</script>
+<script>
+const INFERRED = /*__INFERRED__*/;
+</script>
+<script>
+/* ====ENGINE-BEGIN==== 浏览器内 Cypher 子集引擎（与 kg/query.py 的 grandcypher 子集对齐） */
+const PRESETS = [
+ {g:'学术谱系', t:'潘建伟的直接学生', q:'MATCH (m)-[r]->(s) WHERE r.rel = "师承" AND m.id = "s_pan" RETURN m.name, s.name'},
+ {g:'学术谱系', t:'蔡林格学派全体成员', inf:1, q:'MATCH (n) WHERE n.school = "安东·蔡林格学派" RETURN n.name, n.schools_all'},
+ {g:'学术谱系', t:'英国学者的师承输出', q:'MATCH (m)-[r]->(s) WHERE r.rel = "师承" AND m.country = "英国" RETURN m.name, s.name'},
+ {g:'学术谱系', t:'旗舰学者（权重 ≥ 9）', q:'MATCH (n) WHERE n.type = "scholar" AND n.weight >= 9 RETURN n.name, n.country, n.weight'},
+ {g:'产业与资本', t:'国盾量子的投资方', q:'MATCH (i)-[r]->(c) WHERE r.rel = "投资/持股" AND c.id = "c_quantumctek" RETURN i.name, i.type'},
+ {g:'产业与资本', t:'中科大孵化的公司', q:'MATCH (u)-[r]->(c) WHERE r.rel = "学校孵化" AND u.id = "u_ustc" RETURN c.name, c.funding'},
+ {g:'产业与资本', t:'跨国投资流向', q:'MATCH (i)-[r]->(c) WHERE r.rel = "投资/持股" AND NOT i.country = c.country RETURN i.name, i.country, c.name, c.country'},
+ {g:'推断层', t:'跨境桥梁节点', inf:1, q:'MATCH (n) WHERE n.bridge = 1 RETURN n.name, n.country, n.bridge_countries'},
+ {g:'推断层', t:'共同投资网络', inf:1, q:'MATCH (a)-[r]->(b) WHERE r.rel = "共同投资" RETURN a.name, b.name, r.note'},
+ {g:'推断层', t:'同门关系', inf:1, q:'MATCH (a)-[r]->(b) WHERE r.rel = "同门" RETURN a.name, b.name, r.note'},
+ {g:'数据质量', t:'不确定边审计（待核验清单）', q:'MATCH (a)-[r]->(b) WHERE r.unc = true RETURN a.name, r.rel, b.name'},
+];
+function buildStore(useInferred){
+  const nodes = DATA.nodes.map(n => Object.assign({}, n));
+  const nb = {}; nodes.forEach(n => nb[n.id] = n);
+  if (useInferred && INFERRED && INFERRED.node_annotations){
+    nodes.forEach(n => { n.school=''; n.schools_all=''; n.bridge=0; n.bridge_countries=''; n.centrality_deg=0; n.centrality_btw=0; });
+    Object.keys(INFERRED.node_annotations).forEach(id => {
+      if (nb[id]) Object.keys(INFERRED.node_annotations[id]).forEach(k => { nb[id][k] = INFERRED.node_annotations[id][k]; });
+    });
+  }
+  const edges = DATA.links.map((l,i) => ({idx:i, s:l.s, t:l.t, rel:l.rel, w:l.w||1, unc:!!l.unc, note:l.note||'', inferred:false, source:nb[l.s], target:nb[l.t]}));
+  if (useInferred && INFERRED && INFERRED.inferred_links){
+    INFERRED.inferred_links.forEach(l => edges.push({idx:-1, s:l.s, t:l.t, rel:l.rel, w:l.w||1, unc:false, note:l.note||'', inferred:true, source:nb[l.s], target:nb[l.t]}));
+  }
+  return {nodes:nodes, edges:edges};
+}
+function parseQuery(q){
+  q = (q||'').trim().replace(/\s+/g,' ');
+  if (!q) throw new Error('请输入 Cypher 查询语句');
+  if (q.indexOf("'") >= 0) throw new Error('字符串字面量请使用双引号 "..."');
+  if (/\[\s*\w*\s*:/.test(q)) throw new Error('不支持 [r:类型] 写法；请改用 WHERE r.rel = "类型" 过滤');
+  if (/\bOPTIONAL\b|\bORDER\s+BY\b|\bcount\s*\(|\bsum\s*\(|\bavg\s*\(|\bcollect\s*\(/i.test(q))
+    throw new Error('轻量引擎子集：不支持 聚合 / ORDER BY / OPTIONAL MATCH（聚合统计见 inference_report.md）');
+  let limit = null;
+  const lm = q.match(/\s+LIMIT\s+(\d+)\s*$/i);
+  if (lm){ limit = +lm[1]; q = q.slice(0, q.length - lm[0].length); }
+  const wm = q.match(/^MATCH\s+(.+?)(?:\s+WHERE\s+(.+?))?\s+RETURN\s+(.+)$/i);
+  if (!wm) throw new Error('语法：MATCH (a)-[r]->(b) [WHERE 条件] RETURN 变量.属性, ...');
+  const pat = wm[1].trim(), where = (wm[2]||'').trim(), ret = wm[3].trim();
+  let pattern = null;
+  const m1 = pat.match(/^\(\s*(\w+)\s*\)\s*(<-\[\s*(\w*)\s*\]-|-\[\s*(\w*)\s*\]->|-\[\s*(\w*)\s*\]-)\s*\(\s*(\w+)\s*\)$/);
+  if (m1){
+    const arrow = m1[2];
+    pattern = {kind:'rel', a:m1[1], r:(m1[3]||m1[4]||m1[5]||'r'), b:m1[6], dir: arrow.charAt(0)==='<' ? -1 : 1};
+  } else {
+    const m2 = pat.match(/^\(\s*(\w+)\s*\)$/);
+    if (!m2) throw new Error('MATCH 模式无法解析：' + pat + '（支持 (n) 与 (a)-[r]->(b)）');
+    pattern = {kind:'node', v:m2[1]};
+  }
+  const terms = where ? where.split(/\s+AND\s+/i).map(t => {
+    const tm = t.trim().match(/^(NOT\s+)?(\w+)\.(\w+)\s*(>=|<=|!=|=|>|<)\s*(.+)$/);
+    if (!tm) throw new Error('WHERE 条件无法解析：' + t.trim() + '（示例：n.weight >= 9；r.rel = "师承"；r.unc = true）');
+    const raw = tm[5].trim(); let val, ref = null;
+    if (/^"(.*)"$/.test(raw)) val = raw.slice(1,-1);
+    else if (/^true$/i.test(raw)) val = true;
+    else if (/^false$/i.test(raw)) val = false;
+    else if (!isNaN(+raw) && raw !== '') val = +raw;
+    else {
+      const rm = raw.match(/^(\w+)\.(\w+)$/);   // 支持属性对属性比较：NOT i.country = c.country
+      if (rm) ref = {v:rm[1], attr:rm[2]};
+      else throw new Error('无法识别的值：' + raw + '（字符串请加双引号，或用 变量.属性 做属性间比较）');
+    }
+    return {neg:!!tm[1], v:tm[2], attr:tm[3], op:tm[4], val:val, ref:ref};
+  }) : [];
+  const cols = ret.split(',').map(c => {
+    const cm = c.trim().match(/^(\w+)\.(\w+)$/);
+    if (!cm) throw new Error('RETURN 列需为「变量.属性」形式：' + c.trim());
+    return {v:cm[1], attr:cm[2]};
+  });
+  return {pattern:pattern, terms:terms, cols:cols, limit:limit};
+}
+function cmpVal(a, op, b){
+  if (a === undefined || a === null) return false;
+  if (typeof b === 'number' && typeof a !== 'number') return false;
+  switch(op){
+    case '=': return a === b;
+    case '!=': return a !== b;
+    case '>': return a > b;
+    case '<': return a < b;
+    case '>=': return a >= b;
+    case '<=': return a <= b;
+  }
+  return false;
+}
+function runCypher(qstr, useInferred){
+  const pq = parseQuery(qstr);
+  const store = buildStore(useInferred);
+  const rows = [];
+  const testScope = scope => pq.terms.every(t => {
+    const o = scope[t.v];
+    const b = t.ref ? (scope[t.ref.v] ? scope[t.ref.v][t.ref.attr] : undefined) : t.val;
+    let pass = o ? cmpVal(o[t.attr], t.op, b) : false;
+    return t.neg ? !pass : pass;
+  });
+  if (pq.pattern.kind === 'node'){
+    for (const n of store.nodes){
+      const scope = {}; scope[pq.pattern.v] = n;
+      if (testScope(scope)) rows.push({scope:scope, nodeIds:[n.id], edgeIdxs:[]});
+    }
+  } else {
+    const P = pq.pattern;
+    for (const e of store.edges){
+      const scope = {};
+      if (P.dir === -1){ scope[P.a] = e.target; scope[P.b] = e.source; }
+      else { scope[P.a] = e.source; scope[P.b] = e.target; }
+      scope[P.r] = e;
+      if (testScope(scope)) rows.push({scope:scope, nodeIds:[scope[P.a].id, scope[P.b].id], edgeIdxs: e.idx >= 0 ? [e.idx] : []});
+    }
+  }
+  const limited = pq.limit ? rows.slice(0, pq.limit) : rows;
+  return {
+    cols: pq.cols.map(c => c.v + '.' + c.attr),
+    rows: limited.map(r => ({
+      vals: pq.cols.map(c => { const v = r.scope[c.v] ? r.scope[c.v][c.attr] : undefined; return (v === undefined || v === null) ? '' : v; }),
+      nodeIds: r.nodeIds, edgeIdxs: r.edgeIdxs
+    })),
+    total: rows.length
+  };
+}
+/* ====ENGINE-END==== */
+</script>
+<script>
+(function(){
+const nodes = DATA.nodes.map(n => Object.assign({}, n));
+const links = DATA.links.map(l => Object.assign({}, l));
+const byId = {}; nodes.forEach(n => byId[n.id] = n);
+links.forEach(l => { l.source = byId[l.s]; l.target = byId[l.t]; });
+nodes.forEach(n => { n.x = (Math.random()-0.5)*800; n.y = (Math.random()-0.5)*800; n.vx = 0; n.vy = 0; });
+
+const TYPE_LABEL = {university:'高校/研究机构', scholar:'教授/课题组负责人', student:'研究生/博后(校友)', company:'公司', exec:'企业创始人/高管', investor:'投资机构'};
+const TYPE_COLOR = {university:'#2563eb', scholar:'#7c3aed', student:'#0d9488', company:'#ea580c', exec:'#be185d', investor:'#ca8a04'};
+const REGION_COLOR = {'北美':'#0ea5e9','欧洲':'#8b5cf6','中国':'#dc2626','亚太及其他':'#059669'};
+const REL_COLOR = {'师承':'#16a34a','联合研究':'#6366f1','学校孵化':'#d97706','任职':'#9aa7b5','任职/创办':'#ea580c','投资/持股':'#e11d48'};
+const RADIUS = n => 4 + (n.weight||5) * 1.15;
+const FIELDS = ['量子计算','量子通信','量子传感与测量','量子软件与算法','量子网络'];
+
+// ---------- toolbar options ----------
+const countries = [...new Set(nodes.map(n => n.country))].sort((a,b)=>a.localeCompare(b,'zh'));
+const fCountry = document.getElementById('fCountry');
+countries.forEach(c => { const o=document.createElement('option'); o.value=c; o.textContent=c; fCountry.appendChild(o); });
+const fField = document.getElementById('fField');
+FIELDS.forEach(f => { const o=document.createElement('option'); o.value=f; o.textContent=f; fField.appendChild(o); });
+// 技术路线下拉框：一级领域 = optgroup，二级路线 = option（附企业数；无企业节点的路线置灰保留，用于标记产业空白位）
+const routeCount = {};
+nodes.forEach(n => { if (n.route) routeCount[n.route] = (routeCount[n.route]||0) + 1; });
+const fRoute = document.getElementById('fRoute');
+(ROUTES.groups||[]).forEach(g => {
+  const og = document.createElement('optgroup');
+  og.label = g;
+  (ROUTES.route_order||[]).filter(r => ROUTES.group_of[r]===g).forEach(r => {
+    const c = routeCount[r]||0;
+    const o = document.createElement('option');
+    o.value = r;
+    o.textContent = c ? `${r}（${c} 家）` : `${r}（图谱内暂无）`;
+    if (!c) o.disabled = true;
+    og.appendChild(o);
+  });
+  fRoute.appendChild(og);
+});
+// 关系筛选：由右下角图例承载（原顶栏复选框已移除）
+const relOn = new Set(Object.keys(REL_COLOR));
+
+// ---------- SVG ----------
+const svg = document.getElementById('graph');
+const viewport = document.getElementById('viewport');
+const gEdges = document.getElementById('edges');
+const gNodes = document.getElementById('nodes');
+const tip = document.getElementById('tip');
+// 移动端（<768px）走单列 + 底部面板 + 点按交互；桌面沿用两栏（规范 §1 范围）
+const mq = window.matchMedia('(max-width: 767.98px)');
+const HIT = 22;          // 命中半径（px，屏幕坐标，规范 §5）
+const TAP_MOVE = 8;      // 位移阈值
+const TAP_MS = 300;      // 时长阈值
+const LONG_MS = 400;     // 长按触发辅助
+let twoStep = false;     // 移动端两步点按开关
+let selectedId = null;   // 规范 §5：只维护一个 selectedId，视图由它派生
+const NS = 'http://www.w3.org/2000/svg';
+
+// ---------- 地区聚簇 ----------
+// 说明：早期版本在每个聚簇中心画 76px 的巨型半透明区域名，视觉上像水印且压在节点上，已移除；
+// 区域含义改由右下角图例表达（着色=地区时显示地区配色）。
+const REGION_CENTER = {'北美':{x:-620,y:-330},'欧洲':{x:150,y:-520},'中国':{x:620,y:300},'亚太及其他':{x:-330,y:500}};
+
+/* 连线几何：二次贝塞尔弧，控制点在连线中点沿垂线偏移。
+   为什么这样弯：
+     · 纯直线在力导向图上会把相邻方向的边压成一把扇，弧线更易分辨走向；
+     · 偏移量 = 边长 × CURVE_RATIO，并夹在 [CURVE_MIN, CURVE_MAX]，
+       短边不至于看不见弧度、长边也不会鼓成大包；
+     · 偏移方向由两端 id 字典序定符号 → 互为反向的一对边（A→B / B→A）
+       必然落在曲线两侧，不会重叠成一根线（原来直线时会完全重合）。 */
+const CURVE_RATIO = 0.15, CURVE_MIN = 7, CURVE_MAX = 64;
+function edgeCtrl(l){
+  const x1=l.source.x, y1=l.source.y, x2=l.target.x, y2=l.target.y;
+  const dx=x2-x1, dy=y2-y1;
+  const len=Math.hypot(dx,dy) || 1;
+  const off=Math.min(CURVE_MAX, Math.max(CURVE_MIN, len*CURVE_RATIO));
+  const s=(l.source.id < l.target.id) ? 1 : -1;
+  return {x1, y1, x2, y2,
+          cx:(x1+x2)/2 - dy/len*off*s,
+          cy:(y1+y2)/2 + dx/len*off*s};
+}
+function edgePathD(l){
+  const c = edgeCtrl(l);
+  return `M${c.x1.toFixed(2)},${c.y1.toFixed(2)} Q${c.cx.toFixed(2)},${c.cy.toFixed(2)} ${c.x2.toFixed(2)},${c.y2.toFixed(2)}`;
+}
+const edgeEls = links.map(l => {
+  const g = document.createElementNS(NS,'g');
+  g.classList.add('edge'); g._link = l;
+  const hit = document.createElementNS(NS,'path');
+  hit.setAttribute('fill','none');
+  hit.setAttribute('stroke','rgba(0,0,0,0)');
+  hit.setAttribute('stroke-width','14');
+  hit.style.pointerEvents = 'stroke';
+  hit.classList.add('hit');
+  const e = document.createElementNS(NS,'path');
+  // 默认所有边统一中性灰（CSS: stroke=#9AA3AD, opacity .35, width 1）；
+  // 只有命中/悬停/选中的边才由 JS 上本色（.col 类）并加粗到 2.5px。
+  e.setAttribute('stroke', '#9AA3AD');
+  if (l.unc || l.verif === '否') e.setAttribute('stroke-dasharray','6 4');
+  e.classList.add('vis');
+  g.appendChild(hit); g.appendChild(e);
+  gEdges.appendChild(g); return g;
+});
+
+// 类型形状：高校=方形 学者=圆形 学生=三角 高管=菱形 公司=圆角矩形 投资=六边形
+function makeShape(type, r){
+  let el;
+  if (type==='scholar'){ el = document.createElementNS(NS,'circle'); el.setAttribute('r', r); }
+  else if (type==='university'){ el = document.createElementNS(NS,'rect'); el.setAttribute('x',-r*0.88); el.setAttribute('y',-r*0.88); el.setAttribute('width',r*1.76); el.setAttribute('height',r*1.76); }
+  else if (type==='company'){ el = document.createElementNS(NS,'rect'); el.setAttribute('x',-r); el.setAttribute('y',-r*0.8); el.setAttribute('width',r*2); el.setAttribute('height',r*1.6); el.setAttribute('rx',r*0.32); }
+  else if (type==='student'){ el = document.createElementNS(NS,'polygon'); el.setAttribute('points',`0,${-r} ${r*0.92},${r*0.72} ${-r*0.92},${r*0.72}`); }
+  else if (type==='exec'){ el = document.createElementNS(NS,'polygon'); el.setAttribute('points',`0,${-r} ${r},0 0,${r} ${-r},0`); }
+  else { el = document.createElementNS(NS,'polygon'); const pts=[]; for(let i=0;i<6;i++){const a=Math.PI/3*i-Math.PI/6; pts.push((r*Math.cos(a)).toFixed(2)+','+(r*Math.sin(a)).toFixed(2));} el.setAttribute('points', pts.join(' ')); }
+  return el;
+}
+const defs = document.getElementById('nodeclips');
+const nodeEls = nodes.map((n, ni) => {
+  const g = document.createElementNS(NS,'g');
+  g.classList.add('node'); g._node = n;
+  const r = RADIUS(n);
+  // 高亮 = 深墨外环 + 白色间隙的双环（不占用数据色相，任何底色上都清晰）
+  const halo1 = document.createElementNS(NS,'circle');
+  halo1.setAttribute('r', r+9); halo1.setAttribute('opacity','0');
+  halo1.classList.add('halo1'); halo1.style.pointerEvents='none';
+  const halo2 = document.createElementNS(NS,'circle');
+  halo2.setAttribute('r', r+6); halo2.setAttribute('opacity','0');
+  halo2.classList.add('halo2'); halo2.style.pointerEvents='none';
+  g._halos = [halo1, halo2];
+  g.appendChild(halo1); g.appendChild(halo2);
+  if (n.img){
+    const cp = document.createElementNS(NS,'clipPath');
+    cp.setAttribute('id','clip-'+ni);
+    cp.appendChild(makeShape(n.type, r));
+    defs.appendChild(cp);
+    const bg = makeShape(n.type, r);
+    bg.setAttribute('fill','#ffffff'); bg.classList.add('body');
+    bg.setAttribute('stroke-width','2.5');
+    const iw = document.createElementNS(NS,'g');   // 照片层：默认隐藏，放大/命中时才显示
+    iw.classList.add('imwrap'); iw.style.pointerEvents='none';
+    const im = document.createElementNS(NS,'image');
+    im.setAttribute('href', n.img);
+    im.setAttribute('x',-r); im.setAttribute('y',-r);
+    im.setAttribute('width', r*2); im.setAttribute('height', r*2);
+    im.setAttribute('preserveAspectRatio','xMidYMid slice');
+    im.setAttribute('clip-path', `url(#clip-${ni})`);
+    im.style.pointerEvents = 'none';
+    iw.appendChild(im);
+    const ol = makeShape(n.type, r);
+    ol.setAttribute('fill','none'); ol.classList.add('ring');
+    ol.setAttribute('stroke-width','2.5');
+    g.appendChild(bg); g.appendChild(iw); g.appendChild(ol);
+  } else {
+    const c = makeShape(n.type, r);
+    c.classList.add('body');
+    c.setAttribute('stroke-width','2.5');
+    g.appendChild(c);
+  }
+  const t = document.createElementNS(NS,'text');
+  t.setAttribute('text-anchor','middle'); t.setAttribute('dy', r+13);
+  t.textContent = n.name;
+  t.classList.add('lbl');
+  g.appendChild(t);
+  gNodes.appendChild(g); return g;
+});
+
+let colorMode = 'type';
+function applyColors(){
+  nodeEls.forEach(g => {
+    const n = g._node, c = g.querySelector('.body');
+    const fill = colorMode==='type' ? TYPE_COLOR[n.type] : (REGION_COLOR[n.region]||'#64748b');
+    const ring = colorMode==='type' ? (REGION_COLOR[n.region]||'#64748b') : TYPE_COLOR[n.type];
+    if (n.img){
+      c.setAttribute('fill', '#fff'); c.setAttribute('stroke', ring);
+      const ol = g.querySelector('.ring');
+      if (ol) ol.setAttribute('stroke', TYPE_COLOR[n.type]);   // 类型色外框，保证照片节点仍可辨类型
+    } else {
+      c.setAttribute('fill', fill); c.setAttribute('stroke', ring);
+    }
+  });
+  renderLegend();
+}
+function updateLabels(){
+  // 标签分级：只给「命中/选中」和权重≥9 的节点常显；权重≥6 在放大后出现；其余悬停才见
+  nodeEls.forEach(g => {
+    const n = g._node, t = g.querySelector('.lbl');
+    const w = n.weight||5;
+    const show = g.classList.contains('hot') || g.classList.contains('picked') || g.classList.contains('hoving')
+              || w>=9 || (w>=6 && k>1.35) || k>2.1;
+    t.style.display = (show && !twoStep) ? '' : 'none';
+  });
+  if (twoStep) updateLabelsMobile();
+}
+// 放大到一定倍数才显示照片/logo（默认只显示形状+颜色，避免小尺寸噪点）
+// 移动端阈值更高：先保证缩放下性能与可读性（规范 §6 / §11）
+function updateZoomFeatures(){
+  gNodes.classList.toggle('showimg', k >= (twoStep ? 2.2 : 1.55));
+}
+// 移动端标签更克制：只有命中/选中/悬停 + 最高权重常显，放大后才逐步放出（规范 §6、§3 分档）
+function updateLabelsMobile(){
+  nodeEls.forEach(g => {
+    const n = g._node, t = g.querySelector('.lbl');
+    const w = n.weight||5;
+    const show = g.classList.contains('hot') || g.classList.contains('picked') || g.classList.contains('sel')
+              || g._isSel
+              || w>=9 || (w>=7 && k>1.6) || k>2.4;
+    t.style.display = show ? '' : 'none';
+  });
+}
+
+// ---------- force simulation ----------
+let alpha = 1, running = true;
+let lastAutoFit = 0;              // 布局收敛期间的自动适配节流
+function tick(){
+  for (let i=0;i<nodes.length;i++){
+    const a = nodes[i];
+    for (let j=i+1;j<nodes.length;j++){
+      const b = nodes[j];
+      let dx = a.x-b.x, dy = a.y-b.y;
+      let d2 = dx*dx+dy*dy; if (d2<1) d2=1;
+      const f = 900/d2 * alpha;
+      const d = Math.sqrt(d2);
+      dx/=d; dy/=d;
+      a.vx += dx*f; a.vy += dy*f; b.vx -= dx*f; b.vy -= dy*f;
+    }
+  }
+  links.forEach(l => {
+    const a=l.source,b=l.target;
+    const ideal = 210 - l.w*34 + (RADIUS(a)+RADIUS(b))*0.9;
+    let dx=b.x-a.x, dy=b.y-a.y;
+    let d=Math.sqrt(dx*dx+dy*dy)||1;
+    const f=(d-ideal)*0.045*alpha;
+    dx/=d; dy/=d;
+    a.vx+=dx*f*d*0.1; a.vy+=dy*f*d*0.1; b.vx-=dx*f*d*0.1; b.vy-=dy*f*d*0.1;
+  });
+  // gravity：向所属地区聚簇中心的引力为主 + 全局弱引力防漂移
+  nodes.forEach(n => {
+    const c = REGION_CENTER[n.region] || {x:0,y:0};
+    n.vx += (c.x-n.x)*0.016*alpha; n.vy += (c.y-n.y)*0.016*alpha;
+    n.vx -= n.x*0.002*alpha; n.vy -= n.y*0.002*alpha;
+  });
+  nodes.forEach(n => {
+    if (n._drag) return;
+    n.vx*=0.82; n.vy*=0.82;
+    n.x+=Math.max(-12,Math.min(12,n.vx)); n.y+=Math.max(-12,Math.min(12,n.vy));
+  });
+  alpha *= 0.985;
+  render();
+  // 力导向布局收敛前节点一直在动，首屏那次适配会随之失效（图形越铺越开、偏出视口）：
+  // 用户未干预时边跑边校正，停稳后再对齐一次，保证任何时刻图形都在可视区上下左右居中。
+  const now = performance.now();
+  if (alpha > 0.004 || nodes.some(n=>n._drag)){
+    if (!window.__kgUserMoved && now - lastAutoFit > 800){ lastAutoFit = now; relayoutView('struct'); }
+    requestAnimationFrame(tick);
+  } else {
+    running = false;
+    if (!window.__kgUserMoved) relayoutView('struct');
+  }
+}
+// 重新布局：视为一次新的取景，允许跟随布局重新适配居中
+function reheat(){ window.__kgUserMoved = 0; lastAutoFit = 0; alpha = Math.max(alpha, 0.5); if(!running){ running=true; requestAnimationFrame(tick);} }
+function render(){
+  edgeEls.forEach(gr => {
+    const l = gr._link;
+    const d = edgePathD(l);
+    gr.querySelectorAll('path').forEach(e => e.setAttribute('d', d));
+  });
+  nodeEls.forEach(g => g.setAttribute('transform', `translate(${g._node.x},${g._node.y})`));
+}
+
+// ---------- zoom & pan ----------
+let tx=0, ty=0, k=1;
+function applyTransform(){ viewport.setAttribute('transform',`translate(${tx},${ty}) scale(${k})`); updateLabels(); updateZoomFeatures(); }
+// 适配视图：留 40px 边距（原来无留白 + 图例压住右上角）
+const FIT_PAD = 40;
+
+/* ================= 居中口径的唯一真源：可视画布区 =================
+   图形一律在「可视画布区」上下左右居中，而不是在整块 <svg> 上居中——
+   两者在面板浮在画布之上时并不相同：
+     · 桌面：左右两栏是 flex 兄弟节点，画布本身已被挤到可视位置；
+     · 移动竖屏：底部查询面板浮在画布上 → 可视区 = 画布高度 − 面板高度；
+     · 移动横屏：面板改浮在右侧 → 可视区 = 画布宽度 − 面板宽度。 */
+function visibleRect(){
+  const r = svg.getBoundingClientRect();
+  let w = r.width, h = r.height;
+  if (typeof isMobile === 'function' && isMobile()){
+    if (isLandscape()) w = r.width - panelW();
+    else h = r.height - (PANEL[panelOrder()] || 0);
+  }
+  return {left:r.left, top:r.top, width:Math.max(80,w), height:Math.max(80,h)};
+}
+/* 当前取景目标（frameIds 非空 = 只框选这部分，例如查询命中的节点集）的包围盒。
+   优先用渲染几何（getBBox，含标签文字与光晕），保证「看到的图形」上下左右居中，
+   而不是只居中节点圆心——标签只向单侧伸出时，按圆心居中会显得偏。
+   全部被筛掉时退回全图，避免出现 NaN/Infinity 把视图带飞。 */
+let frameIds = null;
+/* 二次贝塞尔标量极值：t=(p0-pc)/(p0-2pc+p1)，落在 (0,1) 内才算（否则极值在端点） */
+function quadExtent(p0, pc, p1){
+  let lo = Math.min(p0, p1), hi = Math.max(p0, p1);
+  const den = p0 - 2*pc + p1;
+  if (Math.abs(den) > 1e-9){
+    const t = (p0 - pc) / den;
+    if (t > 0 && t < 1){ const v = (1-t)*(1-t)*p0 + 2*(1-t)*t*pc + t*t*p1; if (v<lo) lo=v; if (v>hi) hi=v; }
+  }
+  return [lo, hi];
+}
+function graphBox(){
+  const pool = nodeEls.filter(g => !g.classList.contains('hidden') && (!frameIds || frameIds.has(g._node.id)));
+  const list = pool.length ? pool : nodeEls;
+  if (!list.length) return {minx:0, maxx:1, miny:0, maxy:1};
+  const inPool = new Set(list.map(g => g._node.id));
+  let minx=Infinity, maxx=-Infinity, miny=Infinity, maxy=-Infinity;
+  list.forEach(g => {
+    const p = g._node;
+    let x0=p.x, x1=p.x, y0=p.y, y1=p.y;
+    try {
+      const bb = g.getBBox();
+      if (bb.width || bb.height){ x0=p.x+bb.x; x1=x0+bb.width; y0=p.y+bb.y; y1=y0+bb.height; }
+    } catch(e){}
+    if (x0<minx) minx=x0; if (x1>maxx) maxx=x1;
+    if (y0<miny) miny=y0; if (y1>maxy) maxy=y1;
+  });
+  /* 弧线墨迹计入包围盒：曲线可伸出两端连线弦外最多 CURVE_MAX/2，
+     不算进去的话「看到的图形」边缘会被弧线顶出，视觉上就不居中了。
+     只统计两端都可见的边（与节点可见性同口径）。 */
+  edgeEls.forEach(gr => {
+    const l = gr._link;
+    if (gr.classList.contains('hidden')) return;
+    if (!inPool.has(l.source.id) || !inPool.has(l.target.id)) return;
+    const c = edgeCtrl(l);
+    const ex = quadExtent(c.x1, c.cx, c.x2), ey = quadExtent(c.y1, c.cy, c.y2);
+    if (ex[0]<minx) minx=ex[0]; if (ex[1]>maxx) maxx=ex[1];
+    if (ey[0]<miny) miny=ey[0]; if (ey[1]>maxy) maxy=ey[1];
+  });
+  return {minx, maxx, miny, maxy};
+}
+function fitBox(minx, maxx, miny, maxy, capK){
+  const r = svg.getBoundingClientRect(), v = visibleRect();
+  const availW = Math.max(80, v.width - FIT_PAD*2), availH = Math.max(80, v.height - FIT_PAD*2);
+  const w = Math.max(1, maxx-minx), h = Math.max(1, maxy-miny);
+  k = Math.max(0.2, Math.min(availW/w, availH/h, capK||1.5));
+  tx = (v.left - r.left) + FIT_PAD + (availW - w*k)/2 - minx*k;
+  ty = (v.top  - r.top ) + FIT_PAD + (availH - h*k)/2 - miny*k;
+  applyTransform();
+}
+// 重置视图：取消取景限制，全图适配并居中
+function centerView(){
+  frameIds = null;
+  const b = graphBox();
+  fitBox(b.minx, b.maxx, b.miny, b.maxy, 1.4);
+}
+/* 可视区发生变化时的统一入口（窗口缩放、左右栏开合、底部面板换挡、横竖屏切换）。
+   mode='struct'：结构性变化 → 直接回到适配比例，保证图形完整且居中；
+   mode='resize'：纯窗口尺寸变化 → 若用户在缩放态则保持其缩放（只平移居中），
+                 图形放不下或用户未曾干预时才回到适配比例。 */
+function relayoutView(mode){
+  const v = visibleRect(), b = graphBox(), r = svg.getBoundingClientRect();
+  const w = Math.max(1, b.maxx-b.minx), h = Math.max(1, b.maxy-b.miny);
+  const fitK = Math.max(0.2, Math.min((v.width-FIT_PAD*2)/w, (v.height-FIT_PAD*2)/h, 1.5));
+  const overflow = (w*k > v.width - 8) || (h*k > v.height - 8);
+  if (mode === 'struct' || !window.__kgUserMoved || overflow) k = fitK;
+  tx = (v.left - r.left) + (v.width - w*k)/2 - b.minx*k;
+  ty = (v.top  - r.top ) + (v.height - h*k)/2 - b.miny*k;
+  applyTransform();
+}
+// 面板开合/换挡有 200ms 过渡与一次字体回流 → 立刻算一次，再补一次兜底
+function scheduleRelayout(mode){
+  relayoutView(mode);
+  requestAnimationFrame(() => relayoutView(mode));
+  setTimeout(() => relayoutView(mode), 240);
+}
+svg.addEventListener('wheel', e => {
+  e.preventDefault();
+  const r = svg.getBoundingClientRect();
+  const mx = e.clientX-r.left, my = e.clientY-r.top;
+  const dk = e.deltaY<0 ? 1.12 : 1/1.12;
+  const nk = Math.max(0.2, Math.min(5, k*dk));
+  tx = mx - (mx-tx)*(nk/k); ty = my - (my-ty)*(nk/k); k = nk;
+  applyTransform();
+},{passive:false});
+// ---------- 平移 / 缩放（Pointer Events 统一鼠标与触摸，规范 §5） ----------
+// 单指平移、双指捏合缩放、双击放大；点按与拖动用位移+时长区分。
+const pointers = new Map();
+let tap = null;            // 本次按压的候选点按
+let longTimer = null;
+let pinch = null;
+let panning = null;        // 单指/鼠标平移的起始基准
+
+function svgPt(e){ const r = svg.getBoundingClientRect(); return {x:e.clientX-r.left, y:e.clientY-r.top}; }
+function pinchStart(){
+  const p = [...pointers.values()];
+  const d = Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y);
+  const mx = (p[0].x+p[1].x)/2, my = (p[0].y+p[1].y)/2;
+  pinch = {d, mx, my, k0:k, tx0:tx, ty0:ty};
+  cancelTap();
+}
+
+svg.addEventListener('pointerdown', e => {
+  pointers.set(e.pointerId, svgPt(e));
+  window.__kgUserMoved = 1;
+  if (pointers.size === 2){ pinchStart(); panning = null; return; }   // 规范 §5：两个指针一律视为缩放
+  if (pointers.size > 2) return;
+  const r = svg.getBoundingClientRect();
+  const p = {x:e.clientX, y:e.clientY, t:performance.now(), id:e.pointerId, moved:false};
+  tap = p;
+  // 长按 400ms → 关系摘要（辅助功能，关键功能不依赖它）
+  if (twoStep){
+    longTimer = setTimeout(() => {
+      longTimer = null;
+      if (tap && !tap.moved && !dragNode){ const n = hitAt(e.clientX, e.clientY); if (n) showMini(n, true); }
+    }, LONG_MS);
+  }
+  if (dragNode) return;
+  panning = {x:e.clientX, y:e.clientY, tx, ty};
+  try { svg.setPointerCapture(e.pointerId); } catch(err){}
+});
+svg.addEventListener('pointermove', e => {
+  if (pointers.has(e.pointerId)) pointers.set(e.pointerId, svgPt(e));
+  if (pinch && pointers.size >= 2){
+    const p = [...pointers.values()];
+    const d = Math.hypot(p[0].x-p[1].x, p[0].y-p[1].y) || 1;
+    const mx = (p[0].x+p[1].x)/2, my = (p[0].y+p[1].y)/2;
+    const nk = Math.max(0.2, Math.min(5, pinch.k0 * (d / (pinch.d||1))));
+    k = nk;
+    tx = mx - (pinch.mx - pinch.tx0) * (nk / (pinch.k0||1));
+    ty = my - (pinch.my - pinch.ty0) * (nk / (pinch.k0||1));
+    applyTransform();
+    return;
+  }
+  if (tap && Math.hypot(e.clientX-tap.x, e.clientY-tap.y) > TAP_MOVE){ tap.moved = true; if (longTimer){ clearTimeout(longTimer); longTimer = null; } }
+  if (panning){ tx = panning.tx + e.clientX-panning.x; ty = panning.ty + e.clientY-panning.y; applyTransform(); }
+  if (dragNode){
+    const pt = toGraph(e.clientX, e.clientY);
+    dragNode.x = pt.x; dragNode.y = pt.y; dragNode.vx=0; dragNode.vy=0;
+    render();
+  }
+});
+function endPointer(e){
+  pointers.delete(e.pointerId);
+  if (pinch && pointers.size < 2){ pinch = null; return; }
+  if (longTimer){ clearTimeout(longTimer); longTimer = null; }
+  panning = null;
+  if (dragNode){ dragNode._drag=false; dragNode=null; reheat(); return; }
+  // ---------- 点按判定：位移 <8px 且按下到抬起 <300ms（规范 §5） ----------
+  if (!tap || e.pointerId !== tap.id) { tap = null; return; }
+  const moved = Math.hypot(e.clientX-tap.x, e.clientY-tap.y);
+  const quick = performance.now() - tap.t < TAP_MS;
+  tap = null;
+  if (!twoStep || moved > TAP_MOVE || !quick) return;
+  // 画布点按统一走 tapNodeFlow（含密集区消歧），与节点自身的点按保持同一套判定
+  tapAt(e.clientX, e.clientY);
+}
+// 点按的统一落点判定：密集区弹选择列表，单命中则两步选中，空白则取消（规范 §5/§13）
+function tapAt(cx, cy){
+  const hits = hitsAt(cx, cy);
+  if (!hits.length){ dismissSelection(); return; }
+  if (hits.length > 1){ showPicker(hits); return; }         // 密集区消歧：不自行选中其一，最多 5 项
+  const n = hits[0];
+  if (selectedId === n.id) openDetail(n);                   // 再点同一节点 → 详情
+  else selectNode(n);                                       // 首次点按 → 选中 + 迷你卡
+}
+// 节点自身被点中时调用：以真实指针位置重判命中集合，避免"看起来点的是 A，实际选中 B"，
+// 也保证密集区一定会弹出选择列表而不是直接选中最近的那个节点。
+function tapNodeFlow(n, e){
+  if (twoStep && (e.clientX || e.clientY)) return tapAt(e.clientX, e.clientY);
+  if (selectedId === n.id) openDetail(n); else selectNode(n);
+}
+svg.addEventListener('pointerup', endPointer);
+svg.addEventListener('pointercancel', e => { pointers.delete(e.pointerId); tap=null; panning=null; pinch=null; if(longTimer){clearTimeout(longTimer);longTimer=null;} });
+// 双击：以点击位置为中心放大一档
+svg.addEventListener('dblclick', e => {
+  if (!twoStep) return;
+  const r = svg.getBoundingClientRect();
+  const mx = e.clientX-r.left, my = e.clientY-r.top;
+  const k0 = k, nk = Math.min(5, k*1.6);
+  tx = mx - (mx-tx)*(nk/k0); ty = my - (my-ty)*(nk/k0); k = nk;
+  applyTransform();
+});
+// ---------- 命中半径命中测试（给每个节点加透明点击圆，规范 §5） ----------
+function hitsAt(cx, cy, radius){
+  const r = svg.getBoundingClientRect();
+  const gx = (cx-r.left-tx)/k, gy = (cy-r.top-ty)/k;
+  const rad = (radius || HIT) / k;                          // 屏幕 22px → 图坐标
+  const out = [];
+  nodes.forEach(n => {
+    if (!n._el || n._el.classList.contains('hidden')) return;   // 跳过被筛掉的节点
+    const d = Math.hypot(n.x - gx, n.y - gy);
+    if (d <= rad + RADIUS(n)) out.push(n);
+  });
+  return out.sort((a,b) => (b.weight||5) - (a.weight||5));   // 按权重降序
+}
+function hitAt(cx, cy){ const h = hitsAt(cx, cy); return h.length ? h[0] : null; }
+function cancelTap(){ if (tap){ tap.moved = true; } if (longTimer){ clearTimeout(longTimer); longTimer = null; } }
+function toGraph(cx, cy){
+  const r = svg.getBoundingClientRect();
+  return {x:(cx-r.left-tx)/k, y:(cy-r.top-ty)/k};
+}
+
+// ---------- hover tooltips ----------
+const WEIGHT_TIER = w => w>=9?'旗舰级':(w>=7?'重要级':(w>=5?'骨干级':'新锐级'));
+function showTip(html, cx, cy){
+  const r = svg.getBoundingClientRect();
+  tip.innerHTML = html;
+  tip.style.display = 'block';
+  let x = cx - r.left + 14, y = cy - r.top + 12;
+  const tw = tip.offsetWidth, th = tip.offsetHeight;
+  if (x + tw > r.width - 8)  x = cx - r.left - tw - 10;
+  if (y + th > r.height - 8) y = cy - r.top - th - 8;
+  if (x < 4) x = 4;
+  if (y < 4) y = 4;
+  tip.style.left = x + 'px'; tip.style.top = y + 'px';
+}
+function nodeTipHTML(n){
+  const kv = (k,v) => v ? `<div class="tt-kv"><div class="k">${k}</div><div class="v">${v}</div></div>` : '';
+  let h = (n.img ? `<img src="${n.img}" style="width:52px;height:52px;border-radius:8px;object-fit:cover;float:right;margin:0 0 4px 8px;border:1.5px solid ${TYPE_COLOR[n.type]}">` : '') + `<div class="tt-title">${n.name}</div>`;
+  if (n.name_en && n.name_en !== n.name) h += `<div class="tt-en">${n.name_en}</div>`;
+  h += `<div class="tt-tags"><span class="tag" style="background:${TYPE_COLOR[n.type]}">${TYPE_LABEL[n.type]}</span> <span class="tag" style="background:${REGION_COLOR[n.region]||'#64748b'}">${n.country} · ${n.region}</span>${n.verified==='是'?' <span class="tag" style="background:#2f9e44">✓ 已核实</span>':''}</div>`;
+  if ((n.fields||[]).length) h += `<div class="tt-note">研究方向：${n.fields.join(' / ')}</div>`;
+  if (n.type === 'company'){
+    h += kv('成立',n.founded) + kv('所在地',n.hq) + kv('融资',n.funding) + kv('业务',n.business);
+  } else if (n.type === 'exec'){
+    h += kv('任职企业',n.affiliation) + kv('职务',n.title);
+  } else if (n.type !== 'university' && n.type !== 'investor'){
+    h += kv('机构',n.affiliation) + kv('院系',n.dept) + kv('职称',n.title);
+  }
+  const w = n.weight || 5;
+  h += `<div class="tt-note">影响力权重 <b>${w}</b>/10 · ${WEIGHT_TIER(w)} · 关系 ${links.filter(l=>l.source===n||l.target===n).length} 条</div>`;
+  if (n.intro) h += `<div class="tt-intro">${n.intro}</div>`;
+  if (n.verif_note) h += kv('核实', n.verif_note);
+  if (n.note) h += `<div class="tt-note">备注：${n.note}</div>`;
+  if ((n.uncertain||[]).length) h += `<div class="tt-warn">⚠ 含 ${n.uncertain.length} 项不确定信息，点击查看详情</div>`;
+  h += `<div class="tt-hint">点击查看完整详情卡片与来源链接</div>`;
+  return h;
+}
+function edgeTipHTML(l){
+  const wl = l.w===3 ? '强' : (l.w===2 ? '中' : '弱');
+  let h = `<div class="tt-title">${l.source.name} <span style="color:${REL_COLOR[l.rel]}">— ${l.rel} →</span> ${l.target.name}</div>`;
+  h += `<div class="tt-kv"><div class="k">关系类型</div><div class="v"><span class="tag" style="background:${REL_COLOR[l.rel]}">${l.rel}</span> 强度：${wl}（w=${l.w}）</div></div>`;
+  h += `<div class="tt-kv"><div class="k">两端类型</div><div class="v">${TYPE_LABEL[l.source.type]} ↔ ${TYPE_LABEL[l.target.type]}</div></div>`;
+  const vTxt = l.verif==='是' ? '<b style="color:#2f9e44">✓ 外部核实</b>（权威来源支撑）' : l.verif==='一致' ? '<b style="color:#1c7ed6">✓ 一致核验</b>（多来源交叉一致）' : l.verif==='否' ? '<b style="color:#b45309">⚠ 未核验</b>' : '';
+  if (vTxt) h += `<div class="tt-kv"><div class="k">核实</div><div class="v">${vTxt}</div></div>`;
+  if (l.start || l.end) h += `<div class="tt-kv"><div class="k">起止</div><div class="v">${l.start||'?'} – ${l.end||'今'}</div></div>`;
+  if (l.note) h += `<div class="tt-note">${l.note}</div>`;
+  if (l.unc) h += `<div class="tt-warn">⚠ 不确定项：该关系依据公开报道整理，细节待核验</div>`;
+  h += `<div class="tt-hint">点击任一节点查看完整关系列表</div>`;
+  return h;
+}
+
+// ---------- node interactions ----------
+let dragNode=null, dragMoved=false, selectedNode=null, hoverNode=null;
+let queryHL = null;   // 查询高亮 {nodes:Set<string>, edges:Set<number>（links 下标）}
+function clearSelection(){
+  selectedNode=null; selectedId=null; queryHL=null; clearHalo();
+  hideMini();
+  nodeEls.forEach(g => g.classList.remove('sel'));
+  applyFilters();
+}
+nodeEls.forEach(g => {
+  const n = g._node;
+  n._el = g;                                   // 命中测试要按名字/可见性回查
+  g.addEventListener('pointerdown', e => {
+    e.stopPropagation(); dragMoved=false;
+    cancelTap();                               // 节点上按压不再走画布点按（拖拽节点优先）
+    n._drag=true; dragNode=n;
+    try { g.setPointerCapture(e.pointerId); } catch(err){}
+    // 触摸：按下即开始计时，抬起时按同一套阈值判定点按（规范 §5）
+    if (e.pointerType !== 'mouse'){
+      g._tap = {x:e.clientX, y:e.clientY, t:performance.now(), id:e.pointerId};
+    }
+  });
+  g.addEventListener('pointermove', e => {
+    if (dragNode===n){
+      if (Math.hypot(e.clientX-(g._tap?g._tap.x:e.clientX), e.clientY-(g._tap?g._tap.y:e.clientY)) > TAP_MOVE) dragMoved=true;
+      tip.style.display='none'; return;
+    }
+    // 仅鼠标触发悬停预览；触摸直接跳过（规范 §5）
+    if (e.pointerType !== 'mouse') return;
+    showTip(nodeTipHTML(n), e.clientX, e.clientY);
+    if (hoverNode !== n){ hoverNode = n; applyFilters(); }
+  });
+  g.addEventListener('pointerleave', () => {
+    tip.style.display='none';
+    if (hoverNode === n){ hoverNode = null; applyFilters(); }
+  });
+  g.addEventListener('pointerup', e => {
+    if (e.pointerType === 'mouse'){ if(!dragMoved) tapNodeFlow(n, e); return; }
+    // 触摸：位移 <8px、时长 <300ms 才算点按
+    const t0 = g._tap; g._tap = null;
+    if (!t0 || e.pointerId !== t0.id) return;
+    const moved = Math.hypot(e.clientX-t0.x, e.clientY-t0.y);
+    const quick = performance.now() - t0.t < TAP_MS;
+    if (dragMoved || moved > TAP_MOVE || !quick) return;
+    tapNodeFlow(n, e);
+  });
+  g.addEventListener('click', e => {
+    e.stopPropagation();
+    if (e.detail > 1) return;                   // 双击交给画布放大，不重复选中
+    if(!dragMoved && !twoStep) selectNode(n);   // 触摸端已由 pointerup 处理，避免重复触发
+  });
+});
+edgeEls.forEach(gr => {
+  const l = gr._link, hit = gr.querySelector('.hit');
+  hit.addEventListener('pointermove', e => {
+    if (dragNode || e.pointerType !== 'mouse') return;   // 触摸不悬停
+    showTip(edgeTipHTML(l), e.clientX, e.clientY);
+  });
+  hit.addEventListener('pointerleave', () => tip.style.display='none');
+  // 触摸端：点边 → 取中点命中测试，等价于点节点（边没有独立详情）
+  hit.addEventListener('pointerup', e => {
+    if (!twoStep || e.pointerType === 'mouse') return;
+    const hits = hitsAt(e.clientX, e.clientY);
+    if (hits.length === 1) selectNode(hits[0]);
+    else if (hits.length > 1) showPicker(hits);
+  });
+});
+svg.addEventListener('click', () => { if (twoStep) return; document.getElementById('panel').classList.remove('open'); clearSelection(); });
+
+function setHalo(g, on){ if (g && g._halos) g._halos.forEach(c => c.setAttribute('opacity', on ? '1' : '0')); }
+function clearHalo(){ nodeEls.forEach(g => setHalo(g, false)); }
+function focusNode(n){
+  const r = svg.getBoundingClientRect();
+  const nk = Math.max(k, 1.2);
+  tx = r.width/2 - n.x*nk; ty = r.height/2 - n.y*nk; k = nk; applyTransform();
+}
+
+function selectNode(n){
+  const panel = document.getElementById('panel');
+  selectedNode = n; selectedId = n.id; queryHL = null;
+  clearHalo();
+  nodeEls.forEach(g => g.classList.toggle('sel', g._node === n));
+  setHalo(nodeEls.find(g=>g._node===n), true);
+  // 移动端：先出底部迷你卡（规范 §5 第一步）；桌面：直接开右栏详情
+  if (twoStep){ showMini(n); applyFilters(); return; }
+  if (!panel.classList.contains('open') || panel.dataset.nid !== n.id){ panel.classList.add('open'); }
+  panel.dataset.nid = n.id;
+  const rows = [];
+  const kv = (k,v,link) => { if(v) rows.push(`<div class="kv"><div class="k">${k}</div><div class="v">${link?`<a href="${v}" target="_blank" rel="noopener">${v}</a>`:v}</div></div>`); };
+  let html = `<span class="close" id="pclose">✕</span>
+    ${n.img ? `<img src="${n.img}" style="width:84px;height:84px;border-radius:10px;object-fit:cover;float:right;margin:0 0 6px 10px;border:2px solid ${TYPE_COLOR[n.type]}">` : ''}
+    <h2>${n.name}</h2><div class="en">${n.name_en&&n.name_en!==n.name?n.name_en:''}</div>
+    <div><span class="tag" style="background:${TYPE_COLOR[n.type]}">${TYPE_LABEL[n.type]}</span>
+    <span class="tag" style="background:${REGION_COLOR[n.region]||'#64748b'}">${n.country} · ${n.region}</span>
+    ${n.verified==='是'?'<span class="tag" style="background:#2f9e44">✓ 已核实</span>':'<span class="tag" style="background:#94a3b8">未核实</span>'}</div>
+    <div style="margin:8px 0 2px">${(n.fields||[]).map(f=>`<span class="chip">${f}</span>`).join('')}</div>`;
+  if (n.intro) html += `<div class="intro">${n.intro}</div>`;
+  if (n.type==='company'){ kv('技术路线', n.route ? `${n.route_group} / ${n.route}` : ''); kv('成立年份',n.founded); kv('所在地',n.hq); kv('融资阶段',n.funding); kv('主营业务',n.business); }
+  else if (n.type==='exec'){ kv('任职企业',n.affiliation); kv('职务',n.title); }
+  else if (n.type==='university' || n.type==='investor'){ }
+  else { kv('任职机构',n.affiliation); kv('院系',n.dept); kv('职称/身份',n.title); kv('实验室主页',n.lab,true); }
+  kv('信息来源',n.source,true);
+  kv('核实说明',n.verif_note);
+  if (n.wikidata) kv('Wikidata','https://www.wikidata.org/wiki/'+n.wikidata,true);
+  const w = n.weight||5, wtier = WEIGHT_TIER(w);
+  rows.push(`<div class="kv"><div class="k">影响力权重</div><div class="v"><span class="wbar"><span style="width:${w*10}%"></span></span> <b>${w}</b>/10 · ${wtier}</div></div>`);
+  html += rows.join('');
+  if (n.note) html += `<div class="kv"><div class="k">备注</div><div class="v">${n.note}</div></div>`;
+  if (n.route_note) html += `<div class="kv"><div class="k">路线备注</div><div class="v">${n.route_note}</div></div>`;
+  (n.uncertain||[]).forEach(u => html += `<div class="warn">⚠ 不确定项：${u}</div>`);
+  const rels = links.filter(l => l.source===n || l.target===n);
+  html += `<h3 style="font-size:13px;margin:12px 0 4px">关联关系（${rels.length}）</h3>`;
+  rels.forEach(l => {
+    const other = l.source===n ? l.target : l.source;
+    html += `<div class="relitem" data-id="${other.id}">
+      <span class="sw" style="background:${REL_COLOR[l.rel]}"></span>
+      <span style="color:${REL_COLOR[l.rel]};font-weight:600">${l.rel}</span> →
+      <span class="rname">${other.name}</span>${(l.unc||l.verif==='否')?' <span style="color:#b45309" title="未核验">⚠</span>':''}
+      ${(l.start||l.end)?`<span style="color:#94a3b8;font-size:11px">（${l.start||'?'}–${l.end||'今'}）</span>`:''}
+      ${l.note?`<div class="rnote">${l.note}</div>`:''}</div>`;
+  });
+  panel.innerHTML = html;
+  document.getElementById('pclose').onclick = () => { panel.classList.remove('open'); clearSelection(); };
+  panel.querySelectorAll('.relitem').forEach(el => el.onclick = () => {
+    const t = byId[el.dataset.id]; focusNode(t); selectNode(t);
+  });
+  if (twoStep) show('mMask');
+  applyFilters();
+}
+
+// ---------- 移动端底部弹层：迷你卡 / 密集区选择 / 详情 ----------
+// ⚠ 手势保护：触摸点按后浏览器会补发一个 click。若该 click 落到刚显形的遮罩上，
+//   会把同一次手势刚打开的弹层立刻关掉。记录「开层时刻」，在保护窗口内忽略遮罩 click。
+let sheetShownAt = 0;
+const CLICK_GUARD = 400;                                     // ms，覆盖 tap 后补发 click 的最大延迟
+function noteSheetShown(){ sheetShownAt = performance.now(); }
+function guardedMaskClick(){
+  if (performance.now() - sheetShownAt < CLICK_GUARD) return;  // 同一次手势的补发 click，忽略
+  closeSheets();
+}
+const show = id => { document.getElementById(id).classList.add('show'); noteSheetShown(); };
+const hide = id => document.getElementById(id).classList.remove('show');
+const sheetOpen = () => ['mFilter','mMini','mPick','mMenu'].some(id => document.getElementById(id).classList.contains('show'));
+function closeSheets(){ ['mFilter','mMini','mPick','mMenu'].forEach(hide); hide('mMask'); hide('panel'); }
+function dismissSelection(){                     // 点空白：取消选中，恢复原有高亮
+  if (typeof closeSheets === 'function') closeSheets();
+  clearSelection();
+}
+function openDetail(n){
+  hide('mMini'); hide('mPick');
+  selectNodeInPanel(n);
+  show('panel'); show('mMask');
+}
+// selectNode 的「直接开详情」分支（复用同一套详情渲染）
+function selectNodeInPanel(n){ twoStep = false; selectNode(n); twoStep = isMobile(); show('mMask'); }
+// 迷你卡：名称、类型、关系数 + 查看详情
+function showMini(n, relationsOnly){
+  const el = document.getElementById('mMini');
+  document.getElementById('mMiniDot').innerHTML = legendShapeInner(n.type, TYPE_COLOR[n.type]);
+  document.getElementById('mMiniName').textContent = n.name;
+  const ty = document.getElementById('mMiniType');
+  ty.textContent = TYPE_LABEL[n.type] || '';
+  ty.style.background = TYPE_COLOR[n.type] || '#64748b';
+  const rc = links.filter(l => l.source===n || l.target===n).length;
+  const meta = [];
+  if (n.title) meta.push(n.title);
+  if (n.affiliation) meta.push(n.affiliation);
+  if (n.hq) meta.push(n.hq);
+  if (n.country) meta.push(n.country);
+  document.getElementById('mMiniMeta').textContent = meta.join(' · ') + `（${rc} 条关系）`;
+  show(el.id); show('mMask');
+  document.getElementById('mMiniDetail').onclick = () => openDetail(n);
+}
+function hideMini(){ hide('mMini'); }
+// 密集区消歧：最多 5 个，按影响力权重降序，不自行选中其一
+function showPicker(hits){
+  const list = hits.slice(0, 5);
+  document.getElementById('mPickBody').innerHTML = list.map(n => {
+    const rc = links.filter(l => l.source===n || l.target===n).length;
+    const meta = [TYPE_LABEL[n.type], n.title || n.affiliation || n.hq || '', rc + ' 条关系'].filter(Boolean).join(' · ');
+    return `<div class="mrow" data-id="${n.id}"><span class="mdot" style="background:${TYPE_COLOR[n.type]}"></span>
+      <span class="pb"><span class="pn">${n.name}</span><span class="pm">${meta}</span></span></div>`;
+  }).join('');
+  document.getElementById('mPickBody').querySelectorAll('.mrow').forEach(el => el.onclick = () => {
+    const n = byId[el.dataset.id]; hide('mPick'); selectNode(n);
+  });
+  show('mPick'); show('mMask');
+}
+// 图例形状（不带 <svg> 外壳，供内联小圆点/图标复用）
+function legendShapeInner(type, color){
+  if (type==='scholar') return `<circle r="7" fill="${color}"/>`;
+  if (type==='university') return `<rect x="-6.5" y="-6.5" width="13" height="13" fill="${color}"/>`;
+  if (type==='company') return `<rect x="-7" y="-5.5" width="14" height="11" rx="2.5" fill="${color}"/>`;
+  if (type==='student') return `<polygon points="0,-7.5 7,6 -7,6" fill="${color}"/>`;
+  if (type==='exec') return `<polygon points="0,-7.5 7.5,0 0,7.5 -7.5,0" fill="${color}"/>`;
+  return `<polygon points="3.6,-6.6 7.5,0 3.6,6.6 -3.6,6.6 -7.5,0 -3.6,-6.6" fill="${color}"/>`;
+}
+
+// ---------- filters & search ----------
+let simpleMode = false;
+// 图例类型筛选：被隐藏的节点类型（持久化到本机）
+const hiddenTypes = new Set((() => {
+  try { return JSON.parse(localStorage.getItem('kg_hidden_types') || '[]'); } catch(e){ return []; }
+})());
+function saveHiddenTypes(){
+  try { localStorage.setItem('kg_hidden_types', JSON.stringify([...hiddenTypes])); } catch(e){}
+  if (window.WB && window.WB.onPrefsChanged) window.WB.onPrefsChanged({ hiddenTypes: [...hiddenTypes] });
+}
+// 供 cloud.js 在登录后把云端偏好写回当前视图
+window.__kgPrefs = {
+  getHidden(){ return [...hiddenTypes]; },
+  setHidden(arr){
+    hiddenTypes.clear();
+    (arr || []).forEach(t => hiddenTypes.add(t));
+    try { localStorage.setItem('kg_hidden_types', JSON.stringify([...hiddenTypes])); } catch(e){}
+    renderLegend(); applyFilters();
+  }
+};
+function applyFilters(){
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  const fc = fCountry.value, ff = fField.value, fr = fRoute.value;
+  const visible = {};
+  if (fc){
+    const inCountry = new Set(nodes.filter(n => n.country===fc).map(n => n.id));
+    inCountry.forEach(id => visible[id] = 1);
+    links.forEach(l => {
+      if (inCountry.has(l.source.id)) visible[l.target.id] = 1;
+      if (inCountry.has(l.target.id)) visible[l.source.id] = 1;
+    });
+  }
+  nodes.forEach(n => {
+    let v = fc ? !!visible[n.id] : true;
+    if (fr && n.route !== fr) v = false;             // 技术路线筛选：仅保留该路线的企业节点
+    if (ff && !(n.fields||[]).includes(ff)) v=false;
+    if (simpleMode && (n.weight||5)<=4) v=false;
+    if (hiddenTypes.has(n.type)) v=false;   // 图例类型筛选
+    visible[n.id]=v;
+  });
+  let nbr = null;
+  if (selectedNode && visible[selectedNode.id]){
+    nbr = new Set([selectedNode.id]);
+    links.forEach(l => {
+      if (l.source===selectedNode && visible[l.target.id]) nbr.add(l.target.id);
+      if (l.target===selectedNode && visible[l.source.id]) nbr.add(l.source.id);
+    });
+  }
+  nodeEls.forEach(g => {
+    const n=g._node;
+    g.classList.toggle('hidden', !visible[n.id]);
+    let dim=false, hot=false;
+    if (queryHL){
+      hot = queryHL.nodes.has(n.id);
+      dim = !hot;
+    } else if (nbr){
+      hot = nbr.has(n.id);
+      dim = !hot;
+    } else if (q){
+      const hay = (n.name+' '+(n.name_en||'')+' '+(n.affiliation||'')+' '+(n.business||'')+' '+(n.note||'')+' '+(n.route||'')+' '+(n.route_group||'')+' '+(n.intro||'')).toLowerCase();
+      hot = hay.includes(q);
+      dim = !hot;
+    }
+    // 悬停：该节点与其直接邻居一起点亮（不改变其余节点的既有明暗语义）
+    g.classList.toggle('hoving', hoverNode === n);
+    if (hoverNode && !dim){
+      const rel = n === hoverNode || links.some(l =>
+        (l.source===hoverNode && l.target===n) || (l.target===hoverNode && l.source===n));
+      if (rel) hot = true;
+    }
+    g.classList.toggle('dim', dim);
+    g.classList.toggle('hot', hot);
+  });
+  edgeEls.forEach((e, ei) => {
+    const l=e._link;
+    const hide = !relOn.has(l.rel) || !visible[l.source.id] || !visible[l.target.id] || (simpleMode && l.rel==='任职');
+    e.classList.toggle('hidden', hide);
+    let dim=false, hl=false;
+    if (!hide && queryHL){
+      hl = queryHL.edges.has(ei);
+      dim = !hl;
+    } else if (!hide && nbr){
+      hl = (l.source===selectedNode || l.target===selectedNode);
+      dim = !hl;
+    } else if (q && !hide){
+      const hs = l.source.name.toLowerCase().includes(q)||(l.source.name_en||'').toLowerCase().includes(q);
+      const ht = l.target.name.toLowerCase().includes(q)||(l.target.name_en||'').toLowerCase().includes(q);
+      dim = !(hs||ht);
+    }
+    // 悬停节点：相关联的边立即上本色
+    if (!hide && hoverNode && (l.source===hoverNode || l.target===hoverNode)) hl = true;
+    e.classList.toggle('dim', dim);
+    e.classList.toggle('hl', hl);
+    e.classList.toggle('col', hl);
+    // 中性灰为默认；只有 hl（命中/悬停/选中）才用关系本色
+    // 注意：stroke 用 CSS 规则写着，setAttribute 的呈现属性会被 CSS 覆盖，必须用 style
+    const vis = e.querySelector('.vis');
+    if (hl) vis.style.stroke = (REL_COLOR[l.rel] || '#9AA3AD');
+    else vis.style.stroke = '';
+  });
+  updateLabels();
+}
+document.getElementById('search').addEventListener('input', applyFilters);
+fCountry.addEventListener('change', applyFilters);
+fField.addEventListener('change', applyFilters);
+fRoute.addEventListener('change', applyFilters);
+document.getElementById('mType').onclick = function(){ colorMode='type'; this.classList.add('on'); document.getElementById('mRegion').classList.remove('on'); applyColors(); };
+document.getElementById('mRegion').onclick = function(){ colorMode='region'; this.classList.add('on'); document.getElementById('mType').classList.remove('on'); applyColors(); };
+document.getElementById('mSimple').onchange = function(){ simpleMode=this.checked; applyFilters(); };
+// 重置视图：清掉「用户已干预」标记，回到全图适配居中
+document.getElementById('resetView').onclick = () => { window.__kgUserMoved = 0; centerView(); };
+document.getElementById('reheat').onclick = reheat;
+
+// ---------- legend ----------
+function legendShape(type, color){
+  if (type==='scholar') return `<svg width="14" height="14" viewBox="-8 -8 16 16" style="flex-shrink:0"><circle r="6" fill="${color}"/></svg>`;
+  if (type==='university') return `<svg width="14" height="14" viewBox="-8 -8 16 16" style="flex-shrink:0"><rect x="-5.5" y="-5.5" width="11" height="11" fill="${color}"/></svg>`;
+  if (type==='company') return `<svg width="14" height="14" viewBox="-8 -8 16 16" style="flex-shrink:0"><rect x="-6.5" y="-5" width="13" height="10" rx="2.5" fill="${color}"/></svg>`;
+  if (type==='student') return `<svg width="14" height="14" viewBox="-8 -8 16 16" style="flex-shrink:0"><polygon points="0,-6.5 6,5 -6,5" fill="${color}"/></svg>`;
+  if (type==='exec') return `<svg width="14" height="14" viewBox="-8 -8 16 16" style="flex-shrink:0"><polygon points="0,-6.5 6.5,0 0,6.5 -6.5,0" fill="${color}"/></svg>`;
+  return `<svg width="14" height="14" viewBox="-8 -8 16 16" style="flex-shrink:0"><polygon points="3.2,-5.6 6.5,0 3.2,5.6 -3.2,5.6 -6.5,0 -3.2,-5.6" fill="${color}"/></svg>`;
+}
+const TYPE_COUNT = {}; nodes.forEach(n => TYPE_COUNT[n.type] = (TYPE_COUNT[n.type]||0) + 1);
+const REL_COUNT = {}; links.forEach(l => REL_COUNT[l.rel] = (REL_COUNT[l.rel]||0) + 1);
+// 图例默认收成一行（画布空间优先），展开后兼作「节点类型 / 关系类型」的筛选面板
+let legendOpen = false;
+function renderLegend(){
+  const L = document.getElementById('legend');
+  const strokeNote = colorMode==='type' ? '着色=类型 · 描边=地区' : '着色=地区 · 描边=类型';
+  const typeRows = Object.keys(TYPE_LABEL).map(t => {
+    const off = hiddenTypes.has(t);
+    return `<div class="row lgtype${off?' off':''}" data-type="${t}" title="点击${off?'显示':'隐藏'}「${TYPE_LABEL[t]}」"><span class="nm">${legendShape(t, TYPE_COLOR[t])}${TYPE_LABEL[t]}</span><span class="cnt">${TYPE_COUNT[t]||0}</span></div>`;
+  }).join('');
+  const relRows = Object.keys(REL_COLOR).map(r => {
+    const off = !relOn.has(r);
+    return `<div class="row lgrel${off?' off':''}" data-rel="${r}" title="点击${off?'显示':'隐藏'}「${r}」关系"><span class="nm"><span class="eline" style="border-color:${REL_COLOR[r]}"></span>${r}</span><span class="cnt">${REL_COUNT[r]||0}</span></div>`;
+  }).join('');
+  const resetRow = (hiddenTypes.size || relOn.size < Object.keys(REL_COLOR).length)
+    ? `<div class="row"><a href="javascript:void 0" id="typeReset" style="color:var(--txt);text-decoration:underline">已筛掉 ${hiddenTypes.size} 类节点 · ${Object.keys(REL_COLOR).length - relOn.size} 类关系 · 恢复全部</a></div>` : '';
+  const regionRows = colorMode==='type' ? '' :
+    `<div class="row" style="margin-top:6px"><b style="color:var(--txt);font-size:11.5px">地区配色</b></div>` +
+    Object.keys(REGION_COLOR).map(r=>`<div class="row"><span class="dot" style="background:${REGION_COLOR[r]}"></span>${r}</div>`).join('');
+  L.innerHTML = `<h3 id="legendToggle" style="cursor:pointer;user-select:none" title="展开/收起图例（展开后可直接筛选）">
+    <span class="ttl">图例 · 节点 ${nodes.length} · 关系 ${links.length}</span><span class="arw">${legendOpen?'▾':'▸'}</span></h3>
+  <div id="legendBody" style="${legendOpen?'':'display:none'}">
+    <div class="row" style="margin-bottom:2px"><b style="color:var(--txt);font-size:11.5px">节点类型</b><span class="lghint" style="margin-left:6px">点击开关</span></div>
+    ${typeRows}
+    <div class="row" style="color:var(--sub);margin-top:2px">${strokeNote}</div>${regionRows}
+    <div class="row" style="margin-top:6px"><b style="color:var(--txt);font-size:11.5px">关系（边）</b><span class="lghint" style="margin-left:6px">点击开关</span></div>
+    <div class="lgrid">${relRows}</div>
+    ${resetRow}
+    <div class="row" style="margin-top:4px"><span class="eline" style="border-color:#9AA3AD"></span>默认中性灰；命中/悬停才上本色并加粗</div>
+    <div class="row"><span class="eline dash" style="border-color:#9AA3AD"></span>虚线 = 未核验/不确定</div>
+    <div class="row">✓ 外部核实 44% · ✓ 一致核验 44% · ⚠ 未核验 12%（边三级）</div>
+    <div class="row" style="margin-top:6px"><b style="color:var(--txt);font-size:11.5px">节点大小 = 影响力权重（1-10）</b></div>
+    <div class="row"><span class="dot" style="background:#9AA3AD;width:14px;height:14px"></span>9-10 旗舰级（诺奖/巨头/旗舰机构）</div>
+    <div class="row"><span class="dot" style="background:#9AA3AD;width:10px;height:10px"></span>6-8 重要/骨干级（知名 PI、成长期公司）</div>
+    <div class="row"><span class="dot" style="background:#9AA3AD;width:7px;height:7px"></span>4-5 新锐级（早期公司/校友创业者）</div>
+    <div class="row" style="margin-top:6px">悬停看详情与关系 · 点击节点聚焦关联 · 点击空白取消</div>
+  </div>`;
+  const body = L.querySelector('#legendBody');
+  L.querySelectorAll('.lgtype').forEach(el => el.onclick = () => {
+    const t = el.dataset.type;
+    if (hiddenTypes.has(t)) hiddenTypes.delete(t); else hiddenTypes.add(t);
+    saveHiddenTypes(); renderLegend(); applyFilters();
+  });
+  L.querySelectorAll('.lgrel').forEach(el => el.onclick = () => {
+    const r = el.dataset.rel;
+    if (relOn.has(r)) relOn.delete(r); else relOn.add(r);
+    renderLegend(); applyFilters();
+  });
+  const rs = L.querySelector('#typeReset');
+  if (rs) rs.onclick = () => {
+    hiddenTypes.clear(); saveHiddenTypes();
+    relOn.clear(); Object.keys(REL_COLOR).forEach(r => relOn.add(r));
+    renderLegend(); applyFilters(); syncFilterCount();
+  };
+  const tg = L.querySelector('#legendToggle');
+  if (tg) tg.onclick = () => {
+    legendOpen = !legendOpen;
+    if (twoStep && !legendOpen) hide('legend');    // 移动端：图例是浮层，收起即关闭
+    renderLegend();
+  };
+}
+
+// ================= 移动端控制器（<768px 宽 或 矮屏横屏） =================
+// 断点判据（规范 §1 范围 + §3 横屏要求）：
+//   ① 窗口宽度 < 768px（竖屏手机、桌面缩窄）
+//   ② 横屏手机：高度 < 500px（如 844×390），此时按横屏规则把面板放到右侧
+// 宽屏笔记本横屏（如 1440×500）宽度 ≥768，仍走桌面布局，不受影响。
+const isMobile = () => window.innerWidth < 768 || window.innerHeight < 500;
+const isLandscape = () => window.innerWidth > window.innerHeight;
+const panelW = () => (isLandscape() && isMobile()) ? Math.min(360, window.innerWidth*0.46) : 0;
+const PANEL = {s:168, h:0, f:0};
+function panelHeights(){
+  const vh = window.innerHeight;
+  const halfRatio = vh < 700 ? 0.40 : 0.45;          // 规范 §3：高度 <700 时半屏降 40%
+  PANEL.s = 168; PANEL.h = Math.round(vh * halfRatio); PANEL.f = Math.round(vh * 0.92);
+}
+function setPanel(p, persist){
+  const el = document.getElementById('qpanel');
+  if (!isMobile()){ el.style.removeProperty('--panel-h'); el.removeAttribute('data-p'); return; }
+  panelHeights();
+  el.dataset.p = p;
+  el.style.setProperty('--panel-h', PANEL[p] + 'px');
+  const fb = document.getElementById('footer-note');
+  if (p === 's') fb.classList.remove('m'); else fb.classList.add('m');
+  // 全屏档才放出查询语句（规范 §14：手机端不展示 Cypher；仅在主动展开全屏时可选）
+  const cy = document.getElementById('cyDetails');
+  if (cy) cy.style.display = (p === 'f') ? '' : 'none';
+  if (persist !== false && p !== 's') lastPanel = p;
+  // 换挡改变了「可视画布区」→ 图形重新居中（有取景目标时围绕该目标，例如查询命中的节点）
+  scheduleRelayout('struct');
+}
+let lastPanel = 'h';
+// 移动端面板内容随档位显隐：收起/半屏都保留示例问题条（半屏 = 收起档内容 + 结论 + 卡片，规范 §4）；
+// 查询语句（cyDetails）只在全屏档放出（setPanel 里控制）。这里主要做一次内容可见性兜底。
+function syncPanelContent(){
+  const el = document.getElementById('qpanel');
+  const p = el.dataset.p || 's';
+  document.getElementById('qPresets').style.display = '';
+  const cy = document.getElementById('cyDetails');
+  if (cy) cy.style.display = (p === 'f') ? '' : 'none';
+}
+// 拖动条：拖动跟手，松手吸附最近档；点按循环切档（规范 §4）
+(function(){
+  const handle = document.getElementById('mHandle');
+  const el = document.getElementById('qpanel');
+  let drag = null;
+  handle.addEventListener('pointerdown', e => {
+    if (!isMobile()) return;
+    drag = {y:e.clientY, h0:el.getBoundingClientRect().height, moved:false, t:performance.now()};
+    el.classList.add('dragging');
+    try { handle.setPointerCapture(e.pointerId); } catch(err){}
+  });
+  handle.addEventListener('pointermove', e => {
+    if (!drag) return;
+    const dy = drag.y - e.clientY;
+    if (Math.abs(dy) > 4) drag.moved = true;
+    const nh = Math.max(120, Math.min(window.innerHeight*0.94, drag.h0 + dy));
+    el.style.setProperty('--panel-h', nh + 'px');
+  });
+  const finish = e => {
+    if (!drag) return;
+    const wasMoved = drag.moved;
+    const quick = performance.now() - drag.t < 300;
+    drag = null; el.classList.remove('dragging');
+    if (!wasMoved && quick){                          // 点按 → 循环 收起 → 半屏 → 全屏 → 收起
+      const order = ['s','h','f'], i = order.indexOf(el.dataset.p || 's');
+      setPanel(order[(i+1)%3]);
+    } else {
+      // 吸附到最近档位
+      const h = el.getBoundingClientRect().height;
+      panelHeights();
+      const nearest = ['s','h','f'].reduce((a,b) => Math.abs(PANEL[a]-h) <= Math.abs(PANEL[b]-h) ? a : b);
+      setPanel(nearest);
+    }
+    el.dispatchEvent(new Event('panelchange'));
+    scheduleRelayout('struct');
+  };
+  handle.addEventListener('pointerup', finish);
+  handle.addEventListener('pointercancel', finish);
+})();
+// 浮按钮：图例 / 重置视图
+document.getElementById('mLg').onclick = () => { show('legend'); legendOpen = true; renderLegend(); };
+document.getElementById('mReset').onclick = () => { window.__kgUserMoved = 0; centerView(); };
+// 图例浮层：点标题收起
+document.addEventListener('click', e => {
+  if (!isMobile()) return;
+  const L = document.getElementById('legend');
+  if (L.classList.contains('show') && !L.contains(e.target) && e.target.id !== 'mLg' && !e.target.closest('#mLg')) hide('legend');
+});
+// ---------- 筛选抽屉（规范 §7）：地区 / 方向 / 路线 + 已选计数 ----------
+function openFilter(){
+  const body = document.getElementById('mFilterBody');
+  const opt = (val, cur, label) => `<option value="${escapeAttr(val)}"${val===cur?' selected':''}>${escapeHtml(label)}</option>`;
+  const countryOpts = ['<option value="">全部</option>'].concat(countries.map(c => opt(c, fCountry.value, c))).join('');
+  const fieldOpts = ['<option value="">全部</option>'].concat(FIELDS.map(f => opt(f, fField.value, f))).join('');
+  const routes = [...new Set(nodes.filter(n=>n.route).map(n=>n.route))].sort((a,b)=>a.localeCompare(b,'zh'));
+  const routeOpts = ['<option value="">全部（仅企业）</option>'].concat(routes.map(r => opt(r, fRoute.value, r))).join('');
+  body.innerHTML =
+    `<div class="mgroup">国家 / 地区</div><select data-f="country" style="width:100%;min-height:44px;font-size:15px;padding:0 10px;border:1px solid var(--line);border-radius:9px;background:#fff">${countryOpts}</select>` +
+    `<div class="mgroup">研究方向</div><select data-f="field" style="width:100%;min-height:44px;font-size:15px;padding:0 10px;border:1px solid var(--line);border-radius:9px;background:#fff">${fieldOpts}</select>` +
+    `<div class="mgroup">技术路线（仅企业）</div><select data-f="route" style="width:100%;min-height:44px;font-size:15px;padding:0 10px;border:1px solid var(--line);border-radius:9px;background:#fff">${routeOpts}</select>` +
+    `<div class="mgroup">节点类型</div>` +
+    Object.keys(TYPE_LABEL).map(t => `<label class="mrow"><span class="nm" style="display:flex;align-items:center;gap:8px;flex:1">${legendShape(t, TYPE_COLOR[t])}${TYPE_LABEL[t]}</span><span style="color:var(--sub);font-size:12.5px">${TYPE_COUNT[t]||0}</span><input type="checkbox" data-type="${t}"${hiddenTypes.has(t)?'':' checked'}></label>`).join('') +
+    `<div class="mgroup">关系类型</div>` +
+    Object.keys(REL_COLOR).map(r => `<label class="mrow"><span class="nm" style="display:flex;align-items:center;gap:8px;flex:1"><span class="eline" style="border-color:${REL_COLOR[r]}"></span>${r}</span><span style="color:var(--sub);font-size:12.5px">${REL_COUNT[r]||0}</span><input type="checkbox" data-rel="${r}"${relOn.has(r)?' checked':''}></label>`).join('') +
+    `<div class="mgroup">其他</div>` +
+    `<label class="mrow"><span class="lb">简洁视图（仅显示高权重节点）</span><input type="checkbox" data-f="simple"${simpleMode?' checked':''}></label>` +
+    `<label class="mrow"><span class="lb">按地区着色（关闭则按类型着色）</span><input type="checkbox" data-f="color"${colorMode==='region'?' checked':''}></label>`;
+  show('mFilter'); show('mMask');
+}
+function escapeHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function escapeAttr(s){ return escapeHtml(s).replace(/"/g,'&quot;'); }
+document.getElementById('mFilterApply').onclick = () => {
+  const body = document.getElementById('mFilterBody');
+  body.querySelectorAll('select[data-f]').forEach(sel => {
+    if (sel.dataset.f === 'country') fCountry.value = sel.value;
+    if (sel.dataset.f === 'field') fField.value = sel.value;
+    if (sel.dataset.f === 'route') fRoute.value = sel.value;
+  });
+  hiddenTypes.clear();
+  body.querySelectorAll('input[data-type]').forEach(cb => { if (!cb.checked) hiddenTypes.add(cb.dataset.type); });
+  saveHiddenTypes();
+  body.querySelectorAll('input[data-rel]').forEach(cb => {
+    const r = cb.dataset.rel;
+    if (cb.checked) relOn.add(r); else relOn.delete(r);
+  });
+  const sm = body.querySelector('input[data-f="simple"]'), cl = body.querySelector('input[data-f="color"]');
+  if (sm){ simpleMode = sm.checked; document.getElementById('mSimple').checked = simpleMode; }
+  if (cl){ colorMode = cl.checked ? 'region' : 'type';
+    document.getElementById('mType').classList.toggle('on', !cl.checked);
+    document.getElementById('mRegion').classList.toggle('on', cl.checked); applyColors(); }
+  renderLegend(); applyFilters(); syncFilterCount();
+  hide('mFilter'); hide('mMask');
+};
+document.getElementById('mFilterClear').onclick = () => {
+  fCountry.value=''; fField.value=''; fRoute.value='';
+  hiddenTypes.clear(); saveHiddenTypes();
+  relOn.clear(); Object.keys(REL_COLOR).forEach(r => relOn.add(r));
+  simpleMode = false; document.getElementById('mSimple').checked = false;
+  colorMode = 'type'; document.getElementById('mType').classList.add('on'); document.getElementById('mRegion').classList.remove('on');
+  applyColors(); renderLegend(); applyFilters(); syncFilterCount();
+  openFilter();                                        // 清空后留在抽屉内，便于继续选
+};
+// 「筛选」按钮上的已选条件数量
+function syncFilterCount(){
+  const n = (fCountry.value?1:0) + (fField.value?1:0) + (fRoute.value?1:0) + hiddenTypes.size
+          + (Object.keys(REL_COLOR).length - relOn.size) + (simpleMode?1:0);
+  const btn = document.getElementById('mMore');
+  let badge = btn.querySelector('.cnt');
+  if (!n){ if (badge) badge.remove(); return; }
+  if (!badge){ badge = document.createElement('span'); badge.className='cnt'; btn.appendChild(badge); }
+  badge.textContent = n;
+}
+// ---------- 更多菜单：登录 / 纯图版 / 数据说明 ----------
+document.getElementById('mMore').onclick = () => {
+  const body = document.getElementById('mMenuBody');
+  body.innerHTML =
+    `<div class="mrow" data-a="filter"><span class="lb">筛选（国家 / 方向 / 路线 / 类型）</span><span style="color:var(--sub)">›</span></div>` +
+    `<div class="mrow" data-a="login"><span class="lb">登录 / 账号</span><span style="color:var(--sub)">›</span></div>` +
+    `<div class="mrow" data-a="full"><span class="lb">全屏查看（纯图版）</span><span style="color:var(--sub)">›</span></div>` +
+    `<div class="mrow" data-a="note"><span class="lb">数据说明</span><span style="color:var(--sub)">›</span></div>` +
+    `<div class="mgroup">数据说明</div><div style="font-size:13px;color:var(--sub);line-height:1.7">${document.getElementById('footer-note').textContent}</div>`;
+  body.querySelectorAll('.mrow').forEach(el => el.onclick = () => {
+    const a = el.dataset.a;
+    if (a === 'filter'){ hide('mMenu'); openFilter(); return; }
+    if (a === 'full'){ window.open('index.html','_blank'); return; }
+    if (a === 'login'){
+      const u = document.getElementById('wbAuth').querySelector('button,a');
+      hide('mMenu'); if (u) u.click(); else alert('账号功能需在桌面端使用'); return;
+    }
+    if (a === 'note'){ el.scrollIntoView({block:'nearest',behavior:'smooth'}); }
+  });
+  show('mMenu'); show('mMask');
+};
+// ---------- 遮罩 / 关闭 ----------
+// 遮罩点击：跳过「开层手势自带的那次 click」，之后才是真正的"点空白关闭"
+document.getElementById('mMask').onclick = guardedMaskClick;
+document.querySelectorAll('[data-close]').forEach(el => el.onclick = () => hide(el.closest('.msheet').id));
+// 面板内的“在图中定位”后降到收起档（规范 §4），由查询层调用
+window.__kgPanel = {toHalf:() => setPanel('h'), toCollapse:() => setPanel('s'), order:() => panelOrder(),
+                    syncContent:() => syncPanelContent()};
+function panelOrder(){ return document.getElementById('qpanel').dataset.p || 's'; }
+// ---------- 断点切换：桌面 ⇄ 移动 ----------
+function applyBreakpoint(){
+  twoStep = isMobile();
+  if (twoStep){
+    setPanel(document.getElementById('qpanel').dataset.p || 's');
+    panelHeights();
+  } else {
+    closeSheets(); hide('legend'); legendOpen = false;
+    const el = document.getElementById('qpanel');
+    el.style.removeProperty('--panel-h'); el.removeAttribute('data-p');
+    document.getElementById('footer-note').classList.remove('m');
+    setPanel('h');
+  }
+  nodeEls.forEach(g => g.classList.toggle('sel', false));
+  selectedId = null;
+  updateLabels(); updateZoomFeatures();
+  // 断点切换改变了画布可用区 → 重新居中（保留已有的取景目标）
+  scheduleRelayout('struct');
+}
+mq.addEventListener('change', applyBreakpoint);
+// 宽度变化（含横竖屏切换、桌面窗口拉伸）都重新判定断点；旋转后 260ms 再校正一次
+let bpTimer = null;
+window.addEventListener('resize', () => {
+  clearTimeout(bpTimer);
+  bpTimer = setTimeout(() => { if (isMobile() !== twoStep) applyBreakpoint(); }, 120);
+});
+window.addEventListener('orientationchange', () => setTimeout(() => { applyBreakpoint(); }, 260));
+// 旋转/换挡：面板高度重算后重新居中（规范 §3）
+(function(){
+  const ro = new ResizeObserver(() => {
+    if (twoStep) panelHeights();
+    scheduleRelayout('resize');
+  });
+  try { ro.observe(document.documentElement); } catch(e){}
+})();
+
+// ---------- query workbench hooks（供查询面板调用） ----------
+function highlightQuery(nodeIds, edgeIdxs){
+  queryHL = {nodes:new Set(nodeIds), edges:new Set(edgeIdxs||[])};
+  selectedNode = null; clearHalo();
+  applyFilters();
+}
+function clearQueryHL(){ queryHL = null; frameIds = null; applyFilters(); }
+function fitIds(idSet){
+  const ns = nodes.filter(n => idSet.has(n.id));
+  if (!ns.length) return;
+  // 记住本次取景目标：之后面板开合/换挡/缩放都会围绕这批节点重新居中，而不是跳回全图
+  frameIds = new Set(ns.map(n => n.id));
+  const b = graphBox();
+  fitBox(b.minx, b.maxx, b.miny, b.maxy, 1.6);
+}
+window.__kg = {highlightQuery:highlightQuery, clearQueryHL:clearQueryHL, fitIds:fitIds,
+               TYPE_LABEL:TYPE_LABEL, TYPE_COLOR:TYPE_COLOR, REGION_COLOR:REGION_COLOR,
+               isMobile:isMobile, panelOrder:panelOrder,
+               // 布局变化后重新居中；供左栏收起/展开等画布外的入口调用
+               relayout:mode => scheduleRelayout(mode || 'struct'),
+               // 仅供自动化验收：报告当前「可视画布区」与图形包围盒的居中偏差
+               viewState:() => {
+                 const r = svg.getBoundingClientRect(), v = visibleRect(), b = graphBox();
+                 return {k:+k.toFixed(4), tx:Math.round(tx), ty:Math.round(ty),
+                         canvas:{w:Math.round(r.width), h:Math.round(r.height)},
+                         visible:{w:Math.round(v.width), h:Math.round(v.height)},
+                         graph:{w:Math.round((b.maxx-b.minx)*k), h:Math.round((b.maxy-b.miny)*k)},
+                         dx:Math.round((tx + (b.minx+b.maxx)/2*k) - (v.left - r.left + v.width/2)),
+                         dy:Math.round((ty + (b.miny+b.maxy)/2*k) - (v.top - r.top + v.height/2))};
+               },
+               // 仅供自动化验收：把屏幕坐标按画布实际变换换算成节点中心，避免测试自行推算漂移
+               nodeScreenXY: n => { const r = svg.getBoundingClientRect(); return {x: n.x*k + tx + r.left, y: n.y*k + ty + r.top}; },
+               hitsAt: (cx, cy) => hitsAt(cx, cy).map(n => n.name),
+               tapAt: (cx, cy) => tapAt(cx, cy),
+               pick: n => selectNode(n)};
+
+// 可访问性：节点作为按钮，带类型/单位/关系数的 aria-label（规范 §10）
+function applyA11y(){
+  nodeEls.forEach(g => {
+    const n = g._node;
+    const rc = links.filter(l => l.source===n || l.target===n).length;
+    const bits = [n.name, TYPE_LABEL[n.type], n.title || n.affiliation || n.hq || n.country].filter(Boolean);
+    g.setAttribute('role','button');
+    g.setAttribute('tabindex','0');
+    g.setAttribute('aria-label', bits.join('，') + `，${rc} 条关系`);
+  });
+  document.getElementById('graph').setAttribute('aria-label','量子科技产业关系图谱。使用结果卡片列表可读完整答案。');
+}
+
+// ---------- init ----------
+applyColors(); applyFilters(); applyA11y();
+requestAnimationFrame(tick);
+// 首屏：等布局稳定后做一次 fit-to-view（留 40px 边距）；用户未操作时再补一次以覆盖抽屉/字体回流
+setTimeout(centerView, 60);
+setTimeout(() => { if (!window.__kgUserMoved) centerView(); }, 900);
+// 移动端首次进入：只在文本节点上触发点按（不屏蔽鼠标），并定位到画布可用区（扣掉底部面板）
+setTimeout(() => { if (isMobile()){ applyBreakpoint(); } }, 120);
+svg.addEventListener('wheel', () => { window.__kgUserMoved = 1; }, {passive:true});
+svg.addEventListener('pointerdown', () => { window.__kgUserMoved = 1; });
+window.addEventListener('resize', () => scheduleRelayout('resize'));
+// 画布尺寸变化（窗口缩放、左右栏开合、字体回流）→ 重新居中；首次测量按结构性变化处理
+(function(){
+  const wrap = document.getElementById('canvasWrap');
+  if (!window.ResizeObserver || !wrap) return;
+  let pw = 0, ph = 0, t = null;
+  const ro = new ResizeObserver(entries => {
+    const cr = entries[entries.length-1].contentRect;
+    if (Math.abs(cr.width-pw) < 2 && Math.abs(cr.height-ph) < 2) return;   // 抖动阈值
+    const first = !pw && !ph;
+    pw = cr.width; ph = cr.height;
+    clearTimeout(t);
+    t = setTimeout(() => relayoutView(first ? 'struct' : 'resize'), first ? 0 : 40);
+  });
+  try { ro.observe(wrap); } catch(e){}
+})();
+// 右侧详情面板开合会改变画布宽度 → 结构性变化：重新适配并居中（覆盖全部开合入口，含点击空白关闭）
+(function(){
+  const pn = document.getElementById('panel');
+  if (!pn || !window.MutationObserver) return;
+  let t = null;
+  new MutationObserver(() => {
+    clearTimeout(t);
+    t = setTimeout(() => scheduleRelayout('struct'), 30);
+  }).observe(pn, { attributes:true, attributeFilter:['class','style'] });
+})();
+})();
+</script>
+<script>
+(function(){
+const nlInput = document.getElementById('nlInput');
+const nlAsk = document.getElementById('nlAsk');
+const nlAnswer = document.getElementById('nlAnswer');
+const qInput = document.getElementById('qInput');
+const qInf = document.getElementById('qInf');
+const qStatus = document.getElementById('qStatus');
+let lastRes = null;
+// 图谱 IIFE 内的数据配色/标签（用于结果表与卡片的类型中文化）
+const KG = window.__kg || {};
+const TYPE_LABEL = KG.TYPE_LABEL || {};
+const TYPE_COLOR = KG.TYPE_COLOR || {};
+
+function escapeHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function setStatus(html, isErr){
+  qStatus.className = isErr ? 'err' : 'ok';
+  qStatus.innerHTML = html;
+}
+function highlightRows(rowIdxs){
+  const nodeIds = new Set(), edgeIdxs = new Set();
+  rowIdxs.forEach(i => {
+    lastRes.rows[i].nodeIds.forEach(id => nodeIds.add(id));
+    lastRes.rows[i].edgeIdxs.forEach(ei => edgeIdxs.add(ei));
+  });
+  window.__kg.highlightQuery([...nodeIds], [...edgeIdxs]);
+  return nodeIds;
+}
+// ---------- Markdown 渲染（内容来自大模型）→ marked 渲染 + DOMPurify 清洗 ----------
+const MD = (function(){
+  const hasMarked = !!(window.marked && window.marked.parse);
+  const hasPurify = !!(window.DOMPurify && window.DOMPurify.sanitize);
+  const TAGS = ['p','br','strong','em','code','pre','ul','ol','li','h1','h2','h3','h4','blockquote','a','table','thead','tbody','tr','th','td','hr'];
+  const ATTRS = ['href','title'];
+  function fallback(md){   // 两个库都拿不到时的兜底（不会原样显示星号）
+    let h = escapeHtml(md);
+    h = h.replace(/`([^`]+)`/g,'<code>$1</code>');
+    h = h.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+    h = h.replace(/(^|\n)[-*]\s+/g,'$1• ');
+    h = h.replace(/\n{2,}/g,'</p><p>').replace(/\n/g,'<br>');
+    return '<p>' + h + '</p>';
+  }
+  return function(md){
+    const src = String(md == null ? '' : md);
+    if (!src.trim()) return '';
+    let html;
+    try { html = hasMarked ? window.marked.parse(src, {breaks:true, gfm:true}) : fallback(src); }
+    catch(e){ html = fallback(src); }
+    try { return hasPurify ? window.DOMPurify.sanitize(html, {ALLOWED_TAGS:TAGS, ALLOWED_ATTR:ATTRS}) : html; }
+    catch(e){ return html; }
+  };
+})();
+// 取首句作为结论（加粗放大展示），其余为正文
+function firstSentence(txt){
+  const t = String(txt||'').replace(/^[#>\-\*\s]+/gm,'').replace(/\*\*/g,'').trim();
+  if (!t) return '';
+  const m = t.match(/^[^。！？\n]{2,140}[。！？]/);
+  if (m) return m[0];
+  const line = t.split('\n')[0].trim();
+  return line.length > 140 ? line.slice(0,140) + '…' : line;
+}
+
+// ---------- 结果表：列名与取值都翻译成中文（不再暴露 Cypher 字段名） ----------
+const ATTR_LABEL = {
+  name:'姓名', name_en:'英文名', title:'职称/身份', affiliation:'单位', type:'类型', intro:'简介',
+  country:'国家/地区', region:'地区', weight:'权重', hq:'所在地', funding:'融资阶段', business:'主营业务',
+  founded:'成立年份', route:'技术路线', route_group:'技术领域', dept:'院系', note:'备注', school:'学派',
+  schools_all:'所属学派', rel:'关系类型', w:'关系强度', source:'信息来源', lab:'主页', id:'编号',
+  bridge:'是否为桥梁节点', bridge_countries:'跨境国家', centrality_deg:'连接度', centrality_btw:'中介中心度',
+  confidence:'置信度', route_note:'路线备注', verif_note:'核实说明', aliases:'别名', uncertain:'不确定项',
+  start:'起始年', end:'结束年', img:'照片', verified:'已核实', wikidata:'Wikidata', wikidata_src:'QID来源'
+};
+const colKey = c => { const p = String(c).split('.'); return p.length>1 ? p[1] : String(c); };
+const colLabel = c => ATTR_LABEL[colKey(c)] || colKey(c);
+function fmtCell(c, v){
+  if (v === '' || v === null || v === undefined) return '';
+  const k = colKey(c);
+  if (k === 'type') return TYPE_LABEL[v] || String(v);
+  if (Array.isArray(v)) return v.join('、');
+  if (typeof v === 'boolean') return v ? '是' : '否';
+  return String(v);
+}
+
+// ---------- 结果卡片：姓名 / 职称 / 单位 / 一句话现状 / [在图中定位] ----------
+const nodeByName = {};
+DATA.nodes.forEach(n => {
+  nodeByName[n.name] = n;
+  (n.aliases || []).forEach(a => { if (a && !nodeByName[a]) nodeByName[a] = n; });
+});
+function renderCards(){
+  const box = document.getElementById('nlCards');
+  if (!lastRes || !lastRes.rows.length){ box.style.display = 'none'; box.innerHTML = ''; return; }
+  const cols = lastRes.cols;
+  let nameCi = cols.findIndex(c => colKey(c) === 'name');
+  if (nameCi < 0) nameCi = 0;
+  const cards = lastRes.rows.slice(0, 40).map((r, i) => {
+    const nm = String(r.vals[nameCi] || '');
+    const n = nodeByName[nm];
+    const typeTxt = n ? (TYPE_LABEL[n.type] || '') : '';
+    const meta = [];
+    if (n){
+      if (n.title) meta.push(n.title);
+      if (n.affiliation) meta.push(n.affiliation);
+      if (n.hq) meta.push(n.hq);
+      if (n.country) meta.push(n.country);
+    }
+    // 其余列作为补充（命中到节点时，类型/权重/国家等已由卡片头部表达，不再重复）
+    const SKIP = ['type','weight','country','name','name_en','id','img','verified','region'];
+    const extras = cols.map((c, ci) => {
+      if (ci === nameCi) return null;
+      if (n && SKIP.includes(colKey(c))) return null;
+      const v = r.vals[ci];
+      if (v === '' || v === null || v === undefined) return null;
+      return `${colLabel(c)}：${fmtCell(c, v)}`;
+    }).filter(Boolean);
+    const now = (n && (n.intro || n.business)) || extras.join(' · ');
+    return `<div class="pcard" data-i="${i}">
+      <div class="row1"><span class="nm">${escapeHtml(nm || '（未知实体）')}</span>
+        ${typeTxt ? `<span class="ty" style="background:${TYPE_COLOR[n.type]}">${typeTxt}</span>` : ''}</div>
+      ${meta.length ? `<div class="mt">${escapeHtml(meta.join(' · '))}</div>` : ''}
+      ${now ? `<div class="now">${escapeHtml(now.length > 150 ? now.slice(0,150) + '…' : now)}</div>` : ''}
+      ${extras.length && n && (n.intro || n.business) ? `<div class="mt">${escapeHtml(extras.join(' · ').slice(0,180))}</div>` : ''}
+      <div class="acts"><button class="btn sm" data-locate="${i}">在图中定位</button></div>
+    </div>`;
+  }).join('');
+  box.innerHTML = `<div class="chd">共 ${lastRes.rows.length} 条结果${lastRes.rows.length > 40 ? '（卡片展示前 40 条）' : ''}</div>` + cards;
+  box.style.display = 'block';
+  box.querySelectorAll('[data-locate]').forEach(b => b.onclick = () => {
+    const i = +b.dataset.locate;
+    box.querySelectorAll('.pcard').forEach(c => c.classList.toggle('sel', +c.dataset.i === i));
+    const ids = highlightRows([i]);
+    window.__kg.fitIds(ids);
+    // 移动端：定位后降到收起档，避免遮挡图谱（规范 §4）
+    if (window.__kg.isMobile && window.__kg.isMobile()) window.__kgPanel.toCollapse();
+  });
+}
+
+// ---------- 结果呈现（卡片 + 图中自动聚焦） ----------
+function presentResults(){
+  const n = lastRes.rows.length;
+  setStatus(`<b>${n}</b> 行（共 ${lastRes.total} 匹配）· ${qInf.checked?'含推断层':'基础层'} · 命中节点已在图中自动定位；点击卡片可单独聚焦`, false);
+  renderCards();
+  if (n){
+    // 查询完成即自动聚焦：命中节点满色常显标签，其余淡出，视图缩放到结果范围
+    const ids = highlightRows(lastRes.rows.map((_,i)=>i));
+    if (ids.size) window.__kg.fitIds(ids);
+    // 移动端：提交查询后面板自动升到半屏（规范 §4 / §13）
+    if (window.__kg.isMobile && window.__kg.isMobile()) window.__kgPanel.toHalf();
+    window.__kgPanel.syncContent();
+  }
+}
+function doRun(){
+  try{
+    collapsePresets();
+    lastRes = runCypher(qInput.value, qInf.checked);
+    presentResults();
+  }catch(e){
+    lastRes = null;
+    setStatus('⚠ ' + e.message, true);
+    document.getElementById('nlCards').style.display = 'none';
+  }
+}
+document.getElementById('qRun').onclick = doRun;
+qInput.addEventListener('keydown', e => { if ((e.ctrlKey||e.metaKey) && e.key==='Enter') doRun(); });
+document.getElementById('qClearHL').onclick = () => { window.__kg.clearQueryHL(); };
+// ---------- 查询面板收起/展开 ----------
+const qpanelEl = document.getElementById('qpanel'), qOpenBtn = document.getElementById('qOpen');
+const gbarEl = document.getElementById('gbar');
+function syncGbarShift(){ gbarEl.classList.toggle('qopen-shift', qpanelEl.classList.contains('hidden')); }
+// 左栏收起/展开同样改变画布宽度 → 重新适配并居中
+document.getElementById('qToggle').onclick = () => { qpanelEl.classList.add('hidden'); qOpenBtn.classList.add('show'); syncGbarShift(); if (KG.relayout) KG.relayout('struct'); };
+qOpenBtn.onclick = () => { qpanelEl.classList.remove('hidden'); qOpenBtn.classList.remove('show'); syncGbarShift(); if (KG.relayout) KG.relayout('struct'); };
+
+// ---------- 自然语言查询（LLM 驱动） ----------
+// 安全约定：本页面**不持有、不接收、不发送任何 API Key**。
+//   线上 → 云服务代持凭据（mode='cloud'，浏览器无凭据）
+//   本地 → 自建转发服务代持凭据（mode='server'，浏览器无凭据）
+// 两条路径的凭据都在服务端，前端源码与浏览器存储里都不存在 Key。
+const LLM = {
+  proxyUrl: 'http://127.0.0.1:8790/v1/chat/completions',    // 本地开发转发服务（其凭据由服务端代持）
+  url: 'http://127.0.0.1:8790/v1/chat/completions',
+  mode: 'no-llm',                                      // cloud=云服务代持 | server=本地服务代持 | cloud-*/no-llm=不可用
+  model: 'kimi-k2.6',                                  // 标准模式（更慢、更稳）
+  modelFast: 'kimi-k2.7-code-highspeed',               // 高速模式（默认，快约 10 倍）
+  fast: localStorage.getItem('llm_fast') !== '0',       // 是否使用高速模式
+  // —— 云服务 LLM（首选路径）：无需任何 Key，上游凭据由云服务代持 ——
+  cloudModel: localStorage.getItem('llm_cloud_model') || '',
+  cloudLabel: '',
+  cloudModels: [],
+  cloudErr: ''
+};
+// 清理历史版本可能残留在本机的 Key（旧版曾允许在页面上粘贴 Key）
+try { localStorage.removeItem('llm_key'); } catch(e){}
+// 探测同源/本机的转发服务是否可用（其是否已代持凭据由 /health 告知，浏览器不参与凭据传递）
+async function detectLLM(){
+  const cands = [];
+  if (/^https?:$/.test(location.protocol)) cands.push(location.origin + '/v1/chat/completions');
+  if (location.origin !== 'http://127.0.0.1:8790') cands.push(LLM.proxyUrl);
+  for (const c of cands){
+    try{
+      const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), 2000);
+      const r = await fetch(c.replace(/\/v1\/chat\/completions$/, '/health'), {signal: ctl.signal, cache: 'no-store'});
+      clearTimeout(timer);
+      if (!r.ok) continue;
+      // 必须是本服务的健康检查响应：避免静态托管把未知路径兜底成 200 HTML 而被误判为可用接口
+      if (!(r.headers.get('content-type') || '').toLowerCase().includes('application/json')) continue;
+      const j = await r.json().catch(() => null);
+      if (j && j.service === 'quantum-graph-llm-proxy'){
+        LLM.url = c;
+        LLM.mode = j.keyConfigured ? 'server' : 'no-key';
+        return LLM.mode === 'server';
+      }
+    }catch(e){}
+  }
+  LLM.mode = 'no-llm';
+  return false;
+}
+
+// 首选云服务 LLM（无 Key）；仅当云服务 SDK 不可用时才回退到上面的探测路径。
+// 云服务只认应用的发布域名（服务端强校验 Origin），因此本地预览/离线打开时自动回退到本机转发。
+// 模型目录为空是合法结果：明确提示，不退回硬编码模型 id。
+// 默认模型只在「目录中确实存在」的条目里挑（实测 auto 单次约 300s，不适合交互式问答）。
+const CLOUD_MODEL_PREF = ['kimi-k2.6', 'deepseek-v4-flash'];
+async function initLLM(){
+  if (window.WB && window.WB.ready){
+    const onReleaseDomain = (location.origin === window.WB.PUBLIC_CONFIG.endpoint);
+    try{
+      const all = await WB.llm.selectableModels();
+      // 只保留 kimi / deepseek 系列（其余系列实测过慢或不稳定）；过滤后为空才退回全量目录
+      const kept = all.filter(m => /kimi|deepseek/i.test((m.id || '') + ' ' + (m.name || '')));
+      LLM.cloudModels = kept.length ? kept : all;
+      if (!LLM.cloudModels.length){ LLM.mode = 'cloud-empty'; return false; }
+      const pool = LLM.cloudModels;
+      const bySaved = LLM.cloudModel ? pool.filter(x => x.id === LLM.cloudModel)[0] : null;
+      const byPref = CLOUD_MODEL_PREF.map(id => pool.filter(x => x.id === id)[0]).filter(Boolean)[0];
+      const picked = bySaved || byPref || pool[0];
+      LLM.cloudModel = picked.id;
+      LLM.cloudLabel = picked.name || picked.id;
+      LLM.mode = 'cloud';
+      return true;
+    }catch(e){
+      LLM.cloudErr = WB.errText(e);
+      if (!onReleaseDomain){ LLM.mode = 'cloud-unreachable'; return await detectLLM(); }
+      LLM.mode = 'cloud-error';
+      return false;
+    }
+  }
+  return await detectLLM();
+}
+const llmReady = initLLM();
+document.getElementById('aiKey').onclick = () => {
+  // 云服务模式：在云端模型目录中切换（下拉弹窗，仅 kimi / deepseek 系列）
+  if (LLM.mode === 'cloud' || LLM.mode === 'cloud-empty'){
+    if (!LLM.cloudModels.length){ setStatus('云服务当前没有可用模型，请稍后重试。', true); return; }
+    openModelPicker();
+    return;
+  }
+  // 非云服务模式：本页不持有任何 Key，⚙ 仅用于切换速度模式
+  if (LLM.mode !== 'server'){
+    setStatus('当前问答接口不可用：' + noLlmHint(), true);
+    return;
+  }
+  const cur = LLM.fast ? '高速模式（问答约 2-10 秒）' : '标准模式（问答约 10-80 秒，更稳）';
+  if (confirm('切换问答速度模式？\n（本页面不保存任何 API Key，凭据由服务端代持）\n当前：' + cur)) {
+    LLM.fast = !LLM.fast; localStorage.setItem('llm_fast', LLM.fast ? '1' : '0');
+    if (window.WB && window.WB.onPrefsChanged) window.WB.onPrefsChanged({ fastMode: LLM.fast });
+    setStatus('已切换为' + (LLM.fast ? '高速模式（回答更快）' : '标准模式（回答更稳）'), false);
+  }
+};
+// 模型选择弹窗（下拉框形态；列表已在 initLLM 中过滤为 kimi / deepseek 系列）
+function openModelPicker(){
+  const sel = document.getElementById('modelSelect');
+  sel.innerHTML = '';
+  LLM.cloudModels.forEach(m => {
+    const o = document.createElement('option');
+    o.value = m.id;
+    o.textContent = (m.name || m.id) + (m.id === LLM.cloudModel ? '（当前）' : '');
+    if (m.id === LLM.cloudModel) o.selected = true;
+    sel.appendChild(o);
+  });
+  document.getElementById('modelCur').textContent = LLM.cloudLabel || '—';
+  document.getElementById('modelMask').style.display = 'flex';
+}
+(function bindModelPicker(){
+  const mask = document.getElementById('modelMask');
+  if (!mask) return;
+  document.getElementById('modelOk').onclick = () => {
+    const id = document.getElementById('modelSelect').value;
+    const m = LLM.cloudModels.filter(x => x.id === id)[0];
+    if (m){
+      LLM.cloudModel = m.id; LLM.cloudLabel = m.name || m.id;
+      localStorage.setItem('llm_cloud_model', m.id);
+      LLM.mode = 'cloud';
+      setStatus('已切换到云服务模型：' + LLM.cloudLabel, false);
+    }
+    mask.style.display = 'none';
+  };
+  document.getElementById('modelCancel').onclick = () => { mask.style.display = 'none'; };
+  mask.addEventListener('click', e => { if (e.target === mask) mask.style.display = 'none'; });
+})();
+// 接口不可用时的运维向提示（不再引导用户在前端填 Key）
+function noLlmHint(){
+  if (LLM.mode === 'cloud-error') return '云服务不可用：' + (LLM.cloudErr || '初始化失败');
+  if (LLM.mode === 'cloud-empty') return '云服务当前没有可用的模型，请稍后重试。';
+  if (LLM.mode === 'no-key') return '服务端尚未配置大模型凭据。请在服务端设置环境变量 MOONSHOT_API_KEY，或把 llm_server_config.json 放到 ~/.quantum-graph/ 后重启服务。';
+  return '未检测到问答服务。请在项目目录运行 python llm_proxy.py 后访问 http://127.0.0.1:8790/ 。';
+}
+const SYS_GEN = `你是一个图数据库查询翻译器，把用户的自然语言问题翻译为一条 Cypher 查询语句。
+
+【图结构】量子技术领域知识图谱，节点=实体，边=关系。
+节点属性：
+- id, name（中文名）, name_en（英文名）
+- type：university（高校/研究机构）| scholar（教授/课题组负责人）| student（研究生/博后/校友）| exec（企业创始人/高管）| company（公司）| investor（投资机构）
+- country（国家/地区，如：中国、美国、英国、德国、法国、瑞士、奥地利、荷兰、加拿大、澳大利亚、日本、新加坡、以色列、韩国、西班牙、丹麦、瑞典）
+- weight（影响力权重，整数1-10，越大越重要；>=9 旗舰级）
+- intro（简介，自由文本）, note（备注，自由文本）, uncertain（不确定项，数组）
+- 学者/学生/高管另有：affiliation、dept、title（均为自由文本）
+- 公司另有：founded（成立年份）, hq（所在地）, funding（融资阶段，自由文本）, business（主营业务，自由文本）
+- 公司另有（技术路线分类，仅公司节点具备）：route_group（一级领域：量子计算硬件 | 量子通信与密码 | 量子网络 | 量子传感与测量 | 软件与算法 | 工程支撑与生态）与 route（二级技术路线，枚举值：超导量子计算、离子阱量子计算、光量子计算、中性原子量子计算、硅基及固态自旋量子计算、拓扑量子计算、金刚石色心量子计算、核磁共振量子计算、量子退火与绝热计算、量子密钥分发（QKD）、量子随机数（QRNG）、后量子密码与量子安全服务、量子网络与中继、量子时频与惯性、量子磁测量与成像、量子探测与雷达、量子软件与算法平台、量子纠错与错误缓解、测控与仪器装备、综合运营与生态平台）
+- 实体对齐（仅部分节点具备）：wikidata（Wikidata QID，形如 Q78610）、wikidata_src（该 QID 的来源：manual=人工核实 | auto-label=标签自动匹配 | auto-alias=别名自动匹配）
+- 推断属性（仅推断层可用）：school（学派，如"安东·蔡林格学派"、"潘建伟学派"）、bridge（跨境桥梁=1）、degree（连接数）、betweenness（中介中心性）
+
+边属性：
+- rel（关系类型）：师承（导师→学生）| 联合研究 | 学校孵化（高校→公司）| 任职（人→机构）| 任职/创办（人→公司）| 投资/持股（投资方→公司）；推断层另有：同门、共同投资
+- w（强度1-3）, unc（布尔，是否不确定）, note（说明）
+
+【支持的 Cypher 子集——严格遵守，否则执行失败】
+1. 模式只有两种：MATCH (n) 或 MATCH (a)-[r]->(b)
+2. WHERE：=、!=、>、<、>=、<=；AND 连接；NOT 前缀；布尔 true/false；字符串必须英文双引号
+3. 不支持：OR、[r:类型] 内联、聚合函数、ORDER BY、多跳路径、数组属性过滤
+4. RETURN 逗号分隔的 变量.属性 列表；末尾可 LIMIT n（最多 100）
+5. 可属性对属性比较：NOT i.country = c.country
+
+【关键纪律】
+- 等值匹配只允许用于：n.type、n.country、n.name、n.id、n.school、n.route、n.route_group、n.wikidata、n.wikidata_src、r.rel；intro/note/title/affiliation/funding/business 是自由文本，绝对不要对它们做 = 匹配
+- 用户要"排序/最/前几"时：不支持 ORDER BY，只需 RETURN n.weight 等列，由前端排序
+- 用户要"统计/几家/多家"时：生成返回明细行的宽查询（如全部投资边 RETURN i.name, i.country, c.name, c.country），由后续解读环节归纳
+- 涉及学派/同门/共同投资的问题，才使用 school 属性或 rel = "同门"/"共同投资"
+
+【示例】
+问：潘建伟的学生有哪些？
+MATCH (a)-[r]->(b) WHERE r.rel = "师承" AND a.name = "潘建伟" RETURN b.name, b.title
+
+问：中国的量子公司
+MATCH (n) WHERE n.type = "company" AND n.country = "中国" RETURN n.name, n.hq, n.funding, n.weight
+
+问：做离子阱量子计算的公司有哪些？
+MATCH (n) WHERE n.type = "company" AND n.route = "离子阱量子计算" RETURN n.name, n.country, n.business
+
+问：做量子传感的公司有哪些？
+MATCH (n) WHERE n.route_group = "量子传感与测量" RETURN n.name, n.route, n.country
+
+问：投资国盾量子的机构
+MATCH (i)-[r]->(c) WHERE r.rel = "投资/持股" AND c.name = "国盾量子" RETURN i.name, i.country
+
+问：哪些机构投资了不止一家量子公司？
+MATCH (i)-[r]->(c) WHERE r.rel = "投资/持股" RETURN i.name, i.country, c.name, c.country
+
+只输出 Cypher 语句本身，不要解释、不要用 markdown 代码块。`;
+const SYS_ANS = `你是量子科技产业分析助手。根据用户的问题、已执行的图查询语句和查询结果数据，用中文简明回答。规则：
+1. 只依据给出的结果数据，不得编造结果之外的实体、数字或事实
+2. 可以对结果行做计数、分组、归纳来回答"几家/哪些/最多"类问题
+3. **第一句必须是一句话结论**，直接回答问题（例：潘建伟有 3 位已收录的学生），随后再展开 2-4 句
+4. 结果为空时：说明可能原因（如图谱未收录、问法过窄），并给出 1-2 个改写建议
+5. 若结果涉及"学派/同门/共同投资"但为空，提示用户勾选「含推断层」后重问
+6. 可用 Markdown：**加粗**关键实体、必要时用短列表；全文 3-6 句，不要寒暄和套话`;
+
+// 统一的对话入口：云服务优先；仅当云服务 SDK 不可用时走本地/自建转发
+function llmChat(messages, model){
+  if (LLM.mode === 'cloud'){
+    return WB.llm.text(messages, LLM.cloudModel).catch(e => {
+      throw new Error(WB.errText(e));
+    });
+  }
+  if (LLM.mode === 'cloud-empty') return Promise.reject(new Error('云服务当前没有可用的模型，请稍后重试。'));
+  if (LLM.mode === 'cloud-error') return Promise.reject(new Error('云服务不可用：' + (LLM.cloudErr || '初始化失败')));
+  if (LLM.mode !== 'server') return Promise.reject(new Error(noLlmHint()));
+  return legacyLlmChat(messages, model);
+}
+function legacyLlmChat(messages, model){
+  const ctl = new AbortController();
+  const timer = setTimeout(() => ctl.abort(), 150000);
+  // 安全约定：只发正文，绝不携带任何凭据；凭据 100% 由服务端代持
+  return fetch(LLM.url, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({model:model||(LLM.fast?LLM.modelFast:LLM.model), temperature:1, max_tokens:4000, messages:messages}),
+    signal: ctl.signal
+  }).then(res => {
+    clearTimeout(timer);
+    if (res.status === 401) return res.json().catch(() => ({})).then(d => {
+      throw new Error((d.error && d.error.message) || '服务端未配置大模型凭据。');
+    });
+    if (!res.ok) return res.text().then(t => { throw new Error('接口错误 '+res.status+'：'+t.slice(0,160)); });
+    return res.json().then(d => (d.choices[0].message.content||'').trim());
+  }).catch(e => {
+    clearTimeout(timer);
+    if (e.name === 'AbortError') throw new Error('请求超时（150s），请重试');
+    // 网络层失败（含被 CSP 拦截）：给出可操作的指引
+    if (e instanceof TypeError || /Failed to fetch|NetworkError|Load failed/i.test(e.message || '')){
+      throw new Error('网络请求失败：请检查网络连接；若在应用内预览中打开，请先运行 python llm_proxy.py（详见页面同目录说明）。');
+    }
+    throw e;
+  });
+}
+function extractCypher(text){
+  let t = String(text||'').replace(/```[a-zA-Z]*\n?/g,'').replace(/```/g,'').trim();
+  const i = t.search(/MATCH/i);
+  if (i < 0) return null;
+  t = t.slice(i);
+  const semi = t.indexOf(';');
+  if (semi >= 0) t = t.slice(0, semi);
+  // 模型偶尔会把两条语句拼在一起（第一个 RETURN 之后又出现 MATCH）→ 只取第一条
+  const ret = t.search(/\bRETURN\b/i);
+  if (ret >= 0){
+    const next = t.slice(ret).search(/\bMATCH\b/i);
+    if (next >= 0) t = t.slice(0, ret + next);
+  }
+  t = t.replace(/[,，]\s*$/, '').replace(/\s+/g,' ').trim();
+  return t;
+}
+// 从问题里找出可能指向的实体，给出图谱中的「实际取值」（含别名），供修正名称时参考
+function nameHints(q){
+  const out = [];
+  DATA.nodes.forEach(n => {
+    if (n.name && n.name.length >= 2 && q.includes(n.name)){
+      out.push(n.name + ((n.aliases && n.aliases.length) ? '（别名：' + n.aliases.join('/') + '）' : ''));
+      return;
+    }
+    const hit = (n.aliases || []).filter(a => a && a.length >= 2 && q.includes(a))[0];
+    if (hit) out.push(n.name + '（问题中的“' + hit + '”对应图谱里的“' + n.name + '”）');
+  });
+  return [...new Set(out)].slice(0, 10);
+}
+let asking = false;
+async function askNL(){
+  const q = nlInput.value.trim();
+  if (!q || asking) return;
+  asking = true; nlAsk.disabled = true;
+  nlAnswer.style.display = 'none';
+  document.getElementById('nlCards').style.display = 'none';
+  collapsePresets();
+  try { await llmReady; } catch(e){}
+  try{
+    setStatus('<span class="thinking">正在理解问题并生成查询</span>', false);
+    let text = await llmChat([{role:'system',content:SYS_GEN},{role:'user',content:q}]);
+    let cy = extractCypher(text);
+    if (!cy){
+      nlAnswer.style.display = 'block';
+      nlAnswer.innerHTML = '<span class="nl-tag">助手</span>' + MD(text || '（空回复）');
+      document.getElementById('nlCards').style.display = 'none';
+      setStatus('未生成可执行查询，请换个问法或展开下方高级模式手写查询。', true);
+      return;
+    }
+    qInput.value = cy;
+    try{
+      lastRes = runCypher(cy, qInf.checked);
+    }catch(e1){
+      setStatus('<span class="thinking">查询语句有误，正在自动修正</span>', false);
+      text = await llmChat([
+        {role:'system',content:SYS_GEN},{role:'user',content:q},{role:'assistant',content:cy},
+        {role:'user',content:'这条查询执行报错：'+e1.message+'。请修正后只输出修正后的 Cypher 语句。'}]);
+      cy = extractCypher(text);
+      if (!cy) throw new Error('自动修正失败，请换个问法');
+      qInput.value = cy;
+      lastRes = runCypher(cy, qInf.checked);
+    }
+    // 执行成功但 0 行：最常见原因是实体名称字面量与图谱实际取值不一致（如把"中国科学技术大学"写成"中科大"）
+    // → 让模型带着图谱中的实际取值修正一次；修不好就保留原结果，不循环
+    if (lastRes.total === 0){
+      setStatus('<span class="thinking">未命中结果，正在按图谱实际取值修正查询</span>', false);
+      const hints = nameHints(q);
+      try{
+        const t2 = await llmChat([
+          {role:'system',content:SYS_GEN},
+          {role:'user',content:q},
+          {role:'assistant',content:cy},
+          {role:'user',content:'这条查询执行成功但返回 0 行。'
+            + (hints.length ? '图谱中与问题相关的实体实际取值为：' + hints.join('；') + '。' : '')
+            + '请据此修正实体名称与关系名（关系名仅限：师承、联合研究、学校孵化、任职、任职/创办、投资/持股），'
+            + '必要时放宽条件；只输出修正后的 Cypher 语句。'}
+        ]);
+        const cy2 = extractCypher(t2);
+        if (cy2 && cy2 !== cy){
+          let r2 = null;
+          try{ r2 = runCypher(cy2, qInf.checked); }catch(e){ r2 = null; }
+          if (r2 && r2.total > 0){ lastRes = r2; cy = cy2; qInput.value = cy2; }
+        }
+      }catch(e){ /* 修正失败则保留原始 0 行结果 */ }
+    }
+    presentResults();
+    setStatus('<span class="thinking">正在解读查询结果</span>', false);
+    const rowsText = [lastRes.cols.join('\t')]
+      .concat(lastRes.rows.slice(0,80).map(r => r.vals.map(v => String(v).replace(/\t/g,' ')).join('\t'))).join('\n');
+    const ans = await llmChat([
+      {role:'system',content:SYS_ANS},
+      {role:'user',content:'我的问题：'+q+'\n\n执行的查询：'+cy+'\n\n查询结果（共 '+lastRes.total+' 行'+(lastRes.rows.length<lastRes.total?'，仅前 '+lastRes.rows.length+' 行':'')+'）：\n'+(rowsText||'（无结果）')}
+    ]);
+    const concl = firstSentence(ans);
+    let body = String(ans || '').trim();
+    // 结论句来自正文开头；模型常在正文里原样重复一遍，识别后去重
+    if (concl && body){
+      const plain = s => String(s).replace(/[*_`#>\s]/g, '');
+      const nl = body.indexOf('\n');
+      const head = nl > 0 ? body.slice(0, nl) : body;
+      if (plain(head).startsWith(plain(concl).slice(0, 12))) body = (nl > 0 ? body.slice(nl) : '').trim();
+    }
+    nlAnswer.style.display = 'block';
+    nlAnswer.innerHTML = '<span class="nl-tag">解读</span>'
+      + (concl ? `<div class="nl-concl">${MD(concl)}</div>` : '')
+      + `<div class="nl-body">${MD(body)}</div>`
+      + '<div class="nl-dis">解读基于图谱内置数据（2024–2026 公开资料整理），仅供参考，投资用途请自行核验</div>';
+    // 已登录用户：本次问答自动留存到云数据库（未登录静默跳过）
+    if (window.WB && window.WB.recordQuery){
+      window.WB.recordQuery({ question:q, cypher:cy, answer:ans, rowCount:lastRes.total, useInferred:qInf.checked });
+    }
+    setStatus(`<b>${lastRes.rows.length}</b> 行 · 解读已生成 · 命中已在图中自动定位；点击卡片可单独聚焦`, false);
+  }catch(e){
+    // 失败时清掉上一次的结果卡片，避免"报错 + 残留旧结果"看起来像有结果
+    lastRes = null;
+    document.getElementById('nlCards').style.display = 'none';
+    setStatus('⚠ ' + e.message, true);
+  }finally{
+    asking = false; nlAsk.disabled = false;
+  }
+}
+nlAsk.onclick = askNL;
+nlInput.addEventListener('keydown', e => { if ((e.ctrlKey||e.metaKey) && e.key==='Enter') askNL(); });
+
+// ---------- 示例问题（自然语言） ----------
+const NL_PRESETS = [
+ {g:'学术谱系', t:'潘建伟的学生都有谁？他们现在各自在做什么？'},
+ {g:'学术谱系', t:'蔡林格学派的成员有哪些？分布在哪几个国家？', inf:1},
+ {g:'学术谱系', t:'图谱里权重最高的学者是哪些人？'},
+ {g:'产业与资本', t:'中国的量子公司里，哪些已经上市或正在推进 IPO？'},
+ {g:'产业与资本', t:'哪些投资机构布局了两家以上的量子公司？'},
+ {g:'产业与资本', t:'国外资本投了哪些中国量子公司？国内资本有出海投资吗？'},
+ {g:'产业与资本', t:'中科大系孵化了哪些量子公司？'},
+ {g:'数据质量', t:'图谱里还有哪些关系处于待核验状态？'},
+];
+const pc = document.getElementById('qPresetsBody');
+let curGroup = null;
+NL_PRESETS.forEach(p => {
+  if (p.g !== curGroup){
+    curGroup = p.g;
+    const g = document.createElement('div'); g.className = 'pgroup'; g.textContent = curGroup;
+    pc.appendChild(g);
+  }
+  const b = document.createElement('button');
+  b.className = 'pitem';
+  b.innerHTML = p.t + (p.inf ? '<span class="inf">[推断层]</span>' : '');
+  b.onclick = () => { nlInput.value = p.t; qInf.checked = !!p.inf; askNL(); };
+  pc.appendChild(b);
+});
+// 提问时自动收起示例问题区，给解读和结果表腾空间
+function collapsePresets(){ const box = document.getElementById('qPresetsBox'); if (box) box.open = false; }
+// Cypher 示例（高级模式，本地运行不调 API）
+const cyWrap = document.createElement('details');
+cyWrap.className = 'qhelp'; cyWrap.style.marginTop = '8px';
+cyWrap.innerHTML = '<summary>Cypher 示例语句（高级模式，不调 API）</summary>';
+const cyInner = document.createElement('div');
+PRESETS.forEach(p => {
+  const b = document.createElement('button');
+  b.className = 'pitem';
+  b.innerHTML = p.t + (p.inf ? '<span class="inf">[推断层]</span>' : '');
+  b.onclick = () => {
+    qInput.value = p.q; qInf.checked = !!p.inf;
+    document.getElementById('cyDetails').open = true;
+    doRun();
+  };
+  cyInner.appendChild(b);
+});
+cyWrap.appendChild(cyInner);
+pc.appendChild(cyWrap);
+
+// ---------- 与 cloud.js 的桥接 ----------
+// 历史条目重跑（直接执行已存下的 Cypher，不再消耗模型调用）
+window.__wbRunCypher = (cy, inf) => { qInput.value = cy; qInf.checked = !!inf; doRun(); };
+window.__wbAsk = (q, inf) => { nlInput.value = q; qInf.checked = !!inf; askNL(); };
+// 登录后把云端偏好写回当前视图
+window.__wbApplyPrefs = (p) => {
+  if (!p) return;
+  if (Array.isArray(p.hiddenTypes) && window.__kgPrefs) window.__kgPrefs.setHidden(p.hiddenTypes);
+  if (typeof p.fastMode === 'boolean' && p.fastMode !== LLM.fast){
+    LLM.fast = p.fastMode;
+    try { localStorage.setItem('llm_fast', LLM.fast ? '1' : '0'); } catch(e){}
+  }
+  if (typeof p.useInferred === 'boolean' && qInf.checked !== p.useInferred){
+    qInf.checked = p.useInferred;
+    doRun();
+  }
+};
+qInf.addEventListener('change', () => {
+  if (window.WB && window.WB.onPrefsChanged) window.WB.onPrefsChanged({ useInferred: qInf.checked });
+});
+// 只读诊断信息（不含任何凭据），便于线上排障
+window.__wbDiag = () => ({
+  llmMode: LLM.mode, cloudModel: LLM.cloudModel, cloudLabel: LLM.cloudLabel,
+  cloudModels: LLM.cloudModels.length, cloudErr: LLM.cloudErr || '',
+  fast: LLM.fast, useInferred: qInf.checked,
+  hiddenTypes: window.__kgPrefs ? window.__kgPrefs.getHidden() : [],
+  signedIn: !!(window.WB && window.WB.state && window.WB.state.user),
+  // 安全自证：前端不持有任何凭据，也不会发送 Authorization
+  credentialsInBrowser: false,
+  localStorageKeyRemoved: !localStorage.getItem('llm_key')
+});
+
+// 首屏演示（本地查询，不调 API）
+qInput.value = PRESETS[0].q;
+doRun();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,2009 @@
+[
+ {
+  "id": "u_mit",
+  "type": "university",
+  "term": "MIT",
+  "why": "5 个同名候选",
+  "candidates": [
+   [
+    "Q230684",
+    "MIT",
+    "Wikimedia disambiguation page"
+   ],
+   [
+    "Q24720880",
+    "MIT",
+    "InterPro Domain"
+   ],
+   [
+    "Q54905761",
+    "MIT",
+    "cell line"
+   ],
+   [
+    "Q54956671",
+    "MIT",
+    "company in the Czech Republic"
+   ],
+   [
+    "Q65038027",
+    "MIT",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "u_caltech",
+  "type": "university",
+  "term": "Caltech",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_berkeley",
+  "type": "university",
+  "term": "UC Berkeley",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_ucsb",
+  "type": "university",
+  "term": "UC Santa Barbara",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_sfu",
+  "type": "university",
+  "term": "Simon Fraser University",
+  "why": "3 个同名候选",
+  "candidates": [
+   [
+    "Q201603",
+    "Simon Fraser University",
+    "public research university in Greater Vancouver, British Columbia, Canada"
+   ],
+   [
+    "Q127698680",
+    "Simon Fraser University",
+    "Burnaby, British Columbia, Canada university campus and associated architectural ensemble"
+   ],
+   [
+    "Q134407119",
+    "Simon Fraser University",
+    "campus within the Central City development, Surrey, British Columbia, Canada"
+   ]
+  ]
+ },
+ {
+  "id": "u_ucl",
+  "type": "university",
+  "term": "UCL",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q250211",
+    "UCL",
+    "Wikimedia disambiguation page"
+   ]
+  ]
+ },
+ {
+  "id": "u_delft",
+  "type": "university",
+  "term": "TU Delft",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_lmu",
+  "type": "university",
+  "term": "LMU Munich",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_bordeaux",
+  "type": "university",
+  "term": "University of Bordeaux",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q13344",
+    "University of Bordeaux",
+    "university in France"
+   ],
+   [
+    "Q20791505",
+    "University of Bordeaux",
+    "French university from 1896 to 1971"
+   ]
+  ]
+ },
+ {
+  "id": "u_iqo",
+  "type": "university",
+  "term": "Institut d'Optique Graduate School",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_ens",
+  "type": "university",
+  "term": "ENS Paris",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_ustc",
+  "type": "university",
+  "term": "USTC",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q2471609",
+    "USTC",
+    "Wikimedia disambiguation page"
+   ],
+   [
+    "Q22110370",
+    "USTC",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "u_sustech",
+  "type": "university",
+  "term": "SUSTech",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_unsw",
+  "type": "university",
+  "term": "UNSW Sydney",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_chuang",
+  "type": "scholar",
+  "term": "Isaac Chuang",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_schoelkopf",
+  "type": "scholar",
+  "term": "Robert Schoelkopf",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_jin",
+  "type": "scholar",
+  "term": "Xianmin Jin",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_guogp",
+  "type": "scholar",
+  "term": "Guo Guoping",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_xue",
+  "type": "scholar",
+  "term": "Qikun Xue",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_home",
+  "type": "scholar",
+  "term": "Jonathan Home",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_vandersypen",
+  "type": "scholar",
+  "term": "Lieven Vandersypen",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_cirac",
+  "type": "scholar",
+  "term": "J. Ignacio Cirac",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_thompson",
+  "type": "scholar",
+  "term": "Mark Thompson",
+  "why": "44 个同名候选",
+  "candidates": [
+   [
+    "Q76178275",
+    "Mark Thompson",
+    "Peerage person ID=584551"
+   ],
+   [
+    "Q87461716",
+    "Mark Thompson",
+    "researcher (ORCID 0000-0002-7633-1442)"
+   ],
+   [
+    "Q6769982",
+    "Mark Thompson",
+    "Wikimedia disambiguation page"
+   ],
+   [
+    "Q1060609",
+    "Mark Thompson",
+    "Television executive"
+   ],
+   [
+    "Q6769990",
+    "Mark Thompson",
+    "American reporter, born 1953"
+   ]
+  ]
+ },
+ {
+  "id": "s_cubitt",
+  "type": "scholar",
+  "term": "Toby Cubitt",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_morton",
+  "type": "scholar",
+  "term": "John Morton",
+  "why": "40 个同名候选",
+  "candidates": [
+   [
+    "Q6249575",
+    "John Morton",
+    "English Tory politician"
+   ],
+   [
+    "Q6249573",
+    "John Morton",
+    "American football player and coach (born 1969)"
+   ],
+   [
+    "Q6249578",
+    "John Morton",
+    "American movie actor and stuntman"
+   ],
+   [
+    "Q6249579",
+    "John Morton",
+    "American composer"
+   ],
+   [
+    "Q76145814",
+    "John Morton",
+    "Peerage person ID=562773"
+   ]
+  ]
+ },
+ {
+  "id": "s_hensinger",
+  "type": "scholar",
+  "term": "Winfried Hensinger",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_lucas",
+  "type": "scholar",
+  "term": "David Lucas",
+  "why": "15 个同名候选",
+  "candidates": [
+   [
+    "Q5236803",
+    "David Lucas",
+    "English county cricketer (born 1978)"
+   ],
+   [
+    "Q5236806",
+    "David Lucas",
+    "American rock and roll composer"
+   ],
+   [
+    "Q76360334",
+    "David Lucas",
+    "(1802-1886)"
+   ],
+   [
+    "Q89696888",
+    "David Lucas",
+    "researcher"
+   ],
+   [
+    "Q383483",
+    "David Lucas",
+    "English footballer (born 1977)"
+   ]
+  ]
+ },
+ {
+  "id": "s_leek",
+  "type": "scholar",
+  "term": "Peter Leek",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q7175410",
+    "Peter Leek",
+    "Australian Paralympic swimmer"
+   ]
+  ]
+ },
+ {
+  "id": "s_loss",
+  "type": "scholar",
+  "term": "Daniel Loss",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q121382",
+    "Daniel Loss",
+    "Swiss physicist"
+   ],
+   [
+    "Q60057108",
+    "Daniel Loss",
+    "researcher"
+   ]
+  ]
+ },
+ {
+  "id": "s_biercuk",
+  "type": "scholar",
+  "term": "Michael Biercuk",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_dzurak",
+  "type": "scholar",
+  "term": "Andrew Dzurak",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_doherty",
+  "type": "scholar",
+  "term": "Marcus Doherty",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q110852131",
+    "Marcus Doherty",
+    "Canadian lawyer and judge"
+   ],
+   [
+    "Q76080497",
+    "Marcus Doherty",
+    "(died 1863)"
+   ]
+  ]
+ },
+ {
+  "id": "s_mosca",
+  "type": "scholar",
+  "term": "Michele Mosca",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q6836805",
+    "Michele Mosca",
+    "cryptographer"
+   ]
+  ]
+ },
+ {
+  "id": "s_fitzsimons",
+  "type": "scholar",
+  "term": "Joe Fitzsimons",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "st_weedbrook",
+  "type": "student",
+  "term": "Christian Weedbrook",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "st_wen",
+  "type": "student",
+  "term": "Kai Wen",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "st_ballance",
+  "type": "student",
+  "term": "Chris Ballance",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q1076969",
+    "Chris Ballance",
+    "British politician (born 1952)"
+   ]
+  ]
+ },
+ {
+  "id": "st_heyu",
+  "type": "student",
+  "term": "Yu He",
+  "why": "19 个同名候选",
+  "candidates": [
+   [
+    "Q77782578",
+    "Yu He",
+    "researcher"
+   ],
+   [
+    "Q83585367",
+    "Yu He",
+    "materials researcher"
+   ],
+   [
+    "Q87606784",
+    "Yu He",
+    "researcher (ORCID 0000-0003-4864-9952)"
+   ],
+   [
+    "Q87767848",
+    "Yu He",
+    "researcher (ORCID 0000-0002-8068-5825)"
+   ],
+   [
+    "Q88368147",
+    "Yu He",
+    "researcher (ORCID 0000-0003-4898-5518)"
+   ]
+  ]
+ },
+ {
+  "id": "st_wallman",
+  "type": "student",
+  "term": "Joel Wallman",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "st_zeiher",
+  "type": "student",
+  "term": "Johannes Zeiher",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q92090680",
+    "Johannes Zeiher",
+    "researcher (ORCID 0000-0002-8466-1863)"
+   ],
+   [
+    "Q57132825",
+    "Johannes Zeiher",
+    "researcher (ORCID 0000-0003-1992-1777)"
+   ]
+  ]
+ },
+ {
+  "id": "c_ionq",
+  "type": "company",
+  "term": "IonQ",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_quera",
+  "type": "company",
+  "term": "QuEra",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_rigetti",
+  "type": "company",
+  "term": "Rigetti",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_qci",
+  "type": "company",
+  "term": "QCI",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q7265389",
+    "QCI",
+    "Wikimedia disambiguation page"
+   ]
+  ]
+ },
+ {
+  "id": "c_qolab",
+  "type": "company",
+  "term": "Qolab",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_dwave",
+  "type": "company",
+  "term": "D-Wave",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q5203293",
+    "D-Wave",
+    "Wikimedia disambiguation page"
+   ],
+   [
+    "Q9200304",
+    "D-Wave",
+    "Brand of MP3 / MP4 players"
+   ]
+  ]
+ },
+ {
+  "id": "c_xanadu",
+  "type": "company",
+  "term": "Xanadu",
+  "why": "23 个同名候选",
+  "candidates": [
+   [
+    "Q471765",
+    "Xanadu",
+    "former summer capital of Kublai Khan's Yuan Dynasty"
+   ],
+   [
+    "Q603670",
+    "Xanadu",
+    "Wikimedia disambiguation page"
+   ],
+   [
+    "Q728982",
+    "Xanadu",
+    "song written and composed by Jeff Lynne; originally recorded by Olivia Newton-John and the Electric Light Orchestra in 1979 and released 1980"
+   ],
+   [
+    "Q777970",
+    "Xanadu",
+    "1980 American musical film directed by Robert Greenwald"
+   ],
+   [
+    "Q822211",
+    "Xanadu",
+    "television series"
+   ]
+  ]
+ },
+ {
+  "id": "c_qm",
+  "type": "company",
+  "term": "Quantum Machines",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_oxford_ionics",
+  "type": "company",
+  "term": "Oxford Ionics",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_riverlane",
+  "type": "company",
+  "term": "Riverlane",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_phasecraft",
+  "type": "company",
+  "term": "Phasecraft",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_quantum_motion",
+  "type": "company",
+  "term": "Quantum Motion",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_oqc",
+  "type": "company",
+  "term": "OQC",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_pasqal",
+  "type": "company",
+  "term": "Pasqal",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_planqc",
+  "type": "company",
+  "term": "planqc",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_aqt",
+  "type": "company",
+  "term": "AQT",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q2819349",
+    "AQT",
+    "Wikimedia disambiguation page"
+   ],
+   [
+    "Q138755121",
+    "AQT",
+    "american-based Nigerian musician and entrepreneur"
+   ]
+  ]
+ },
+ {
+  "id": "c_qphox",
+  "type": "company",
+  "term": "QphoX",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_qblox",
+  "type": "company",
+  "term": "Qblox",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_kets",
+  "type": "company",
+  "term": "KETS",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_quantumctek",
+  "type": "company",
+  "term": "QuantumCTek",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_origin",
+  "type": "company",
+  "term": "Origin Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_boseq",
+  "type": "company",
+  "term": "QBoson",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_huayi",
+  "type": "company",
+  "term": "Huayi Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_horizon",
+  "type": "company",
+  "term": "Horizon Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_qbench",
+  "type": "company",
+  "term": "Quantum Benchmark",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_evoq",
+  "type": "company",
+  "term": "evolutionQ",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_ye",
+  "type": "scholar",
+  "term": "Jun Ye",
+  "why": "15 个同名候选",
+  "candidates": [
+   [
+    "Q22005647",
+    "Jun Ye",
+    "Chinese-American physicist and professor"
+   ],
+   [
+    "Q56958224",
+    "Jun Ye",
+    "microbiologist"
+   ],
+   [
+    "Q102960204",
+    "Jun Ye",
+    "economist"
+   ],
+   [
+    "Q103830411",
+    "Jun Ye",
+    "electrical engineer"
+   ],
+   [
+    "Q130933006",
+    "Jun Ye",
+    "researcher (ORCID 0009-0003-4628-087X)"
+   ]
+  ]
+ },
+ {
+  "id": "s_zhusn",
+  "type": "scholar",
+  "term": "Zhu Shining",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q45698986",
+    "Zhu Shining",
+    "Yuan dynasty person CBDB = 101974"
+   ],
+   [
+    "Q65895925",
+    "Zhu Shining",
+    "person, CBDB ID = 405334"
+   ]
+  ]
+ },
+ {
+  "id": "s_han",
+  "type": "scholar",
+  "term": "Han Zhengfu",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_wunderlich",
+  "type": "scholar",
+  "term": "Christof Wunderlich",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q103147220",
+    "Christof Wunderlich",
+    ""
+   ],
+   [
+    "Q112360947",
+    "Christof Wunderlich",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "st_xiang",
+  "type": "student",
+  "term": "Xiang Jingen",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "st_peronnin",
+  "type": "student",
+  "term": "Théau Peronnin",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q124306891",
+    "Théau Peronnin",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "c_wentian",
+  "type": "company",
+  "term": "Qasky (Anhui Qasky Quantum Technology)",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_eleqtron",
+  "type": "company",
+  "term": "eleQtron GmbH",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_spinq",
+  "type": "company",
+  "term": "SpinQ Technology",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_guoyao",
+  "type": "company",
+  "term": "Guoyao Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_gkqn",
+  "type": "company",
+  "term": "Guoke Quantum Network",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_goetz",
+  "type": "exec",
+  "term": "Jan Goetz",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q59508510",
+    "Jan Goetz",
+    "researcher at Aalto University"
+   ]
+  ]
+ },
+ {
+  "id": "x_reymond",
+  "type": "exec",
+  "term": "Georges-Olivier Reymond",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q124311231",
+    "Georges-Olivier Reymond",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "x_ribordy",
+  "type": "exec",
+  "term": "Grégoire Ribordy",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_bloom",
+  "type": "exec",
+  "term": "Ben Bloom",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q58240979",
+    "Ben Bloom",
+    "British journalist"
+   ],
+   [
+    "Q124288483",
+    "Ben Bloom",
+    "American football coach"
+   ]
+  ]
+ },
+ {
+  "id": "x_sivan",
+  "type": "exec",
+  "term": "Itamar Sivan",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_shadbolt",
+  "type": "exec",
+  "term": "Pete Shadbolt",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q117278882",
+    "Pete Shadbolt",
+    "researcher"
+   ]
+  ]
+ },
+ {
+  "id": "x_brierley",
+  "type": "exec",
+  "term": "Steve Brierley",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q116476312",
+    "Steve Brierley",
+    "rugby league footballer"
+   ]
+  ]
+ },
+ {
+  "id": "x_yaolin",
+  "type": "exec",
+  "term": "Yao Lin",
+  "why": "15 个同名候选",
+  "candidates": [
+   [
+    "Q41911885",
+    "Yao Lin",
+    "professor of chemistry"
+   ],
+   [
+    "Q45407443",
+    "Yao Lin",
+    "Song dynasty person CBDB = 25094"
+   ],
+   [
+    "Q45529275",
+    "Yao Lin",
+    "Ming dynasty person CBDB = 236917"
+   ],
+   [
+    "Q45616834",
+    "Yao Lin",
+    "Ming dynasty person CBDB = 271058"
+   ],
+   [
+    "Q45639118",
+    "Yao Lin",
+    "Ming dynasty person CBDB = 360147"
+   ]
+  ]
+ },
+ {
+  "id": "x_mayin",
+  "type": "exec",
+  "term": "Ma Yin",
+  "why": "7 个同名候选",
+  "candidates": [
+   [
+    "Q1071598",
+    "Ma Yin",
+    "Chu prince"
+   ],
+   [
+    "Q45435435",
+    "Ma Yin",
+    "Song dynasty person CBDB = 44196"
+   ],
+   [
+    "Q45509189",
+    "Ma Yin",
+    "Ming dynasty person CBDB = 326708"
+   ],
+   [
+    "Q45595409",
+    "Ma Yin",
+    "Ming dynasty person CBDB = 243860"
+   ],
+   [
+    "Q45649242",
+    "Ma Yin",
+    "Tang dynasty person CBDB = 165508"
+   ]
+  ]
+ },
+ {
+  "id": "x_nunn",
+  "type": "exec",
+  "term": "Josh Nunn",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_nvidia",
+  "type": "investor",
+  "term": "NVIDIA / NVentures",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_temasek",
+  "type": "investor",
+  "term": "Temasek",
+  "why": "3 个同名候选",
+  "candidates": [
+   [
+    "Q4918669",
+    "Temasek",
+    "settlement on the site of modern Singapore"
+   ],
+   [
+    "Q122795414",
+    "Temasek",
+    "ship built in 1982"
+   ],
+   [
+    "Q65176871",
+    "Temasek",
+    "Wikimedia disambiguation page"
+   ]
+  ]
+ },
+ {
+  "id": "i_hillhouse",
+  "type": "investor",
+  "term": "GL Ventures",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_jushi",
+  "type": "investor",
+  "term": "Co-Stone Capital",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_zkx",
+  "type": "investor",
+  "term": "CASSTAR",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_junlian",
+  "type": "investor",
+  "term": "Legend Capital",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_legendstar",
+  "type": "investor",
+  "term": "Legend Star",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_shengshi",
+  "type": "investor",
+  "term": "CGP Investment",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_baiduv",
+  "type": "investor",
+  "term": "Baidu Ventures",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_jiantou",
+  "type": "investor",
+  "term": "JIC Investment",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_wuhu",
+  "type": "investor",
+  "term": "Wuhu Investment Holding Group",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_worldfund",
+  "type": "investor",
+  "term": "World Fund",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_earlybird",
+  "type": "investor",
+  "term": "Earlybird Venture Capital",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q5326911",
+    "Earlybird Venture Capital",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "i_google",
+  "type": "investor",
+  "term": "Google Quantum AI",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q137637461",
+    "Google Quantum AI",
+    "Research division of Google Inc."
+   ]
+  ]
+ },
+ {
+  "id": "i_nrf",
+  "type": "investor",
+  "term": "National Reconstruction Fund (NRF)",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_icfo",
+  "type": "university",
+  "term": "The Institute of Photonic Sciences",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_iapcm",
+  "type": "university",
+  "term": "Innovation Academy for Precision Measurement Science and Technology, CAS",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "u_sherbrooke",
+  "type": "university",
+  "term": "Université de Sherbrooke",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_ozeri",
+  "type": "scholar",
+  "term": "Roee Ozeri",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_luole",
+  "type": "scholar",
+  "term": "Le Luo",
+  "why": "3 个同名候选",
+  "candidates": [
+   [
+    "Q56224421",
+    "Le Luo",
+    "researcher (ORCID 0000-0002-8375-6326)"
+   ],
+   [
+    "Q91339739",
+    "Le Luo",
+    "researcher (ORCID 0000-0002-0278-6903)"
+   ],
+   [
+    "Q99608916",
+    "Le Luo",
+    "researcher ORCID 0000-0001-8205-4122"
+   ]
+  ]
+ },
+ {
+  "id": "s_zengguihua",
+  "type": "scholar",
+  "term": "Guihua Zeng",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_qart",
+  "type": "company",
+  "term": "Quantum Art",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_qedma",
+  "type": "company",
+  "term": "Qedma Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_quobly",
+  "type": "company",
+  "term": "Quobly",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_luxquanta",
+  "type": "company",
+  "term": "LuxQuanta Technologies",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_nanoqt",
+  "type": "company",
+  "term": "Nanofiber Quantum Technologies",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_qike",
+  "type": "company",
+  "term": "Qudoors",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_coolatom",
+  "type": "company",
+  "term": "Cold Atom Quantum (Wuhan)",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_xuntai",
+  "type": "company",
+  "term": "Xuntai Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_vinet",
+  "type": "exec",
+  "term": "Maud Vinet",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q110765797",
+    "Maud Vinet",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "x_tangbiao",
+  "type": "exec",
+  "term": "Tang Biao",
+  "why": "3 个同名候选",
+  "candidates": [
+   [
+    "Q45435514",
+    "Tang Biao",
+    "Song dynasty person CBDB = 43706"
+   ],
+   [
+    "Q45506978",
+    "Tang Biao",
+    "Ming dynasty person CBDB = 241899"
+   ],
+   [
+    "Q45634397",
+    "Tang Biao",
+    "Ming dynasty person CBDB = 260825"
+   ]
+  ]
+ },
+ {
+  "id": "u_ub",
+  "type": "university",
+  "term": "Universitat de Barcelona",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_longguilu",
+  "type": "scholar",
+  "term": "Long Guilu",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_sich",
+  "type": "exec",
+  "term": "Maksym Sich",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q57037195",
+    "Maksym Sich",
+    "researcher"
+   ]
+  ]
+ },
+ {
+  "id": "c_parityqc",
+  "type": "company",
+  "term": "ParityQC",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_qili",
+  "type": "company",
+  "term": "Qilimanjaro",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_orangeqs",
+  "type": "company",
+  "term": "OrangeQS",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_norinco",
+  "type": "investor",
+  "term": "Norinco Group",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_lightsynq",
+  "type": "company",
+  "term": "Lightsynq",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_vector_atomic",
+  "type": "company",
+  "term": "Vector Atomic",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_nakai",
+  "type": "company",
+  "term": "Nakai Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_vecq",
+  "type": "company",
+  "term": "Vector Singularity",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_liangyi",
+  "type": "company",
+  "term": "Liangyi Wanxiang",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_logicbit",
+  "type": "company",
+  "term": "LogicBit",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_buchou",
+  "type": "company",
+  "term": "Buchou Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_xianggan",
+  "type": "company",
+  "term": "Coherent Quantum Tech",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_weici",
+  "type": "company",
+  "term": "Weici Technology",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "i_thirdpoint",
+  "type": "investor",
+  "term": "Third Point Ventures",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_mcdermott",
+  "type": "scholar",
+  "term": "Robert McDermott",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q7347497",
+    "Robert McDermott",
+    "Wikimedia disambiguation page"
+   ]
+  ]
+ },
+ {
+  "id": "s_zhaihui",
+  "type": "scholar",
+  "term": "Zhai Hui",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q45456718",
+    "Zhai Hui",
+    "Ming dynasty person CBDB = 325586"
+   ],
+   [
+    "Q45694701",
+    "Zhai Hui",
+    "Qing dynasty person CBDB = 91204"
+   ]
+  ]
+ },
+ {
+  "id": "s_jinyirong",
+  "type": "scholar",
+  "term": "Jin Yirong",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "st_lixiang",
+  "type": "student",
+  "term": "Li Xiangliang",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_demasi",
+  "type": "exec",
+  "term": "Niccolo de Masi",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_keesling",
+  "type": "exec",
+  "term": "Alex Keesling",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_hazra",
+  "type": "exec",
+  "term": "Rajeeb Hazra",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q102256946",
+    "Rajeeb Hazra",
+    "Ph.D. College of William and Mary 1995"
+   ]
+  ]
+ },
+ {
+  "id": "x_baratz",
+  "type": "exec",
+  "term": "Alan Baratz",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_somaschi",
+  "type": "exec",
+  "term": "Niccolò Somaschi",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_henriet",
+  "type": "exec",
+  "term": "Loïc Henriet",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_ho",
+  "type": "exec",
+  "term": "Alan Ho",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q10886035",
+    "Alan Ho",
+    "Hong Kong singer"
+   ],
+   [
+    "Q123367361",
+    "Alan Ho",
+    "Canadian politician"
+   ]
+  ]
+ },
+ {
+  "id": "x_yan",
+  "type": "exec",
+  "term": "Tennin Yan",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_cohen",
+  "type": "exec",
+  "term": "Yonatan Cohen",
+  "why": "4 个同名候选",
+  "candidates": [
+   [
+    "Q32541138",
+    "Yonatan Cohen",
+    "Israeli association footballer"
+   ],
+   [
+    "Q88187576",
+    "Yonatan Cohen",
+    "researcher (ORCID 0000-0002-5920-5196)"
+   ],
+   [
+    "Q88597417",
+    "Yonatan Cohen",
+    "researcher (ORCID 0000-0002-2641-483X)"
+   ],
+   [
+    "Q112671257",
+    "Yonatan Cohen",
+    "Israeli fencer"
+   ]
+  ]
+ },
+ {
+  "id": "x_caibin",
+  "type": "exec",
+  "term": "Cai Bin",
+  "why": "5 个同名候选",
+  "candidates": [
+   [
+    "Q9337356",
+    "Cai Bin",
+    "Chinese volleyball coach"
+   ],
+   [
+    "Q45495843",
+    "Cai Bin",
+    "Ming dynasty person CBDB = 257640"
+   ],
+   [
+    "Q45524186",
+    "Cai Bin",
+    "Ming dynasty person CBDB = 215817"
+   ],
+   [
+    "Q45724834",
+    "Cai Bin",
+    "Ming dynasty person CBDB = 363334"
+   ],
+   [
+    "Q45724897",
+    "Cai Bin",
+    "Qing dynasty person CBDB = 363335"
+   ]
+  ]
+ },
+ {
+  "id": "x_pdesjardins",
+  "type": "exec",
+  "term": "Pierre Desjardins",
+  "why": "4 个同名候选",
+  "candidates": [
+   [
+    "Q7192177",
+    "Pierre Desjardins",
+    "Player of American and Canadian football"
+   ],
+   [
+    "Q137539305",
+    "Pierre Desjardins",
+    ""
+   ],
+   [
+    "Q83617459",
+    "Pierre Desjardins",
+    "French politician"
+   ],
+   [
+    "Q96399345",
+    "Pierre Desjardins",
+    "Canadian sailor"
+   ]
+  ]
+ },
+ {
+  "id": "u_osaka",
+  "type": "university",
+  "term": "Osaka University",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_fujii",
+  "type": "scholar",
+  "term": "Keisuke Fujii",
+  "why": "6 个同名候选",
+  "candidates": [
+   [
+    "Q11622729",
+    "Keisuke Fujii",
+    "Japanese voice actor"
+   ],
+   [
+    "Q134552079",
+    "Keisuke Fujii",
+    "fusion energy engineering researcher"
+   ],
+   [
+    "Q56353874",
+    "Keisuke Fujii",
+    "Japanese architectural historian"
+   ],
+   [
+    "Q86743373",
+    "Keisuke Fujii",
+    "Japanese physicist researching quantum information"
+   ],
+   [
+    "Q90614603",
+    "Keisuke Fujii",
+    "researcher in sports dynamics (ORCID 0000-0001-5487-4297)"
+   ]
+  ]
+ },
+ {
+  "id": "s_mitarai",
+  "type": "scholar",
+  "term": "Kosuke Mitarai",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_ling",
+  "type": "scholar",
+  "term": "Alexander Ling",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q59504713",
+    "Alexander Ling",
+    "researcher ORCID ID = 0000-0001-5866-1141"
+   ],
+   [
+    "Q89313939",
+    "Alexander Ling",
+    "researcher (ORCID 0000-0001-6194-9875)"
+   ]
+  ]
+ },
+ {
+  "id": "c_qsource",
+  "type": "company",
+  "term": "Quantum Source Labs",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_lum",
+  "type": "exec",
+  "term": "Lum Chune Yang",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_melamed",
+  "type": "exec",
+  "term": "Oded Melamed",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_abellan",
+  "type": "exec",
+  "term": "Carlos Abellan",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_etcheverry",
+  "type": "exec",
+  "term": "Sebastian Etcheverry",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_tan",
+  "type": "exec",
+  "term": "Kuan Yen Tan",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q51587837",
+    "Kuan Yen Tan",
+    "researcher"
+   ]
+  ]
+ },
+ {
+  "id": "x_vartiainen",
+  "type": "exec",
+  "term": "Juha Vartiainen",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q18633812",
+    "Juha Vartiainen",
+    "Finnish singer and composer"
+   ]
+  ]
+ },
+ {
+  "id": "x_minerbi",
+  "type": "exec",
+  "term": "Nir Minerbi",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_navehy",
+  "type": "exec",
+  "term": "Yehuda Naveh",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_erven",
+  "type": "exec",
+  "term": "Chris Erven",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_lescannne",
+  "type": "exec",
+  "term": "Raphaël Lescanne",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q124306989",
+    "Raphaël Lescanne",
+    ""
+   ]
+  ]
+ },
+ {
+  "id": "x_giesz",
+  "type": "exec",
+  "term": "Valérian Giesz",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q96154603",
+    "Valérian Giesz",
+    "researcher"
+   ]
+  ]
+ },
+ {
+  "id": "x_canivell",
+  "type": "exec",
+  "term": "Victor Canivell",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_kulkarni",
+  "type": "exec",
+  "term": "Subodh Kulkarni",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_mullally",
+  "type": "exec",
+  "term": "Gerald Mullally",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "st_harty",
+  "type": "student",
+  "term": "Tom Harty",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_humphreys",
+  "type": "scholar",
+  "term": "Sir Colin Humphreys",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_sthomas",
+  "type": "exec",
+  "term": "Simon Thomas",
+  "why": "17 个同名候选",
+  "candidates": [
+   [
+    "Q3405148",
+    "Simon Thomas",
+    "British politician (born 1963)"
+   ],
+   [
+    "Q58327033",
+    "Simon Thomas",
+    "researcher, ORCID id # 0000-0001-6762-8247"
+   ],
+   [
+    "Q59554832",
+    "Simon Thomas",
+    "researcher ORCID ID = 0000-0002-2951-6700"
+   ],
+   [
+    "Q65769229",
+    "Simon Thomas",
+    "family name"
+   ],
+   [
+    "Q14475873",
+    "Simon Thomas",
+    "television presenter"
+   ]
+  ]
+ },
+ {
+  "id": "c_deltag",
+  "type": "company",
+  "term": "Delta g",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_lowe",
+  "type": "exec",
+  "term": "Tony Lowe",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_peng",
+  "type": "exec",
+  "term": "Victor Peng",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_ofek",
+  "type": "exec",
+  "term": "Nissim Ofek",
+  "why": "唯一候选但描述未命中类型词",
+  "candidates": [
+   [
+    "Q125342365",
+    "Nissim Ofek",
+    "researcher"
+   ]
+  ]
+ },
+ {
+  "id": "s_heiblum",
+  "type": "scholar",
+  "term": "Moty Heiblum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_dufferwiel",
+  "type": "exec",
+  "term": "Scott Dufferwiel",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_izaac",
+  "type": "exec",
+  "term": "Josh Izaac",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "c_quix",
+  "type": "company",
+  "term": "QuiX Quantum",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_renema",
+  "type": "scholar",
+  "term": "Jelmer Renema",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_meunier",
+  "type": "exec",
+  "term": "Tristan Meunier",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_chenliuping",
+  "type": "exec",
+  "term": "Chen Liuping",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_rongxing",
+  "type": "scholar",
+  "term": "Rong Xing",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "s_sblatt",
+  "type": "scholar",
+  "term": "Sebastian Blatt",
+  "why": "2 个同名候选",
+  "candidates": [
+   [
+    "Q55416274",
+    "Sebastian Blatt",
+    "researcher (ORCID 0000-0003-2466-9967)"
+   ],
+   [
+    "Q89586598",
+    "Sebastian Blatt",
+    "researcher (ORCID 0000-0003-1949-4605)"
+   ]
+  ]
+ },
+ {
+  "id": "x_glaetzle",
+  "type": "exec",
+  "term": "Alexander Glätzle",
+  "why": "无精确标签匹配",
+  "candidates": []
+ },
+ {
+  "id": "x_ory",
+  "type": "exec",
+  "term": "Andy Ory",
+  "why": "无精确标签匹配",
+  "candidates": []
+ }
+]

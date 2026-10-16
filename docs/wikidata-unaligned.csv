@@ -1,0 +1,84 @@
+﻿节点ID,类型,中文名,英文名,国别,机构/所属,核查结论
+c_deltag,company,Delta g,Delta g,英国,英国伯明翰,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_horizon,company,Horizon Quantum,Horizon Quantum,新加坡,新加坡,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_kets,company,KETS Quantum Security,KETS,英国,英国布里斯托,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_orangeqs,company,Orange Quantum Systems,OrangeQS,荷兰,代尔夫特（荷兰）,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_oxford_ionics,company,Oxford Ionics,Oxford Ionics,英国,英国牛津,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_oqc,company,Oxford Quantum Circuits,OQC,英国,英国牛津,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_parityqc,company,ParityQC,ParityQC,奥地利,因斯布鲁克（奥地利）,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_qolab,company,Qolab,Qolab,美国,美国威斯康星州 Madison,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_qphox,company,QphoX,QphoX,荷兰,荷兰 Delft,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_qart,company,Quantum Art,Quantum Art,以色列,雷霍沃特,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_quobly,company,Quobly,Quobly,法国,格勒诺布尔,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_vector_atomic,company,Vector Atomic,Vector Atomic,美国,美国加州 Pleasanton,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_eleqtron,company,eleQtron,eleQtron GmbH,德国,锡根（兼汉堡）,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_evoq,company,evolutionQ,evolutionQ,加拿大,加拿大滑铁卢,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_buchou,company,不筹量子,Buchou Quantum,中国,上海,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_liangyi,company,两仪万象,Liangyi Wanxiang,中国,北京,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_coolatom,company,中科酷原,Cold Atom Quantum (Wuhan),中国,武汉,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_vecq,company,向量奇点,Vector Singularity,中国,北京,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_gkqn,company,国科量网（国科量子通信网络）,Guoke Quantum Network,中国,北京,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_guoyao,company,国耀量子,Guoyao Quantum,中国,合肥,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_weici,company,未磁科技,Weici Technology,中国,北京,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_xianggan,company,相干科技,Coherent Quantum Tech,中国,北京,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_nakai,company,纳开量子,Nakai Quantum,中国,北京,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_logicbit,company,逻辑比特,LogicBit,中国,杭州,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+c_spinq,company,量旋科技,SpinQ Technology,中国,深圳（河套）,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+i_worldfund,investor,World Fund,World Fund,德国,,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+i_jiantou,investor,建投投资,JIC Investment,中国,,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+i_nrf,investor,澳大利亚国家重建基金,National Reconstruction Fund (NRF),澳大利亚,堪培拉,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+i_baiduv,investor,百度风投,Baidu Ventures,中国,,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+i_shengshi,investor,盛世投资,CGP Investment,中国,,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+i_legendstar,investor,联想之星,Legend Star,中国,,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+i_wuhu,investor,芜湖投控,Wuhu Investment Holding Group,中国,,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+i_hillhouse,investor,高瓴创投,GL Ventures,中国,,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+u_iapcm,university,中科院精密测量科学与技术创新研究院,"Innovation Academy for Precision Measurement Science and Technology, CAS",中国,,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_ozeri,scholar,Roee Ozeri,Roee Ozeri,以色列,魏茨曼科学研究所,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_fitzsimons,scholar,乔·菲茨西蒙斯,Joe Fitzsimons,新加坡,SUTD / CQT,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_wunderlich,scholar,克里斯托夫·文德利希,Christof Wunderlich,德国,锡根大学,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_sblatt,scholar,塞巴斯蒂安·布拉特,Sebastian Blatt,德国,马克斯·普朗克量子光学研究所,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_mitarai,scholar,御手洗光介,Kosuke Mitarai,日本,大阪大学,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_zengguihua,scholar,曾贵华,Guihua Zeng,中国,上海交通大学,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_renema,scholar,耶尔默·雷内马,Jelmer Renema,荷兰,特文特大学,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_rongxing,scholar,荣星,Rong Xing,中国,中国科学技术大学,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_guogp,scholar,郭国平,Guo Guoping,中国,中国科学技术大学,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_jinyirong,scholar,金贻荣,Jin Yirong,中国,北京量子信息科学研究院,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+s_han,scholar,韩正甫,Han Zhengfu,中国,中国科学技术大学,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_izaac,exec,乔什·伊扎克,Josh Izaac,澳大利亚,Xanadu,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_nunn,exec,乔什·纳恩,Josh Nunn,英国,ORCA Computing,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_keesling,exec,亚历克斯·基斯林,Alex Keesling,美国,QuEra,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_glaetzle,exec,亚历山大·格莱茨勒,Alexander Glätzle,德国,planqc,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_sivan,exec,伊塔马尔·西万,Itamar Sivan,以色列,Quantum Machines,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_henriet,exec,卢瓦克·昂里耶,Loïc Henriet,法国,Pasqal,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_brierley,exec,史蒂夫·布赖尔利,Steve Brierley,英国,Riverlane,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_etcheverry,exec,塞巴斯蒂安·埃切维里,Sebastian Etcheverry,西班牙,LuxQuanta,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_melamed,exec,奥德德·梅拉梅德,Oded Melamed,以色列,Quantum Source,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_yaolin,exec,姚麟,Yao Lin,中国,华翊量子,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_ory,exec,安迪·奥里,Andy Ory,美国,QuEra,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_vartiainen,exec,尤哈·瓦尔蒂艾宁,Juha Vartiainen,芬兰,IQM,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_minerbi,exec,尼尔·米内尔比,Nir Minerbi,以色列,Classiq,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_demasi,exec,尼科洛·德马西,Niccolo de Masi,美国,IonQ,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_somaschi,exec,尼科洛·索马斯基,Niccolò Somaschi,法国,Quandela,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_lowe,exec,托尼·洛,Tony Lowe,英国,Delta g,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_dufferwiel,exec,斯科特·达弗维尔,Scott Dufferwiel,英国,Aegiq,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_yan,exec,晏天任,Tennin Yan,日本,QunaSys,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_mullally,exec,杰拉尔德·马拉利,Gerald Mullally,英国,OQC,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_lum,exec,林俊阳,Lum Chune Yang,新加坡,SpeQtral,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_ribordy,exec,格雷瓜尔·里博迪,Grégoire Ribordy,瑞士,ID Quantique,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_tangbiao,exec,汤彪,Tang Biao,中国,中科酷原,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_meunier,exec,特里斯坦·默尼耶,Tristan Meunier,法国,Quobly,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_pdesjardins,exec,皮埃尔·德雅尔丹,Pierre Desjardins,法国,C12,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_canivell,exec,维克托·卡尼维尔,Victor Canivell,西班牙,Qilimanjaro,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_navehy,exec,耶胡达·纳维,Yehuda Naveh,以色列,Classiq,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_ho,exec,艾伦·何,Alan Ho,美国,Qolab,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_kulkarni,exec,苏博德·库尔卡尼,Subodh Kulkarni,美国,Rigetti,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_caibin,exec,蔡宾,Cai Bin,中国,未磁科技,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_chenliuping,exec,陈柳平,Chen Liuping,中国,启科量子,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+x_mayin,exec,马寅,Ma Yin,中国,玻色量子,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+st_ballance,student,克里斯·巴兰斯,Chris Ballance,英国,Oxford 博士,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+st_weedbrook,student,克里斯蒂安·威德布鲁克,Christian Weedbrook,加拿大,昆士兰大学博士；Toronto/MIT 博后,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+st_wen,student,文凯,Kai Wen,中国,Stanford 博士,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+st_lixiang,student,李相良,Li Xiangliang,中国,向量奇点,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+st_harty,student,汤姆·哈蒂,Tom Harty,英国,Oxford Ionics / IonQ,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+st_heyu,student,贺羽,Yu He,中国,中科大 博士,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
+st_xiang,student,项金根,Xiang Jingen,中国,深圳量旋科技,Wikidata 无对应实体（全词条全文召回+P31 类型门后无自洽候选）
